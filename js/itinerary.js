@@ -41,7 +41,7 @@ function renderItinerary() {
   function render() {
     container.innerHTML = '';
 
-    // Before trip: countdown
+    // Before trip: countdown + pre-trip to-do list
     if (today < tripStart) {
       const diffMs = tripStart - today;
       const diffDays = Math.ceil(diffMs / (1000 * 60 * 60 * 24));
@@ -54,6 +54,12 @@ function renderItinerary() {
         <div class="countdown-dates">May 12 – 25, 2026 · ${data.trip.route.join(' → ')}</div>
       `;
       container.appendChild(countdownEl);
+
+      // Pre-trip to-do list (appended after countdown, before day picker)
+      const todoWrap = document.createElement('div');
+      todoWrap.id = 'pretodo-wrap';
+      container.appendChild(todoWrap);
+      renderPreTripTodos(todoWrap);
     }
 
     // After trip: summary banner
@@ -196,6 +202,90 @@ function renderItinerary() {
 
     // Scroll panel to top
     window.scrollTo(0, 0);
+  }
+
+  // ── Pre-trip to-do list (shown before May 12) ──────────────
+  function renderPreTripTodos(wrap) {
+    const bookings = data.bookings_checklist || data.bookings || [];
+
+    function isChecked(id) {
+      try { return !!localStorage.getItem('booking_' + id); } catch(e) { return false; }
+    }
+    function toggleItem(id) {
+      try {
+        if (localStorage.getItem('booking_' + id)) localStorage.removeItem('booking_' + id);
+        else localStorage.setItem('booking_' + id, '1');
+      } catch(e) {}
+    }
+
+    function draw() {
+      const done  = bookings.filter(b => isChecked(b.id)).length;
+      const total = bookings.length;
+      const pct   = total ? Math.round((done / total) * 100) : 0;
+
+      const priorityOrder = ['URGENT', 'HIGH', 'MEDIUM'];
+      const priorityEmoji = { URGENT: '🔴', HIGH: '🟠', MEDIUM: '🟡' };
+      const priorityClass = { URGENT: 'priority-urgent', HIGH: 'priority-high', MEDIUM: 'priority-medium' };
+
+      let html = `
+        <div class="pretodo-header">
+          <div class="pretodo-title">📋 Before You Go — Pre-Trip To-Do</div>
+          <div class="pretodo-count">${done} of ${total} done</div>
+        </div>
+        <div class="pretodo-progress">
+          <div class="pretodo-progress-fill" style="width:${pct}%"></div>
+        </div>
+      `;
+
+      priorityOrder.forEach(priority => {
+        const items = bookings.filter(b => b.priority === priority);
+        if (!items.length) return;
+        html += `<div class="pretodo-group-label">${priorityEmoji[priority]} ${priority}</div>`;
+        items.forEach(b => {
+          const checked = isChecked(b.id);
+          const whereLabel = b.where_to_book || b.where || '';
+          html += `
+            <div class="pretodo-item ${checked ? 'done' : ''}" data-id="${escHtml(b.id)}">
+              <div class="pretodo-check">${checked ? '✓' : ''}</div>
+              <div class="pretodo-body">
+                <div class="pretodo-name">
+                  <span class="priority-badge ${priorityClass[priority]}">${priority}</span>
+                  ${escHtml(b.item)}
+                </div>
+                ${whereLabel ? `<div class="pretodo-where">${b.url
+                  ? `<a href="${escHtml(b.url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">🔗 ${escHtml(whereLabel)}</a>`
+                  : `📋 ${escHtml(whereLabel)}`
+                }</div>` : ''}
+                ${b.sale_date_chicago ? `
+                <div class="pretodo-sale-alert">
+                  <span>⏰</span>
+                  <div>
+                    <strong>${escHtml(b.sale_date_chicago)}</strong>
+                    <div class="pretodo-sale-jp">${escHtml(b.sale_date_japan)}</div>
+                  </div>
+                </div>` : ''}
+              </div>
+            </div>
+          `;
+        });
+      });
+
+      wrap.innerHTML = html;
+
+      wrap.querySelectorAll('.pretodo-item').forEach(el => {
+        el.addEventListener('click', () => {
+          toggleItem(el.dataset.id);
+          draw();
+          // Also refresh checklists tab if it's been rendered
+          const checklistsPanel = document.getElementById('tab-checklists');
+          if (checklistsPanel && checklistsPanel.querySelector('.checklist-section')) {
+            renderChecklists();
+          }
+        });
+      });
+    }
+
+    draw();
   }
 
   function renderActivity(act) {

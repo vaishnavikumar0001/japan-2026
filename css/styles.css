@@ -982,6 +982,148 @@ input { font-family: inherit; }
 .empty-state .es-icon { font-size: 3rem; margin-bottom: 10px; }
 .empty-state .es-msg  { font-size: 0.9rem; }
 
+/* ---------- Pre-Trip To-Do List (shown before May 12) ---------- */
+#pretodo-wrap {
+  margin-bottom: 16px;
+}
+
+.pretodo-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.pretodo-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.pretodo-count {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.pretodo-progress {
+  height: 6px;
+  background: var(--surface2);
+  border-radius: 3px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  margin-bottom: 14px;
+}
+
+.pretodo-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--navy), var(--navy-light));
+  border-radius: 3px;
+  transition: width 0.4s ease;
+}
+
+.pretodo-group-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--text-muted);
+  margin: 14px 0 6px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--border);
+}
+
+.pretodo-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 12px;
+  background: var(--surface);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  margin-bottom: 6px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.pretodo-item.done {
+  opacity: 0.4;
+}
+
+.pretodo-item.done .pretodo-name {
+  text-decoration: line-through;
+}
+
+.pretodo-check {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  border: 2px solid var(--border);
+  flex-shrink: 0;
+  margin-top: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  background: var(--surface);
+  transition: all 0.2s;
+}
+
+.pretodo-item.done .pretodo-check {
+  background: var(--navy);
+  border-color: var(--navy);
+  color: white;
+}
+
+.pretodo-body { flex: 1; min-width: 0; }
+
+.pretodo-name {
+  font-size: 0.87rem;
+  font-weight: 600;
+  line-height: 1.35;
+  margin-bottom: 3px;
+}
+
+.pretodo-where {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.pretodo-where a { color: var(--navy-light); }
+
+.pretodo-sale-alert {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  margin-top: 6px;
+  padding: 7px 10px;
+  background: #fff8e1;
+  border: 1px solid #f9a825;
+  border-left: 3px solid #f9a825;
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .pretodo-sale-alert {
+    background: #2d2200;
+    border-color: #c8920a;
+  }
+}
+
+.pretodo-sale-alert strong {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--text);
+}
+
+.pretodo-sale-jp {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin-top: 1px;
+}
+
 /* ---------- Suzuka Alert Banner (May 23 day card) ---------- */
 .suzuka-alert {
   display: flex;

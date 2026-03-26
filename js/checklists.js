@@ -18,8 +18,8 @@ function renderChecklists() {
 
   // ── Render ─────────────────────────────────────────────────
   function render() {
-    const bookings = data.bookings_checklist;
-    const experiences = data.experiences_checklist;
+    const bookings    = data.bookings_checklist    || data.bookings    || [];
+    const experiences = data.experiences_checklist || data.experiences || [];
 
     const bDone = bookings.filter(b => isChecked('booking_' + b.id)).length;
     const eDone = experiences.filter(e => isChecked('exp_' + e.id)).length;
@@ -60,6 +60,7 @@ function renderChecklists() {
         const done = isChecked('booking_' + b.id);
         const priorityClass = 'priority-' + priority.toLowerCase();
 
+        const whereLabel = b.where_to_book || b.where || '';
         html.push(`
           <div class="checklist-item ${done ? 'done' : ''}" data-key="booking_${escHtml(b.id)}">
             <div class="ci-checkbox">${done ? '✓' : ''}</div>
@@ -69,10 +70,19 @@ function renderChecklists() {
               </div>
               <div class="ci-meta">
                 ${b.url
-                  ? `<a href="${escHtml(b.url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">🔗 ${escHtml(b.where_to_book)}</a>`
-                  : `📋 ${escHtml(b.where_to_book)}`}
+                  ? `<a href="${escHtml(b.url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">🔗 ${escHtml(whereLabel)}</a>`
+                  : `📋 ${escHtml(whereLabel)}`}
                 ${b.notes ? ` · ${escHtml(b.notes)}` : ''}
               </div>
+              ${b.sale_date_chicago ? `
+              <div class="sale-date-alert" onclick="event.stopPropagation()">
+                <div class="sale-date-icon">⏰</div>
+                <div class="sale-date-details">
+                  <div class="sale-date-label">TICKETS ON SALE</div>
+                  <div class="sale-date-chicago">${escHtml(b.sale_date_chicago)}</div>
+                  <div class="sale-date-japan">${escHtml(b.sale_date_japan)}</div>
+                </div>
+              </div>` : ''}
             </div>
           </div>
         `);

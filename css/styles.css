@@ -982,6 +982,102 @@ input { font-family: inherit; }
 .empty-state .es-icon { font-size: 3rem; margin-bottom: 10px; }
 .empty-state .es-msg  { font-size: 0.9rem; }
 
+/* ---------- Suzuka Alert Banner (May 23 day card) ---------- */
+.suzuka-alert {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: linear-gradient(135deg, #1a0a00, #3d1500);
+  border: 2px solid #e65100;
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  margin-bottom: 14px;
+  box-shadow: 0 2px 12px rgba(230,81,0,0.25);
+}
+.suzuka-alert-flag {
+  font-size: 1.8rem;
+  flex-shrink: 0;
+  line-height: 1;
+}
+.suzuka-alert-body { flex: 1; }
+.suzuka-alert-title {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: #ff8a50;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 5px;
+}
+.suzuka-alert-msg {
+  font-size: 0.82rem;
+  color: #ffccbc;
+  line-height: 1.5;
+}
+.suzuka-alert-msg strong { color: #ff6d00; }
+
+/* ---------- Train Warning Badge (train 8b) ---------- */
+.train-warning {
+  margin: 0 14px 12px;
+  padding: 9px 12px;
+  background: #2d0a0a;
+  border: 1px solid var(--red);
+  border-left: 4px solid var(--red);
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #ff8a80;
+  line-height: 1.45;
+}
+@media (prefers-color-scheme: light) {
+  .train-warning {
+    background: #ffebee;
+    color: #c62828;
+  }
+}
+
+/* ---------- Sale Date Alert (Bookings tab) ---------- */
+.sale-date-alert {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 8px;
+  padding: 9px 12px;
+  background: #fff8e1;
+  border: 1px solid #f9a825;
+  border-left: 4px solid #f9a825;
+  border-radius: var(--radius-sm);
+}
+@media (prefers-color-scheme: dark) {
+  .sale-date-alert {
+    background: #2d2200;
+    border-color: #c8920a;
+  }
+}
+.sale-date-icon { font-size: 1.1rem; flex-shrink: 0; margin-top: 1px; }
+.sale-date-details { flex: 1; }
+.sale-date-label {
+  font-size: 0.68rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #e65100;
+  margin-bottom: 2px;
+}
+@media (prefers-color-scheme: dark) {
+  .sale-date-label { color: #ffb74d; }
+}
+.sale-date-chicago {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.3;
+}
+.sale-date-japan {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
 /* ---------- Utilities ---------- */
 .hidden { display: none !important; }
 .mt-8 { margin-top: 8px; }

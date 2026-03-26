@@ -64,6 +64,8 @@ function renderTrains() {
           ${suppTag ? `<span class="train-meta-item">${suppTag}</span>` : ''}
         </div>
 
+        ${t.warning ? `<div class="train-warning">⚠️ ${escHtml(t.warning)}</div>` : ''}
+
         ${t.seat_tip ? `<div class="train-seat-tip">💺 ${escHtml(t.seat_tip)}</div>` : ''}
 
         ${t.booking_note ? `<div class="train-booking-note">📋 ${escHtml(t.booking_note)}</div>` : ''}

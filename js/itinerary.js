@@ -153,6 +153,16 @@ function renderItinerary() {
         </div>
       </div>
 
+      <!-- Suzuka Alert Banner -->
+      ${day.suzuka_alert ? `
+      <div class="suzuka-alert">
+        <div class="suzuka-alert-flag">🏁</div>
+        <div class="suzuka-alert-body">
+          <div class="suzuka-alert-title">SUZUKA CIRCUIT DAY — Super Formula Race + Pit Walk</div>
+          <div class="suzuka-alert-msg">⚠️ <strong>Kintetsu to Shiroko is NOT covered by JR Pass.</strong> Buy tickets at Nagoya Station EAST exit (~¥1,720 each way). Buy BOTH outbound + return at same time.</div>
+        </div>
+      </div>` : ''}
+
       <!-- Activities -->
       <div class="activity-list" id="activity-list-${day.date}">
         ${day.activities.map(act => renderActivity(act)).join('')}

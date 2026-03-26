@@ -166,7 +166,7 @@ function renderItinerary() {
       <div class="suzuka-alert">
         <div class="suzuka-alert-flag">🏁</div>
         <div class="suzuka-alert-body">
-          <div class="suzuka-alert-title">SUZUKA CIRCUIT DAY — Super Formula Race + Pit Walk</div>
+          <div class="suzuka-alert-title">SUZUKA CIRCUIT DAY — Super Formula Race + Pit Walk 🏎️</div>
           <div class="suzuka-alert-msg">⚠️ <strong>Kintetsu to Shiroko is NOT covered by JR Pass.</strong> Buy tickets at Nagoya Station EAST exit (~¥1,720 each way). Buy BOTH outbound + return at same time.</div>
         </div>
       </div>` : ''}
@@ -258,11 +258,11 @@ function renderItinerary() {
                   ? `<a href="${escHtml(b.url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">🔗 ${escHtml(whereLabel)}</a>`
                   : `📋 ${escHtml(whereLabel)}`
                 }</div>` : ''}
-                ${b.sale_date_chicago ? `
+                ${b.sale_date_austin ? `
                 <div class="pretodo-sale-alert">
                   <span>⏰</span>
                   <div>
-                    <strong>${escHtml(b.sale_date_chicago)}</strong>
+                    <strong>${escHtml(b.sale_date_austin)}</strong>
                     <div class="pretodo-sale-jp">${escHtml(b.sale_date_japan)}</div>
                   </div>
                 </div>` : ''}

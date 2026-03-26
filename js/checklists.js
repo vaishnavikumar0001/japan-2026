@@ -74,12 +74,12 @@ function renderChecklists() {
                   : `📋 ${escHtml(whereLabel)}`}
                 ${b.notes ? ` · ${escHtml(b.notes)}` : ''}
               </div>
-              ${b.sale_date_chicago ? `
+              ${b.sale_date_austin ? `
               <div class="sale-date-alert" onclick="event.stopPropagation()">
                 <div class="sale-date-icon">⏰</div>
                 <div class="sale-date-details">
                   <div class="sale-date-label">TICKETS ON SALE</div>
-                  <div class="sale-date-chicago">${escHtml(b.sale_date_chicago)}</div>
+                  <div class="sale-date-chicago">${escHtml(b.sale_date_austin)}</div>
                   <div class="sale-date-japan">${escHtml(b.sale_date_japan)}</div>
                 </div>
               </div>` : ''}

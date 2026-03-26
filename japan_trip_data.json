@@ -1985,8 +1985,8 @@
       "priority": "URGENT",
       "done": false,
       "sale_date_japan": "Sunday April 12, 2026 at 11:00 AM JST",
-      "sale_date_chicago": "Saturday April 11, 2026 at 9:00 PM CDT",
-      "alert": "TICKETS ON SALE: Saturday April 11 at 9:00 PM Chicago time. Buy Race Day Special Passport for May 23 + Pit Walk Pass."
+      "alert": "TICKETS ON SALE: Saturday April 11 at 9:00 PM Austin, TX time. Buy Race Day Special Passport for May 23 + Pit Walk Pass.",
+      "sale_date_austin": "Saturday April 11, 2026 at 9:00 PM Austin, TX Time (CDT)"
     },
     {
       "id": "book_2",
@@ -2010,7 +2010,9 @@
       "where": "sumo.or.jp",
       "url": "https://www.sumo.or.jp",
       "priority": "URGENT",
-      "done": false
+      "done": false,
+      "sale_date_austin": "Friday April 3, 2026 at 10:01 AM Austin, TX Time (CDT)",
+      "sale_date_japan": "Saturday April 4, 2026 at 12:01 AM JST"
     },
     {
       "id": "book_5",

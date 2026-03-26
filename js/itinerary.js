@@ -27,7 +27,7 @@ function renderItinerary() {
   // Build day index
   const dayMap = {};
   data.itinerary.forEach(d => { dayMap[d.date] = d; });
-  const dates = data.itinerary.map(d => d.date);
+  const dates = data.itinerary.map(d => d.date).sort();
 
   // ── Expose goToDay globally (used by search) ──────────────
   window.goToDay = function(date) {
@@ -85,7 +85,7 @@ function renderItinerary() {
       if (date === currentDate) pill.classList.add('active');
       const isToday = date === today.toISOString().slice(0, 10);
       if (isToday) pill.classList.add('today');
-      pill.textContent = `${d.day_num} · ${date.slice(5)}`;
+      pill.textContent = `${d.day} · ${date.slice(5)}`;
       pill.dataset.date = date;
       pill.addEventListener('click', () => {
         currentDate = date;
@@ -144,15 +144,15 @@ function renderItinerary() {
         <button class="day-nav-arrow" id="prev-day" ${!prevDate ? 'disabled' : ''}>‹</button>
         <div class="day-nav-center">
           <div class="day-nav-date">${fmtDate(day.date)}${isToday ? ' · <span style="color:var(--red);font-weight:700">TODAY</span>' : ''}</div>
-          <div class="day-nav-title">${escHtml(day.title)}</div>
+          <div class="day-nav-title">${escHtml(day.label)}</div>
         </div>
         <button class="day-nav-arrow" id="next-day" ${!nextDate ? 'disabled' : ''}>›</button>
       </div>
 
       <!-- Day Header -->
       <div class="day-header">
-        <div class="day-header-num">Day ${day.day_num} of ${dates.length}</div>
-        <div class="day-header-title">${escHtml(day.title)}</div>
+        <div class="day-header-num">Day ${day.day} of ${dates.length}</div>
+        <div class="day-header-title">${escHtml(day.label)}</div>
         <div class="day-header-meta">
           <span>📍 ${escHtml(day.city)}</span>
           <span>🏨 ${escHtml(day.hotel)}</span>
@@ -160,7 +160,7 @@ function renderItinerary() {
       </div>
 
       <!-- Suzuka Alert Banner -->
-      ${day.suzuka_alert ? `
+      ${day.suzuka_day ? `
       <div class="suzuka-alert">
         <div class="suzuka-alert-flag">🏁</div>
         <div class="suzuka-alert-body">
@@ -171,7 +171,7 @@ function renderItinerary() {
 
       <!-- Activities -->
       <div class="activity-list" id="activity-list-${day.date}">
-        ${day.activities.map(act => renderActivity(act)).join('')}
+        ${(day.schedule || []).map(act => renderActivity(act)).join('')}
       </div>
 
       <!-- Tips -->
@@ -289,20 +289,18 @@ function renderItinerary() {
   }
 
   function renderActivity(act) {
-    const hasMap = act.map_query && act.map_query.trim();
-    const isOnsen = act.name.includes('ONSEN') || act.name.includes('♨️');
-    const isTaqbin = act.name.includes('TA-Q-BIN') || act.name.includes('⚠️');
-    const isBucket = act.name.includes('BUCKET LIST') || act.name.includes('🗻') || act.name.includes('GRAN CLASS') || act.name.includes('GREEN CAR') || act.name.includes('FINAL');
+    const name    = act.activity || act.name || '';
+    const desc    = act.notes    || act.description || '';
+    const hasMap  = name.trim().length > 0;
 
     return `
       <div class="activity-item">
         <div class="activity-time">${escHtml(act.time || '')}</div>
         <div class="activity-body">
-          <div class="activity-name">${escHtml(act.name)}</div>
-          ${act.description ? `<div class="activity-desc">${escHtml(act.description)}</div>` : ''}
-          ${act.transport ? `<div class="activity-transport">🚇 ${escHtml(act.transport)}</div>` : ''}
+          <div class="activity-name">${escHtml(name)}</div>
+          ${desc ? `<div class="activity-desc">${escHtml(desc)}</div>` : ''}
           <div class="activity-actions">
-            ${hasMap ? `<a href="${mapLink(act.map_query)}" target="_blank" rel="noopener" class="map-btn">🗺 Map</a>` : ''}
+            ${hasMap ? `<a href="${mapLink(name)}" target="_blank" rel="noopener" class="map-btn">🗺 Map</a>` : ''}
           </div>
         </div>
       </div>

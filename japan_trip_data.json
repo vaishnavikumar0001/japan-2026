@@ -11,7 +11,7 @@
     "route": ["Tokyo", "Hakone", "Kyoto", "Osaka", "Takayama", "Tokyo"],
     "nights": 13,
     "days": 15,
-    "home": "Cedar Park, TX - 1hr drive to AUS",
+    "home": "Cedar Park, TX (near Veterans Park)",
     "airport_drive_mins": 60,
     "airport_transport": "Uber/Rideshare"
   },
@@ -19,19 +19,22 @@
   "flights": {
     "outbound": {
       "date": "2026-05-11",
+      "uber_pickup": "06:30",
+      "airport_arrive": "07:30",
+      "checkin_deadline": "07:50",
+      "connection_note": "YVR has US Customs Preclearance - clear customs in Vancouver, arrive Tokyo as domestic. Connection is 1h 32m - move quickly.",
       "legs": [
         {
           "flight": "AC 1763",
           "airline": "Air Canada Rouge",
           "from": "Austin (AUS)",
-          "from_terminal": "Austin-Bergstrom International Airport",
           "to": "Vancouver (YVR)",
-          "to_terminal": "Vancouver International Airport Terminal M",
+          "to_terminal": "Terminal M",
           "departs": "08:50",
           "arrives": "11:28",
           "aircraft": "Boeing 737 MAX 8",
           "duration": "4h 38m",
-          "cabin": "Economy Class (W)",
+          "cabin": "Economy (W)",
           "meal": "Air Canada Bistro (paid)",
           "layover_next": "1h 32m"
         },
@@ -39,55 +42,49 @@
           "flight": "AC 3",
           "airline": "Air Canada",
           "from": "Vancouver (YVR)",
-          "from_terminal": "Vancouver International Airport Terminal M",
           "to": "Tokyo Narita (NRT)",
-          "to_terminal": "Narita Airport Terminal 1",
+          "to_terminal": "Terminal 1",
           "departs": "13:00",
-          "arrives": "14:55 +1 day (May 12)",
+          "arrives": "14:55 +1 (May 12)",
           "aircraft": "Boeing 787-9",
           "duration": "9h 55m",
-          "cabin": "Economy Class (W)",
-          "meal": "Meal, Meal (included)",
-          "wifi": true,
-          "notes": "Crosses International Date Line. Arrives May 12."
+          "cabin": "Economy (W)",
+          "meal": "Meal + Meal (included)",
+          "wifi": true
         }
-      ],
-      "uber_pickup": "06:30",
-      "airport_arrive": "07:30",
-      "checkin_deadline": "07:50",
-      "notes": "YVR has US Customs Preclearance - clear customs in Vancouver, arrive Tokyo as domestic. Connection is 1h 32m - move quickly on arrival at YVR."
+      ]
     },
     "return": {
       "date": "2026-05-25",
+      "nex_depart_shinjuku": "14:20",
+      "nex_arrive_narita": "15:50",
       "legs": [
         {
           "flight": "AC 4",
           "airline": "Air Canada",
           "from": "Tokyo Narita (NRT)",
-          "from_terminal": "Narita Airport Terminal 1",
+          "from_terminal": "Terminal 1",
           "to": "Vancouver (YVR)",
-          "to_terminal": "Vancouver International Airport Terminal M",
+          "to_terminal": "Terminal M",
           "departs": "16:30",
-          "arrives": "09:15 same day (May 25)",
+          "arrives": "09:15 same day",
           "aircraft": "Boeing 787-9",
           "duration": "8h 45m",
-          "cabin": "Economy Class (L)",
-          "meal": "Meal, Breakfast (included)",
-          "wifi": true,
-          "notes": "Depart Shinjuku on N'EX at 14:20 - arrives Narita 15:50. 40 min to gate. Go straight to check-in on arrival."
+          "cabin": "Economy (L)",
+          "meal": "Meal + Breakfast (included)",
+          "wifi": true
         },
         {
           "flight": "AC 1762",
           "airline": "Air Canada Rouge",
           "from": "Vancouver (YVR)",
-          "from_terminal": "Vancouver International Airport Terminal M",
+          "from_terminal": "Terminal M",
           "to": "Austin (AUS)",
-          "to_terminal": "Austin-Bergstrom International Airport",
           "departs": "13:50",
           "arrives": "20:17",
           "aircraft": "Boeing 737 MAX 8",
           "duration": "4h 27m",
-          "cabin": "Economy Class (L)",
+          "cabin": "Economy (L)",
           "meal": "Air Canada Bistro (paid)"
         }
       ]
@@ -99,143 +96,640 @@
       "cabin_bag_size_cm": "56x36x23",
       "personal_item": "backpack under seat",
       "extra_checked_bag_fee": "$100 per trip",
-      "notes": "1 checked bag + 1 cabin bag + 1 backpack per person all included. Second checked bag is $100 per trip if needed."
+      "notes": "1 checked bag + 1 cabin bag + 1 backpack per person included. Second checked bag $100 per trip."
     }
   },
 
-  "pre_departure": {
-    "date": "2026-05-10",
-    "label": "Night Before - Final Prep",
-    "packing_checks": [
-      { "item": "Pack both checked bags (1 per person)", "done": false },
-      { "item": "Pack both cabin bags (1 per person)", "done": false },
-      { "item": "Pack both backpacks (personal items)", "done": false },
-      { "item": "Weigh all checked bags - max 23kg (50lb) each", "done": false },
-      { "item": "Weigh all cabin bags - max 10kg each", "done": false },
-      { "item": "JR Pass vouchers x2 in carry-on (NEVER checked bag)", "done": false },
-      { "item": "Both passports in carry-on", "done": false },
-      { "item": "All booking confirmations downloaded offline on phone", "done": false },
-      { "item": "Travel insurance documents saved on phone", "done": false },
-      { "item": "Charge all devices fully overnight", "done": false },
-      { "item": "Charge power banks fully overnight", "done": false },
-      { "item": "Download Japan maps offline in Google Maps (on home WiFi)", "done": false },
-      { "item": "Download Japanese language pack in Google Translate (on home WiFi)", "done": false }
-    ],
-    "house_checks": [
-      { "item": "Lock front door", "done": false },
-      { "item": "Lock back door", "done": false },
-      { "item": "Lock all windows", "done": false },
-      { "item": "Turn off all lights - check every room", "done": false },
-      { "item": "Turn off and unplug kitchen appliances (oven, toaster, coffee maker)", "done": false },
-      { "item": "Turn off and unplug non-essential electronics (TVs, lamps)", "done": false },
-      { "item": "Adjust thermostat for 2 weeks away", "done": false },
-      { "item": "Empty fridge of anything that will go bad", "done": false },
-      { "item": "Take out trash", "done": false },
-      { "item": "Set security lights or timers if needed", "done": false }
-    ],
-    "logistics": [
-      { "item": "Schedule Uber for 06:30 AM pickup (May 11) - do this in app tonight", "done": false },
-      { "item": "Set two alarms - 05:45 AM and 06:00 AM", "done": false }
-    ]
-  },
   "hotels": [
-    { "id": "hotel_1", "name": "JR Kyushu Hotel Blossom Shinjuku", "city": "Tokyo", "area": "Shinjuku", "checkin": "2026-05-12", "checkout": "2026-05-16", "nights": 4, "onsen": false, "address": "Shinjuku, Tokyo", "notes": "5 min walk from Shinjuku Station South Exit", "tags": ["Tokyo","Shinjuku"] },
-    { "id": "hotel_2", "name": "Fujiya Hotel (est. 1878)", "city": "Hakone", "area": "Miyanoshita", "checkin": "2026-05-15", "checkout": "2026-05-17", "nights": 2, "onsen": true, "onsen_description": "Historic mineral pools - indoor and outdoor rotenburo", "address": "Miyanoshita, Hakone, Kanagawa", "notes": "Japan oldest Western hotel. Yukata and geta provided. 3 min walk from Miyanoshita Station.", "tags": ["Hakone","Historic","Onsen"] },
-    { "id": "hotel_3", "name": "Dormy Inn Kyoto Gion", "city": "Kyoto", "area": "Gion", "checkin": "2026-05-17", "checkout": "2026-05-20", "nights": 3, "onsen": true, "onsen_description": "Hotel onsen - open late nights", "address": "Gion, Kyoto", "notes": "5 min walk to Hanamikoji Street. Free late-night ramen served 9:30-11 PM nightly.", "tags": ["Kyoto","Gion","Onsen","Free ramen"] },
-    { "id": "hotel_4", "name": "Dormy Inn Premium Namba ANNEX", "city": "Osaka", "area": "Namba", "checkin": "2026-05-20", "checkout": "2026-05-21", "nights": 1, "onsen": true, "onsen_description": "Rooftop natural hot spring with city views", "address": "2-1-6 Higashishinsaibashi, Chuo Ward, Osaka 542-0083", "phone": "+81 6-6212-5489", "notes": "Lawson convenience store attached. Free late-night ramen 9:30-11 PM. Rooftop onsen open til midnight.", "tags": ["Osaka","Namba","Onsen","Rooftop","Free ramen"] },
-    { "id": "hotel_5", "name": "Residence Hotel Takayama Station", "city": "Takayama", "area": "Station", "checkin": "2026-05-21", "checkout": "2026-05-23", "nights": 2, "onsen": false, "address": "6-105 Hanasatomachi, Takayama, Gifu 506-0026", "phone": "+81 577-57-5578", "notes": "30 seconds from Takayama Station. Full apartment with kitchen.", "tags": ["Takayama","Apartment","Station"] },
-    { "id": "hotel_6", "name": "Yuen Shinjuku", "city": "Tokyo", "area": "Shinjuku", "checkin": "2026-05-23", "checkout": "2026-05-25", "nights": 2, "onsen": true, "onsen_description": "Rooftop onsen with indoor and outdoor baths - stunning Tokyo skyline views", "address": "5-3-18 Shinjuku, Shinjuku City, Tokyo 160-0022", "phone": "+81 3-5361-8355", "notes": "8 min walk from Shinjuku Station. Yukata provided. Rooftop onsen with Shinjuku skyline views.", "tags": ["Tokyo","Shinjuku","Onsen","Rooftop","Skyline"] }
+    { "id": "hotel_1", "name": "JR Kyushu Hotel Blossom Shinjuku", "city": "Tokyo", "area": "Shinjuku", "checkin": "2026-05-12", "checkout": "2026-05-16", "nights": 4, "onsen": false, "address": "Shinjuku, Tokyo", "notes": "5 min walk from Shinjuku Station South Exit" },
+    { "id": "hotel_2", "name": "Fujiya Hotel (est. 1878)", "city": "Hakone", "area": "Miyanoshita", "checkin": "2026-05-15", "checkout": "2026-05-17", "nights": 2, "onsen": true, "onsen_description": "Historic mineral pools - indoor and outdoor rotenburo", "address": "Miyanoshita, Hakone, Kanagawa", "notes": "Japan's oldest Western hotel. Yukata and geta provided. 3 min walk from Miyanoshita Station." },
+    { "id": "hotel_3", "name": "Dormy Inn Kyoto Gion", "city": "Kyoto", "area": "Gion", "checkin": "2026-05-17", "checkout": "2026-05-20", "nights": 3, "onsen": true, "onsen_description": "Hotel onsen - open late nights", "address": "Gion, Kyoto", "notes": "5 min walk to Hanamikoji Street. Free late-night ramen 9:30-11 PM nightly." },
+    { "id": "hotel_4", "name": "Dormy Inn Premium Namba ANNEX", "city": "Osaka", "area": "Namba", "checkin": "2026-05-20", "checkout": "2026-05-21", "nights": 1, "onsen": true, "onsen_description": "Rooftop natural hot spring with city views", "address": "2-1-6 Higashishinsaibashi, Chuo Ward, Osaka 542-0083", "phone": "+81 6-6212-5489", "notes": "Lawson attached. Free late-night ramen 9:30-11 PM. Rooftop onsen open til midnight." },
+    { "id": "hotel_5", "name": "Residence Hotel Takayama Station", "city": "Takayama", "area": "Station", "checkin": "2026-05-21", "checkout": "2026-05-23", "nights": 2, "onsen": false, "address": "6-105 Hanasatomachi, Takayama, Gifu 506-0026", "phone": "+81 577-57-5578", "notes": "30 seconds from Takayama Station. Full apartment with kitchen." },
+    { "id": "hotel_6", "name": "Yuen Shinjuku", "city": "Tokyo", "area": "Shinjuku", "checkin": "2026-05-23", "checkout": "2026-05-25", "nights": 2, "onsen": true, "onsen_description": "Rooftop onsen - indoor and outdoor with Tokyo skyline views", "address": "5-3-18 Shinjuku, Shinjuku City, Tokyo 160-0022", "phone": "+81 3-5361-8355", "notes": "8 min walk from Shinjuku Station. Yukata provided." }
   ],
+
   "onsens": [
-    { "id": "onsen_1", "number": 1, "date": "2026-05-15", "time": "Evening", "location": "Fujiya Hotel", "city": "Hakone", "type": "Historic mineral pools - indoor and outdoor rotenburo", "included": true, "notes": "First onsen of the trip! Historic mineral baths used since 1878." },
-    { "id": "onsen_2", "number": 2, "date": "2026-05-16", "time": "6:30 AM", "location": "Fujiya Hotel - dawn soak", "city": "Hakone", "type": "Mountain mineral bath at sunrise - rotenburo", "included": true, "notes": "Dawn rotenburo - almost empty at this hour." },
-    { "id": "onsen_3", "number": 3, "date": "2026-05-16", "time": "Night", "location": "Tenzan Tohji-kyo", "city": "Hakone", "type": "Riverside rotenburo in cedar forest - public onsen", "included": false, "notes": "Public forest onsen - taxi from Fujiya Hotel." },
-    { "id": "onsen_4", "number": 4, "date": "2026-05-17", "time": "6:30 AM", "location": "Fujiya Hotel - final Hakone soak", "city": "Hakone", "type": "Last mountain mineral bath before departing for Kyoto", "included": true, "notes": "Final soak before checking out!" },
-    { "id": "onsen_5", "number": 5, "date": "2026-05-20", "time": "11:00 PM", "location": "Dormy Inn Namba ANNEX - rooftop", "city": "Osaka", "type": "Natural hot spring with city views - open til midnight", "included": true, "notes": "Follow up with free late-night ramen downstairs!" },
-    { "id": "onsen_6", "number": 6, "date": "2026-05-23", "time": "11:00 PM", "location": "Yuen Shinjuku - rooftop", "city": "Tokyo", "type": "Indoor and outdoor baths with Tokyo skyline views", "included": true, "notes": "Best onsen of the trip for views." }
+    { "id": "onsen_1", "number": 1, "date": "2026-05-15", "time": "Evening", "location": "Fujiya Hotel", "city": "Hakone", "type": "Historic mineral pools - indoor + outdoor rotenburo", "included": true, "notes": "First onsen of the trip! Historic mineral baths since 1878." },
+    { "id": "onsen_2", "number": 2, "date": "2026-05-16", "time": "6:30 AM", "location": "Fujiya Hotel - dawn soak", "city": "Hakone", "type": "Mountain mineral bath at sunrise", "included": true, "notes": "Dawn rotenburo - almost empty at this hour." },
+    { "id": "onsen_3", "number": 3, "date": "2026-05-16", "time": "Night", "location": "Tenzan Tohji-kyo - forest public onsen", "city": "Hakone", "type": "Riverside rotenburo in cedar forest", "included": false, "notes": "Taxi from Fujiya Hotel." },
+    { "id": "onsen_4", "number": 4, "date": "2026-05-17", "time": "6:30 AM", "location": "Fujiya Hotel - final Hakone soak", "city": "Hakone", "type": "Last mountain mineral bath before Kyoto", "included": true, "notes": "Final soak before checking out!" },
+    { "id": "onsen_5", "number": 5, "date": "2026-05-20", "time": "11:00 PM", "location": "Dormy Inn Namba ANNEX - rooftop", "city": "Osaka", "type": "Natural hot spring with city views", "included": true, "notes": "Follow up with free late-night ramen downstairs!" },
+    { "id": "onsen_6", "number": 6, "date": "2026-05-23", "time": "11:30 PM", "location": "Yuen Shinjuku - rooftop", "city": "Tokyo", "type": "Indoor + outdoor with Tokyo skyline views", "included": true, "notes": "Best onsen views of the trip. Shinjuku skyline at night." }
   ],
+
   "trains": [
-    { "id": "train_1", "number": 1, "date": "2026-05-12", "from": "Narita Airport", "to": "Shinjuku", "train": "N'EX Narita Express", "class": "Standard", "duration": "90 min", "jr_pass": true, "seat_tip": "Any seat - sit back and enjoy first views of Japan", "notes": "Activate JR Pass at Narita JR counter before boarding." },
-    { "id": "train_2", "number": 2, "date": "2026-05-15", "from": "Shinjuku", "to": "Hakone-Yumoto", "train": "Odakyu Romance Car", "class": "Reserved", "duration": "85 min", "jr_pass": false, "seat_tip": "Seat 1A or 1B for panoramic front view. RIGHT side for Mt Fuji at 40 min mark.", "book_at": "odakyu.jp - book at least 2 weeks ahead", "notes": "Mt Fuji visible on right side around 40 min in." },
-    { "id": "train_3", "number": 3, "date": "2026-05-17", "from": "Odawara", "to": "Kyoto", "train": "Hikari Shinkansen", "class": "GRAN CLASS", "duration": "2 hours", "jr_pass": true, "supplement": "Gran Class supplement required", "seat_tip": "RIGHT side D seats - Mt Fuji visible around 10:20 AM. THIS IS THE LAST MT FUJI VIEW UNTIL RETURN.", "book_at": "JR office at Odawara Station on the morning", "notes": "Fully reclining seats, meal + drinks, hot towel, amenity kit. Only 18 Gran Class seats per train!" },
+    { "id": "train_1", "number": 1, "date": "2026-05-12", "from": "Narita Airport", "to": "Shinjuku", "train": "N'EX Narita Express", "class": "Standard", "duration": "90 min", "jr_pass": true, "seat_tip": "Any seat", "notes": "Activate JR Pass at Narita JR counter BEFORE boarding." },
+    { "id": "train_2", "number": 2, "date": "2026-05-15", "from": "Shinjuku", "to": "Hakone-Yumoto", "train": "Odakyu Romance Car", "class": "Reserved", "duration": "85 min", "jr_pass": false, "seat_tip": "Seat 1A or 1B for panoramic front view. RIGHT side for Mt Fuji at 40 min mark.", "book_at": "odakyu.jp - at least 2 weeks ahead" },
+    { "id": "train_3", "number": 3, "date": "2026-05-17", "from": "Odawara", "to": "Kyoto", "train": "Hikari Shinkansen", "class": "GRAN CLASS", "duration": "2 hrs", "jr_pass": true, "supplement": true, "seat_tip": "RIGHT side D seats - Mt Fuji visible ~10:20 AM between Odawara and Shin-Fuji. LAST MT FUJI VIEW OF TRIP.", "book_at": "JR office at Odawara Station on the morning", "notes": "Fully reclining seats, meal + drinks, hot towel, amenity kit. Only 18 seats per train - reserve early!" },
     { "id": "train_4", "number": 4, "date": "2026-05-20", "from": "Kyoto", "to": "Shin-Osaka", "train": "Hikari Shinkansen", "class": "Ordinary Reserved", "duration": "15 min", "jr_pass": true, "seat_tip": "Any reserved seat", "notes": "Shortest Shinkansen of the trip!" },
     { "id": "train_5", "number": 5, "date": "2026-05-21", "from": "Osaka", "to": "Nagoya", "train": "Hikari Shinkansen", "class": "Ordinary Reserved", "duration": "50 min", "jr_pass": true, "seat_tip": "Any reserved seat", "notes": "Transfer at Nagoya for Wide View Hida." },
-    { "id": "train_6", "number": 6, "date": "2026-05-21", "from": "Nagoya", "to": "Takayama", "train": "Wide View Hida Limited Express", "class": "Reserved", "duration": "2 hrs 25 min", "jr_pass": true, "seat_tip": "LEFT side A/B seats - Hida River gorge appears on left side about 90 min in.", "book_at": "Any JR office", "notes": "One of Japan's most scenic train journeys." },
-    { "id": "train_7", "number": 7, "date": "2026-05-23", "from": "Takayama", "to": "Nagoya", "train": "Wide View Hida Limited Express", "class": "Reserved", "duration": "2 hrs 25 min", "jr_pass": true, "seat_tip": "LEFT side A/B seats - gorge views on return journey too", "notes": "Transfer at Nagoya for Green Car to Tokyo." },
-    { "id": "train_8", "number": 8, "date": "2026-05-23", "from": "Nagoya", "to": "Tokyo", "train": "Hikari Shinkansen", "class": "Ordinary Reserved", "duration": "1 hr 40 min", "jr_pass": true, "seat_tip": "Any reserved seat - evening train after Suzuka, Fuji view unlikely after dark", "book_at": "JR office or machine at Nagoya Station on the day", "notes": "Take evening Hikari after Suzuka. Depart Nagoya around 7:10 PM, arrive Tokyo around 8:50 PM." },
-    { "id": "train_8b", "number": "8b", "date": "2026-05-23", "from": "Nagoya", "to": "Shiroko (Suzuka)", "train": "Kintetsu Limited Express", "class": "Reserved", "duration": "50 min each way", "jr_pass": false, "seat_tip": "Any reserved seat", "book_at": "Kintetsu ticket office - east side of Nagoya Station. Buy BOTH outbound and return at same time.", "notes": "NOT covered by JR Pass - separate Kintetsu purchase. Approx Y1,720 each way. Then 20-min Mie Kotsu shuttle bus from Shiroko to circuit. Suica accepted on Kintetsu." },
-    { "id": "train_9", "number": 9, "date": "2026-05-25", "from": "Shinjuku", "to": "Narita Airport", "train": "N'EX Narita Express", "class": "Standard", "depart_time": "2:20 PM", "duration": "90 min", "jr_pass": true, "seat_tip": "Any seat", "notes": "Depart 2:20 PM. Return Suica card at Narita JR office for deposit refund." }
+    { "id": "train_6", "number": 6, "date": "2026-05-21", "from": "Nagoya", "to": "Takayama", "train": "Wide View Hida Limited Express", "class": "Reserved", "duration": "2 hrs 25 min", "jr_pass": true, "seat_tip": "LEFT side A/B seats - Hida River gorge appears ~90 min in.", "book_at": "Any JR office" },
+    { "id": "train_7", "number": 7, "date": "2026-05-23", "from": "Takayama", "to": "Nagoya", "train": "Wide View Hida Limited Express", "class": "Reserved", "duration": "2 hrs 25 min", "jr_pass": true, "seat_tip": "LEFT side A/B seats - gorge views on return too." },
+    { "id": "train_8b", "number": "8b", "date": "2026-05-23", "from": "Nagoya", "to": "Shiroko (for Suzuka)", "train": "Kintetsu Limited Express", "class": "Reserved", "duration": "50 min each way", "jr_pass": false, "jr_pass_warning": "NOT covered by JR Pass - buy separately at Kintetsu office east side Nagoya Station. ~Y1,720 each way. Buy BOTH directions at same time.", "seat_tip": "Any reserved seat", "notes": "Then 20-min Mie Kotsu shuttle bus from Shiroko to circuit. Suica accepted." },
+    { "id": "train_8", "number": 8, "date": "2026-05-23", "from": "Nagoya", "to": "Tokyo", "train": "Hikari Shinkansen", "class": "Ordinary Reserved", "duration": "1 hr 40 min", "jr_pass": true, "seat_tip": "Any reserved seat - evening train, Fuji view unlikely after dark.", "notes": "Depart Nagoya ~19:10, arrive Tokyo ~20:50." },
+    { "id": "train_9", "number": 9, "date": "2026-05-25", "from": "Shinjuku", "to": "Narita Airport", "train": "N'EX Narita Express", "class": "Standard", "depart_time": "14:20", "duration": "90 min", "jr_pass": true, "seat_tip": "Any seat", "notes": "Depart 14:20 sharp. Return Suica card at Narita JR office for balance + Y500 deposit refund." }
   ],
+
+  "itinerary": [
+    {
+      "date": "2026-05-10",
+      "day": 0,
+      "city": "Cedar Park, TX",
+      "label": "Pre-Departure Night",
+      "hotel": null,
+      "type": "pre_departure",
+      "schedule": [
+        { "time": "Evening", "activity": "Final pack - both checked bags (1 per person)", "notes": "Max 23kg / 50lb each. Lay everything out first then pack." },
+        { "time": "Evening", "activity": "Final pack - both cabin bags (1 per person)", "notes": "Max 10kg. Must fit overhead: 56x36x23 cm." },
+        { "time": "Evening", "activity": "Final pack - both backpacks (personal items)", "notes": "Under-seat item. Pack tomorrow's snacks + entertainment." },
+        { "time": "Evening", "activity": "Weigh ALL bags", "notes": "Checked max 23kg, cabin max 10kg. Overweight fees are expensive." },
+        { "time": "Evening", "activity": "JR Pass vouchers x2 in carry-on - NEVER checked bag", "notes": "Lose these and the trip gets very expensive very fast." },
+        { "time": "Evening", "activity": "Both passports in carry-on", "notes": "Double check validity - must be valid 6+ months past May 2026." },
+        { "time": "Evening", "activity": "Download all booking confirmations offline on phone", "notes": "teamLab, Sumo, Romance Car, Tea Ceremony, Suzuka, Air Canada." },
+        { "time": "Evening", "activity": "Charge all devices + power banks fully overnight", "notes": "Phones, camera, earbuds, power banks - all plugged in." },
+        { "time": "Evening", "activity": "Download Japan offline maps in Google Maps (on home WiFi)", "notes": "Do this on WiFi - large download." },
+        { "time": "Evening", "activity": "Download Japanese language pack in Google Translate (on home WiFi)", "notes": "Camera translate is essential for menus and signs." },
+        { "time": "Evening", "activity": "Lock all doors and windows", "notes": "Front door, back door, garage, all windows." },
+        { "time": "Evening", "activity": "Turn off all lights - check every room", "notes": "" },
+        { "time": "Evening", "activity": "Turn off and unplug kitchen appliances", "notes": "Oven, toaster, coffee maker - unplug them all." },
+        { "time": "Evening", "activity": "Turn off and unplug non-essential electronics", "notes": "TVs, lamps, desktop chargers." },
+        { "time": "Evening", "activity": "Adjust thermostat for 2 weeks away", "notes": "May in Texas - set around 78F, no need to run AC hard." },
+        { "time": "Evening", "activity": "Empty fridge of anything that will go bad", "notes": "" },
+        { "time": "Evening", "activity": "Take out trash", "notes": "" },
+        { "time": "Evening", "activity": "Schedule Uber for 06:30 AM pickup tomorrow", "notes": "Do this in the Uber app tonight - scheduled rides are more reliable." },
+        { "time": "Before bed", "activity": "Set TWO alarms - 05:45 AM and 06:00 AM", "notes": "Early flight - no snoozing." }
+      ],
+      "tips": [
+        "JR Pass vouchers must be in carry-on - losing them is catastrophic",
+        "Schedule Uber tonight rather than requesting in the morning",
+        "Leave nothing perishable in the fridge - 2 weeks is a long time"
+      ]
+    },
+    {
+      "date": "2026-05-11",
+      "day": 1,
+      "city": "Austin → Vancouver → (in the air)",
+      "label": "Departure Day",
+      "hotel": null,
+      "type": "travel",
+      "flights_today": ["AC 1763", "AC 3"],
+      "schedule": [
+        { "time": "05:45 AM", "activity": "Wake up - both alarms", "notes": "Last morning at home for 2 weeks!" },
+        { "time": "05:45 AM", "activity": "Get dressed + final bathroom sweep", "notes": "Don't forget phone chargers, razors, last-minute toiletries." },
+        { "time": "06:15 AM", "activity": "Final house walkthrough", "notes": "Lights off? Doors locked? Oven off? Fridge closed?" },
+        { "time": "06:30 AM", "activity": "Uber pickup - Cedar Park (Veterans Park area)", "notes": "1 hour to Austin-Bergstrom Airport (AUS)." },
+        { "time": "07:30 AM", "activity": "Arrive Austin-Bergstrom Airport (AUS)", "notes": "Head to Air Canada check-in counter." },
+        { "time": "07:30 AM", "activity": "Check in + bag drop - Air Canada counter", "notes": "2 checked bags (1 per person, included). Counter closes ~07:50." },
+        { "time": "08:00 AM", "activity": "Clear TSA security", "notes": "AUS is usually fast. Allow 30 min to be safe." },
+        { "time": "08:30 AM", "activity": "At gate - grab coffee and last US breakfast", "notes": "" },
+        { "time": "08:50 AM", "activity": "✈️ AC 1763 departs Austin (AUS)", "notes": "Boeing 737 MAX 8. 4h 38m. Air Canada Bistro meal available for purchase." },
+        { "time": "11:28 AM", "activity": "Land Vancouver (YVR) Terminal M", "notes": "1h 32m connection - move quickly off the plane." },
+        { "time": "11:28 AM", "activity": "Clear US Customs Preclearance at YVR", "notes": "YVR processes US customs in Canada - you arrive in Tokyo as a domestic passenger. Follow signs." },
+        { "time": "11:45 AM", "activity": "Walk to Air Canada international gate", "notes": "Terminal M - follow AC Japan signs. YVR is well signed." },
+        { "time": "12:30 PM", "activity": "Board AC 3 - get settled on 787-9", "notes": "Much bigger plane - Dreamliner. Better air quality and humidity than older aircraft." },
+        { "time": "13:00 PM", "activity": "✈️ AC 3 departs Vancouver (YVR)", "notes": "Boeing 787-9. Wi-Fi available. Two full meals included. 9h 55m." },
+        { "time": "In flight", "activity": "Cross International Date Line - Monday becomes Tuesday", "notes": "You skip overnight - May 11 ends, May 12 begins while in the air." }
+      ],
+      "tips": [
+        "YVR connection (1h 32m): deplane fast, follow Air Canada Japan signs, clear customs, go straight to gate",
+        "Dreamliner 787-9 tip: window shades are electronic - dim but don't fully block for better sleep",
+        "Try to sleep on the Vancouver-Tokyo leg - arrive refreshed"
+      ]
+    },
+    {
+      "date": "2026-05-12",
+      "day": 2,
+      "city": "Tokyo",
+      "label": "Arrive Tokyo",
+      "hotel": "hotel_1",
+      "type": "arrival",
+      "trains_today": ["train_1"],
+      "schedule": [
+        { "time": "14:55", "activity": "🛬 Land Tokyo Narita (NRT) Terminal 1", "notes": "Welcome to Japan! You cleared customs in Vancouver so you walk out as a domestic arrival." },
+        { "time": "15:00", "activity": "Immigration + baggage claim", "notes": "Faster than normal since customs was done at YVR. Allow 30-45 min." },
+        { "time": "15:30", "activity": "Activate JR Pass x2 at Narita JR ticket counter", "notes": "Ground floor Terminal 1. Show vouchers + passports. This is your most important task on arrival." },
+        { "time": "15:45", "activity": "Pick up 2x Suica cards at JR counter", "notes": "Load Y5,000 each (~$35). Covers all metro, buses, convenience stores." },
+        { "time": "16:00", "activity": "Board N'EX Narita Express to Shinjuku", "notes": "Platform B1. 90 min. Covered by JR Pass." },
+        { "time": "17:30", "activity": "Arrive Shinjuku Station - South Exit", "notes": "5 min walk to hotel." },
+        { "time": "17:45", "activity": "Check in - JR Kyushu Hotel Blossom Shinjuku", "notes": "Night 1 of 4." },
+        { "time": "18:30", "activity": "Dinner - Omoide Yokocho (Memory Lane)", "notes": "2 min walk. Smoky yakitori alley. Very atmospheric first Tokyo meal." },
+        { "time": "20:00", "activity": "Kabukicho + Golden Gai evening stroll", "notes": "8 min walk. 200 tiny bars. Each fits 6-8 people. Just walk in and sit." },
+        { "time": "22:00", "activity": "Back to hotel - early night", "notes": "Jet lag is real. Tomorrow starts at 10 AM." }
+      ],
+      "tips": [
+        "Activate JR Pass FIRST before doing anything else at Narita",
+        "Golden Gai: cover charge ~$5-8, just pick any bar and sit down",
+        "You skipped a night flying so jet lag hits hard tonight - sleep early"
+      ]
+    },
+    {
+      "date": "2026-05-13",
+      "day": 3,
+      "city": "Tokyo",
+      "label": "Kimono + Asakusa + teamLab",
+      "hotel": "hotel_1",
+      "type": "sightseeing",
+      "schedule": [
+        { "time": "10:00", "activity": "Depart hotel", "notes": "" },
+        { "time": "10:45", "activity": "Kimono Rental Wargo - Asakusa", "notes": "Metro: Shinjuku > Ginza > Asakusa. Book at wargokyoto.com in advance." },
+        { "time": "11:50", "activity": "Senso-ji Temple + Nakamise shopping street", "notes": "5 min walk from Wargo. Free entry." },
+        { "time": "13:25", "activity": "Tsukiji Outer Market - graze lunch", "notes": "Toei Line > Higashi-Ginza. Fresh tuna, uni, tamagoyaki." },
+        { "time": "15:10", "activity": "Meiji Jingu Shrine", "notes": "Hibiya Line > Harajuku. Forested approach path." },
+        { "time": "16:35", "activity": "Takeshita Street - kawaii fashion and crepes", "notes": "3 min walk from shrine." },
+        { "time": "17:35", "activity": "Hachiko Statue + Shibuya Scramble Crossing", "notes": "12 min walk." },
+        { "time": "17:45", "activity": "Starbucks 2nd floor - aerial view of the crossing", "notes": "Above Shibuya Crossing." },
+        { "time": "18:30", "activity": "Dinner - Ichiran Ramen Shibuya", "notes": "5 min walk. Solo booth ramen experience." },
+        { "time": "20:00", "activity": "teamLab Planets Toyosu - immersive digital art", "notes": "Yamanote > Shimbashi > Yurikamome. Timed entry - book at teamlab.art!" },
+        { "time": "22:10", "activity": "Return to Shinjuku", "notes": "Yurikamome > Yamanote." }
+      ],
+      "tips": [
+        "Wear slip-on shoes today - easy on/off for kimono fitting AND teamLab water rooms",
+        "teamLab sells out weeks ahead - must pre-book at teamlab.art"
+      ]
+    },
+    {
+      "date": "2026-05-14",
+      "day": 4,
+      "city": "Tokyo",
+      "label": "Shibuya Sky + Sumo Natsu Basho",
+      "hotel": "hotel_1",
+      "type": "sightseeing",
+      "schedule": [
+        { "time": "10:00", "activity": "Depart hotel", "notes": "" },
+        { "time": "10:20", "activity": "Shibuya Sky - observation deck floors 45-46", "notes": "JR Yamanote > Shibuya (7 min). Book at shibuya-scramble-square.com." },
+        { "time": "10:30", "activity": "360 degree views + open air rooftop + Mt Fuji view", "notes": "Morning gives best Fuji visibility before haze builds." },
+        { "time": "11:50", "activity": "Travel to Ryogoku - sumo town", "notes": "JR Yamanote > Akihabara > JR Sobu. 35 min." },
+        { "time": "12:25", "activity": "Chanko nabe pre-sumo lunch at Tomoegata", "notes": "2 min from Kokugikan. Wrestler's hot pot stew." },
+        { "time": "13:40", "activity": "Collect sumo tickets at will-call", "notes": "Pre-booked at sumo.or.jp." },
+        { "time": "14:00", "activity": "Enter Ryogoku Kokugikan - grab arena bento + beer", "notes": "" },
+        { "time": "14:00", "activity": "🏆 Sumo Natsu Basho - Makuuchi top division bouts", "notes": "May tournament runs May 11-25. Yokozuna bout ~17:45." },
+        { "time": "18:30", "activity": "Dinner - Chanko Dining Wakamatsu", "notes": "5 min walk from arena." },
+        { "time": "20:00", "activity": "JR Sobu Line back to Shinjuku", "notes": "30 min." },
+        { "time": "21:00", "activity": "Optional - Omoide Yokocho drinks", "notes": "2 min from hotel." }
+      ],
+      "tips": [
+        "Book Shibuya Sky 10:30 AM slot - best Mt Fuji visibility before haze",
+        "Arriving at sumo at 2 PM gives full lower + top division experience"
+      ]
+    },
+    {
+      "date": "2026-05-15",
+      "day": 5,
+      "city": "Hakone",
+      "label": "Romance Car + Open Air Museum + Fujiya Hotel",
+      "hotel": "hotel_2",
+      "checkout_hotel": "hotel_1",
+      "type": "travel_and_sightseeing",
+      "luggage_forward": true,
+      "luggage_note": "Send large bags via TA-Q-BIN to Fujiya Hotel this morning. Travel with daypack only.",
+      "trains_today": ["train_2"],
+      "onsen_today": ["onsen_1"],
+      "schedule": [
+        { "time": "08:00", "activity": "TA-Q-BIN bags forwarded to Fujiya Hotel", "notes": "JR Hotel front desk. Bags arrive Fujiya afternoon." },
+        { "time": "09:30", "activity": "Check out JR Hotel - daypack only", "notes": "" },
+        { "time": "10:00", "activity": "Odakyu Romance Car - Shinjuku > Hakone-Yumoto", "notes": "Book at odakyu.jp at least 2 weeks ahead. 85 min scenic mountain ride." },
+        { "time": "11:30", "activity": "Arrive Hakone-Yumoto - buy 2-day Hakone Free Pass", "notes": "Station kiosk. Covers ALL Hakone transport." },
+        { "time": "11:45", "activity": "Ashiyu free foot baths at Hayakawa riverside", "notes": "3 min walk from station. Free." },
+        { "time": "12:20", "activity": "Hakone Tozan Railway > Miyanoshita", "notes": "15 min switchback mountain railway." },
+        { "time": "12:40", "activity": "Drop bags at Fujiya Hotel front desk", "notes": "3 min walk from Miyanoshita Station." },
+        { "time": "13:00", "activity": "Lunch - Fujiya Hotel Orchid Room", "notes": "Historic chandeliers and mountain views." },
+        { "time": "14:10", "activity": "Tozan Railway > Hakone Open Air Museum", "notes": "10 min." },
+        { "time": "14:30", "activity": "Hakone Open Air Museum - sculptures + Picasso + foot onsen", "notes": "Don't miss the foot onsen inside the museum!" },
+        { "time": "16:35", "activity": "Proper check in - yukata and geta sandals provided!", "notes": "Japan's oldest Western hotel. Est. 1878." },
+        { "time": "17:30", "activity": "♨️ ONSEN 1 - Fujiya Hotel historic mineral pools", "notes": "First onsen of the trip!" },
+        { "time": "19:30", "activity": "Dinner - Fujiya Hotel Orchid Room", "notes": "Try Western course - served since 1878!" },
+        { "time": "21:15", "activity": "♨️ ONSEN 1 continued - second evening soak", "notes": "Hotel baths are quieter now." }
+      ],
+      "tips": [
+        "Tomorrow is the earliest start of the trip - set alarm for 6:15 AM tonight!",
+        "Open Air Museum foot onsen: soak while looking at sculptures and Hakone mountains"
+      ]
+    },
+    {
+      "date": "2026-05-16",
+      "day": 6,
+      "city": "Hakone",
+      "label": "Mt Fuji + Kawaguchiko + Owakudani",
+      "hotel": "hotel_2",
+      "type": "sightseeing",
+      "early_start": true,
+      "early_start_time": "6:15 AM",
+      "early_start_reason": "Mt Fuji clearest before 11 AM - today's early start is essential",
+      "onsen_today": ["onsen_2", "onsen_3"],
+      "schedule": [
+        { "time": "06:30", "activity": "♨️ ONSEN 2 - dawn rotenburo at Fujiya Hotel", "notes": "Almost empty at dawn. Mountain mineral water at sunrise." },
+        { "time": "07:15", "activity": "Quick breakfast - 7-Eleven or Fujiya Hotel", "notes": "" },
+        { "time": "08:05", "activity": "Tozan Railway > Hakone-Yumoto", "notes": "15 min." },
+        { "time": "08:30", "activity": "Fujikyuko Highway Bus > Kawaguchiko", "notes": "90 min ride. Book at highway-buses.jp." },
+        { "time": "10:05", "activity": "Buy Kawaguchiko Retro Bus Pass (1-day)", "notes": "Station kiosk." },
+        { "time": "10:38", "activity": "Climb 398 stone steps to Chureito Pagoda", "notes": "Red Line bus to Shimo-Yoshida then 5 min walk." },
+        { "time": "10:55", "activity": "🗻 CHUREITO PAGODA - iconic Mt Fuji view", "notes": "Stand LEFT of pagoda for classic shot with Fuji centered behind all five stories." },
+        { "time": "12:20", "activity": "Mt Fuji Panoramic Ropeway (Kachi Kachi Yama)", "notes": "Red Line bus to ropeway base." },
+        { "time": "12:55", "activity": "Ring the love bell at the summit together", "notes": "Summit shrine - couples tradition!" },
+        { "time": "13:25", "activity": "Lunch - Kawaguchiko lakefront hoto noodles", "notes": "5 min walk from ropeway." },
+        { "time": "14:20", "activity": "Lake Kawaguchi stroll + optional swan boat", "notes": "" },
+        { "time": "15:25", "activity": "Fujikyuko Bus back to Hakone-Yumoto", "notes": "90 min return." },
+        { "time": "17:40", "activity": "Hakone Shrine + Peace Torii Gate on Lake Ashi", "notes": "Bus to Hakone-machi." },
+        { "time": "18:35", "activity": "Lake Ashi rowboat - 30 min", "notes": "Lakeside dock near shrine." },
+        { "time": "19:20", "activity": "Pirate Ship - Hakone-machi to Togendai", "notes": "30 min lake cruise. Free with Hakone Free Pass." },
+        { "time": "20:00", "activity": "Hakone Ropeway > Owakudani volcanic valley", "notes": "15 min aerial cable car." },
+        { "time": "20:15", "activity": "🌋 Owakudani - sulfur vents + kuro tamago black eggs", "notes": "Eating black eggs adds 7 years to your life!" },
+        { "time": "21:35", "activity": "Ropeway > Cable Car > Railway back to Miyanoshita", "notes": "40 min total." },
+        { "time": "22:15", "activity": "Late dinner - Fujiya Hotel", "notes": "" },
+        { "time": "23:00", "activity": "♨️ ONSEN 3 - Tenzan Tohji-kyo (or Fujiya Hotel soak)", "notes": "Tenzan = forest riverside onsen by taxi. Or use Fujiya Hotel baths if tired." }
+      ],
+      "tips": [
+        "Check fujisan.jp the night before for Mt Fuji visibility forecast",
+        "Chureito: stand LEFT of pagoda for the classic five-story + Fuji shot",
+        "Last ropeway down from Owakudani is ~9 PM - our 8:15 PM arrival gives 45 min"
+      ]
+    },
+    {
+      "date": "2026-05-17",
+      "day": 7,
+      "city": "Kyoto",
+      "label": "Gran Class Shinkansen + Kyoto Arrival",
+      "hotel": "hotel_3",
+      "checkout_hotel": "hotel_2",
+      "type": "travel_and_sightseeing",
+      "trains_today": ["train_3"],
+      "onsen_today": ["onsen_4"],
+      "fuji_view_alert": "Mt Fuji visible RIGHT side Gran Class (D seats) between Odawara and Shin-Fuji ~10:20 AM - LAST MT FUJI VIEW OF THE ENTIRE TRIP",
+      "schedule": [
+        { "time": "06:30", "activity": "♨️ ONSEN 4 - final dawn rotenburo at Fujiya Hotel", "notes": "Last Hakone onsen. Last mountain mineral water." },
+        { "time": "07:30", "activity": "Final Fujiya Hotel breakfast", "notes": "Orchid Room - savour it!" },
+        { "time": "08:45", "activity": "Check out Fujiya Hotel", "notes": "" },
+        { "time": "08:55", "activity": "Tozan Railway > Hakone-Yumoto > Odawara", "notes": "30 min total." },
+        { "time": "09:50", "activity": "Reserve Gran Class seats at JR office - Odawara Station", "notes": "Show JR Pass, pay Gran Class supplement. Only 18 seats per train - reserve ASAP!" },
+        { "time": "10:05", "activity": "🌟 GRAN CLASS Hikari Shinkansen - Odawara > Kyoto", "notes": "SIT RIGHT SIDE D SEATS! Fuji view ~10:20 AM." },
+        { "time": "10:20", "activity": "🗻 MT FUJI - RIGHT SIDE - LAST FUJI VIEW OF THE TRIP!", "notes": "Between Odawara and Shin-Fuji stations. Camera ready!" },
+        { "time": "10:05", "activity": "Gran Class service - meal + drinks + hot towel + amenity kit", "notes": "Fully reclining seats, cabin attendant. Enjoy every minute." },
+        { "time": "12:05", "activity": "Arrive Kyoto Station", "notes": "Welcome to Kyoto!" },
+        { "time": "12:20", "activity": "Lunch - Kyoto Ramen Koji (10th floor of station)", "notes": "8 different ramen restaurants on one floor." },
+        { "time": "13:45", "activity": "Taxi to Dormy Inn Kyoto Gion", "notes": "10-15 min." },
+        { "time": "14:00", "activity": "Check in Dormy Inn Kyoto Gion", "notes": "Gion area. 5 min walk to Hanamikoji Street." },
+        { "time": "15:15", "activity": "Taxi to Higashiyama District", "notes": "" },
+        { "time": "15:50", "activity": "Kiyomizu-dera Temple", "notes": "10 min uphill through Ninenzaka." },
+        { "time": "17:05", "activity": "Sannenzaka + Ninenzaka historic stone-paved lanes", "notes": "Downhill walk through machiya shops." },
+        { "time": "17:30", "activity": "Yasaka Shrine at dusk - stone lanterns glowing", "notes": "" },
+        { "time": "18:25", "activity": "Gion - Hanamikoji Street - spot maiko 18:30-19:30!", "notes": "Walk slowly, no flash photography, bow respectfully." },
+        { "time": "20:15", "activity": "Dinner in Gion area", "notes": "" },
+        { "time": "21:30", "activity": "Taxi back to hotel", "notes": "10 min." },
+        { "time": "22:00", "activity": "♨️ Dormy Inn Kyoto onsen", "notes": "" }
+      ],
+      "tips": [
+        "Gran Class: only 18 seats per train - reserve at Odawara JR office first thing!",
+        "Fuji view: RIGHT side D seats, ~10:20 AM - this is the LAST Mt Fuji view of the trip",
+        "Maiko spotting: 18:00-19:30 on Hanamikoji - walk slowly, respect their space"
+      ]
+    },
+    {
+      "date": "2026-05-18",
+      "day": 8,
+      "city": "Kyoto",
+      "label": "Arashiyama + Tea Ceremony + Samurai Museum",
+      "hotel": "hotel_3",
+      "type": "sightseeing",
+      "schedule": [
+        { "time": "10:00", "activity": "Taxi to Kyoto Station", "notes": "10 min." },
+        { "time": "10:45", "activity": "Arashiyama Bamboo Grove", "notes": "JR Sagano Line > Saga-Arashiyama (25 min). Walk deeper than 100m!" },
+        { "time": "11:55", "activity": "Tenryu-ji Zen Garden - UNESCO, designed 1339", "notes": "3 min walk from grove." },
+        { "time": "12:45", "activity": "Lunch in Arashiyama", "notes": "Shigetsu vegetarian or Yoshimura soba." },
+        { "time": "13:50", "activity": "Oi River walk + Togetsukyo Bridge", "notes": "" },
+        { "time": "14:35", "activity": "JR Sagano > Kyoto Station > Karasuma Subway", "notes": "" },
+        { "time": "15:30", "activity": "🍵 Camellia Tea Ceremony - 90 min authentic", "notes": "8 min walk from Karasuma-Oike. Book at camellia-teaceremony.com!" },
+        { "time": "17:15", "activity": "Nijo Castle - nightingale floors! UNESCO Heritage", "notes": "10 min walk. Gold-leaf interiors + chirping floorboards." },
+        { "time": "18:35", "activity": "⚔️ Samurai and Ninja Museum - armor + sword + shuriken", "notes": "Try on samurai armor, handle katana, throw shuriken!" },
+        { "time": "20:20", "activity": "Dinner - Pontocho kawadoko riverside terrace", "notes": "Only available May-September. Perfect timing!" },
+        { "time": "22:00", "activity": "Kamo River evening walk - sit on the stone steps", "notes": "Classic Kyoto evening moment." },
+        { "time": "23:00", "activity": "Dormy Inn Kyoto onsen", "notes": "" }
+      ],
+      "tips": [
+        "Nijo nightingale floors: walk as slowly and quietly as possible",
+        "Pontocho kawadoko terrace is only May-September - don't miss it"
+      ]
+    },
+    {
+      "date": "2026-05-19",
+      "day": 9,
+      "city": "Kyoto",
+      "label": "Fushimi Inari + Kinkaku-ji + Farewell Gion",
+      "hotel": "hotel_3",
+      "type": "sightseeing",
+      "last_night_note": "Last night in Kyoto - pack for Osaka tonight!",
+      "schedule": [
+        { "time": "10:00", "activity": "Taxi to Inari Station", "notes": "" },
+        { "time": "10:25", "activity": "⛩️ Fushimi Inari - climb to Yotsutsuji + beyond!", "notes": "Go PAST Yotsutsuji - most tourists miss the best upper section. Allow 1.5+ hrs." },
+        { "time": "12:35", "activity": "JR Nara Line > Kyoto Station", "notes": "5 min." },
+        { "time": "13:00", "activity": "Nishiki Market - 130 stalls, graze everything!", "notes": "Arrive hungry!" },
+        { "time": "14:20", "activity": "🥇 Kinkaku-ji - the Golden Pavilion", "notes": "Taxi. Gold leaf shimmers in afternoon light - 14:45 timing is perfect." },
+        { "time": "15:50", "activity": "Sekkatei teahouse matcha + exit matcha soft serve", "notes": "" },
+        { "time": "16:00", "activity": "Taxi to Gion area", "notes": "" },
+        { "time": "16:30", "activity": "Gion antique shopping - Shinmonzen + Furumonzen", "notes": "Genuine world-class Kyoyaki ceramics." },
+        { "time": "17:30", "activity": "Maruyama Park - weeping cherry + locals picnicking", "notes": "" },
+        { "time": "18:15", "activity": "Yasaka Shrine at dusk - lanterns glowing", "notes": "" },
+        { "time": "19:00", "activity": "Hanamikoji Street - farewell Gion walk", "notes": "" },
+        { "time": "20:00", "activity": "FAREWELL KYOTO DINNER - Pontocho kawadoko", "notes": "Last night in Kyoto - make it special." },
+        { "time": "22:00", "activity": "Final Kamo River walk - say goodbye to Kyoto", "notes": "" },
+        { "time": "23:00", "activity": "Dormy Inn onsen - final Kyoto soak", "notes": "Pack bags for Osaka tonight!" }
+      ],
+      "tips": [
+        "Fushimi Inari: go beyond Yotsutsuji - the crowds thin out and the views open up",
+        "Pack bags tonight for early Osaka departure tomorrow"
+      ]
+    },
+    {
+      "date": "2026-05-20",
+      "day": 10,
+      "city": "Osaka",
+      "label": "Osaka Castle + Kuromon + Dotonbori",
+      "hotel": "hotel_4",
+      "checkout_hotel": "hotel_3",
+      "type": "travel_and_sightseeing",
+      "trains_today": ["train_4"],
+      "onsen_today": ["onsen_5"],
+      "schedule": [
+        { "time": "09:30", "activity": "Check out Dormy Inn Kyoto Gion", "notes": "" },
+        { "time": "09:38", "activity": "Taxi to Kyoto Station", "notes": "" },
+        { "time": "10:05", "activity": "Hikari Shinkansen Kyoto > Shin-Osaka", "notes": "15 min! Shortest Shinkansen of the trip. JR Pass." },
+        { "time": "10:35", "activity": "Taxi to Dormy Inn Namba ANNEX - drop bags", "notes": "" },
+        { "time": "10:55", "activity": "Taxi to Osaka Castle", "notes": "" },
+        { "time": "11:15", "activity": "Osaka Castle outer grounds - free walk", "notes": "Giant stone walls, moat, volunteer English guides!" },
+        { "time": "12:00", "activity": "Lunch in castle park", "notes": "" },
+        { "time": "13:00", "activity": "🏯 Osaka Castle main tower - 8 floors + observation deck", "notes": "Museum + 360 degree views + gold tiger roof!" },
+        { "time": "14:45", "activity": "JR Osaka Loop Line > Namba", "notes": "20 min. JR Pass." },
+        { "time": "15:10", "activity": "Check in Dormy Inn Namba ANNEX", "notes": "Lawson convenience store attached!" },
+        { "time": "16:00", "activity": "Kuromon Ichiba Market - Osaka's Kitchen!", "notes": "170 stalls. Graze everything." },
+        { "time": "17:00", "activity": "Amerikamura - Triangle Park + vintage + records", "notes": "" },
+        { "time": "18:15", "activity": "Shinsaibashi Shopping Arcade + Don Quijote", "notes": "" },
+        { "time": "18:50", "activity": "Dotonbori at dusk - neon canal reflections!", "notes": "Stand on Ebisu Bridge for full neon canal view." },
+        { "time": "18:55", "activity": "Glico Running Man - mandatory couple photo!", "notes": "Ebisu Bridge by the canal." },
+        { "time": "19:00", "activity": "Takoyaki at Ichifuji - the original and most authentic", "notes": "Not the flashiest stall but the best flavor." },
+        { "time": "19:30", "activity": "Dinner - Kani Doraku (giant mechanical crab!)", "notes": "King crab course meal by the canal." },
+        { "time": "21:30", "activity": "Bar hopping - Bar K whisky + Craft Beer Base Kamikaze", "notes": "" },
+        { "time": "23:00", "activity": "♨️ ONSEN 5 - Dormy Inn rooftop natural hot spring", "notes": "Natural hot spring + city views. Open til midnight!" },
+        { "time": "23:30", "activity": "Free late night ramen - Dormy Inn!", "notes": "Served 21:30-23:00 nightly. Do NOT miss." }
+      ],
+      "tips": [
+        "Dotonbori: stand on Ebisu Bridge at dusk facing west for the classic neon shot",
+        "Dormy Inn free ramen: served 21:30-23:00 nightly - do not miss it"
+      ]
+    },
+    {
+      "date": "2026-05-21",
+      "day": 11,
+      "city": "Takayama",
+      "label": "Den Den Town + Wide View Hida",
+      "hotel": "hotel_5",
+      "checkout_hotel": "hotel_4",
+      "type": "travel_and_sightseeing",
+      "luggage_forward": true,
+      "luggage_note": "Send large bags via TA-Q-BIN to Residence Hotel Takayama this morning. Bags arrive May 22.",
+      "early_start": true,
+      "early_start_time": "7:00 AM",
+      "trains_today": ["train_5", "train_6"],
+      "schedule": [
+        { "time": "07:00", "activity": "TA-Q-BIN bags to Residence Hotel Takayama Station", "notes": "Hotel front desk. Address: 6-105 Hanasatomachi, Takayama." },
+        { "time": "07:15", "activity": "Check out Dormy Inn Namba - daypack only", "notes": "" },
+        { "time": "07:20", "activity": "Breakfast - Lawson attached to hotel", "notes": "" },
+        { "time": "07:30", "activity": "Den Den Town (Nipponbashi) - Osaka's Akihabara", "notes": "10 min walk. Joshin + Rocket retro games + Animate + Figure King." },
+        { "time": "09:20", "activity": "Walk to Shinsekai district", "notes": "15 min walk." },
+        { "time": "09:35", "activity": "Shinsekai street level - Jan Jan Yokocho retro arcade", "notes": "" },
+        { "time": "09:45", "activity": "Fugu (puffer fish) breakfast at standing restaurant", "notes": "Licensed chefs - fully safe!" },
+        { "time": "10:50", "activity": "Subway to Osaka Station", "notes": "" },
+        { "time": "11:30", "activity": "Hikari Shinkansen Osaka > Nagoya", "notes": "50 min. JR Pass." },
+        { "time": "12:35", "activity": "Quick lunch - Nagoya ekiben (miso katsu bento!)", "notes": "Platform shops at Nagoya." },
+        { "time": "13:00", "activity": "Wide View Hida Limited Express Nagoya > Takayama", "notes": "LEFT side A/B seats! Hida River gorge ~90 min in. JR Pass." },
+        { "time": "15:25", "activity": "Arrive Takayama Station", "notes": "🏔️ Welcome to the Japanese Alps!" },
+        { "time": "15:30", "activity": "Check in Residence Hotel - 30 SECONDS from station!", "notes": "Full apartment with kitchen. Night 1 of 2." },
+        { "time": "15:45", "activity": "Sanmachi Suji historic district + sake tastings", "notes": "10 min walk. Look for sugidama (cedar balls) above brewery entrances." },
+        { "time": "17:35", "activity": "Takayama Jinya - only surviving Edo government house in Japan", "notes": "" },
+        { "time": "18:35", "activity": "Higashiyama Temple Walk - hilltop views", "notes": "" },
+        { "time": "19:45", "activity": "Dinner - Hida beef ramen or sukiyaki", "notes": "" },
+        { "time": "21:30", "activity": "Sanmachi Suji at night - lanterns and silence", "notes": "One of Japan's most beautiful quiet experiences." }
+      ],
+      "tips": [
+        "Wide View Hida: LEFT side A/B seats for gorge views - reserve at any JR office",
+        "Sanmachi Suji at night is one of Japan's most beautiful quiet experiences - don't skip it"
+      ]
+    },
+    {
+      "date": "2026-05-22",
+      "day": 12,
+      "city": "Takayama",
+      "label": "Morning Market + Hida Folk Village",
+      "hotel": "hotel_5",
+      "type": "sightseeing",
+      "early_start": true,
+      "early_start_time": "7:00 AM",
+      "last_night_note": "Last night in Takayama - pack for Tokyo tomorrow!",
+      "luggage_arrives": true,
+      "luggage_note": "Large bags arrive from Osaka today! Collect at front desk.",
+      "schedule": [
+        { "time": "06:50", "activity": "Breakfast - Lawson near Takayama Station", "notes": "" },
+        { "time": "07:00", "activity": "Miyagawa Morning Market - running since Edo period", "notes": "5 min walk. Bring CASH - most stalls cash only!" },
+        { "time": "08:35", "activity": "Collect large bags at hotel (arrived via TA-Q-BIN)", "notes": "Hotel front desk." },
+        { "time": "09:00", "activity": "Morning Sanmachi Suji - mist + quiet lanes", "notes": "" },
+        { "time": "09:40", "activity": "Kusakabe Folk Museum - 1879 preserved merchant house", "notes": "" },
+        { "time": "11:00", "activity": "Cedar Avenue (Sugi-namiki) - 360 year old cryptomeria trees", "notes": "15 min walk. Almost no tourists!" },
+        { "time": "12:00", "activity": "Lunch at Amazake-chaya - 400yr old thatched teahouse", "notes": "Open since 1638!" },
+        { "time": "13:20", "activity": "Taxi to Hida Folk Village", "notes": "" },
+        { "time": "13:35", "activity": "🏡 Hida Folk Village - 30+ gassho-zukuri farmhouses", "notes": "Walk inside every open farmhouse! Allow 1.5-2 hrs." },
+        { "time": "15:20", "activity": "Taxi back to Sanmachi Suji", "notes": "" },
+        { "time": "15:35", "activity": "Final Sanmachi - sake shopping + crafts + Hida beef manju", "notes": "" },
+        { "time": "18:00", "activity": "Dinner - Hida beef sukiyaki + hoba miso + local sake", "notes": "" },
+        { "time": "19:35", "activity": "Final Takayama night walk - lanterns + total silence", "notes": "Unforgettable." },
+        { "time": "20:45", "activity": "Back to hotel - pack for Tokyo tomorrow", "notes": "Set alarm for 6:50 AM." }
+      ],
+      "tips": [
+        "Morning Market: 7 AM sharp for freshest produce. Bring cash - cash only stalls.",
+        "Buy sake DIRECT from breweries - namazake (unpasteurized) unavailable outside Hida"
+      ]
+    },
+    {
+      "date": "2026-05-23",
+      "day": 13,
+      "city": "Takayama > Suzuka > Tokyo",
+      "label": "Morning Market > Wide View Hida > SUZUKA CIRCUIT > Tokyo",
+      "hotel": "hotel_6",
+      "checkout_hotel": "hotel_5",
+      "type": "travel_and_sightseeing",
+      "suzuka_day": true,
+      "trains_today": ["train_7", "train_8b", "train_8"],
+      "onsen_today": ["onsen_6"],
+      "schedule": [
+        { "time": "06:50", "activity": "Breakfast - convenience store near Takayama Station", "notes": "" },
+        { "time": "07:00", "activity": "Miyagawa Morning Market - final farewell", "notes": "5 min walk. Different vendors daily." },
+        { "time": "08:25", "activity": "Check out Residence Hotel", "notes": "30 SECOND walk to station!" },
+        { "time": "08:55", "activity": "Wide View Hida - Takayama > Nagoya", "notes": "LEFT side A/B for gorge views on return. JR Pass." },
+        { "time": "11:25", "activity": "Arrive Nagoya Station", "notes": "" },
+        { "time": "11:30", "activity": "Quick lunch - Hitsumabushi eel or miso katsu at platform shops", "notes": "Eat fast!" },
+        { "time": "11:45", "activity": "Buy Kintetsu Limited Express tickets - Nagoya to Shiroko AND return", "notes": "Kintetsu office EAST SIDE of Nagoya Station. NOT JR Pass. ~Y1,720 each way. Buy BOTH directions now." },
+        { "time": "12:00", "activity": "Kintetsu Limited Express - Nagoya > Shiroko", "notes": "50 min. Reserved reclining seat." },
+        { "time": "12:50", "activity": "Arrive Shiroko Station - follow English signs to shuttle bus", "notes": "" },
+        { "time": "13:10", "activity": "Mie Kotsu shuttle bus > Suzuka Circuit", "notes": "20 min. ~Y500. Suica accepted." },
+        { "time": "13:30", "activity": "🏁 Arrive Suzuka Circuit! Buy Race Day Special Passport + Pit Walk Pass", "notes": "Buy at main gate on arrival." },
+        { "time": "13:45", "activity": "Explore circuit grounds - Motopia Park + Racing Theater + Ferris Wheel", "notes": "Racing Theater has F1 car displays. Ferris Wheel gives aerial track view." },
+        { "time": "14:30", "activity": "🏎️ PIT WALK - walk the actual Suzuka pitlane!", "notes": "No umbrellas in pitlane - use rainwear if raining." },
+        { "time": "15:30", "activity": "Super Formula Rounds 4 & 5 - qualifying or race session", "notes": "Japan's premier single-seater. Same Suzuka corners as F1 - 130R, Spoon, Degner." },
+        { "time": "17:30", "activity": "Head to shuttle bus - leave 15 min before session ends if possible", "notes": "Buses get very crowded right after sessions." },
+        { "time": "18:00", "activity": "Shuttle bus > Shiroko Station", "notes": "20 min." },
+        { "time": "18:10", "activity": "Kintetsu Limited Express - Shiroko > Nagoya", "notes": "50 min. Use pre-bought return ticket." },
+        { "time": "19:10", "activity": "Arrive Nagoya Station - board evening Shinkansen", "notes": "" },
+        { "time": "19:10", "activity": "Hikari Shinkansen - Nagoya > Tokyo", "notes": "~1 hr 40 min. Ordinary reserved. JR Pass." },
+        { "time": "20:50", "activity": "Arrive Tokyo Station", "notes": "" },
+        { "time": "21:05", "activity": "JR Chuo Line > Shinjuku", "notes": "30 min. JR Pass." },
+        { "time": "21:40", "activity": "Check in Yuen Shinjuku - night 1 of 2", "notes": "8 min walk from Shinjuku Station. Yukata provided!" },
+        { "time": "22:00", "activity": "Late dinner - Tsunahachi tempura or Omoide Yokocho", "notes": "Both 5 min walk from hotel." },
+        { "time": "23:30", "activity": "♨️ ONSEN 6 - Yuen Shinjuku rooftop onsen", "notes": "Indoor + outdoor with Shinjuku skyline!" }
+      ],
+      "tips": [
+        "Kintetsu is NOT JR Pass - buy at Kintetsu office EAST side Nagoya Station",
+        "Buy BOTH outbound and return Kintetsu tickets at the same time",
+        "Pit Walk: no umbrellas allowed in the pitlane - pack a poncho"
+      ]
+    },
+    {
+      "date": "2026-05-24",
+      "day": 14,
+      "city": "Tokyo",
+      "label": "A-PIT JDM + Harajuku + Shopping",
+      "hotel": "hotel_6",
+      "type": "sightseeing",
+      "schedule": [
+        { "time": "09:00", "activity": "Breakfast at Yuen Shinjuku", "notes": "" },
+        { "time": "09:30", "activity": "Check out - store bags at hotel front desk", "notes": "" },
+        { "time": "09:40", "activity": "Rinkai Line from Shinjuku > Shinonome (via Osaki)", "notes": "35 min." },
+        { "time": "10:05", "activity": "🚗 A-PIT Super Autobacs - JDM paradise! 4 floors", "notes": "Walk the PARKING LOT first - show cars change regularly. 3 min walk from Shinonome station." },
+        { "time": "12:00", "activity": "Rinkai Line + JR Yamanote > Harajuku", "notes": "35 min." },
+        { "time": "12:30", "activity": "Lunch in Harajuku or Omotesando area", "notes": "" },
+        { "time": "13:30", "activity": "Cat Street - Off-White, Supreme Japan, BAPE, Neighborhood", "notes": "Japan-only releases not in US stores!" },
+        { "time": "15:00", "activity": "Ura-Harajuku boutiques - Sacai, Kapital, Nanamica, Beams Japan", "notes": "" },
+        { "time": "16:00", "activity": "JR Yamanote > Shinjuku", "notes": "7 min." },
+        { "time": "16:15", "activity": "Isetan Shinjuku - B1 food hall + craft floor + menswear", "notes": "" },
+        { "time": "18:00", "activity": "Tokyu Hands + Don Quijote Shinjuku", "notes": "" },
+        { "time": "19:00", "activity": "Collect bags from Yuen Shinjuku", "notes": "Check back in for second night." },
+        { "time": "20:00", "activity": "Dinner - New York Bar Park Hyatt or Kozue", "notes": "Optional splurge. Lost in Translation vibes." },
+        { "time": "21:30", "activity": "Omoide Yokocho final visit", "notes": "2 min from hotel." },
+        { "time": "23:00", "activity": "Yuen Shinjuku rooftop onsen - last onsen of the trip", "notes": "Savour it." }
+      ],
+      "tips": [
+        "A-PIT parking lot first before going inside - the show cars are the highlight",
+        "Cat Street: Supreme Japan has Japan-only releases different from US stores",
+        "Ask every store for tax-free shopping - show passport for 10% refund on Y5,000+ purchases"
+      ]
+    },
+    {
+      "date": "2026-05-25",
+      "day": 15,
+      "city": "Tokyo > Austin",
+      "label": "Takashimaya + Final Shopping + Depart",
+      "hotel": null,
+      "checkout_hotel": "hotel_6",
+      "type": "departure",
+      "flights_today": ["AC 4", "AC 1762"],
+      "trains_today": ["train_9"],
+      "schedule": [
+        { "time": "08:00", "activity": "Wake up - final morning in Japan", "notes": "Last breakfast in Japan!" },
+        { "time": "08:15", "activity": "Breakfast at Yuen Shinjuku", "notes": "" },
+        { "time": "09:00", "activity": "Check out Yuen Shinjuku - store bags at front desk", "notes": "" },
+        { "time": "09:10", "activity": "Walk to Takashimaya Times Square", "notes": "8 min walk from hotel." },
+        { "time": "09:10", "activity": "Takashimaya B1-B2 food hall - Kit Kats, wagashi, sake, matcha, yuzu", "notes": "Best souvenir shopping in Tokyo." },
+        { "time": "09:10", "activity": "Takashimaya 6F craft floor - ceramics, lacquerware, washi, knives", "notes": "" },
+        { "time": "09:10", "activity": "Takashimaya 8F tax-free counter - 10% refund, bring passport!", "notes": "Consolidate ALL purchases here." },
+        { "time": "11:30", "activity": "Shinjuku final shopping - Beams Japan + Tokyu Hands", "notes": "" },
+        { "time": "13:00", "activity": "Final Tokyo lunch - Afuri Ramen or Tsunahachi tempura", "notes": "" },
+        { "time": "13:50", "activity": "Collect bags from Yuen Shinjuku", "notes": "8 min walk." },
+        { "time": "14:20", "activity": "N'EX Narita Express - Shinjuku > Narita Airport", "notes": "90 min. JR Pass. DEPART ON TIME - tight connection at Narita." },
+        { "time": "15:50", "activity": "Arrive Narita Airport Terminal 1", "notes": "Go straight to Air Canada check-in." },
+        { "time": "15:50", "activity": "Check in AC 4 + bag drop", "notes": "Counter closes before 16:30. Move quickly." },
+        { "time": "16:00", "activity": "Security + immigration - Narita T1", "notes": "Allow 20-25 min." },
+        { "time": "16:20", "activity": "At gate - last Japan duty free!", "notes": "Yamazaki, Hibiki, Nikka whisky. Best prices in Japan." },
+        { "time": "16:30", "activity": "✈️ AC 4 departs Tokyo Narita (NRT)", "notes": "Boeing 787-9. 8h 45m. Wi-Fi. Meal + Breakfast included." },
+        { "time": "09:15", "activity": "Land Vancouver (YVR) - same calendar day!", "notes": "You crossed the Date Line going east - gain a day back." },
+        { "time": "13:50", "activity": "✈️ AC 1762 departs Vancouver (YVR)", "notes": "Boeing 737 MAX 8. 4h 27m." },
+        { "time": "20:17", "activity": "🏠 Land Austin-Bergstrom Airport (AUS)", "notes": "Welcome home! Uber back to Cedar Park ~1 hour." }
+      ],
+      "tips": [
+        "N'EX at 14:20 is non-negotiable - missing it means missing the flight",
+        "Return Suica cards at Narita JR office for remaining balance + Y500 deposit",
+        "Whisky: Narita duty free usually has Yamazaki and Hibiki even when shops are sold out"
+      ]
+    }
+  ],
+
   "bookings": [
     {
+      "id": "book_1",
       "item": "Suzuka Circuit - Super Formula tickets (May 23)",
-      "where": "suzukacircuit.jp/eng/park/fee/ or Asoview app",
+      "where": "suzukacircuit.jp",
       "url": "https://www.suzukacircuit.jp/eng/park/fee/",
       "priority": "URGENT",
       "done": false,
-      "sale_date_japan": "Sunday April 12, 2026 at 11:00 AM Japan Time (JST)",
-      "sale_date_chicago": "Saturday April 11, 2026 at 9:00 PM Chicago Time (CDT)",
-      "alert": "SET A REMINDER! Tickets go on sale SATURDAY APRIL 11 at 9:00 PM Chicago time. Buy Race Day Special Passport for May 23 + Pit Walk Pass. JR Pass does NOT cover Kintetsu to Shiroko - buy separately at Nagoya Station."
+      "sale_date_japan": "Sunday April 12, 2026 at 11:00 AM JST",
+      "sale_date_chicago": "Saturday April 11, 2026 at 9:00 PM CDT",
+      "alert": "TICKETS ON SALE: Saturday April 11 at 9:00 PM Chicago time. Buy Race Day Special Passport for May 23 + Pit Walk Pass."
     },
-    { "item": "JR Pass x2 (14-day)", "where": "Purchase before leaving Austin - cannot buy in Japan", "url": "", "priority": "URGENT", "done": false },
-    { "item": "teamLab Planets timed entry", "where": "teamlab.art", "url": "https://teamlab.art", "priority": "URGENT", "done": false },
-    { "item": "Sumo tickets - Natsu Basho (May 11-25)", "where": "sumo.or.jp", "url": "https://www.sumo.or.jp", "priority": "URGENT", "done": false },
-    { "item": "Odakyu Romance Car reserved seats", "where": "odakyu.jp", "url": "https://www.odakyu.jp", "priority": "HIGH", "done": false },
-    { "item": "Camellia Tea Ceremony", "where": "camellia-teaceremony.com", "url": "https://www.camellia-teaceremony.com", "priority": "HIGH", "done": false },
-    { "item": "Shibuya Sky timed entry", "where": "shibuya-scramble-square.com", "url": "https://shibuya-scramble-square.com", "priority": "HIGH", "done": false },
-    { "item": "Fujikyuko Bus Kawaguchiko", "where": "highway-buses.jp", "url": "https://www.highway-buses.jp", "priority": "HIGH", "done": false },
-    { "item": "Gran Class seats (May 17)", "where": "JR office at Odawara Station on arrival morning", "url": "", "priority": "MEDIUM", "done": false },
-    { "item": "Green Car seats (May 23)", "where": "JR Midori-no-madoguchi at Nagoya Station", "url": "", "priority": "MEDIUM", "done": false },
-    { "item": "Travel insurance", "where": "Any major provider", "url": "", "priority": "MEDIUM", "done": false }
+    { "id": "book_2", "item": "JR Pass x2 (14-day)", "where": "Purchase before leaving Austin - cannot buy in Japan", "url": "", "priority": "URGENT", "done": false },
+    { "id": "book_3", "item": "teamLab Planets timed entry", "where": "teamlab.art", "url": "https://teamlab.art", "priority": "URGENT", "done": false },
+    { "id": "book_4", "item": "Sumo tickets - Natsu Basho (May 11-25)", "where": "sumo.or.jp", "url": "https://www.sumo.or.jp", "priority": "URGENT", "done": false },
+    { "id": "book_5", "item": "Odakyu Romance Car reserved seats", "where": "odakyu.jp", "url": "https://www.odakyu.jp", "priority": "HIGH", "done": false },
+    { "id": "book_6", "item": "Camellia Tea Ceremony", "where": "camellia-teaceremony.com", "url": "https://www.camellia-teaceremony.com", "priority": "HIGH", "done": false },
+    { "id": "book_7", "item": "Shibuya Sky timed entry", "where": "shibuya-scramble-square.com", "url": "https://shibuya-scramble-square.com", "priority": "HIGH", "done": false },
+    { "id": "book_8", "item": "Fujikyuko Bus Kawaguchiko", "where": "highway-buses.jp", "url": "https://www.highway-buses.jp", "priority": "HIGH", "done": false },
+    { "id": "book_9", "item": "Gran Class seats (May 17) - Odawara Station JR office on arrival morning", "where": "JR office at Odawara Station", "url": "", "priority": "MEDIUM", "done": false },
+    { "id": "book_10", "item": "Travel insurance", "where": "Any major provider", "url": "", "priority": "MEDIUM", "done": false }
   ],
+
   "experiences": [
     { "id": "exp_1",  "item": "Kimono dress-up at Wargo Asakusa", "date": "2026-05-13", "city": "Tokyo", "done": false },
-    { "id": "exp_2",  "item": "Sumo Natsu Basho - Makuuchi top division", "date": "2026-05-14", "city": "Tokyo", "done": false },
-    { "id": "exp_3",  "item": "Super Formula live racing at Suzuka Circuit + pit walk", "date": "2026-05-23", "city": "Suzuka", "done": false },
-    { "id": "exp_3b", "item": "JDM A-PIT Super Autobacs - 4 floors (moved to May 24 morning)", "date": "2026-05-24", "city": "Tokyo", "done": false },
-    { "id": "exp_4",  "item": "teamLab Planets immersive digital art", "date": "2026-05-13", "city": "Tokyo", "done": false },
-    { "id": "exp_5",  "item": "Chureito Pagoda - iconic Mt Fuji view", "date": "2026-05-16", "city": "Hakone", "done": false },
-    { "id": "exp_6",  "item": "Mt Fuji Panoramic Ropeway + ring the love bell together", "date": "2026-05-16", "city": "Hakone", "done": false },
-    { "id": "exp_7",  "item": "Odakyu Romance Car scenic train", "date": "2026-05-15", "city": "Hakone", "done": false },
-    { "id": "exp_8",  "item": "Gran Class Shinkansen - Odawara to Kyoto", "date": "2026-05-17", "city": "Hakone", "done": false },
-    { "id": "exp_9",  "item": "Suzuka Circuit - walk the pitlane and watch Super Formula live", "date": "2026-05-23", "city": "Suzuka", "done": false },
-    { "id": "exp_10", "item": "Fujiya Hotel mineral onsen x3", "date": "2026-05-15", "city": "Hakone", "done": false },
+    { "id": "exp_2",  "item": "Sumo Natsu Basho - Makuuchi top division bouts", "date": "2026-05-14", "city": "Tokyo", "done": false },
+    { "id": "exp_3",  "item": "Super Formula live racing + pit walk at Suzuka Circuit", "date": "2026-05-23", "city": "Suzuka", "done": false },
+    { "id": "exp_4",  "item": "JDM A-PIT Super Autobacs - 4 floors", "date": "2026-05-24", "city": "Tokyo", "done": false },
+    { "id": "exp_5",  "item": "teamLab Planets immersive digital art", "date": "2026-05-13", "city": "Tokyo", "done": false },
+    { "id": "exp_6",  "item": "Chureito Pagoda - iconic Mt Fuji view", "date": "2026-05-16", "city": "Hakone", "done": false },
+    { "id": "exp_7",  "item": "Mt Fuji Panoramic Ropeway + ring the love bell", "date": "2026-05-16", "city": "Hakone", "done": false },
+    { "id": "exp_8",  "item": "Odakyu Romance Car scenic train ride", "date": "2026-05-15", "city": "Hakone", "done": false },
+    { "id": "exp_9",  "item": "Gran Class Shinkansen - Odawara to Kyoto", "date": "2026-05-17", "city": "Hakone", "done": false },
+    { "id": "exp_10", "item": "Fujiya Hotel mineral onsen x3 (evenings + dawn)", "date": "2026-05-15", "city": "Hakone", "done": false },
     { "id": "exp_11", "item": "Tenzan Tohji-kyo forest public onsen", "date": "2026-05-16", "city": "Hakone", "done": false },
-    { "id": "exp_12", "item": "Authentic tea ceremony 90 min at Camellia", "date": "2026-05-18", "city": "Kyoto", "done": false },
+    { "id": "exp_12", "item": "Authentic matcha tea ceremony 90 min at Camellia", "date": "2026-05-18", "city": "Kyoto", "done": false },
     { "id": "exp_13", "item": "Samurai Museum - armor fitting + sword + shuriken", "date": "2026-05-18", "city": "Kyoto", "done": false },
     { "id": "exp_14", "item": "Fushimi Inari thousand torii gates", "date": "2026-05-19", "city": "Kyoto", "done": false },
     { "id": "exp_15", "item": "Kinkaku-ji the Golden Pavilion", "date": "2026-05-19", "city": "Kyoto", "done": false },
     { "id": "exp_16", "item": "Gion Hanamikoji Street and spotting maiko", "date": "2026-05-17", "city": "Kyoto", "done": false },
     { "id": "exp_17", "item": "Osaka Castle 8 floors + observation deck", "date": "2026-05-20", "city": "Osaka", "done": false },
     { "id": "exp_18", "item": "Dotonbori neon canal + Glico Man couple photo", "date": "2026-05-20", "city": "Osaka", "done": false },
-    { "id": "exp_19", "item": "Sanmachi Suji Takayama + sake tastings", "date": "2026-05-21", "city": "Takayama", "done": false },
-    { "id": "exp_20", "item": "Hida Folk Village gassho-zukuri farmhouses", "date": "2026-05-22", "city": "Takayama", "done": false },
+    { "id": "exp_19", "item": "Sanmachi Suji Takayama historic lanes + sake tastings", "date": "2026-05-21", "city": "Takayama", "done": false },
+    { "id": "exp_20", "item": "Hida Folk Village gassho-zukuri thatched farmhouses", "date": "2026-05-22", "city": "Takayama", "done": false },
     { "id": "exp_21", "item": "Harajuku Cat Street - Supreme Japan, BAPE, Off-White", "date": "2026-05-24", "city": "Tokyo", "done": false },
     { "id": "exp_22", "item": "Takashimaya Times Square food hall + craft floor", "date": "2026-05-25", "city": "Tokyo", "done": false },
     { "id": "exp_23", "item": "Narita duty free Japanese whisky", "date": "2026-05-25", "city": "Tokyo", "done": false }
   ],
+
   "packing": {
     "documents": [
-      { "item": "Passport (valid 6+ months past May 2026)", "done": false },
-      { "item": "JR Pass vouchers x2 (purchased before leaving Austin)", "done": false },
+      { "item": "Passports x2 (valid 6+ months past May 2026)", "done": false },
+      { "item": "JR Pass vouchers x2 - in carry-on ONLY, never checked bag", "done": false },
+      { "item": "Air Canada booking confirmation (AC 1763 + AC 3 / AC 4 + AC 1762)", "done": false },
       { "item": "Travel insurance documents", "done": false },
-      { "item": "Hotel confirmation printouts or saved offline", "done": false },
+      { "item": "Hotel confirmations saved offline", "done": false },
       { "item": "Sumo ticket confirmation", "done": false },
-      { "item": "Suzuka Circuit Race Day Special Passport + Pit Walk Pass (May 23)", "done": false },
-      { "item": "Air Canada booking confirmation (AC 1763 + AC 3 outbound / AC 4 + AC 1762 return)", "done": false },
-      { "item": "teamLab booking confirmation", "done": false },
+      { "item": "Suzuka Circuit Race Day Special Passport + Pit Walk Pass", "done": false },
+      { "item": "teamLab Planets booking confirmation", "done": false },
       { "item": "Romance Car booking confirmation", "done": false },
-      { "item": "Tea ceremony booking confirmation", "done": false }
+      { "item": "Camellia Tea Ceremony booking confirmation", "done": false }
     ],
     "essentials": [
       { "item": "Portable WiFi / pocket WiFi (pre-book for Japan)", "done": false },
-      { "item": "Universal power adapter (Japan uses Type A - same as US)", "done": false },
+      { "item": "Universal power adapter (Japan uses Type A - same plug as US)", "done": false },
       { "item": "Portable battery pack / power bank", "done": false },
       { "item": "Cash in USD to exchange on arrival", "done": false },
       { "item": "Comfortable walking shoes (10,000+ steps per day)", "done": false },
       { "item": "Slip-on shoes for May 13 (kimono + teamLab water rooms)", "done": false },
       { "item": "Small daypack for TA-Q-BIN forwarding days (May 15 + May 21)", "done": false },
-      { "item": "Small towel for onsen (provided at Fujiya and Dormy Inn)", "done": false }
+      { "item": "Small towel for onsen (Fujiya + Dormy Inn provide towels)", "done": false }
     ],
     "clothing": [
       { "item": "Layers for variable May weather (10-22C / 50-72F)", "done": false },
@@ -245,10 +739,11 @@
     ],
     "tech": [
       { "item": "Camera + extra batteries and memory cards", "done": false },
-      { "item": "Download Japan maps offline in Google Maps before leaving", "done": false },
-      { "item": "Download Japanese offline translation pack in Google Translate", "done": false }
+      { "item": "Download Japan maps offline in Google Maps (do on home WiFi)", "done": false },
+      { "item": "Download Japanese language pack in Google Translate (do on home WiFi)", "done": false }
     ]
   },
+
   "useful_info": {
     "emergency": {
       "police": "110",
@@ -257,19 +752,19 @@
       "us_embassy_tokyo": "+81-3-3224-5000"
     },
     "transport_tips": [
-      "JR Pass covers all Shinkansen except Nozomi and Mizuho - always take Hikari or Kodama",
-      "Suica card works on all non-JR metro lines, buses, and even convenience stores",
-      "IC card readers everywhere - just tap in and tap out",
-      "Taxis are expensive but reliable - have hotel address in Japanese ready to show driver",
-      "Last train typically around midnight in major cities - do not miss it!"
+      "JR Pass covers all Shinkansen except Nozomi and Mizuho - always book Hikari or Kodama",
+      "Kintetsu to Suzuka is NOT JR Pass - buy separately at Kintetsu office east side Nagoya Station",
+      "Suica card works on all non-JR metro lines, buses, and even convenience stores and vending machines",
+      "IC card readers everywhere - tap in and tap out",
+      "Last train typically around midnight in major cities - do not miss it"
     ],
     "etiquette_tips": [
       "No eating or drinking while walking (except at food stalls and festivals)",
       "Trash cans are rare - carry a small bag for waste",
       "Quiet on trains - no phone calls, keep music in headphones",
-      "Onsen rules: shower thoroughly before entering, no swimwear, tattoos may be restricted at some",
+      "Onsen rules: shower before entering, no swimwear, tattoos may be restricted at some",
       "Cash is still widely used - always carry some yen",
-      "Bow when thanking someone - it is appreciated",
+      "Bow when thanking someone",
       "Remove shoes when entering temples, traditional restaurants, and some museums"
     ],
     "apps_to_download": [

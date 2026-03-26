@@ -1102,9 +1102,9 @@ input { font-family: inherit; }
 }
 
 .pretodo-progress {
-  height: 6px;
+  height: 12px;
   background: var(--surface2);
-  border-radius: 3px;
+  border-radius: 6px;
   overflow: hidden;
   border: 1px solid var(--border);
   margin-bottom: 14px;
@@ -1113,7 +1113,7 @@ input { font-family: inherit; }
 .pretodo-progress-fill {
   height: 100%;
   background: linear-gradient(90deg, var(--navy), var(--navy-light));
-  border-radius: 3px;
+  border-radius: 6px;
   transition: width 0.4s ease;
 }
 
@@ -1349,16 +1349,16 @@ input { font-family: inherit; }
 .learn-header-count { font-size: 0.82rem; color: var(--text-muted); }
 
 .learn-progress-bar {
-  height: 10px;
+  height: 14px;
   background: var(--border);
   margin: 0 16px 16px;
-  border-radius: 6px;
+  border-radius: 7px;
   overflow: hidden;
 }
 .learn-progress-fill {
   height: 100%;
   background: var(--gold);
-  border-radius: 6px;
+  border-radius: 7px;
   transition: width 0.4s ease;
 }
 

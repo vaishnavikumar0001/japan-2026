@@ -1,4 +1,4 @@
-const CACHE_NAME = 'japan-2026-v12';
+const CACHE_NAME = 'japan-2026-v13';
 
 const ASSETS = [
   '/',
@@ -17,7 +17,8 @@ const ASSETS = [
   '/js/learn.js',
   '/icons/icon-192.png',
   '/icons/icon-512.png',
-  '/sumo_explainer.html'
+  '/sumo_explainer.html',
+  '/suzuka_explainer.html'
 ];
 
 // Install: pre-cache all assets

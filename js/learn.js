@@ -8,6 +8,14 @@ const LEARN_TOPICS = [
     subtitle: 'Natsu Basho · May 14 · Day 3',
     desc:     'Ranks, rituals, key moves, wrestlers to watch & your Day 5 schedule',
     src:      'sumo_explainer.html'
+  },
+  {
+    id:       'suzuka',
+    emoji:    '🏎️',
+    title:    'Suzuka Circuit Guide',
+    subtitle: 'Super Formula · May 23 · Day 12',
+    desc:     'Circuit history, race format, pit walk tips & what to expect on race day',
+    src:      'suzuka_explainer.html'
   }
   // Add more topics here — e.g. onsen etiquette, train guide, temple customs
 ];

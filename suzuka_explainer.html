@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Suzuka Guide — May 23, 2026</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,900;1,700&display=swap');
+
+:root {
+  --red:    #CC0000;
+  --orange: #FF6B00;
+  --yellow: #FFD700;
+  --teal:   #00C8A0;
+  --blue:   #0066CC;
+  --dark:   #0A0A0F;
+  --panel:  #111118;
+  --card:   #161622;
+  --border: rgba(255,255,255,0.07);
+  --white:  #F0F4FF;
+  --muted:  #8899BB;
+  --honda-red: #CC0000;
+  --toyota-blue: #0066CC;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  background: var(--dark);
+  font-family: 'Barlow Condensed', sans-serif;
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+/* ── PROGRESS ── */
+#progress {
+  position:fixed; top:0; left:0; height:3px;
+  background: linear-gradient(90deg, var(--red), var(--orange), var(--yellow));
+  width:0%; z-index:999; transition:width 0.3s;
+}
+
+/* ── SLIDES ── */
+.slide {
+  min-height:100vh;
+  display:flex; flex-direction:column;
+  align-items:center; justify-content:center;
+  padding: 48px 24px 80px;
+  position:relative; overflow:hidden;
+}
+
+/* ── TRACK BG DECORATION ── */
+.track-lines {
+  position:absolute; inset:0; pointer-events:none; overflow:hidden; opacity:0.04;
+}
+.track-lines svg { width:100%; height:100%; }
+
+/* ── SLIDE 0 — TITLE ── */
+.slide-0 { background: radial-gradient(ellipse at 30% 50%, #1a0500 0%, #0A0A0F 70%); }
+
+.speed-lines {
+  position:absolute; inset:0; pointer-events:none;
+  overflow:hidden;
+}
+.speed-line {
+  position:absolute;
+  height:1px;
+  background: linear-gradient(90deg, transparent, rgba(255,107,0,0.4), transparent);
+  animation: speed-rush linear infinite;
+  top: var(--top);
+  width: var(--w);
+  left: -100%;
+}
+@keyframes speed-rush {
+  from { left:-100%; }
+  to   { left:200%; }
+}
+
+.title-eyebrow {
+  font-size:13px; letter-spacing:0.5em; color:var(--orange);
+  text-transform:uppercase; margin-bottom:12px;
+  opacity:0; animation:fadeUp 0.6s 0.3s forwards;
+}
+.title-main {
+  font-size: clamp(44px, 10vw, 96px);
+  font-weight:900; line-height:0.95;
+  text-align:center; letter-spacing:-0.02em;
+  opacity:0; animation:fadeUp 0.7s 0.5s forwards;
+}
+.title-main .red { color:var(--red); }
+.title-main .orange { color:var(--orange); }
+.title-sub {
+  font-size: clamp(14px,2.5vw,18px);
+  color:var(--muted); margin-top:16px;
+  opacity:0; animation:fadeUp 0.6s 0.8s forwards;
+  letter-spacing:0.05em;
+}
+.title-badges {
+  display:flex; gap:10px; flex-wrap:wrap; justify-content:center;
+  margin-top:28px;
+  opacity:0; animation:fadeUp 0.6s 1s forwards;
+}
+.tbadge {
+  padding:7px 18px; border-radius:4px; font-size:13px;
+  font-weight:700; letter-spacing:0.1em; text-transform:uppercase;
+}
+.tb-red  { background:rgba(204,0,0,0.2); border:1px solid var(--red); color:var(--red); }
+.tb-ora  { background:rgba(255,107,0,0.15); border:1px solid var(--orange); color:var(--orange); }
+.tb-yel  { background:rgba(255,215,0,0.15); border:1px solid var(--yellow); color:var(--yellow); }
+
+/* ── CONTENT ── */
+.content {
+  max-width:760px; width:100%; z-index:1;
+}
+.eyebrow {
+  font-size:11px; letter-spacing:0.5em; text-transform:uppercase;
+  color:var(--orange); margin-bottom:10px;
+}
+.heading {
+  font-size: clamp(34px, 7vw, 64px);
+  font-weight:900; line-height:1; letter-spacing:-0.01em;
+  margin-bottom:16px;
+}
+.heading .accent { color:var(--red); }
+.heading .gold { color:var(--yellow); }
+.heading .teal { color:var(--teal); }
+.body-text {
+  font-size: clamp(14px,2.5vw,17px);
+  color:var(--muted); line-height:1.7;
+  margin-bottom:20px;
+  font-family:'Rajdhani', sans-serif;
+}
+.rule {
+  width:48px; height:3px; margin:12px 0 20px;
+  background: linear-gradient(90deg, var(--red), var(--orange));
+}
+
+/* ── CARDS ── */
+.cards {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap:12px; margin:16px 0;
+}
+.card {
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:10px; padding:18px 16px;
+  transition:transform 0.2s, border-color 0.2s;
+}
+.card:hover { transform:translateY(-3px); border-color:rgba(255,107,0,0.3); }
+.card-icon { font-size:26px; margin-bottom:8px; }
+.card-label {
+  font-size:11px; letter-spacing:0.2em; text-transform:uppercase;
+  color:var(--orange); margin-bottom:5px; font-family:'Rajdhani',sans-serif;
+}
+.card-val { font-size:22px; font-weight:700; color:var(--white); margin-bottom:4px; }
+.card-desc { font-size:13px; color:var(--muted); line-height:1.5; font-family:'Rajdhani',sans-serif; }
+
+/* ── CIRCUIT SVG ── */
+.circuit-wrap {
+  margin:20px auto; width:min(500px,95vw);
+  position:relative;
+}
+.circuit-svg { width:100%; height:auto; }
+.circuit-hotspot {
+  cursor:pointer;
+  transition: all 0.2s;
+}
+.circuit-hotspot:hover .hs-dot { r:10; }
+.hs-label { font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:13px; }
+.circuit-car {
+  animation: circuit-drive 8s linear infinite;
+}
+@keyframes circuit-drive {
+  0%   { offset-distance:0%;   }
+  100% { offset-distance:100%; }
+}
+
+/* ── CORNER CARDS ── */
+.corners {
+  display:grid; grid-template-columns:repeat(auto-fit, minmax(160px,1fr));
+  gap:10px; margin:16px 0;
+}
+.corner-card {
+  background:var(--card); border-radius:10px; padding:14px;
+  border-left:3px solid var(--red);
+  font-family:'Rajdhani',sans-serif;
+}
+.corner-card.honda { border-left-color: var(--red); }
+.corner-card.teal  { border-left-color: var(--teal); }
+.corner-card.yellow{ border-left-color: var(--yellow); }
+.corner-card.blue  { border-left-color: var(--blue); }
+.cc-name { font-size:16px; font-weight:700; color:var(--white); margin-bottom:3px; }
+.cc-sub  { font-size:11px; color:var(--orange); letter-spacing:0.1em; text-transform:uppercase; margin-bottom:6px; }
+.cc-desc { font-size:12px; color:var(--muted); line-height:1.5; }
+
+/* ── DRIVER CARDS ── */
+.driver-grid {
+  display:grid; grid-template-columns:repeat(auto-fit, minmax(155px,1fr));
+  gap:12px; margin:16px 0;
+}
+.driver-card {
+  background:var(--card); border-radius:12px; padding:16px 14px;
+  border:2px solid transparent; text-align:center;
+  transition:transform 0.2s;
+  font-family:'Rajdhani',sans-serif;
+}
+.driver-card:hover { transform:translateY(-4px) scale(1.02); }
+.driver-card.honda-card { border-color:rgba(204,0,0,0.4); }
+.driver-card.toyota-card { border-color:rgba(0,102,204,0.4); }
+.driver-card.star-card {
+  border-color:var(--yellow);
+  animation:star-pulse 2.5s ease-in-out infinite;
+}
+@keyframes star-pulse {
+  0%,100% { box-shadow:0 0 0 0 rgba(255,215,0,0.3); }
+  50%      { box-shadow:0 0 0 10px rgba(255,215,0,0); }
+}
+.d-avatar {
+  width:54px; height:54px; border-radius:50%;
+  margin:0 auto 10px; display:flex; align-items:center; justify-content:center;
+  font-size:22px; position:relative;
+}
+.d-avatar::after {
+  content:''; position:absolute; inset:-3px;
+  border-radius:50%; border:2px solid transparent;
+}
+.honda-card .d-avatar { background:radial-gradient(#3a0000, #1a0000); }
+.honda-card .d-avatar::after { border-color:var(--red); }
+.toyota-card .d-avatar { background:radial-gradient(#001a3a, #000a1a); }
+.toyota-card .d-avatar::after { border-color:var(--blue); }
+.star-card .d-avatar { background:radial-gradient(#2a2000, #1a1000); }
+.star-card .d-avatar::after { border-color:var(--yellow); }
+.d-name { font-size:17px; font-weight:700; color:var(--white); margin-bottom:2px; }
+.d-team { font-size:11px; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:7px; }
+.honda-card .d-team { color:var(--red); }
+.toyota-card .d-team { color:#4499ff; }
+.star-card .d-team { color:var(--yellow); }
+.d-desc { font-size:12px; color:var(--muted); line-height:1.5; }
+.d-badge {
+  display:inline-block; margin-top:8px;
+  font-size:9px; padding:3px 9px; border-radius:20px;
+  font-weight:700; letter-spacing:0.1em; text-transform:uppercase;
+}
+.badge-champ { background:rgba(255,215,0,0.15); color:var(--yellow); border:1px solid var(--yellow); }
+.badge-watch { background:rgba(255,107,0,0.15); color:var(--orange); border:1px solid var(--orange); }
+.badge-root  {
+  background:rgba(0,200,160,0.15); color:var(--teal); border:1px solid var(--teal);
+  animation:root-pulse 2s infinite;
+}
+@keyframes root-pulse {
+  0%,100% { border-color:var(--teal); }
+  50% { border-color:#00ffcc; box-shadow:0 0 8px rgba(0,200,160,0.4); }
+}
+
+/* ── TIMELINE ── */
+.timeline { margin:16px 0; padding-left:28px; position:relative; }
+.timeline::before {
+  content:''; position:absolute; left:6px; top:8px; bottom:8px;
+  width:2px; background:linear-gradient(to bottom, var(--red), var(--orange), var(--yellow));
+}
+.t-item { position:relative; margin-bottom:18px; opacity:0; animation:fadeUp 0.5s forwards; }
+.t-item:nth-child(1){animation-delay:.05s}
+.t-item:nth-child(2){animation-delay:.15s}
+.t-item:nth-child(3){animation-delay:.25s}
+.t-item:nth-child(4){animation-delay:.35s}
+.t-item:nth-child(5){animation-delay:.45s}
+.t-item:nth-child(6){animation-delay:.55s}
+.t-item:nth-child(7){animation-delay:.65s}
+.t-dot {
+  position:absolute; left:-24px; top:4px;
+  width:12px; height:12px; border-radius:50%;
+  background:var(--orange); border:2px solid var(--dark);
+}
+.t-dot.you { background:var(--yellow); width:14px; height:14px; left:-25px; }
+.t-time { font-size:11px; color:var(--orange); letter-spacing:0.1em; font-family:'Rajdhani',sans-serif; }
+.t-title { font-size:16px; font-weight:700; color:var(--white); }
+.t-desc { font-size:13px; color:var(--muted); line-height:1.5; font-family:'Rajdhani',sans-serif; }
+
+/* ── ATTRACTION CARDS ── */
+.attractions {
+  display:grid; grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
+  gap:12px; margin:16px 0;
+}
+.att-card {
+  background:var(--card); border-radius:12px;
+  overflow:hidden; border:1px solid var(--border);
+  transition:transform 0.2s;
+}
+.att-card:hover { transform:translateY(-3px); }
+.att-header {
+  height:6px;
+}
+.att-body { padding:16px 14px; font-family:'Rajdhani',sans-serif; }
+.att-icon { font-size:28px; margin-bottom:8px; }
+.att-title { font-size:17px; font-weight:700; color:var(--white); margin-bottom:4px; }
+.att-sub { font-size:11px; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:6px; }
+.att-desc { font-size:13px; color:var(--muted); line-height:1.5; }
+.att-tip {
+  margin-top:8px; font-size:12px;
+  padding:6px 10px; border-radius:6px;
+  background:rgba(255,255,255,0.04);
+  color:var(--teal);
+}
+.priority-1 .att-header { background:linear-gradient(90deg,var(--red),var(--orange)); }
+.priority-2 .att-header { background:linear-gradient(90deg,var(--yellow),#FF8C00); }
+.priority-3 .att-header { background:linear-gradient(90deg,var(--teal),var(--blue)); }
+.priority-4 .att-header { background:linear-gradient(90deg,#8844CC,#CC44CC); }
+
+/* ── TIPS ── */
+.tips { margin:16px 0; }
+.tip-row {
+  display:flex; gap:12px; align-items:flex-start;
+  margin-bottom:12px; padding:14px;
+  background:var(--card); border-radius:10px;
+  border:1px solid var(--border);
+  font-family:'Rajdhani',sans-serif;
+}
+.tip-row:hover { border-color:rgba(255,107,0,0.25); }
+.tip-ico { font-size:20px; flex-shrink:0; margin-top:1px; }
+.tip-txt { font-size:14px; color:var(--muted); line-height:1.5; }
+.tip-txt strong { color:var(--white); }
+
+/* ── SF CAR ANIMATION ── */
+.car-scene {
+  position:relative; width:100%; height:80px;
+  overflow:hidden; margin:16px 0;
+  background:linear-gradient(90deg, transparent 0%, rgba(255,107,0,0.03) 50%, transparent 100%);
+  border-radius:8px;
+}
+.animated-car {
+  position:absolute; top:50%; transform:translateY(-50%);
+  font-size:28px; white-space:nowrap;
+  animation:car-zoom 3s linear infinite;
+}
+.animated-car2 {
+  position:absolute; top:50%; transform:translateY(-50%);
+  font-size:24px; white-space:nowrap;
+  animation:car-zoom 3s linear infinite 1.2s;
+  opacity:0.7;
+}
+.animated-car3 {
+  position:absolute; top:50%; transform:translateY(-50%);
+  font-size:20px; white-space:nowrap;
+  animation:car-zoom 3s linear infinite 2.1s;
+  opacity:0.5;
+}
+@keyframes car-zoom {
+  0%   { left:-10%; opacity:0; }
+  5%   { opacity:1; }
+  90%  { opacity:1; }
+  100% { left:110%; opacity:0; }
+}
+.car-blur {
+  position:absolute; top:50%; left:0; right:0;
+  height:2px; transform:translateY(-50%);
+  background:linear-gradient(90deg, transparent, rgba(255,107,0,0.1), var(--orange), rgba(255,107,0,0.1), transparent);
+  animation:blur-pulse 2s ease-in-out infinite;
+}
+@keyframes blur-pulse {
+  0%,100%{opacity:0.3;} 50%{opacity:0.8;}
+}
+
+/* ── STAT GRID ── */
+.stats {
+  display:grid; grid-template-columns:repeat(auto-fit, minmax(140px,1fr));
+  gap:10px; margin:16px 0;
+}
+.stat-box {
+  background:var(--card); border-radius:10px; padding:16px 14px; text-align:center;
+  border:1px solid var(--border);
+}
+.stat-num { font-size:32px; font-weight:900; color:var(--orange); line-height:1; }
+.stat-unit { font-size:13px; color:var(--red); font-weight:700; }
+.stat-label { font-size:12px; color:var(--muted); margin-top:4px; font-family:'Rajdhani',sans-serif; }
+
+/* ── FINAL ── */
+.final-bg {
+  background: radial-gradient(ellipse at 60% 40%, #1a0a00 0%, var(--dark) 70%);
+}
+.final-flag {
+  font-size:clamp(60px,18vw,140px);
+  animation:flag-wave 1s ease-in-out infinite;
+  display:inline-block;
+}
+@keyframes flag-wave {
+  0%,100%{transform:rotate(-5deg) scale(1);}
+  50%{transform:rotate(5deg) scale(1.05);}
+}
+.cheat-box {
+  background:var(--card); border-radius:14px;
+  padding:20px 24px; border:1px solid rgba(255,107,0,0.3);
+  font-family:'Rajdhani',sans-serif; font-size:15px; line-height:2;
+  color:var(--muted); margin-top:24px; text-align:left;
+}
+.cheat-box strong { color:var(--white); }
+.cheat-box .go { color:var(--teal); font-weight:700; }
+
+/* ── NAV ── */
+#nav-dots {
+  position:fixed; right:14px; top:50%; transform:translateY(-50%);
+  display:flex; flex-direction:column; gap:7px; z-index:100;
+}
+.dot {
+  width:7px; height:7px; border-radius:50%;
+  background:rgba(255,255,255,0.2); cursor:pointer; transition:all 0.3s;
+}
+.dot.active { background:var(--orange); transform:scale(1.5); }
+#nav-btns {
+  position:fixed; bottom:20px; left:50%; transform:translateX(-50%);
+  display:flex; gap:10px; z-index:100;
+}
+.nbtn {
+  padding:10px 26px; border-radius:30px; border:none; cursor:pointer;
+  font-family:'Barlow Condensed',sans-serif; font-size:14px; font-weight:700;
+  letter-spacing:0.05em; transition:all 0.2s;
+}
+.nbtn-prev { background:rgba(255,255,255,0.08); color:var(--muted); }
+.nbtn-next { background:var(--red); color:white; }
+.nbtn-next:hover { background:#ee0000; transform:scale(1.04); }
+
+@keyframes fadeUp {
+  from{opacity:0;transform:translateY(16px);}
+  to{opacity:1;transform:translateY(0);}
+}
+
+@media(max-width:500px){
+  .driver-grid { grid-template-columns:1fr 1fr; }
+  .corners { grid-template-columns:1fr 1fr; }
+  .attractions { grid-template-columns:1fr; }
+}
+</style>
+</head>
+<body>
+
+<div id="progress"></div>
+<div id="nav-dots"></div>
+<div id="nav-btns">
+  <button class="nbtn nbtn-prev" onclick="go(-1)">← Back</button>
+  <button class="nbtn nbtn-next" onclick="go(1)">Next →</button>
+</div>
+
+<!-- ═══════ SLIDE 0 — TITLE ═══════ -->
+<div class="slide slide-0" id="slide-0">
+  <div class="speed-lines" id="speed-lines"></div>
+  <div class="content" style="text-align:center;">
+    <div class="title-eyebrow">鈴鹿サーキット — Your Complete Guide</div>
+    <div class="title-main">
+      <span class="red">SUZUKA</span><br>
+      <span class="orange">CIRCUIT</span>
+    </div>
+    <div class="title-sub">Super Formula Rounds 4 &amp; 5 · Pit Walk · Circuit Park · May 23, 2026</div>
+    <div class="title-badges">
+      <div class="tbadge tb-red">🏎️ Super Formula</div>
+      <div class="tbadge tb-ora">🏁 Pit Walk</div>
+      <div class="tbadge tb-yel">🎡 Circuit Park</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════ SLIDE 1 — WHAT IS SUPER FORMULA ═══════ -->
+<div class="slide" style="display:none;background:#0A0A0F;" id="slide-1">
+  <div class="content">
+    <div class="eyebrow">01 / 10 — The Series</div>
+    <h2 class="heading">What Is <span class="accent">Super Formula</span>?</h2>
+    <div class="rule"></div>
+    <p class="body-text">Japan's premier single-seater racing series — and arguably the second-fastest formula series in the world after F1. These cars lap Suzuka faster than GP2, faster than IndyCar, and within touching distance of 2010-era F1 machinery.</p>
+
+    <div class="car-scene">
+      <div class="car-blur"></div>
+      <div class="animated-car">🏎️ ══════</div>
+      <div class="animated-car2">🏎️ ══</div>
+      <div class="animated-car3">🏎️</div>
+    </div>
+
+    <div class="stats">
+      <div class="stat-box">
+        <div class="stat-num">2.0<span class="stat-unit">L</span></div>
+        <div class="stat-label">Turbocharged engine — Honda or Toyota</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">550<span class="stat-unit">hp</span></div>
+        <div class="stat-label">Power output per car</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">1:38<span class="stat-unit">s</span></div>
+        <div class="stat-label">Suzuka lap time — faster than F2</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">22<span class="stat-unit">+</span></div>
+        <div class="stat-label">Drivers on the 2026 grid</div>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <div class="card-icon">🔩</div>
+        <div class="card-label">The Car</div>
+        <div class="card-desc">All cars use the identical Dallara SF23 chassis — the difference is the engine (Honda HR-417E vs Toyota TRD-01F) and driver skill. Pure competition.</div>
+      </div>
+      <div class="card">
+        <div class="card-icon">🏁</div>
+        <div class="card-label">The Format</div>
+        <div class="card-desc">TWO full races across Saturday and Sunday. Race 1 on May 23, Race 2 on May 24. Each race is around 30–40 laps with mandatory pit stops and tyre strategy.</div>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔊</div>
+        <div class="card-label">The Sound</div>
+        <div class="card-desc">No hybrid silence here — raw turbocharged 2.0-litre scream through Suzuka's famous corners. 130R at full attack is a sound you never forget.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════ SLIDE 2 — SUZUKA CIRCUIT ═══════ -->
+<div class="slide" style="display:none;background:#0a0a14;" id="slide-2">
+  <div class="content">
+    <div class="eyebrow">02 / 10 — The Track</div>
+    <h2 class="heading">Suzuka — The <span class="accent">Legend</span></h2>
+    <div class="rule"></div>
+    <p class="body-text">Built by Honda in 1962 as a test track. The world's only figure-eight circuit — cars cross over themselves between the Crossover Bridge. Every serious F1 driver ranks Suzuka as their favourite circuit on the planet.</p>
+
+    <!-- Simplified SVG circuit layout -->
+    <div class="circuit-wrap">
+      <svg viewBox="0 0 500 340" xmlns="http://www.w3.org/2000/svg" class="circuit-svg">
+        <!-- Track outline -->
+        <defs>
+          <filter id="glow">
+            <feGaussianBlur stdDeviation="2" result="blur"/>
+            <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+        </defs>
+        <!-- Simplified circuit path -->
+        <path d="M 80,280 L 420,280 Q 450,280 460,260 L 460,220 Q 460,200 440,195
+                 L 380,190 Q 360,188 355,170 L 350,140 Q 348,120 330,115
+                 L 300,112 Q 280,110 270,95 L 260,70 Q 255,55 240,52
+                 L 200,52 Q 180,52 175,68 L 170,90 Q 165,110 148,115
+                 L 120,118 Q 100,120 92,135 L 85,155 Q 78,170 80,190
+                 L 82,210 Q 83,225 90,235 L 100,248 Q 108,258 108,270 L 108,280"
+          fill="none" stroke="#333" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+        <!-- Crossover bridge -->
+        <rect x="225" y="125" width="50" height="14" rx="3" fill="#222" stroke="#555" stroke-width="1"/>
+        <text x="250" y="120" text-anchor="middle" fill="#FF6B00" font-family="Barlow Condensed" font-size="10" font-weight="700">CROSSOVER</text>
+
+        <!-- Track surface bright -->
+        <path d="M 80,280 L 420,280 Q 450,280 460,260 L 460,220 Q 460,200 440,195
+                 L 380,190 Q 360,188 355,170 L 350,140 Q 348,120 330,115
+                 L 300,112 Q 280,110 270,95 L 260,70 Q 255,55 240,52
+                 L 200,52 Q 180,52 175,68 L 170,90 Q 165,110 148,115
+                 L 120,118 Q 100,120 92,135 L 85,155 Q 78,170 80,190
+                 L 82,210 Q 83,225 90,235 L 100,248 Q 108,258 108,270 L 108,280"
+          fill="none" stroke="#1a1a2e" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M 80,280 L 420,280 Q 450,280 460,260 L 460,220 Q 460,200 440,195
+                 L 380,190 Q 360,188 355,170 L 350,140 Q 348,120 330,115
+                 L 300,112 Q 280,110 270,95 L 260,70 Q 255,55 240,52
+                 L 200,52 Q 180,52 175,68 L 170,90 Q 165,110 148,115
+                 L 120,118 Q 100,120 92,135 L 85,155 Q 78,170 80,190
+                 L 82,210 Q 83,225 90,235 L 100,248 Q 108,258 108,270 L 108,280"
+          fill="none" stroke="rgba(255,107,0,0.15)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+
+        <!-- Pit lane -->
+        <rect x="80" y="290" width="340" height="6" rx="3" fill="#FF6B00" opacity="0.4"/>
+        <text x="250" y="312" text-anchor="middle" fill="#FF6B00" font-family="Barlow Condensed" font-size="11" font-weight="700">PIT LANE — YOU WALK HERE</text>
+
+        <!-- Corner labels -->
+        <!-- S-Curves -->
+        <circle cx="268" cy="78" r="7" fill="rgba(255,215,0,0.2)" stroke="#FFD700" stroke-width="1.5"/>
+        <text x="285" y="70" fill="#FFD700" font-family="Barlow Condensed" font-size="11" font-weight="700">S-CURVES</text>
+
+        <!-- Degner -->
+        <circle cx="355" cy="165" r="7" fill="rgba(204,0,0,0.2)" stroke="#CC0000" stroke-width="1.5"/>
+        <text x="365" y="161" fill="#CC0000" font-family="Barlow Condensed" font-size="11" font-weight="700">DEGNER</text>
+
+        <!-- 130R -->
+        <circle cx="448" cy="240" r="7" fill="rgba(0,200,160,0.2)" stroke="#00C8A0" stroke-width="1.5"/>
+        <text x="462" y="244" fill="#00C8A0" font-family="Barlow Condensed" font-size="11" font-weight="700">130R</text>
+
+        <!-- Spoon -->
+        <circle cx="95" cy="190" r="7" fill="rgba(100,100,255,0.2)" stroke="#6699FF" stroke-width="1.5"/>
+        <text x="18" y="194" fill="#6699FF" font-family="Barlow Condensed" font-size="11" font-weight="700">SPOON</text>
+
+        <!-- Start/Finish -->
+        <line x1="250" y1="275" x2="250" y2="295" stroke="white" stroke-width="2"/>
+        <text x="250" y="270" text-anchor="middle" fill="white" font-family="Barlow Condensed" font-size="11" font-weight="700">S/F</text>
+
+        <!-- Direction arrow -->
+        <text x="420" y="260" fill="rgba(255,107,0,0.6)" font-size="14" font-family="Barlow Condensed">→</text>
+
+        <text x="250" y="335" text-anchor="middle" fill="rgba(255,255,255,0.25)" font-family="Barlow Condensed" font-size="10">5.807km · Figure-Eight · 18 Corners</text>
+      </svg>
+    </div>
+
+    <div class="corners">
+      <div class="corner-card honda">
+        <div class="cc-name">S-Curves</div>
+        <div class="cc-sub">Turns 3–7</div>
+        <div class="cc-desc">The iconic flowing esses. Drivers go flat out — any wobble ends in the wall. The most photographed sequence in motorsport.</div>
+      </div>
+      <div class="corner-card yellow">
+        <div class="cc-name">Degner Curve</div>
+        <div class="cc-sub">Turns 11–12</div>
+        <div class="cc-desc">Blind high-speed right. Named after a rider who crashed here in 1962. Haunts drivers — the outside wall is unforgiving.</div>
+      </div>
+      <div class="corner-card teal">
+        <div class="cc-name">130R</div>
+        <div class="cc-sub">Turn 15</div>
+        <div class="cc-desc">300+ km/h flat-out left. Some drivers lift. Most don't. You feel the bravery from the grandstands. The bravest corner in the world.</div>
+      </div>
+      <div class="corner-card blue">
+        <div class="cc-name">Spoon Curve</div>
+        <div class="cc-sub">Turns 13–14</div>
+        <div class="cc-desc">Wide, fast double-apex. A great overtaking spot. Where championship-deciding passes have happened. Best general admission view.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════ SLIDE 3 — YOUR DRIVERS ═══════ -->
+<div class="slide" style="display:none;background:#0A0A0F;" id="slide-3">
+  <div class="content">
+    <div class="eyebrow">03 / 10 — The Drivers</div>
+    <h2 class="heading">Who's <span class="accent">Racing</span> May 23</h2>
+    <div class="rule"></div>
+    <p class="body-text">Super Formula 2026 fields 22+ drivers split between Honda and Toyota power. The defending champion is defending against a field full of F1-calibre talent.</p>
+
+    <div class="driver-grid">
+      <div class="driver-card star-card">
+        <div class="d-avatar">🏆</div>
+        <div class="d-name">Ayumu Iwasa</div>
+        <div class="d-team">Team Mugen · Honda</div>
+        <div class="d-desc">2025 Defending Champion. Red Bull junior. F1 reserve for Racing Bulls. Japanese motorsport's biggest star right now. Won the title in a dramatic final race last November.</div>
+        <div class="d-badge badge-champ">⭐ Defending Champion</div>
+      </div>
+      <div class="driver-card honda-card">
+        <div class="d-avatar">🎌</div>
+        <div class="d-name">Tomoki Nojiri</div>
+        <div class="d-team">Team Mugen · Honda</div>
+        <div class="d-desc">Two-time series champion. Iwasa's veteran teammate. Suzuka specialist — has won here multiple times. The wise old fox of the series.</div>
+        <div class="d-badge badge-watch">🔥 Suzuka Specialist</div>
+      </div>
+      <div class="driver-card toyota-card">
+        <div class="d-avatar">🥈</div>
+        <div class="d-name">Sho Tsuboi</div>
+        <div class="d-team">TOM'S · Toyota</div>
+        <div class="d-desc">Runner-up to Iwasa in 2025 after a heartbreaking final round. Toyota's best hope for the title. Fast, clinical, and motivated for revenge.</div>
+        <div class="d-badge badge-watch">💥 Title Contender</div>
+      </div>
+      <div class="driver-card honda-card">
+        <div class="d-avatar">🇧🇷</div>
+        <div class="d-name">Igor Fraga</div>
+        <div class="d-team">Nakajima Racing · Honda</div>
+        <div class="d-desc">Brazilian-Japanese. Burst onto the scene as 2025's Rookie of the Year with his first win in the final round. Exciting, aggressive driving style.</div>
+        <div class="d-badge badge-root">🌟 Root For Him</div>
+      </div>
+      <div class="driver-card toyota-card">
+        <div class="d-avatar">🇬🇧</div>
+        <div class="d-name">Luke Browning</div>
+        <div class="d-team">Kondo Racing · Toyota</div>
+        <div class="d-desc">Williams F1 junior driver making his Super Formula debut in 2026. Jumping straight from F2. First European F1-backed driver to enter the series. Watch how he adapts.</div>
+        <div class="d-badge badge-watch">👀 F1 Prospect</div>
+      </div>
+      <div class="driver-card toyota-card">
+        <div class="d-avatar">🇫🇮</div>
+        <div class="d-name">Yuto Nomura</div>
+        <div class="d-team">B-Max Racing · Toyota</div>
+        <div class="d-desc">Won the 2025 Super Formula Lights title and got promoted to the main series. Young, fast, and completely fearless on debut. The classic underdog story.</div>
+        <div class="d-badge badge-root">🌊 The Underdog</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════ SLIDE 4 — WHO TO ROOT FOR ═══════ -->
+<div class="slide" style="display:none;background:radial-gradient(ellipse at 70% 30%, #1a0a00 0%, #0A0A0F 70%);" id="slide-4">
+  <div class="content">
+    <div class="eyebrow">04 / 10 — Your Rooting Guide</div>
+    <h2 class="heading"><span class="gold">Who</span> to Cheer</h2>
+    <div class="rule"></div>
+
+    <div class="cards" style="grid-template-columns:1fr;">
+      <div class="card" style="border-color:var(--yellow); background:rgba(255,215,0,0.04);">
+        <div class="card-icon">🏆</div>
+        <div class="card-label" style="color:var(--yellow);">THE CHAMPION — Watch Ayumu Iwasa</div>
+        <div class="card-desc">He's the defending champion AND an F1 reserve driver for Red Bull — but trapped in Japan because Racing Bulls picked someone else for the F1 seat. Every race he wins is a statement that he SHOULD be in F1. His driving has the precision and aggression of someone with a point to prove. Watch his braking points into Degner and his commitment through 130R.</div>
+      </div>
+      <div class="card" style="border-color:var(--teal); background:rgba(0,200,160,0.04);">
+        <div class="card-icon">🌊</div>
+        <div class="card-label" style="color:var(--teal);">THE UNDERDOG — Root for Igor Fraga or Yuto Nomura</div>
+        <div class="card-desc">Fraga won on debut in his rookie year as a wildcard finish and is now expected to fight for top-5 results. Nomura just got promoted from the junior series — raw speed, zero F1 pretensions, pure hunger. If either of them overtakes a champion-level driver into the S-Curves or Spoon, that's your moment. Shout their name.</div>
+      </div>
+      <div class="card" style="border-color:#4488ff; background:rgba(68,136,255,0.04);">
+        <div class="card-icon">🇬🇧</div>
+        <div class="card-label" style="color:#4488ff;">THE WILD CARD — Watch Luke Browning</div>
+        <div class="card-desc">The Williams F1 junior is learning one of the world's most difficult circuits in one of the world's most competitive series. His early laps will be tentative, his fast laps will be dramatic. If he crashes, that's a lesson. If he finishes in points on debut at Suzuka, that's extraordinary.</div>
+      </div>
+      <div class="card" style="border-color:var(--red); background:rgba(204,0,0,0.04);">
+        <div class="card-icon">💥</div>
+        <div class="card-label" style="color:var(--red);">THE REVENGE TOUR — Watch Sho Tsuboi</div>
+        <div class="card-desc">He lost the 2025 title to Iwasa by just 4.5 points in the final race. Toyota is backing him hard. This is personal. Expect calculated, relentless pressure on the champion all weekend.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════ SLIDE 5 — YOUR DAY SCHEDULE ═══════ -->
+<div class="slide" style="display:none;background:#0A0A0F;" id="slide-5">
+  <div class="content">
+    <div class="eyebrow">05 / 10 — Your May 23 Schedule</div>
+    <h2 class="heading">Your <span class="accent">Race Day</span></h2>
+    <div class="rule"></div>
+    <p class="body-text">You arrive from Nagoya at approximately 1:30 PM. Here's how to make every minute count at Suzuka. Session times are approximate — confirm at suzukacircuit.jp closer to the day.</p>
+
+    <div class="timeline">
+      <div class="t-item">
+        <div class="t-dot"></div>
+        <div class="t-time">Morning</div>
+        <div class="t-title">Super Formula Qualifying (both rounds)</div>
+        <div class="t-desc">You'll miss this — it sets the grid for both races. Check results on your phone on the train from Takayama so you know the grid order before you arrive.</div>
+      </div>
+      <div class="t-item">
+        <div class="t-dot you"></div>
+        <div class="t-time">~13:30 🎯 YOU ARRIVE</div>
+        <div class="t-title">Enter Circuit · Buy Pit Walk Pass</div>
+        <div class="t-desc">Buy Race Day Special Passport + Pit Walk Pass at the main gate. Pit Walk passes sell until 15 min after it starts — don't delay. Head to circuit grounds first.</div>
+      </div>
+      <div class="t-item">
+        <div class="t-dot"></div>
+        <div class="t-time">~13:45</div>
+        <div class="t-title">🎡 Ferris Wheel — Go Now While Lines Are Short</div>
+        <div class="t-desc">Ride the Ferris wheel first before afternoon crowds build. Get your aerial circuit photo from the top. See the entire figure-eight layout from above. Unmissable.</div>
+      </div>
+      <div class="t-item">
+        <div class="t-dot"></div>
+        <div class="t-time">~14:30</div>
+        <div class="t-title">🏛️ Honda Racing Gallery — Must Do</div>
+        <div class="t-desc">Free entry with circuit pass (open until end of May 2026). Senna's actual 1990 McLaren MP4/5B F1 car is here. Valentino Rossi's RC211V motorcycle. Real championship-winning machines. Allow 30 min.</div>
+      </div>
+      <div class="t-item">
+        <div class="t-dot you"></div>
+        <div class="t-time">~15:00</div>
+        <div class="t-title">🏎️ PIT WALK — Walk the Suzuka Pitlane</div>
+        <div class="t-desc">Get within metres of the Super Formula cars, mechanics, and engineers. See the actual cockpits, tyres, and equipment up close. No umbrellas — carry a poncho if rain likely. This is the experience.</div>
+      </div>
+      <div class="t-item">
+        <div class="t-dot"></div>
+        <div class="t-time">~15:30</div>
+        <div class="t-title">🏁 Super Formula Round 4 — Race 1</div>
+        <div class="t-desc">Find your grandstand position. Race is ~30-40 laps. Watch the starts — most overtakes happen in the first 3 laps. Chaos at Turn 1 is common. Pit stops happen around lap 10-15.</div>
+      </div>
+      <div class="t-item">
+        <div class="t-dot"></div>
+        <div class="t-time">~17:30</div>
+        <div class="t-title">Gap — Merch Shopping + Food</div>
+        <div class="t-desc">Between races. Get Super Formula merchandise now — driver goods, car models, team kit. Food stalls sell ramen, yakisoba, takoyaki, curry. Avoid queues that form at race end.</div>
+      </div>
+      <div class="t-item">
+        <div class="t-dot"></div>
+        <div class="t-time">Head out ~17:45</div>
+        <div class="t-title">🚌 Shuttle Bus → Shiroko → Nagoya → Tokyo</div>
+        <div class="t-desc">Leave 15 min before Round 5 qualifying preview ends to beat the exit crush. Buses get very crowded immediately after sessions. Pre-bought Kintetsu return ticket ready to go.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════ SLIDE 6 — THE PIT WALK ═══════ -->
+<div class="slide" style="display:none;background:#0a0a14;" id="slide-6">
+  <div class="content">
+    <div class="eyebrow">06 / 10 — The Pit Walk</div>
+    <h2 class="heading">The <span class="accent">Pit Walk</span><br>Experience</h2>
+    <div class="rule"></div>
+    <p class="body-text">Walking the Suzuka pitlane with actual race cars present is one of the most exciting things a motorsport fan can do. Here's exactly what to expect and how to make the most of it.</p>
+
+    <div class="cards">
+      <div class="card" style="border-color:rgba(255,107,0,0.3);">
+        <div class="card-icon">🎫</div>
+        <div class="card-label">The Ticket</div>
+        <div class="card-desc">Pit Walk passes are sold at the gate on the day — until 15 minutes after the Pit Walk starts. They sell out. Buy yours the moment you arrive at 1:30 PM. Do not browse the Honda Gallery first.</div>
+      </div>
+      <div class="card" style="border-color:rgba(255,107,0,0.3);">
+        <div class="card-icon">🚫</div>
+        <div class="card-label">No Umbrellas</div>
+        <div class="card-desc">Umbrellas are NOT allowed in the pitlane — a safety rule. If rain is forecast, bring a compact poncho or waterproof jacket instead. The pit lane is narrow and umbrellas cause accidents.</div>
+      </div>
+      <div class="card" style="border-color:rgba(255,107,0,0.3);">
+        <div class="card-icon">📸</div>
+        <div class="card-label">Photo Tips</div>
+        <div class="card-desc">Get low for car shots — the SF23 is tiny and low to the ground. Wide angle for team garage shots. The Dallara SF23 cockpit is incredibly small — photograph next to a mechanic for scale.</div>
+      </div>
+      <div class="card" style="border-color:rgba(255,107,0,0.3);">
+        <div class="card-icon">👀</div>
+        <div class="card-label">What to Look For</div>
+        <div class="card-desc">Tyre blankets keeping the rubber warm. Engineers reviewing data on laptops. The tiny, angular SF23 bodywork — see how different it is from anything you've driven. Listen for engine warmup sounds.</div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:8px; border-color:var(--teal); background:rgba(0,200,160,0.04);">
+      <div class="card-icon">🔍</div>
+      <div class="card-label" style="color:var(--teal);">Nerd Detail to Look For</div>
+      <div class="card-desc">The SF23 uses a push-rod suspension front and rear — the opposite of most modern F1 cars. The rear-mounted steering wheel camera position. The exposed Yokohama tyre compounds — soft compounds will be bright yellow-marked sidewalls. If mechanics are changing setups, watch how many people it takes to adjust wing angles — Super Formula cars are complex machines.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════ SLIDE 7 — UNDERSTANDING RACES ═══════ -->
+<div class="slide" style="display:none;background:#0A0A0F;" id="slide-7">
+  <div class="content">
+    <div class="eyebrow">07 / 10 — Race Day Basics</div>
+    <h2 class="heading">How to <span class="gold">Read</span> a Race</h2>
+    <div class="rule"></div>
+    <p class="body-text">Super Formula races are strategic puzzles as much as driving contests. Here's what to watch for at each stage so nothing surprises you.</p>
+
+    <div class="corners">
+      <div class="corner-card honda">
+        <div class="cc-name">The Start</div>
+        <div class="cc-sub">Lap 1</div>
+        <div class="cc-desc">Five red lights extinguish one by one — then they ALL go out simultaneously. Watch Turn 1 immediately. The pack bunches up — side-by-side, wheel-to-wheel. Most drama happens in the first corner.</div>
+      </div>
+      <div class="corner-card yellow">
+        <div class="cc-name">Pit Stops</div>
+        <div class="cc-sub">Laps 10-20</div>
+        <div class="cc-desc">Mandatory tyre change. Cars peel into pitlane at 80 km/h, stop for about 3-4 seconds (Super Formula crews are fast), then rejoin. Track position changes dramatically here.</div>
+      </div>
+      <div class="corner-card teal">
+        <div class="cc-name">DRS Zones</div>
+        <div class="cc-sub">Main Straight</div>
+        <div class="cc-desc">Drag Reduction System — the rear wing opens on the main straight to give the chasing car a speed boost. If a car is within 1 second of the car ahead at detection point, it gets DRS. Enables overtaking on the straight.</div>
+      </div>
+      <div class="corner-card blue">
+        <div class="cc-name">Safety Car</div>
+        <div class="cc-sub">After incidents</div>
+        <div class="cc-desc">All cars queue behind the Safety Car. Gaps close up — restarts are explosive. Some teams use this to pit without losing position. Watch strategy unfold in real time.</div>
+      </div>
+      <div class="corner-card honda">
+        <div class="cc-name">Flags</div>
+        <div class="cc-sub">Key signals</div>
+        <div class="cc-desc">Yellow = incident ahead, no overtaking. Blue = faster car behind, let them pass. Red = race stopped. Chequered = race over. Black/white = driving standards warning.</div>
+      </div>
+      <div class="corner-card yellow">
+        <div class="cc-name">The Podium</div>
+        <div class="cc-sub">Race end</div>
+        <div class="cc-desc">Top 3 park up in Parc Ferme. Celebrations happen in front of a dedicated podium. Super Formula podiums are animated — fans at the fence, teams pouring in. Stay for it.</div>
+      </div>
+    </div>
+
+    <div class="tip-row" style="margin-top:12px;">
+      <div class="tip-ico">🎧</div>
+      <div class="tip-txt"><strong>Team radio is broadcast in Japan.</strong> If you have a Japanese radio app or pick up an English broadcast at the circuit, listen for team/driver communication during safety car periods — this is when strategy decisions get made and the conversation gets intense.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════ SLIDE 8 — CIRCUIT PARK ATTRACTIONS ═══════ -->
+<div class="slide" style="display:none;background:#0a0a14;" id="slide-8">
+  <div class="content">
+    <div class="eyebrow">08 / 10 — Must-See Attractions</div>
+    <h2 class="heading">Suzuka <span class="teal">Circuit Park</span></h2>
+    <div class="rule"></div>
+    <p class="body-text">Beyond the race itself, Suzuka Circuit Park is a full motorsport destination. Here's what's worth your time — ranked by priority for a motorsport fan visiting in May 2026.</p>
+
+    <div class="attractions">
+      <div class="att-card priority-1">
+        <div class="att-body">
+          <div class="att-icon">🏛️</div>
+          <div class="att-title">Honda Racing Gallery</div>
+          <div class="att-sub" style="color:var(--red);">Priority 1 — FREE with entry</div>
+          <div class="att-desc">The centrepiece. Open January–end of May 2026. Features Ayrton Senna's actual 1990 McLaren MP4/5B F1 machine (the car that won the 1990 World Championship). Also Valentino Rossi's RC211V Honda MotoGP motorcycle, stripped down to show the internal engineering. F1 power units from Honda's championship-winning years on display. Photography allowed — absolutely post this on social media.</div>
+          <div class="att-tip">⚡ Go here before the pit walk — it closes based on crowd levels</div>
+        </div>
+      </div>
+
+      <div class="att-card priority-1">
+        <div class="att-body">
+          <div class="att-icon">🎡</div>
+          <div class="att-title">Circuit Ferris Wheel</div>
+          <div class="att-sub" style="color:var(--orange);">Priority 1 — Go FIRST on arrival</div>
+          <div class="att-desc">The tallest structure in Mie Prefecture. From the top you see the entire figure-eight circuit layout — the crossover bridge, the main straight, the S-curves, the infield. The only place you can truly comprehend the full track geography. During race sessions you can hear the cars from up here. Best photo of the day. Early afternoon visit = shorter queues.</div>
+          <div class="att-tip">🎯 Ride before 2 PM — queues build significantly later</div>
+        </div>
+      </div>
+
+      <div class="att-card priority-2">
+        <div class="att-body">
+          <div class="att-icon">🏁</div>
+          <div class="att-title">130R Corner View</div>
+          <div class="att-sub" style="color:var(--yellow);">Priority 2 — Best spectating spot</div>
+          <div class="att-desc">Standing at the outside of 130R with a Super Formula car going flat-out past you at 300+ km/h is genuinely one of the most physically intense motorsport experiences available to a spectator. The noise arrives before the car does. General admission access — no reserved seat needed. Get here 20 min before sessions start.</div>
+          <div class="att-tip">👂 Cover your ears for the first few cars until you calibrate</div>
+        </div>
+      </div>
+
+      <div class="att-card priority-2">
+        <div class="att-body">
+          <div class="att-icon">🎮</div>
+          <div class="att-title">Racing Theater</div>
+          <div class="att-sub" style="color:var(--yellow);">Priority 2 — Interactive museum</div>
+          <div class="att-desc">Interactive motorsport education centre. Bike technology from A to Z. Reaction time simulators — try the same mental response tests that real racing drivers train with. The "Legends of Suzuka" exhibit covers every major championship-deciding race held here. Air-conditioned — great if it rains or gets hot.</div>
+          <div class="att-tip">🌧️ Perfect backup if weather turns bad</div>
+        </div>
+      </div>
+
+      <div class="att-card priority-3">
+        <div class="att-body">
+          <div class="att-icon">🛒</div>
+          <div class="att-title">Official Merch &amp; Paddock Shop</div>
+          <div class="att-sub" style="color:var(--teal);">Priority 3 — Shop between races</div>
+          <div class="att-desc">Super Formula team merchandise, car models, diecast replicas, driver items, circuit-branded goods. Japan-exclusive items you cannot get anywhere else. Prices are very reasonable compared to F1 equivalents. Buy during the gap between Race 1 finish and Race 2 — queues are shorter during on-track action.</div>
+          <div class="att-tip">💡 Buy merch during Race 2 if you're watching on screens — least crowded</div>
+        </div>
+      </div>
+
+      <div class="att-card priority-4">
+        <div class="att-body">
+          <div class="att-icon">🏎️</div>
+          <div class="att-title">Go-Kart Experience</div>
+          <div class="att-sub" style="color:#CC44CC;">Priority 4 — Time permitting</div>
+          <div class="att-desc">Circuit Challenger — drive an electric kart on part of the actual Suzuka track. Lewis Hamilton did his early training here. Separate ticket required on top of park pass. Genuinely worth it if you have 45 minutes to spare before your return bus.</div>
+          <div class="att-tip">⏰ Only if you have 45+ min before your 17:45 departure</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════ SLIDE 9 — PRACTICAL TIPS ═══════ -->
+<div class="slide" style="display:none;background:#0A0A0F;" id="slide-9">
+  <div class="content">
+    <div class="eyebrow">09 / 10 — Practical Tips</div>
+    <h2 class="heading">Make It <span class="accent">Perfect</span></h2>
+    <div class="rule"></div>
+    <p class="body-text">Suzuka race days reward preparation. These are the things that separate a great visit from a frustrating one.</p>
+
+    <div class="tips">
+      <div class="tip-row">
+        <div class="tip-ico">🎫</div>
+        <div class="tip-txt"><strong>Buy Pit Walk Pass FIRST.</strong> The moment you enter the gate, go straight to the Pit Walk ticket point before anything else. They stop selling 15 minutes after the walk begins and they sell out. Do not see the Ferris wheel first — pit walk ticket first, everything else second.</div>
+      </div>
+      <div class="tip-row">
+        <div class="tip-ico">🚌</div>
+        <div class="tip-txt"><strong>Kintetsu return ticket — already bought.</strong> You pre-purchased both directions at Nagoya Station in the morning. Your return is already secured. Leave at 17:45 to beat the post-race crush at Shiroko shuttle bus stop.</div>
+      </div>
+      <div class="tip-row">
+        <div class="tip-ico">🌧️</div>
+        <div class="tip-txt"><strong>No umbrellas in the pitlane.</strong> If rain is forecast, a compact waterproof poncho goes in your daypack. Japanese konbini (7-Eleven / Lawson) near Shiroko Station sell ponchos cheaply if caught unprepared.</div>
+      </div>
+      <div class="tip-row">
+        <div class="tip-ico">📷</div>
+        <div class="tip-txt"><strong>Camera lens limit: 26cm.</strong> Longer lenses are not permitted at Suzuka events. A 70-200mm zoom at 26cm is fine. Phone cameras are unrestricted. Monopods are permitted, tripods are not.</div>
+      </div>
+      <div class="tip-row">
+        <div class="tip-ico">💴</div>
+        <div class="tip-txt"><strong>Carry cash.</strong> Some merchandise stalls and food vendors at the circuit prefer cash — card acceptance is improving but not universal at Japanese motorsport events. ¥3,000-5,000 in cash is advisable beyond the Suica card.</div>
+      </div>
+      <div class="tip-row">
+        <div class="tip-ico">🍱</div>
+        <div class="tip-txt"><strong>Food at the circuit.</strong> Over 20 restaurants and stalls inside. The circuit bento boxes are good value and Japan-themed. Ramen, yakisoba, takoyaki, curry — all available. Eat during the gap between Race 1 and Race 2 when queues are shorter.</div>
+      </div>
+      <div class="tip-row">
+        <div class="tip-ico">📱</div>
+        <div class="tip-txt"><strong>Check session times the night before.</strong> At suzukacircuit.jp — exact race start times for Round 4 and Round 5 will be confirmed closer to the event. The schedule we have is approximate — real-world timing can shift by 15-30 minutes.</div>
+      </div>
+      <div class="tip-row">
+        <div class="tip-ico">🏁</div>
+        <div class="tip-txt"><strong>Best grandstand on a budget.</strong> General admission near Spoon Curve (West Area included with Race Day Special Passport). Excellent overtaking view. Alternatively, stand at 130R exit — hear the commitment from every driver on every lap.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════ SLIDE 10 — FINAL ═══════ -->
+<div class="slide final-bg" style="display:none;" id="slide-10">
+  <div class="content" style="text-align:center;">
+    <div class="final-flag">🏁</div>
+    <h2 class="heading" style="margin-top:12px;">Go <span class="accent">Flat Out</span></h2>
+    <p class="body-text">You're spending an afternoon at one of the greatest racetracks on Earth, watching cars that are within touching distance of F1 speed, walking the same pitlane where championships have been decided since 1987.</p>
+    <div class="rule" style="margin:16px auto;"></div>
+
+    <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:16px 0;">
+      <div class="tbadge tb-yel">⭐ Watch: Ayumu Iwasa</div>
+      <div class="tbadge tb-red">💥 Rival: Sho Tsuboi</div>
+      <div class="tbadge" style="background:rgba(0,200,160,0.15);border:1px solid var(--teal);color:var(--teal);">🌊 Root For: Igor Fraga</div>
+    </div>
+
+    <div class="cheat-box">
+      <strong>Your Suzuka Cheat Sheet</strong><br>
+      <span class="go">✓</span> Arrive 13:30 · Pit Walk Pass FIRST<br>
+      <span class="go">✓</span> Ferris Wheel while lines are short<br>
+      <span class="go">✓</span> Honda Racing Gallery — Senna's actual F1 car<br>
+      <span class="go">✓</span> Pit Walk ~15:00 — no umbrella, poncho if needed<br>
+      <span class="go">✓</span> Race 1 from 130R corner or Spoon grandstand<br>
+      <span class="go">✓</span> Merch shopping between races<br>
+      <span class="go">✓</span> Leave 17:45 → Shuttle → Shiroko → Kintetsu → Nagoya → Tokyo<br><br>
+      <strong>Your Return:</strong> Pre-bought Kintetsu ticket in pocket · Arrive Tokyo ~20:50 · Yuen Shinjuku · Rooftop Onsen 🥵
+    </div>
+
+    <p style="margin-top:20px;font-size:11px;color:rgba(255,255,255,0.2);letter-spacing:0.2em;">
+      SUPER FORMULA ROUNDS 4 &amp; 5 · MAY 23, 2026 · SUZUKA CIRCUIT · MIE PREFECTURE · JAPAN
+    </p>
+  </div>
+</div>
+
+<script>
+const TOTAL = 11;
+let cur = 0;
+
+// Speed lines on title
+function makeSpeedLines() {
+  const c = document.getElementById('speed-lines');
+  if (!c) return;
+  for (let i = 0; i < 20; i++) {
+    const l = document.createElement('div');
+    l.className = 'speed-line';
+    l.style.setProperty('--top', (5 + Math.random() * 90) + '%');
+    l.style.setProperty('--w', (80 + Math.random() * 200) + 'px');
+    l.style.animationDuration = (0.8 + Math.random() * 1.5) + 's';
+    l.style.animationDelay = (Math.random() * 2) + 's';
+    c.appendChild(l);
+  }
+}
+
+function buildDots() {
+  const c = document.getElementById('nav-dots');
+  for (let i = 0; i < TOTAL; i++) {
+    const d = document.createElement('div');
+    d.className = 'dot' + (i === 0 ? ' active' : '');
+    d.onclick = () => goTo(i);
+    c.appendChild(d);
+  }
+}
+
+function goTo(n) {
+  document.getElementById('slide-' + cur).style.display = 'none';
+  cur = Math.max(0, Math.min(TOTAL - 1, n));
+  const s = document.getElementById('slide-' + cur);
+  s.style.display = 'flex';
+  updateUI();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function go(dir) {
+  if (dir === 1 && cur === TOTAL - 1) goTo(0);
+  else goTo(cur + dir);
+}
+
+function updateUI() {
+  document.querySelectorAll('.dot').forEach((d, i) => {
+    d.className = 'dot' + (i === cur ? ' active' : '');
+  });
+  const pct = (cur / (TOTAL - 1)) * 100;
+  document.getElementById('progress').style.width = pct + '%';
+  document.querySelector('.nbtn-prev').style.opacity = cur === 0 ? '0.3' : '1';
+  document.querySelector('.nbtn-next').textContent = cur === TOTAL - 1 ? 'Start Over →' : 'Next →';
+}
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1);
+  if (e.key === 'ArrowLeft'  || e.key === 'ArrowUp')   go(-1);
+});
+
+let tx = 0;
+document.addEventListener('touchstart', e => tx = e.touches[0].clientX, { passive: true });
+document.addEventListener('touchend', e => {
+  const dx = tx - e.changedTouches[0].clientX;
+  if (Math.abs(dx) > 50) go(dx > 0 ? 1 : -1);
+}, { passive: true });
+
+buildDots();
+updateUI();
+makeSpeedLines();
+</script>
+</body>
+</html>

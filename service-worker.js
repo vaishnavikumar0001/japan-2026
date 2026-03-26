@@ -1,4 +1,4 @@
-const CACHE_NAME = 'japan-2026-v8';
+const CACHE_NAME = 'japan-2026-v9';
 
 const ASSETS = [
   '/',
@@ -15,7 +15,8 @@ const ASSETS = [
   '/js/onsens.js',
   '/js/checklists.js',
   '/icons/icon-192.png',
-  '/icons/icon-512.png'
+  '/icons/icon-512.png',
+  '/sumo_explainer.html'
 ];
 
 // Install: pre-cache all assets

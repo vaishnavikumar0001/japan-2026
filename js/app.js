@@ -13,6 +13,17 @@
   loadingEl.innerHTML = '<div class="load-flag">🇯🇵</div><div class="load-text">Loading your Japan trip…</div>';
   document.body.appendChild(loadingEl);
 
+  // ── Dynamic calendar badge ─────────────────────────────────
+  (function() {
+    const now = new Date();
+    const monthEl = document.getElementById('cal-month');
+    const dayEl   = document.getElementById('cal-day');
+    if (monthEl && dayEl) {
+      monthEl.textContent = now.toLocaleString('en-US', { month: 'short' });
+      dayEl.textContent   = now.getDate();
+    }
+  })();
+
   // ── Tab routing ────────────────────────────────────────────
   const tabs = {
     itinerary:  { panel: document.getElementById('tab-itinerary'),  btn: null, rendered: false },

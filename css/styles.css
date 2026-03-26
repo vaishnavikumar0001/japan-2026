@@ -1345,8 +1345,8 @@ input { font-family: inherit; }
   align-items: center;
   padding: 18px 16px 8px;
 }
-.learn-header-title { font-size: 1rem; font-weight: 700; color: var(--white); }
-.learn-header-count { font-size: 0.82rem; color: var(--muted); }
+.learn-header-title { font-size: 1rem; font-weight: 700; color: var(--text); }
+.learn-header-count { font-size: 0.82rem; color: var(--text-muted); }
 
 .learn-progress-bar {
   height: 10px;

@@ -30,7 +30,8 @@
     hotels:     { panel: document.getElementById('tab-hotels'),     btn: null, rendered: false },
     trains:     { panel: document.getElementById('tab-trains'),     btn: null, rendered: false },
     onsens:     { panel: document.getElementById('tab-onsens'),     btn: null, rendered: false },
-    checklists: { panel: document.getElementById('tab-checklists'), btn: null, rendered: false }
+    checklists: { panel: document.getElementById('tab-checklists'), btn: null, rendered: false },
+    learn:      { panel: document.getElementById('tab-learn'),      btn: null, rendered: true  }
   };
 
   let activeTab = 'itinerary';
@@ -59,7 +60,8 @@
       hotels:     '🏨 Hotels',
       trains:     '🚄 Trains',
       onsens:     '♨️ Onsens',
-      checklists: '✅ Checklists'
+      checklists: '✅ Checklists',
+      learn:      '🥋 Sumo Guide'
     };
     document.getElementById('header-title').textContent = titles[name] || '🇯🇵 Japan 2026';
 

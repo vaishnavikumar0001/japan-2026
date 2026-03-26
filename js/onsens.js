@@ -51,7 +51,7 @@ function renderOnsens() {
           <div class="onsen-card-header">
             <div>
               <div class="onsen-num">Onsen ${o.number} of ${total}</div>
-              <div class="onsen-name">♨️ ${escHtml(o.hotel)}</div>
+              <div class="onsen-name">♨️ ${escHtml(o.location || o.hotel || '')}</div>
               <div class="onsen-date">📅 ${escHtml(o.date.slice(5))} · ${escHtml(o.time)}</div>
             </div>
             <div class="onsen-check-wrap">
@@ -62,8 +62,8 @@ function renderOnsens() {
           </div>
           <div class="onsen-card-body">
             <div class="onsen-type">📍 ${escHtml(o.city)} · ${escHtml(o.type)}</div>
-            <div class="onsen-desc">${escHtml(o.description)}</div>
-            ${o.tips ? `<div class="onsen-tips">💡 ${escHtml(o.tips)}</div>` : ''}
+            <div class="onsen-desc">${escHtml(o.notes || o.description || '')}</div>
+            ${(o.tips || o.included !== undefined) ? `<div class="onsen-tips">💡 ${o.included ? 'Included with hotel stay' : 'Separate entry fee'}</div>` : ''}
           </div>
         </div>
       `);
@@ -75,7 +75,7 @@ function renderOnsens() {
     container.querySelectorAll('.onsen-check').forEach(btn => {
       btn.addEventListener('click', e => {
         e.stopPropagation();
-        const id = parseInt(btn.dataset.id);
+        const id = btn.dataset.id;
         toggleVisited(id);
         render(); // re-render to update progress
       });
@@ -84,7 +84,7 @@ function renderOnsens() {
     // Tap card also toggles
     container.querySelectorAll('.onsen-card').forEach(card => {
       card.addEventListener('click', () => {
-        const id = parseInt(card.dataset.id);
+        const id = card.dataset.id;
         toggleVisited(id);
         render();
       });

@@ -1,6 +1,6 @@
 // auth.js — passphrase lock screen (client-side only, no network calls)
 (function () {
-  const HASH     = '6bb335571806f56ccb0f6b32e3184752887aa4b25107a92c1b312e574e33d310';
+  const HASH     = '6e16c88405bc7bc565770563d49b3597655d528a9a91e068d30a7ed47e60209e';
   const SALT     = 'japan2026trip';
   const AUTH_KEY = 'japan2026-unlocked';
 

@@ -85,7 +85,9 @@ function renderItinerary() {
       if (date === currentDate) pill.classList.add('active');
       const isToday = date === today.toISOString().slice(0, 10);
       if (isToday) pill.classList.add('today');
-      pill.textContent = `${d.day} · ${date.slice(5)}`;
+      const monthNames = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+      const mo = monthNames[new Date(date + 'T00:00:00').getMonth()];
+      pill.textContent = `${mo}-${date.slice(8)}${d.suzuka_day ? ' 🏎️' : ''}`;
       pill.dataset.date = date;
       pill.addEventListener('click', () => {
         currentDate = date;

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'japan-2026-v4';
+const CACHE_NAME = 'japan-2026-v5';
 
 const ASSETS = [
   '/',
@@ -6,6 +6,7 @@ const ASSETS = [
   '/manifest.json',
   '/japan_trip_data.json',
   '/css/styles.css',
+  '/js/auth.js',
   '/js/data.js',
   '/js/app.js',
   '/js/itinerary.js',

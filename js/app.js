@@ -121,14 +121,16 @@
 
     // Search itinerary activities
     data.itinerary.forEach(day => {
-      day.activities.forEach(act => {
-        const haystack = (act.name + ' ' + act.description + ' ' + day.title + ' ' + day.city).toLowerCase();
+      (day.schedule || day.activities || []).forEach(act => {
+        const name = act.activity || act.name || '';
+        const desc = act.notes    || act.description || '';
+        const haystack = (name + ' ' + desc + ' ' + (day.label || day.title || '') + ' ' + day.city).toLowerCase();
         if (haystack.includes(q)) {
           results.push({
             type: 'activity',
             day: day,
-            activity: act,
-            label: `Day ${day.day_num} · ${day.date.slice(5)} · ${day.city}`
+            activity: { ...act, name, description: desc },
+            label: `Day ${day.day || day.day_num} · ${day.date.slice(5)} · ${day.city}`
           });
         }
       });

@@ -291,9 +291,10 @@ function renderItinerary() {
   }
 
   function renderActivity(act) {
-    const name    = act.activity || act.name || '';
-    const desc    = act.notes    || act.description || '';
-    const hasMap  = name.trim().length > 0;
+    const name     = act.activity || act.name || '';
+    const desc     = act.notes    || act.description || '';
+    const hasMap   = name.trim().length > 0;
+    const isSumo   = /sumo/i.test(name);
 
     return `
       <div class="activity-item">
@@ -303,6 +304,7 @@ function renderItinerary() {
           ${desc ? `<div class="activity-desc">${escHtml(desc)}</div>` : ''}
           <div class="activity-actions">
             ${hasMap ? `<a href="${mapLink(name)}" target="_blank" rel="noopener" class="map-btn">🗺 Map</a>` : ''}
+            ${isSumo ? `<button class="learn-link-btn" onclick="window.openLearnTopic('sumo')">📖 Sumo Guide</button>` : ''}
           </div>
         </div>
       </div>

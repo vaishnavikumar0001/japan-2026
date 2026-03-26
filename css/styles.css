@@ -1335,3 +1335,143 @@ input { font-family: inherit; }
 }
 #loading .load-flag { font-size: 4rem; }
 #loading .load-text { color: white; font-size: 1rem; opacity: 0.8; }
+
+/* ---------- Learn Tab ---------- */
+#tab-learn { padding: 0 0 8px 0; }
+
+.learn-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 16px 8px;
+}
+.learn-header-title { font-size: 1rem; font-weight: 700; color: var(--white); }
+.learn-header-count { font-size: 0.82rem; color: var(--muted); }
+
+.learn-progress-bar {
+  height: 4px;
+  background: var(--border);
+  margin: 0 16px 16px;
+  border-radius: 2px;
+  overflow: hidden;
+}
+.learn-progress-fill {
+  height: 100%;
+  background: var(--gold);
+  border-radius: 2px;
+  transition: width 0.4s ease;
+}
+
+.learn-list { display: flex; flex-direction: column; gap: 10px; padding: 0 16px 16px; }
+
+.learn-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+.learn-card:active { background: var(--border); }
+.learn-card.learned { border-color: var(--gold); }
+
+.learn-card-emoji { font-size: 2rem; flex-shrink: 0; }
+
+.learn-card-body { flex: 1; min-width: 0; }
+.learn-card-title { font-size: 0.95rem; font-weight: 700; color: var(--white); margin-bottom: 2px; }
+.learn-card-sub   { font-size: 0.75rem; color: var(--gold); margin-bottom: 4px; }
+.learn-card-desc  { font-size: 0.8rem; color: var(--muted); line-height: 1.4; }
+
+.learn-card-arrow {
+  font-size: 1.4rem;
+  color: var(--muted);
+  flex-shrink: 0;
+  font-weight: 300;
+}
+.learn-card.learned .learn-card-arrow { color: var(--gold); font-size: 1.1rem; }
+
+/* ---------- Learn Overlay (full-screen reader) ---------- */
+.learn-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  background: #1a1008;
+}
+
+.learn-overlay-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  padding-top: calc(10px + env(safe-area-inset-top));
+  background: rgba(0,0,0,0.7);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  flex-shrink: 0;
+}
+
+.learn-back-btn {
+  background: rgba(255,255,255,0.12);
+  border: none;
+  color: #fff;
+  font-size: 0.85rem;
+  padding: 6px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.learn-overlay-label {
+  flex: 1;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.learn-mark-btn {
+  background: rgba(200,150,12,0.2);
+  border: 1px solid rgba(200,150,12,0.4);
+  color: #C8960C;
+  font-size: 0.78rem;
+  padding: 6px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: background 0.2s;
+}
+.learn-mark-btn.marked {
+  background: rgba(200,150,12,0.35);
+  border-color: #C8960C;
+  color: #fff;
+}
+
+.learn-iframe {
+  flex: 1;
+  width: 100%;
+  border: none;
+  display: block;
+}
+
+/* ---------- Sumo Guide link in activity tiles ---------- */
+.learn-link-btn {
+  background: rgba(200,150,12,0.15);
+  border: 1px solid rgba(200,150,12,0.35);
+  color: #C8960C;
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 14px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.15s;
+}
+.learn-link-btn:active { background: rgba(200,150,12,0.3); }

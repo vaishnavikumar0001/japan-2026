@@ -1,4 +1,4 @@
-const CACHE_NAME = 'japan-2026-v10';
+const CACHE_NAME = 'japan-2026-v11';
 
 const ASSETS = [
   '/',
@@ -14,6 +14,7 @@ const ASSETS = [
   '/js/trains.js',
   '/js/onsens.js',
   '/js/checklists.js',
+  '/js/learn.js',
   '/icons/icon-192.png',
   '/icons/icon-512.png',
   '/sumo_explainer.html'

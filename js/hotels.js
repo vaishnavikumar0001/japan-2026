@@ -28,11 +28,11 @@ function renderHotels() {
 
   data.hotels.forEach(h => {
     const nights = h.nights;
-    const isActive = h.check_in <= today && today < h.check_out;
+    const isActive = (h.checkin || h.check_in) <= today && today < (h.checkout || h.check_out);
     const isTaqbinDay = h.taqbin_day === today;
 
-    const checkinFmt  = fmtDate(h.check_in);
-    const checkoutFmt = fmtDate(h.check_out);
+    const checkinFmt  = fmtDate(h.checkin  || h.check_in);
+    const checkoutFmt = fmtDate(h.checkout || h.check_out);
 
     html.push(`
       <div class="hotel-card">

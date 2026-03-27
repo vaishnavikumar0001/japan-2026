@@ -116,7 +116,10 @@
       "nights": 4,
       "onsen": false,
       "address": "Shinjuku, Tokyo",
-      "notes": "5 min walk from Shinjuku Station South Exit"
+      "notes": "5 min walk from Shinjuku Station South Exit",
+      "checkin_time": "2:00 PM",
+      "checkout_time": "11:00 AM",
+      "checkin_note": "Only hotel with 2 PM check-in — arrives May 12 after long flight, perfect"
     },
     {
       "id": "hotel_2",
@@ -129,7 +132,10 @@
       "onsen": true,
       "onsen_description": "Historic mineral pools - indoor and outdoor rotenburo",
       "address": "Miyanoshita, Hakone, Kanagawa",
-      "notes": "Japan's oldest Western hotel. Yukata and geta provided. 3 min walk from Miyanoshita Station."
+      "notes": "Japan's oldest Western hotel. Yukata and geta provided. 3 min walk from Miyanoshita Station.",
+      "checkin_time": "3:00 PM",
+      "checkout_time": "11:00 AM",
+      "checkin_note": "Send bags via TA-Q-BIN May 15 morning"
     },
     {
       "id": "hotel_3",
@@ -142,7 +148,9 @@
       "onsen": true,
       "onsen_description": "Hotel onsen - open late nights",
       "address": "Gion, Kyoto",
-      "notes": "5 min walk to Hanamikoji Street. Free late-night ramen 9:30-11 PM nightly."
+      "notes": "5 min walk to Hanamikoji Street. Free late-night ramen 9:30-11 PM nightly.",
+      "checkin_time": "3:00 PM",
+      "checkout_time": "11:00 AM"
     },
     {
       "id": "hotel_4",
@@ -156,7 +164,9 @@
       "onsen_description": "Rooftop natural hot spring with city views",
       "address": "2-1-6 Higashishinsaibashi, Chuo Ward, Osaka 542-0083",
       "phone": "+81 6-6212-5489",
-      "notes": "Lawson attached. Free late-night ramen 9:30-11 PM. Rooftop onsen open til midnight."
+      "notes": "Lawson attached. Free late-night ramen 9:30-11 PM. Rooftop onsen open til midnight.",
+      "checkin_time": "3:00 PM",
+      "checkout_time": "11:00 AM"
     },
     {
       "id": "hotel_5",
@@ -169,7 +179,10 @@
       "onsen": false,
       "address": "6-105 Hanasatomachi, Takayama, Gifu 506-0026",
       "phone": "+81 577-57-5578",
-      "notes": "30 seconds from Takayama Station. Full apartment with kitchen."
+      "notes": "30 seconds from Takayama Station. Full apartment with kitchen.",
+      "checkin_time": "3:00 PM",
+      "checkout_time": "11:00 AM",
+      "checkin_note": "⚠️ Front desk only 6:30 AM–midnight — not 24hr. May 23 early checkout: key drop box available."
     },
     {
       "id": "hotel_6",
@@ -183,7 +196,10 @@
       "onsen_description": "Rooftop onsen - indoor and outdoor with Tokyo skyline views",
       "address": "5-3-18 Shinjuku, Shinjuku City, Tokyo 160-0022",
       "phone": "+81 3-5361-8355",
-      "notes": "8 min walk from Shinjuku Station. Yukata provided."
+      "notes": "8 min walk from Shinjuku Station. Yukata provided.",
+      "checkin_time": "3:00 PM",
+      "checkout_time": "11:00 AM",
+      "checkin_note": "⚠️ Early check-in explicitly NOT offered. Arriving ~9:40 PM May 23 — no issue. If arriving early, store bags at front desk."
     }
   ],
   "onsens": [

@@ -50,10 +50,16 @@ function renderHotels() {
         <div class="hotel-card-body">
           <!-- Dates row -->
           <div class="hotel-dates">
-            <span class="badge badge-muted">✈ In ${checkinFmt}</span>
-            <span class="badge badge-muted">✈ Out ${checkoutFmt}</span>
+            <span class="badge badge-muted">✈ In ${checkinFmt}${h.checkin_time ? ' · ' + h.checkin_time : ''}</span>
+            <span class="badge badge-muted">✈ Out ${checkoutFmt}${h.checkout_time ? ' · ' + h.checkout_time : ''}</span>
             <span class="badge badge-muted">${nights} night${nights !== 1 ? 's' : ''}</span>
           </div>
+
+          ${h.checkin_note ? `
+          <div class="hotel-checkin-note">
+            <span>🔑</span>
+            <span>${escHtml(h.checkin_note)}</span>
+          </div>` : ''}
 
           ${h.onsen ? `
           <div class="hotel-info-row">

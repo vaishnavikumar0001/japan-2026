@@ -119,7 +119,9 @@
       "notes": "5 min walk from Shinjuku Station South Exit",
       "checkin_time": "2:00 PM",
       "checkout_time": "11:00 AM",
-      "checkin_note": "Only hotel with 2 PM check-in — arrives May 12 after long flight, perfect"
+      "checkin_note": "Only hotel with 2 PM check-in — arrives May 12 after long flight, perfect",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=JR+Kyushu+Hotel+Blossom+Shinjuku",
+      "booking_site": "Booking.com"
     },
     {
       "id": "hotel_2",
@@ -135,7 +137,9 @@
       "notes": "Japan's oldest Western hotel. Yukata and geta provided. 3 min walk from Miyanoshita Station.",
       "checkin_time": "3:00 PM",
       "checkout_time": "11:00 AM",
-      "checkin_note": "Send bags via TA-Q-BIN May 15 morning"
+      "checkin_note": "Send bags via TA-Q-BIN May 15 morning",
+      "booking_url": "https://www.fujiyahotel.jp/en/",
+      "booking_site": "fujiyahotel.jp"
     },
     {
       "id": "hotel_3",
@@ -150,7 +154,9 @@
       "address": "Gion, Kyoto",
       "notes": "5 min walk to Hanamikoji Street. Free late-night ramen 9:30-11 PM nightly.",
       "checkin_time": "3:00 PM",
-      "checkout_time": "11:00 AM"
+      "checkout_time": "11:00 AM",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Dormy+Inn+Kyoto+Gion",
+      "booking_site": "Booking.com"
     },
     {
       "id": "hotel_4",
@@ -166,7 +172,9 @@
       "phone": "+81 6-6212-5489",
       "notes": "Lawson attached. Free late-night ramen 9:30-11 PM. Rooftop onsen open til midnight.",
       "checkin_time": "3:00 PM",
-      "checkout_time": "11:00 AM"
+      "checkout_time": "11:00 AM",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Dormy+Inn+Premium+Namba+Annex",
+      "booking_site": "Booking.com"
     },
     {
       "id": "hotel_5",
@@ -182,7 +190,9 @@
       "notes": "30 seconds from Takayama Station. Full apartment with kitchen.",
       "checkin_time": "3:00 PM",
       "checkout_time": "11:00 AM",
-      "checkin_note": "⚠️ Front desk only 6:30 AM–midnight — not 24hr. May 23 early checkout: key drop box available."
+      "checkin_note": "⚠️ Front desk only 6:30 AM–midnight — not 24hr. May 23 early checkout: key drop box available.",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Residence+Hotel+Takayama+Station",
+      "booking_site": "Booking.com"
     },
     {
       "id": "hotel_6",
@@ -199,7 +209,9 @@
       "notes": "8 min walk from Shinjuku Station. Yukata provided.",
       "checkin_time": "3:00 PM",
       "checkout_time": "11:00 AM",
-      "checkin_note": "⚠️ Early check-in explicitly NOT offered. Arriving ~9:40 PM May 23 — no issue. If arriving early, store bags at front desk."
+      "checkin_note": "⚠️ Early check-in explicitly NOT offered. Arriving ~9:40 PM May 23 — no issue. If arriving early, store bags at front desk.",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Yuen+Shinjuku",
+      "booking_site": "Booking.com"
     }
   ],
   "onsens": [

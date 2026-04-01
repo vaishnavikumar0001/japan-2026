@@ -692,6 +692,141 @@ input { font-family: inherit; }
   line-height: 1.45;
 }
 
+/* ---------- Hotel Booking Checklist ---------- */
+.hotel-checklist-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow);
+}
+
+.hotel-checklist-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.hotel-checklist-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.hotel-checklist-progress {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 3px 10px;
+}
+.hotel-checklist-progress.progress-done {
+  background: rgba(46,125,50,0.12);
+  color: var(--green-car);
+  border-color: rgba(46,125,50,0.3);
+}
+
+.hotel-checklist-bar {
+  height: 5px;
+  background: var(--surface2);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.hotel-checklist-fill {
+  height: 100%;
+  background: var(--navy);
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.hotel-checklist-done {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--green-car);
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.hotel-checklist-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.hotel-checklist-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 4px;
+  border-radius: var(--radius-sm);
+  transition: background 0.1s;
+}
+.hotel-checklist-row:not(:last-child) {
+  border-bottom: 1px solid var(--border);
+}
+.hcr-done .hcr-name { text-decoration: line-through; color: var(--text-muted); }
+
+.hcr-checkbox {
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  border: 2px solid var(--border);
+  background: var(--surface2);
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+  -webkit-tap-highlight-color: transparent;
+}
+.hcr-checked {
+  background: var(--navy);
+  border-color: var(--navy);
+  color: white;
+}
+
+.hcr-info {
+  flex: 1;
+  min-width: 0;
+}
+.hcr-name {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.hcr-dates {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin-top: 1px;
+}
+
+.hcr-book-btn {
+  flex-shrink: 0;
+  padding: 5px 12px;
+  background: var(--navy);
+  color: white;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.15s;
+  -webkit-tap-highlight-color: transparent;
+}
+.hcr-book-btn:hover { background: var(--navy-dark); color: white; }
+
+/* ---------- Hotel Actions ---------- */
 .hotel-actions {
   display: flex;
   gap: 8px;

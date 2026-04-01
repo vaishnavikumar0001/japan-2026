@@ -8,7 +8,49 @@ function renderHotels() {
   const today = new Date().toISOString().slice(0, 10);
   const html = [];
 
-  // TA-Q-BIN reminder banner (show if today is a forwarding day)
+  // ── Hotel Booking Checklist ────────────────────────────────
+  const STORAGE_KEY = 'japan_hotel_booked';
+  const booked = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
+  const totalHotels = data.hotels.length;
+  const bookedCount = data.hotels.filter(h => booked[h.id]).length;
+  const allDone = bookedCount === totalHotels;
+
+  html.push(`
+    <div class="hotel-checklist-card" id="hotel-checklist">
+      <div class="hotel-checklist-header">
+        <div class="hotel-checklist-title">🏨 Hotel Bookings</div>
+        <div class="hotel-checklist-progress ${allDone ? 'progress-done' : ''}">
+          ${bookedCount}/${totalHotels} booked
+        </div>
+      </div>
+      <div class="hotel-checklist-bar">
+        <div class="hotel-checklist-fill" style="width:${Math.round(bookedCount/totalHotels*100)}%"></div>
+      </div>
+      ${allDone ? '<div class="hotel-checklist-done">✅ All hotels booked!</div>' : ''}
+      <div class="hotel-checklist-list">
+        ${data.hotels.map(h => {
+          const isBooked = !!booked[h.id];
+          const checkinShort = fmtDate(h.checkin || h.check_in);
+          const checkoutShort = fmtDate(h.checkout || h.check_out);
+          const hasUrl = h.booking_url && h.booking_url.length > 0;
+          return `
+            <div class="hotel-checklist-row ${isBooked ? 'hcr-done' : ''}" data-hotel-id="${escHtml(h.id)}">
+              <button class="hcr-checkbox ${isBooked ? 'hcr-checked' : ''}" data-hotel-id="${escHtml(h.id)}" aria-label="Mark ${escHtml(h.name)} as booked">
+                ${isBooked ? '✓' : ''}
+              </button>
+              <div class="hcr-info">
+                <div class="hcr-name">${escHtml(h.name)}</div>
+                <div class="hcr-dates">${escHtml(h.city)} · ${checkinShort} – ${checkoutShort} · ${h.nights}n</div>
+              </div>
+              ${hasUrl ? `<a href="${escHtml(h.booking_url)}" target="_blank" rel="noopener" class="hcr-book-btn">Book →</a>` : ''}
+            </div>
+          `;
+        }).join('')}
+      </div>
+    </div>
+  `);
+
+  // ── TA-Q-BIN reminder banner (show if today is a forwarding day)
   const taqbinDays = data.hotels.filter(h => h.taqbin_day);
   taqbinDays.forEach(h => {
     if (h.taqbin_day === today) {
@@ -104,4 +146,15 @@ function renderHotels() {
   });
 
   container.innerHTML = html.join('');
+
+  // Wire up checklist checkboxes
+  container.querySelectorAll('.hcr-checkbox').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const id = btn.dataset.hotelId;
+      const stored = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
+      stored[id] = !stored[id];
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(stored));
+      renderHotels();
+    });
+  });
 }

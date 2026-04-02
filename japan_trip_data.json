@@ -160,20 +160,19 @@
     },
     {
       "id": "hotel_4",
-      "name": "Dormy Inn Premium Namba ANNEX",
+      "name": "Villa Fontaine Grand Osaka Umeda",
       "city": "Osaka",
-      "area": "Namba",
+      "area": "Umeda",
       "checkin": "2026-05-20",
       "checkout": "2026-05-21",
       "nights": 1,
       "onsen": true,
       "onsen_description": "Rooftop natural hot spring with city views",
-      "address": "2-1-6 Higashishinsaibashi, Chuo Ward, Osaka 542-0083",
-      "phone": "+81 6-6212-5489",
-      "notes": "Lawson attached. Free late-night ramen 9:30-11 PM. Rooftop onsen open til midnight.",
+      "address": "Umeda, Osaka",
+      "notes": "Confirmed May 20–21.",
       "checkin_time": "3:00 PM",
       "checkout_time": "11:00 AM",
-      "booking_url": "https://www.booking.com/searchresults.html?ss=Dormy+Inn+Premium+Namba+Annex",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Villa+Fontaine+Grand+Osaka+Umeda",
       "booking_site": "Booking.com"
     },
     {
@@ -264,7 +263,7 @@
       "number": 5,
       "date": "2026-05-20",
       "time": "11:00 PM",
-      "location": "Dormy Inn Namba ANNEX - rooftop",
+      "location": "Villa Fontaine Grand Osaka Umeda",
       "city": "Osaka",
       "type": "Natural hot spring with city views",
       "included": true,
@@ -1359,7 +1358,7 @@
         },
         {
           "time": "10:35",
-          "activity": "Taxi to Dormy Inn Namba ANNEX - drop bags",
+          "activity": "Taxi to Villa Fontaine Grand Osaka Umeda - drop bags",
           "notes": ""
         },
         {
@@ -1389,7 +1388,7 @@
         },
         {
           "time": "15:10",
-          "activity": "Check in Dormy Inn Namba ANNEX",
+          "activity": "Check in Villa Fontaine Grand Osaka Umeda",
           "notes": "Lawson convenience store attached!"
         },
         {
@@ -1472,7 +1471,7 @@
         },
         {
           "time": "07:15",
-          "activity": "Check out Dormy Inn Namba - daypack only",
+          "activity": "Check out Villa Fontaine Grand Osaka Umeda - daypack only",
           "notes": ""
         },
         {

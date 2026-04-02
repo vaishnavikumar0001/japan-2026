@@ -9,10 +9,19 @@ function renderHotels() {
   const html = [];
 
   // ── Hotel Booking Checklist ────────────────────────────────
-  const STORAGE_KEY = 'japan_hotel_booked';
-  const booked = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
+  function hotelKey(id) { return 'hotel_booked_' + id; }
+  function isHotelBooked(id) {
+    try { return !!localStorage.getItem(hotelKey(id)); } catch(e) { return false; }
+  }
+  function toggleHotelBooked(id) {
+    try {
+      if (localStorage.getItem(hotelKey(id))) localStorage.removeItem(hotelKey(id));
+      else localStorage.setItem(hotelKey(id), '1');
+    } catch(e) {}
+  }
+
   const totalHotels = data.hotels.length;
-  const bookedCount = data.hotels.filter(h => booked[h.id]).length;
+  const bookedCount = data.hotels.filter(h => isHotelBooked(h.id)).length;
   const allDone = bookedCount === totalHotels;
 
   html.push(`
@@ -29,7 +38,7 @@ function renderHotels() {
       ${allDone ? '<div class="hotel-checklist-done">✅ All hotels booked!</div>' : ''}
       <div class="hotel-checklist-list">
         ${data.hotels.map(h => {
-          const isBooked = !!booked[h.id];
+          const isBooked = isHotelBooked(h.id);
           const checkinShort = fmtDate(h.checkin || h.check_in);
           const checkoutShort = fmtDate(h.checkout || h.check_out);
           const hasUrl = h.booking_url && h.booking_url.length > 0;
@@ -150,10 +159,7 @@ function renderHotels() {
   // Wire up checklist checkboxes
   container.querySelectorAll('.hcr-checkbox').forEach(btn => {
     btn.addEventListener('click', () => {
-      const id = btn.dataset.hotelId;
-      const stored = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
-      stored[id] = !stored[id];
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(stored));
+      toggleHotelBooked(btn.dataset.hotelId);
       renderHotels();
     });
   });

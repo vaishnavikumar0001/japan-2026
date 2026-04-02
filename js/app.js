@@ -27,6 +27,7 @@
   // ── Tab routing ────────────────────────────────────────────
   const tabs = {
     itinerary:  { panel: document.getElementById('tab-itinerary'),  btn: null, rendered: false },
+    schedule:   { panel: document.getElementById('tab-schedule'),   btn: null, rendered: false },
     hotels:     { panel: document.getElementById('tab-hotels'),     btn: null, rendered: false },
     trains:     { panel: document.getElementById('tab-trains'),     btn: null, rendered: false },
     onsens:     { panel: document.getElementById('tab-onsens'),     btn: null, rendered: false },
@@ -56,7 +57,8 @@
 
     // Update header title
     const titles = {
-      itinerary:  '📅 Itinerary',
+      itinerary:  '🇯🇵 Today',
+      schedule:   '📅 Itinerary',
       hotels:     '🏨 Hotels',
       trains:     '🚄 Trains',
       onsens:     '♨️ Onsens',
@@ -71,6 +73,7 @@
     if (!tabs[name].rendered) {
       tabs[name].rendered = true;
       switch (name) {
+        case 'schedule':   renderSchedule();   break;
         case 'hotels':     renderHotels();     break;
         case 'trains':     renderTrains();     break;
         case 'onsens':     renderOnsens();     break;

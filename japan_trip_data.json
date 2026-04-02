@@ -143,7 +143,7 @@
     },
     {
       "id": "hotel_3",
-      "name": "Dormy Inn Kyoto Gion",
+      "name": "Hotel Vischio Kyoto by Granvia",
       "city": "Kyoto",
       "area": "Gion",
       "checkin": "2026-05-17",
@@ -155,7 +155,7 @@
       "notes": "5 min walk to Hanamikoji Street. Free late-night ramen 9:30-11 PM nightly.",
       "checkin_time": "3:00 PM",
       "checkout_time": "11:00 AM",
-      "booking_url": "https://www.booking.com/searchresults.html?ss=Dormy+Inn+Kyoto+Gion",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Hotel+Vischio+Kyoto+by+Granvia",
       "booking_site": "Booking.com"
     },
     {
@@ -1113,12 +1113,12 @@
         },
         {
           "time": "13:45",
-          "activity": "Taxi to Dormy Inn Kyoto Gion",
+          "activity": "Taxi to Hotel Vischio Kyoto by Granvia",
           "notes": "10-15 min."
         },
         {
           "time": "14:00",
-          "activity": "Check in Dormy Inn Kyoto Gion",
+          "activity": "Check in Hotel Vischio Kyoto by Granvia",
           "notes": "Gion area. 5 min walk to Hanamikoji Street."
         },
         {
@@ -1158,7 +1158,7 @@
         },
         {
           "time": "22:00",
-          "activity": "♨️ Dormy Inn Kyoto onsen",
+          "activity": "♨️ Hotel Vischio Kyoto onsen",
           "notes": ""
         }
       ],
@@ -1233,7 +1233,7 @@
         },
         {
           "time": "23:00",
-          "activity": "Dormy Inn Kyoto onsen",
+          "activity": "Hotel Vischio Kyoto onsen",
           "notes": ""
         }
       ],
@@ -1344,7 +1344,7 @@
       "schedule": [
         {
           "time": "09:30",
-          "activity": "Check out Dormy Inn Kyoto Gion",
+          "activity": "Check out Hotel Vischio Kyoto by Granvia",
           "notes": ""
         },
         {

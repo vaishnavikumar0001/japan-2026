@@ -41,40 +41,7 @@ function renderItinerary() {
   function render() {
     container.innerHTML = '';
 
-    // Before trip: countdown + pre-trip to-do list
-    if (today < tripStart) {
-      const diffMs = tripStart - today;
-      const diffDays = Math.ceil(diffMs / (1000 * 60 * 60 * 24));
-      const countdownEl = document.createElement('div');
-      countdownEl.className = 'countdown-card';
-      countdownEl.innerHTML = `
-        <div class="countdown-flag">🇯🇵</div>
-        <div class="countdown-days">${diffDays}</div>
-        <div class="countdown-label">day${diffDays !== 1 ? 's' : ''} until Japan!</div>
-        <div class="countdown-dates">May 12 – 25, 2026 · ${data.trip.route.join(' → ')}</div>
-      `;
-      container.appendChild(countdownEl);
-
-      // Pre-trip to-do list (appended after countdown, before day picker)
-      const todoWrap = document.createElement('div');
-      todoWrap.id = 'pretodo-wrap';
-      container.appendChild(todoWrap);
-      renderPreTripTodos(todoWrap);
-    }
-
-    // After trip: summary banner
-    if (today > tripEnd) {
-      const summaryEl = document.createElement('div');
-      summaryEl.className = 'trip-summary-card';
-      summaryEl.innerHTML = `
-        <div style="font-size:2.5rem;margin-bottom:8px">🎌</div>
-        <div style="font-size:1.3rem;font-weight:800;margin-bottom:6px">Trip Complete!</div>
-        <div style="opacity:0.8;font-size:0.9rem">May 12 – 25, 2026<br>${data.trip.route.join(' → ')}</div>
-      `;
-      container.appendChild(summaryEl);
-    }
-
-    // Day picker strip
+    // Day picker strip — always first so dates are immediately visible
     const strip = document.createElement('div');
     strip.className = 'day-picker';
     strip.id = 'day-picker-strip';
@@ -103,6 +70,38 @@ function renderItinerary() {
     const dayArea = document.createElement('div');
     dayArea.id = 'day-area';
     container.appendChild(dayArea);
+
+    // Before trip: countdown + pre-trip to-do list (after picker so dates show first)
+    if (today < tripStart) {
+      const diffMs = tripStart - today;
+      const diffDays = Math.ceil(diffMs / (1000 * 60 * 60 * 24));
+      const countdownEl = document.createElement('div');
+      countdownEl.className = 'countdown-card';
+      countdownEl.innerHTML = `
+        <div class="countdown-flag">🇯🇵</div>
+        <div class="countdown-days">${diffDays}</div>
+        <div class="countdown-label">day${diffDays !== 1 ? 's' : ''} until Japan!</div>
+        <div class="countdown-dates">May 12 – 25, 2026 · ${data.trip.route.join(' → ')}</div>
+      `;
+      container.appendChild(countdownEl);
+
+      const todoWrap = document.createElement('div');
+      todoWrap.id = 'pretodo-wrap';
+      container.appendChild(todoWrap);
+      renderPreTripTodos(todoWrap);
+    }
+
+    // After trip: summary banner
+    if (today > tripEnd) {
+      const summaryEl = document.createElement('div');
+      summaryEl.className = 'trip-summary-card';
+      summaryEl.innerHTML = `
+        <div style="font-size:2.5rem;margin-bottom:8px">🎌</div>
+        <div style="font-size:1.3rem;font-weight:800;margin-bottom:6px">Trip Complete!</div>
+        <div style="opacity:0.8;font-size:0.9rem">May 12 – 25, 2026<br>${data.trip.route.join(' → ')}</div>
+      `;
+      container.appendChild(summaryEl);
+    }
 
     renderDay();
 

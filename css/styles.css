@@ -406,10 +406,15 @@ input { font-family: inherit; }
   display: flex;
   overflow-x: auto;
   gap: 6px;
-  padding-bottom: 8px;
-  margin-bottom: 14px;
+  padding: 8px 16px;
+  margin: 0 -16px 14px;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  position: sticky;
+  top: var(--header-h);
+  z-index: 10;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
 }
 .day-picker::-webkit-scrollbar { display: none; }
 

@@ -69,8 +69,9 @@
 
     activeTab = name;
 
-    // Lazy-render tabs on first visit
-    if (!tabs[name].rendered) {
+    // Tabs with user state always re-render to stay in sync with localStorage
+    const alwaysRender = name === 'hotels' || name === 'checklists';
+    if (alwaysRender || !tabs[name].rendered) {
       tabs[name].rendered = true;
       switch (name) {
         case 'schedule':   renderSchedule();   break;
@@ -234,6 +235,11 @@
     const d = new Date(dateStr + 'T00:00:00');
     return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', weekday: 'short' });
   };
+
+  // ── Request persistent storage (prevents browser clearing localStorage) ──
+  if (navigator.storage && navigator.storage.persist) {
+    navigator.storage.persist().catch(() => {});
+  }
 
   // ── Init ───────────────────────────────────────────────────
   window.loadTripData().then(() => {

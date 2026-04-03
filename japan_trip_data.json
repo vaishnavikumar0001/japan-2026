@@ -108,7 +108,7 @@
   "hotels": [
     {
       "id": "hotel_1",
-      "name": "JR Kyushu Hotel Blossom Shinjuku",
+      "name": "Hotel Gracery Shinjuku",
       "city": "Tokyo",
       "area": "Shinjuku",
       "checkin": "2026-05-12",
@@ -120,7 +120,7 @@
       "checkin_time": "2:00 PM",
       "checkout_time": "11:00 AM",
       "checkin_note": "Only hotel with 2 PM check-in — arrives May 12 after long flight, perfect",
-      "booking_url": "https://www.booking.com/searchresults.html?ss=JR+Kyushu+Hotel+Blossom+Shinjuku",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Hotel+Gracery+Shinjuku",
       "booking_site": "Booking.com"
     },
     {
@@ -666,7 +666,7 @@
         },
         {
           "time": "17:45",
-          "activity": "Check in - JR Kyushu Hotel Blossom Shinjuku",
+          "activity": "Check in - Hotel Gracery Shinjuku",
           "notes": "Night 1 of 4."
         },
         {

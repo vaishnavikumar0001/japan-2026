@@ -177,7 +177,7 @@
     },
     {
       "id": "hotel_5",
-      "name": "Residence Hotel Takayama Station",
+      "name": "Tokyu Stay Hida-Takayama Musubi no Yu",
       "city": "Takayama",
       "area": "Station",
       "checkin": "2026-05-21",
@@ -190,7 +190,7 @@
       "checkin_time": "3:00 PM",
       "checkout_time": "11:00 AM",
       "checkin_note": "⚠️ Front desk only 6:30 AM–midnight — not 24hr. May 23 early checkout: key drop box available.",
-      "booking_url": "https://www.booking.com/searchresults.html?ss=Residence+Hotel+Takayama+Station",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Tokyu+Stay+Hida-Takayama+Musubi+no+Yu",
       "booking_site": "Booking.com"
     },
     {
@@ -1456,7 +1456,7 @@
       "checkout_hotel": "hotel_4",
       "type": "travel_and_sightseeing",
       "luggage_forward": true,
-      "luggage_note": "Send large bags via TA-Q-BIN to Residence Hotel Takayama this morning. Bags arrive May 22.",
+      "luggage_note": "Send large bags via TA-Q-BIN to Tokyu Stay Hida-Takayama this morning. Bags arrive May 22.",
       "early_start": true,
       "early_start_time": "7:00 AM",
       "trains_today": [
@@ -1466,7 +1466,7 @@
       "schedule": [
         {
           "time": "07:00",
-          "activity": "TA-Q-BIN bags to Residence Hotel Takayama Station",
+          "activity": "TA-Q-BIN bags to Tokyu Stay Hida-Takayama Musubi no Yu",
           "notes": "Hotel front desk. Address: 6-105 Hanasatomachi, Takayama."
         },
         {

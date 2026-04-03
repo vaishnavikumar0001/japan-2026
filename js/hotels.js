@@ -75,7 +75,7 @@ function renderHotels() {
     }
   });
 
-  html.push('<div class="section-heading">7 Hotels · May 12–25</div>');
+  html.push('<div class="section-heading">6 Hotels · May 12–25</div>');
 
   data.hotels.forEach(h => {
     const nights = h.nights;

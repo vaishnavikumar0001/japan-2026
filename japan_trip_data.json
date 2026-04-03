@@ -849,11 +849,11 @@
         {
           "time": "08:00",
           "activity": "TA-Q-BIN bags forwarded to Fujiya Hotel",
-          "notes": "JR Hotel front desk. Bags arrive Fujiya afternoon."
+          "notes": "Hotel Gracery Shinjuku front desk. Bags arrive Fujiya afternoon."
         },
         {
           "time": "09:30",
-          "activity": "Check out JR Hotel - daypack only",
+          "activity": "Check out Hotel Gracery Shinjuku - daypack only",
           "notes": ""
         },
         {
@@ -1317,7 +1317,7 @@
         },
         {
           "time": "23:00",
-          "activity": "Dormy Inn onsen - final Kyoto soak",
+          "activity": "Hotel Vischio Kyoto onsen - final Kyoto soak",
           "notes": "Pack bags for Osaka tonight!"
         }
       ],
@@ -1433,18 +1433,12 @@
         },
         {
           "time": "23:00",
-          "activity": "♨️ ONSEN 5 - Dormy Inn rooftop natural hot spring",
-          "notes": "Natural hot spring + city views. Open til midnight!"
-        },
-        {
-          "time": "23:30",
-          "activity": "Free late night ramen - Dormy Inn!",
-          "notes": "Served 21:30-23:00 nightly. Do NOT miss."
+          "activity": "♨️ ONSEN 5 - Villa Fontaine Grand Osaka Umeda hotel bath",
+          "notes": "Relax after a big Osaka day!"
         }
       ],
       "tips": [
-        "Dotonbori: stand on Ebisu Bridge at dusk facing west for the classic neon shot",
-        "Dormy Inn free ramen: served 21:30-23:00 nightly - do not miss it"
+        "Dotonbori: stand on Ebisu Bridge at dusk facing west for the classic neon shot"
       ]
     },
     {
@@ -1526,8 +1520,8 @@
         },
         {
           "time": "15:30",
-          "activity": "Check in Residence Hotel - 30 SECONDS from station!",
-          "notes": "Full apartment with kitchen. Night 1 of 2."
+          "activity": "Check in Tokyu Stay Hida-Takayama Musubi no Yu - 30 SECONDS from station!",
+          "notes": "Onsen hotel steps from the station. Night 1 of 2."
         },
         {
           "time": "15:45",
@@ -1679,7 +1673,7 @@
         },
         {
           "time": "08:25",
-          "activity": "Check out Residence Hotel",
+          "activity": "Check out Tokyu Stay Hida-Takayama Musubi no Yu",
           "notes": "30 SECOND walk to station!"
         },
         {
@@ -2334,7 +2328,7 @@
         "done": false
       },
       {
-        "item": "Small towel for onsen (Fujiya + Dormy Inn provide towels)",
+        "item": "Small towel for onsen (Fujiya provides towels; Tokyu Stay has onsen)",
         "done": false
       }
     ],

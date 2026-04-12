@@ -108,18 +108,20 @@
   "hotels": [
     {
       "id": "hotel_1",
-      "name": "JR Kyushu Hotel Blossom Shinjuku",
+      "name": "Hotel Gracery Shinjuku",
       "city": "Tokyo",
       "area": "Shinjuku",
       "checkin": "2026-05-12",
-      "checkout": "2026-05-16",
-      "nights": 4,
+      "checkout": "2026-05-15",
+      "nights": 3,
       "onsen": false,
       "address": "Shinjuku, Tokyo",
       "notes": "5 min walk from Shinjuku Station South Exit",
       "checkin_time": "2:00 PM",
       "checkout_time": "11:00 AM",
-      "checkin_note": "Only hotel with 2 PM check-in — arrives May 12 after long flight, perfect"
+      "checkin_note": "Only hotel with 2 PM check-in — arrives May 12 after long flight, perfect",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Hotel+Gracery+Shinjuku",
+      "booking_site": "Booking.com"
     },
     {
       "id": "hotel_2",
@@ -135,11 +137,13 @@
       "notes": "Japan's oldest Western hotel. Yukata and geta provided. 3 min walk from Miyanoshita Station.",
       "checkin_time": "3:00 PM",
       "checkout_time": "11:00 AM",
-      "checkin_note": "Send bags via TA-Q-BIN May 15 morning"
+      "checkin_note": "Send bags via TA-Q-BIN May 15 morning",
+      "booking_url": "https://www.fujiyahotel.jp/en/",
+      "booking_site": "fujiyahotel.jp"
     },
     {
       "id": "hotel_3",
-      "name": "Dormy Inn Kyoto Gion",
+      "name": "Hotel Vischio Kyoto by Granvia",
       "city": "Kyoto",
       "area": "Gion",
       "checkin": "2026-05-17",
@@ -150,27 +154,30 @@
       "address": "Gion, Kyoto",
       "notes": "5 min walk to Hanamikoji Street. Free late-night ramen 9:30-11 PM nightly.",
       "checkin_time": "3:00 PM",
-      "checkout_time": "11:00 AM"
+      "checkout_time": "11:00 AM",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Hotel+Vischio+Kyoto+by+Granvia",
+      "booking_site": "Booking.com"
     },
     {
       "id": "hotel_4",
-      "name": "Dormy Inn Premium Namba ANNEX",
+      "name": "Villa Fontaine Grand Osaka Umeda",
       "city": "Osaka",
-      "area": "Namba",
+      "area": "Umeda",
       "checkin": "2026-05-20",
       "checkout": "2026-05-21",
       "nights": 1,
       "onsen": true,
       "onsen_description": "Rooftop natural hot spring with city views",
-      "address": "2-1-6 Higashishinsaibashi, Chuo Ward, Osaka 542-0083",
-      "phone": "+81 6-6212-5489",
-      "notes": "Lawson attached. Free late-night ramen 9:30-11 PM. Rooftop onsen open til midnight.",
+      "address": "Umeda, Osaka",
+      "notes": "Confirmed May 20–21.",
       "checkin_time": "3:00 PM",
-      "checkout_time": "11:00 AM"
+      "checkout_time": "11:00 AM",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Villa+Fontaine+Grand+Osaka+Umeda",
+      "booking_site": "Booking.com"
     },
     {
       "id": "hotel_5",
-      "name": "Residence Hotel Takayama Station",
+      "name": "Tokyu Stay Hida-Takayama Musubi no Yu",
       "city": "Takayama",
       "area": "Station",
       "checkin": "2026-05-21",
@@ -182,7 +189,9 @@
       "notes": "30 seconds from Takayama Station. Full apartment with kitchen.",
       "checkin_time": "3:00 PM",
       "checkout_time": "11:00 AM",
-      "checkin_note": "⚠️ Front desk only 6:30 AM–midnight — not 24hr. May 23 early checkout: key drop box available."
+      "checkin_note": "⚠️ Front desk only 6:30 AM–midnight — not 24hr. May 23 early checkout: key drop box available.",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Tokyu+Stay+Hida-Takayama+Musubi+no+Yu",
+      "booking_site": "Booking.com"
     },
     {
       "id": "hotel_6",
@@ -199,7 +208,9 @@
       "notes": "8 min walk from Shinjuku Station. Yukata provided.",
       "checkin_time": "3:00 PM",
       "checkout_time": "11:00 AM",
-      "checkin_note": "⚠️ Early check-in explicitly NOT offered. Arriving ~9:40 PM May 23 — no issue. If arriving early, store bags at front desk."
+      "checkin_note": "⚠️ Early check-in explicitly NOT offered. Arriving ~9:40 PM May 23 — no issue. If arriving early, store bags at front desk.",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Yuen+Shinjuku",
+      "booking_site": "Booking.com"
     }
   ],
   "onsens": [
@@ -252,7 +263,7 @@
       "number": 5,
       "date": "2026-05-20",
       "time": "11:00 PM",
-      "location": "Dormy Inn Namba ANNEX - rooftop",
+      "location": "Villa Fontaine Grand Osaka Umeda",
       "city": "Osaka",
       "type": "Natural hot spring with city views",
       "included": true,
@@ -655,7 +666,7 @@
         },
         {
           "time": "17:45",
-          "activity": "Check in - JR Kyushu Hotel Blossom Shinjuku",
+          "activity": "Check in - Hotel Gracery Shinjuku",
           "notes": "Night 1 of 4."
         },
         {
@@ -838,11 +849,11 @@
         {
           "time": "08:00",
           "activity": "TA-Q-BIN bags forwarded to Fujiya Hotel",
-          "notes": "JR Hotel front desk. Bags arrive Fujiya afternoon."
+          "notes": "Hotel Gracery Shinjuku front desk. Bags arrive Fujiya afternoon."
         },
         {
           "time": "09:30",
-          "activity": "Check out JR Hotel - daypack only",
+          "activity": "Check out Hotel Gracery Shinjuku - daypack only",
           "notes": ""
         },
         {
@@ -1101,12 +1112,12 @@
         },
         {
           "time": "13:45",
-          "activity": "Taxi to Dormy Inn Kyoto Gion",
+          "activity": "Taxi to Hotel Vischio Kyoto by Granvia",
           "notes": "10-15 min."
         },
         {
           "time": "14:00",
-          "activity": "Check in Dormy Inn Kyoto Gion",
+          "activity": "Check in Hotel Vischio Kyoto by Granvia",
           "notes": "Gion area. 5 min walk to Hanamikoji Street."
         },
         {
@@ -1146,7 +1157,7 @@
         },
         {
           "time": "22:00",
-          "activity": "♨️ Dormy Inn Kyoto onsen",
+          "activity": "♨️ Hotel Vischio Kyoto onsen",
           "notes": ""
         }
       ],
@@ -1221,7 +1232,7 @@
         },
         {
           "time": "23:00",
-          "activity": "Dormy Inn Kyoto onsen",
+          "activity": "Hotel Vischio Kyoto onsen",
           "notes": ""
         }
       ],
@@ -1306,7 +1317,7 @@
         },
         {
           "time": "23:00",
-          "activity": "Dormy Inn onsen - final Kyoto soak",
+          "activity": "Hotel Vischio Kyoto onsen - final Kyoto soak",
           "notes": "Pack bags for Osaka tonight!"
         }
       ],
@@ -1332,7 +1343,7 @@
       "schedule": [
         {
           "time": "09:30",
-          "activity": "Check out Dormy Inn Kyoto Gion",
+          "activity": "Check out Hotel Vischio Kyoto by Granvia",
           "notes": ""
         },
         {
@@ -1347,7 +1358,7 @@
         },
         {
           "time": "10:35",
-          "activity": "Taxi to Dormy Inn Namba ANNEX - drop bags",
+          "activity": "Taxi to Villa Fontaine Grand Osaka Umeda - drop bags",
           "notes": ""
         },
         {
@@ -1377,7 +1388,7 @@
         },
         {
           "time": "15:10",
-          "activity": "Check in Dormy Inn Namba ANNEX",
+          "activity": "Check in Villa Fontaine Grand Osaka Umeda",
           "notes": "Lawson convenience store attached!"
         },
         {
@@ -1422,18 +1433,12 @@
         },
         {
           "time": "23:00",
-          "activity": "♨️ ONSEN 5 - Dormy Inn rooftop natural hot spring",
-          "notes": "Natural hot spring + city views. Open til midnight!"
-        },
-        {
-          "time": "23:30",
-          "activity": "Free late night ramen - Dormy Inn!",
-          "notes": "Served 21:30-23:00 nightly. Do NOT miss."
+          "activity": "♨️ ONSEN 5 - Villa Fontaine Grand Osaka Umeda hotel bath",
+          "notes": "Relax after a big Osaka day!"
         }
       ],
       "tips": [
-        "Dotonbori: stand on Ebisu Bridge at dusk facing west for the classic neon shot",
-        "Dormy Inn free ramen: served 21:30-23:00 nightly - do not miss it"
+        "Dotonbori: stand on Ebisu Bridge at dusk facing west for the classic neon shot"
       ]
     },
     {
@@ -1445,7 +1450,7 @@
       "checkout_hotel": "hotel_4",
       "type": "travel_and_sightseeing",
       "luggage_forward": true,
-      "luggage_note": "Send large bags via TA-Q-BIN to Residence Hotel Takayama this morning. Bags arrive May 22.",
+      "luggage_note": "Send large bags via TA-Q-BIN to Tokyu Stay Hida-Takayama this morning. Bags arrive May 22.",
       "early_start": true,
       "early_start_time": "7:00 AM",
       "trains_today": [
@@ -1455,12 +1460,12 @@
       "schedule": [
         {
           "time": "07:00",
-          "activity": "TA-Q-BIN bags to Residence Hotel Takayama Station",
+          "activity": "TA-Q-BIN bags to Tokyu Stay Hida-Takayama Musubi no Yu",
           "notes": "Hotel front desk. Address: 6-105 Hanasatomachi, Takayama."
         },
         {
           "time": "07:15",
-          "activity": "Check out Dormy Inn Namba - daypack only",
+          "activity": "Check out Villa Fontaine Grand Osaka Umeda - daypack only",
           "notes": ""
         },
         {
@@ -1515,8 +1520,8 @@
         },
         {
           "time": "15:30",
-          "activity": "Check in Residence Hotel - 30 SECONDS from station!",
-          "notes": "Full apartment with kitchen. Night 1 of 2."
+          "activity": "Check in Tokyu Stay Hida-Takayama Musubi no Yu - 30 SECONDS from station!",
+          "notes": "Onsen hotel steps from the station. Night 1 of 2."
         },
         {
           "time": "15:45",
@@ -1668,7 +1673,7 @@
         },
         {
           "time": "08:25",
-          "activity": "Check out Residence Hotel",
+          "activity": "Check out Tokyu Stay Hida-Takayama Musubi no Yu",
           "notes": "30 SECOND walk to station!"
         },
         {
@@ -2323,7 +2328,7 @@
         "done": false
       },
       {
-        "item": "Small towel for onsen (Fujiya + Dormy Inn provide towels)",
+        "item": "Small towel for onsen (Fujiya provides towels; Tokyu Stay has onsen)",
         "done": false
       }
     ],

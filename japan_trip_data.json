@@ -145,18 +145,19 @@
       "id": "hotel_3",
       "name": "Hotel Vischio Kyoto by Granvia",
       "city": "Kyoto",
-      "area": "Gion",
+      "area": "Kyoto Station South (Higashikujo)",
       "checkin": "2026-05-17",
       "checkout": "2026-05-20",
       "nights": 3,
       "onsen": true,
       "onsen_description": "Hotel onsen - open late nights",
-      "address": "Gion, Kyoto",
-      "notes": "5 min walk to Hanamikoji Street. Free late-night ramen 9:30-11 PM nightly.",
+      "address": "44-1 Kamitonoda-cho, Higashikujo, Minami-ku, Kyoto",
+      "notes": "2-min walk from Hachijo (South) Exit of Kyoto Station. Free late-night ramen 9:30-11 PM nightly.",
       "checkin_time": "3:00 PM",
       "checkout_time": "11:00 AM",
       "booking_url": "https://www.booking.com/searchresults.html?ss=Hotel+Vischio+Kyoto+by+Granvia",
-      "booking_site": "Booking.com"
+      "booking_site": "Booking.com",
+      "checkin_note": "Hotel is a 2-min walk from Kyoto Station Hachijo South Exit. Drop luggage from 12 PM, official check-in 3 PM."
     },
     {
       "id": "hotel_4",
@@ -1111,14 +1112,14 @@
           "notes": "8 different ramen restaurants on one floor."
         },
         {
-          "time": "13:45",
-          "activity": "Taxi to Hotel Vischio Kyoto by Granvia",
-          "notes": "10-15 min."
+          "time": "13:15",
+          "activity": "Walk 2 min to Hotel Vischio Kyoto — Hachijo South Exit",
+          "notes": "Drop luggage at front desk (check-in is 3 PM). No taxi needed — hotel is steps from the south exit."
         },
         {
-          "time": "14:00",
+          "time": "15:00",
           "activity": "Check in Hotel Vischio Kyoto by Granvia",
-          "notes": "Gion area. 5 min walk to Hanamikoji Street."
+          "notes": "Official check-in 3:00 PM. Luggage already dropped earlier."
         },
         {
           "time": "15:15",

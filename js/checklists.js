@@ -21,7 +21,7 @@ function renderChecklists() {
     const bookings    = data.bookings_checklist    || data.bookings    || [];
     const experiences = data.experiences_checklist || data.experiences || [];
 
-    const bDone = bookings.filter(b => isChecked('booking_' + b.id)).length;
+    const bDone = bookings.filter(b => b.done || isChecked('booking_' + b.id)).length;
     const eDone = experiences.filter(e => isChecked('exp_' + e.id)).length;
 
     const bPct = bookings.length ? Math.round((bDone / bookings.length) * 100) : 0;
@@ -57,7 +57,7 @@ function renderChecklists() {
       html.push(`<div class="section-heading">${priorityEmoji(priority)} ${priority}</div>`);
 
       items.forEach(b => {
-        const done = isChecked('booking_' + b.id);
+        const done = b.done || isChecked('booking_' + b.id);
         const priorityClass = 'priority-' + priority.toLowerCase();
 
         const whereLabel = b.where_to_book || b.where || '';

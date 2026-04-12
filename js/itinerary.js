@@ -221,7 +221,7 @@ function renderItinerary() {
     }
 
     function draw() {
-      const done  = bookings.filter(b => isChecked(b.id)).length;
+      const done  = bookings.filter(b => b.done || isChecked(b.id)).length;
       const total = bookings.length;
       const pct   = total ? Math.round((done / total) * 100) : 0;
 
@@ -244,7 +244,7 @@ function renderItinerary() {
         if (!items.length) return;
         html += `<div class="pretodo-group-label">${priorityEmoji[priority]} ${priority}</div>`;
         items.forEach(b => {
-          const checked = isChecked(b.id);
+          const checked = b.done || isChecked(b.id);
           const whereLabel = b.where_to_book || b.where || '';
           html += `
             <div class="pretodo-item ${checked ? 'done' : ''}" data-id="${escHtml(b.id)}">

@@ -310,11 +310,14 @@ function renderSchedule() {
           <span>📍 ${escHtml(day.city)}</span>
           <span>🏨 ${escHtml(day.hotel)}</span>
         </div>
-        ${(day.luggage_forward || day.fuji_view_alert || day.rest_day) ? `
+        ${(day.luggage_forward || day.fuji_view_alert || day.rest_day || day.flags?.checkout_day || day.flags?.fuji_view_alert || day.type === 'day_tour') ? `
         <div class="day-badges">
           ${day.luggage_forward ? `<span class="day-badge badge-luggage">🧳 Luggage Forward Day</span>` : ''}
-          ${day.fuji_view_alert ? `<span class="day-badge badge-fuji">🗻 Mt Fuji View Day</span>` : ''}
+          ${day.flags?.checkout_day ? `<span class="day-badge badge-luggage">🧳 Checkout Day</span>` : ''}
+          ${(day.fuji_view_alert || day.flags?.fuji_view_alert) ? `<span class="day-badge badge-fuji">🗻 Mt Fuji View</span>` : ''}
+          ${day.flags?.maiko_alert ? `<span class="day-badge badge-maiko">🌸 Maiko Hour Tonight</span>` : ''}
           ${day.rest_day ? `<span class="day-badge badge-rest">😌 Rest Day</span>` : ''}
+          ${day.type === 'day_tour' ? `<span class="day-badge badge-tour">🚌 Full Day Organised Tour</span>` : ''}
         </div>` : ''}
       </div>
 
@@ -327,9 +330,39 @@ function renderSchedule() {
         </div>
       </div>` : ''}
 
+      ${day.flags?.fuji_view_alert ? `
+      <div class="fuji-alert">
+        <div class="fuji-alert-icon">🗻</div>
+        <div class="fuji-alert-body">
+          <div class="fuji-alert-title">${escHtml(day.flags.fuji_view_alert)}</div>
+        </div>
+      </div>` : ''}
+
+      ${day.flags?.maiko_alert ? `
+      <div class="maiko-alert">
+        <div class="maiko-alert-icon">🌸</div>
+        <div class="maiko-alert-body">
+          <div class="maiko-alert-title">Maiko Alert — ${escHtml(day.flags.maiko_alert)}</div>
+        </div>
+      </div>` : ''}
+
+      ${day.type === 'day_tour' ? `
+      <div class="day-tour-card">
+        <div class="day-tour-icon">🚌</div>
+        <div class="day-tour-body">
+          <div class="day-tour-title">${escHtml(day.label)}</div>
+          <div class="day-tour-note">Tour operator manages all transport and logistics — no independent planning required.</div>
+          ${(day.schedule || []).map(act => `
+            <div class="day-tour-item">
+              <span class="day-tour-time">${escHtml(act.time || '')}</span>
+              <span>${escHtml(act.activity || '')}</span>
+              ${act.notes ? `<div class="day-tour-desc">${escHtml(act.notes)}</div>` : ''}
+            </div>`).join('')}
+        </div>
+      </div>` : `
       <div class="activity-list" id="activity-list-${day.date}">
         ${(day.schedule || []).map(act => _renderActivity(act)).join('')}
-      </div>
+      </div>`}
 
       ${day.optional ? (() => {
         const entries = Object.entries(day.optional);

@@ -483,11 +483,51 @@ input { font-family: inherit; }
 .badge-luggage { background: #e8f0fe; color: #1a56a0; }
 .badge-fuji    { background: #e6f4ea; color: #1e6e3a; }
 .badge-rest    { background: #fce8e6; color: #a0220a; }
+.badge-maiko   { background: #fce4f0; color: #9a1060; }
+.badge-tour    { background: #f0e8fe; color: #5020a0; }
 @media (prefers-color-scheme: dark) {
   .badge-luggage { background: #1a2a4a; color: #7ab3f0; }
   .badge-fuji    { background: #142a1e; color: #6dba8a; }
   .badge-rest    { background: #3a1a16; color: #f09080; }
+  .badge-maiko   { background: #2a1020; color: #e070b0; }
+  .badge-tour    { background: #1e1030; color: #b080f0; }
 }
+
+/* Day tour card (full day organised tour) */
+.day-tour-card {
+  display: flex;
+  gap: 14px;
+  background: var(--surface2);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 14px;
+}
+.day-tour-icon { font-size: 2rem; flex-shrink: 0; }
+.day-tour-body { flex: 1; }
+.day-tour-title { font-size: 1rem; font-weight: 800; margin-bottom: 6px; }
+.day-tour-note {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-bottom: 12px;
+  padding: 6px 10px;
+  background: var(--surface);
+  border-radius: 6px;
+  border-left: 3px solid #7040c0;
+}
+.day-tour-item {
+  font-size: 0.85rem;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.day-tour-item:last-child { border-bottom: none; }
+.day-tour-time { font-weight: 700; color: var(--navy-light); min-width: 60px; flex-shrink: 0; }
+@media (prefers-color-scheme: dark) { .day-tour-time { color: #60a0d8; } }
+.day-tour-desc { font-size: 0.78rem; color: var(--text-muted); width: 100%; margin-top: 2px; }
 
 /* NOT JR Pass badge on transport items */
 .activity-not-jr { background: #fff8e8; border-radius: 8px; padding: 8px 10px; margin: 2px 0; }
@@ -1482,6 +1522,42 @@ input { font-family: inherit; }
   line-height: 1.5;
 }
 .suzuka-alert-msg strong { color: #ff6d00; }
+
+/* Fuji view alert banner */
+.fuji-alert {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #e8f5e8;
+  border: 1.5px solid #6ab06a;
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  margin-bottom: 12px;
+}
+.fuji-alert-icon { font-size: 1.4rem; }
+.fuji-alert-title { font-size: 0.85rem; font-weight: 700; color: #1e5e1e; }
+@media (prefers-color-scheme: dark) {
+  .fuji-alert { background: #0e2e0e; border-color: #3a7a3a; }
+  .fuji-alert-title { color: #80cc80; }
+}
+
+/* Maiko alert banner */
+.maiko-alert {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #fce4f0;
+  border: 1.5px solid #d060a0;
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  margin-bottom: 12px;
+}
+.maiko-alert-icon { font-size: 1.4rem; }
+.maiko-alert-title { font-size: 0.85rem; font-weight: 700; color: #8a1060; }
+@media (prefers-color-scheme: dark) {
+  .maiko-alert { background: #2a0e1e; border-color: #a04080; }
+  .maiko-alert-title { color: #e080c0; }
+}
 
 /* ---------- Train Warning Badge (train 8b) ---------- */
 .train-warning {

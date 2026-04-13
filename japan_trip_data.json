@@ -22,8 +22,9 @@
     "airport_drive_mins": 60,
     "airport_transport": "Uber/Rideshare",
     "last_updated": "2026-04-12",
-    "version": "2.1",
+    "version": "2.2",
     "changelog": [
+      "v2.2: May 16 rebuilt — early checkout from Fujiya, afternoon Shinkansen to Kyoto, Higashiyama evening (Kiyomizu-dera, Ninenzaka, Yasaka, Hanamikoji). Pola Museum and Tenzan Tohji-kyo removed (onsen_3 dropped). May 17 rebuilt — Amanohashidate + Ine full day organised tour. Gran Class Shinkansen (train_3) removed from May 17. Dormy Inn hotel_3 check-in moved to May 16.",
       "v2.1: May 15 rebuilt — Shinjuku → Kawaguchiko (bus), Chureito Pagoda, Kachi Kachi Ropeway + Love Bell, Lake Kawaguchiko north shore, Owakudani, Hakone Shrine, Fujiya Hotel. Romance Car removed. Pirate Ship and Lake Ashi rowboat removed.",
       "v2.1: May 16 rebuilt — full rest day at Fujiya. Dawn onsen, hotel gardens, Gora Park, Pola Museum, afternoon rest, Tenzan Tohji-kyo public onsen at night.",
       "v2.0: Initial full itinerary."
@@ -127,7 +128,7 @@
       "address": "2-6-2 Yoyogi, Shibuya-ku, Tokyo 151-0053",
       "phone": "+81-3-5333-8687",
       "notes": "3 min walk from Shinjuku Station South Exit. Luggage storage available before check-in and after check-out.",
-      "checkin_note": "Check-in from 2 PM. Station is a 3-min walk from JR Shinjuku Station south exit."
+      "checkin_note": "Check-in from 2 PM. 3-min walk from JR Shinjuku Station south exit."
     },
     {
       "id": "hotel_2",
@@ -144,23 +145,23 @@
       "address": "359 Miyanoshita, Hakone-machi, Hakone 250-0404",
       "phone": "+81-460-82-2211",
       "notes": "Japan's oldest Western hotel. Yukata and geta provided. 3 min walk from Miyanoshita Station.",
-      "checkin_note": "Check-in from 3 PM. Historic hotel est. 1878 — ask for the Orchid Room for meals."
+      "checkin_note": "Standard checkout 11 AM — ask reception about 12 PM late checkout. Historic hotel est. 1878."
     },
     {
       "id": "hotel_3",
       "name": "Dormy Inn Kyoto Gion",
       "city": "Kyoto",
       "area": "Gion",
-      "checkin": "2026-05-17",
+      "checkin": "2026-05-16",
       "checkout": "2026-05-20",
-      "nights": 3,
+      "nights": 4,
       "onsen": true,
       "onsen_description": "Hotel onsen - open late nights",
       "checkin_time": "3:00 PM",
       "checkout_time": "11:00 AM",
       "address": "Gion, Kyoto",
-      "notes": "5 min walk to Hanamikoji Street. Free late-night ramen 9:30-11 PM nightly.",
-      "checkin_note": "Check-in from 3 PM. Drop luggage from noon. Gion area — Hanamikoji St 5 min walk."
+      "notes": "5 min walk to Hanamikoji Street. Free late-night ramen 9:30-11 PM nightly. Check-in May 16 (one night earlier than original).",
+      "checkin_note": "Check-in from 3 PM. Gion area — Hanamikoji St 5 min walk. Free late-night ramen 9:30–11 PM."
     },
     {
       "id": "hotel_4",
@@ -239,34 +240,8 @@
       "notes": "Dawn rotenburo - almost empty at this hour."
     },
     {
-      "id": "onsen_3",
-      "number": 3,
-      "date": "2026-05-16",
-      "time": "Night",
-      "location": "Tenzan Tohji-kyo - forest public onsen",
-      "city": "Hakone",
-      "type": "Riverside rotenburo in cedar forest",
-      "included": false,
-      "notes": "Public onsen — pay ¥1,500/person at door. Taxi from Fujiya Hotel (¥2,000 each way). Riverside rotenburo in cedar forest.",
-      "taxi_required": true,
-      "taxi_cost": "¥2,000 each way from Fujiya Hotel",
-      "entry_fee": "¥1,500 per person",
-      "pay_at_door": true
-    },
-    {
       "id": "onsen_4",
       "number": 4,
-      "date": "2026-05-17",
-      "time": "6:30 AM",
-      "location": "Fujiya Hotel - final Hakone soak",
-      "city": "Hakone",
-      "type": "Last mountain mineral bath before Kyoto",
-      "included": true,
-      "notes": "Final soak before checking out!"
-    },
-    {
-      "id": "onsen_5",
-      "number": 5,
       "date": "2026-05-20",
       "time": "11:00 PM",
       "location": "Dormy Inn Namba ANNEX - rooftop",
@@ -276,8 +251,8 @@
       "notes": "Follow up with free late-night ramen downstairs!"
     },
     {
-      "id": "onsen_6",
-      "number": 6,
+      "id": "onsen_5",
+      "number": 5,
       "date": "2026-05-23",
       "time": "11:30 PM",
       "location": "Yuen Shinjuku - rooftop",
@@ -302,19 +277,18 @@
       "notes": "Activate JR Pass at Narita JR counter BEFORE boarding."
     },
     {
-      "id": "train_3",
-      "number": 3,
-      "date": "2026-05-17",
+      "id": "train_2b",
+      "number": "2b",
+      "date": "2026-05-16",
       "from": "Odawara",
       "to": "Kyoto",
       "train": "Hikari Shinkansen",
-      "class": "GRAN CLASS",
-      "duration": "2 hrs",
+      "class": "Ordinary Reserved",
+      "duration": "~1h 40min",
       "jr_pass": true,
-      "supplement": true,
-      "seat_tip": "RIGHT side D seats - Mt Fuji visible ~10:20 AM between Odawara and Shin-Fuji. LAST MT FUJI VIEW OF TRIP.",
-      "book_at": "JR office at Odawara Station on the morning",
-      "notes": "Fully reclining seats, meal + drinks, hot towel, amenity kit. Only 18 seats per train - reserve early!"
+      "seat_tip": "RIGHT side for Mt Fuji view ~13:45 between Odawara and Shin-Fuji — may be your last Fuji view of the trip.",
+      "book_at": "JR office at Odawara Station on arrival",
+      "notes": "Departs Odawara ~13:10. No Gran Class on this service — ordinary reserved is comfortable. Reserve at Odawara JR office."
     },
     {
       "id": "train_4",
@@ -978,208 +952,181 @@
     {
       "date": "2026-05-16",
       "day": 6,
-      "city": "Hakone",
-      "label": "Fujiya Rest Day — Dawn Onsen + Gora Park + Pola Museum + Tenzan Onsen",
-      "type": "rest_and_sightseeing",
-      "hotel": "hotel_2",
+      "city": "Hakone → Kyoto",
+      "label": "Fujiya Checkout → Kyoto Arrival + Higashiyama Evening",
+      "hotel": "hotel_3",
+      "checkout_hotel": "hotel_2",
+      "type": "travel_and_sightseeing",
       "early_start": true,
       "early_start_time": "06:15",
-      "early_start_reason": "Dawn rotenburo at Fujiya — almost empty at this hour, mountain mineral water at sunrise",
-      "trains_today": [],
-      "onsen_today": [
-        "onsen_2",
-        "onsen_3"
+      "early_start_reason": "Dawn onsen before checkout and travel to Kyoto",
+      "trains_today": [
+        "train_2b"
       ],
+      "onsen_today": [
+        "onsen_2"
+      ],
+      "flags": {
+        "checkout_day": true,
+        "fuji_view_alert": "Possible last Mt Fuji view — RIGHT side Shinkansen ~13:45",
+        "maiko_alert": "18:00-19:30 Hanamikoji Street — prime maiko hour on arrival evening"
+      },
       "schedule": [
+        {
+          "time": "06:15",
+          "activity": "Wake up — last morning at Fujiya Hotel",
+          "notes": "Set alarm tonight before sleeping."
+        },
         {
           "time": "06:30",
           "activity": "♨️ ONSEN 2 — Dawn rotenburo at Fujiya Hotel",
-          "notes": "Almost empty at dawn. Mountain mineral water at sunrise. Outdoor rotenburo with misty forest views. One of the quietest, most peaceful moments of the entire trip. Take your time."
+          "notes": "Almost empty at this hour. Mountain mineral water at sunrise. Outdoor rotenburo with misty forest views. This is also your farewell Hakone soak — savour it. No swimwear. Hair up."
         },
         {
           "time": "07:30",
-          "activity": "🍳 Breakfast at Fujiya Hotel",
-          "notes": "Full hotel breakfast — Western or Japanese course. Orchid Room or dining hall. Fuji Hotel breakfast has been served in the same room since 1878."
+          "activity": "🍳 Breakfast at Fujiya Hotel — Orchid Room",
+          "notes": "Last meal here. Western or Japanese course. Served in the same room since 1878. Take your time."
         },
         {
           "time": "09:00",
-          "activity": "Slow morning — explore Fujiya Hotel grounds",
-          "notes": "The hotel has 16,000 sqm gardens with streams, waterfalls, seasonal flowers and mountain views. Wander in yukata. Visit the small museum with historic guest memorabilia (Chaplin, Lennon, Keller signatures). Greenhouse. Gift shop."
+          "activity": "Pack bags + explore Fujiya Hotel grounds",
+          "notes": "Wander in yukata one last time. Visit the memorabilia room (Chaplin, Lennon, Keller signatures). Gift shop for Fujiya Hotel souvenir tins."
         },
         {
           "time": "10:30",
-          "activity": "🚃 Hakone Tozan Railway → Gora",
-          "notes": "From Miyanoshita, one stop up to Gora (5 min, Hakone Free Pass). The end of the line for the zigzag railway."
+          "activity": "🚃 Hakone Tozan Railway → Gora (Hakone Free Pass)",
+          "notes": "One stop up from Miyanoshita (5 min). Last use of Hakone Free Pass."
         },
         {
           "time": "10:45",
-          "activity": "🌸 Hakone Gora Park",
-          "notes": "French-style garden 3 min walk from Gora Station. Manicured lawns, fountains, seasonal flowers. In May: roses, wisteria, fresh green. Craft workshops inside — glass blowing, pottery spinning. Entry ~¥700. Allow 45–60 min."
+          "activity": "🌸 Hakone Gora Park — final Hakone stop",
+          "notes": "French-style garden 3 min from Gora Station. Roses and wisteria in May. 45 min gentle walk. Entry ~¥700."
+        },
+        {
+          "time": "11:30",
+          "activity": "Return to Fujiya Hotel — collect luggage",
+          "notes": "Tozan Railway back to Miyanoshita (5 min, Hakone Free Pass)."
+        },
+        {
+          "time": "11:00",
+          "activity": "Check out Fujiya Hotel",
+          "notes": "Standard checkout is 11:00 — ask at reception if a 12:00 late checkout is possible (worth trying). Store luggage at front desk if needed while you do the Gora detour."
         },
         {
           "time": "12:00",
-          "activity": "🎨 Pola Museum of Art",
-          "notes": "15 min bus from Gora (Hakone Free Pass). One of Japan's finest private art museums — Monet, Renoir, Picasso, Cézanne, plus Japanese modern masters. Set in forest with floor-to-ceiling windows over the valley. Allow 1.5–2 hours. ~¥1,800 admission. Book ahead: polamuseum.or.jp"
+          "activity": "🚃 Tozan Railway → Hakone-Yumoto → Odawara",
+          "notes": "~30 min total. Hakone Free Pass covers this leg."
         },
         {
-          "time": "14:00",
-          "activity": "🍱 Lunch — Pola Museum café or back at Gora",
-          "notes": "The Pola Museum has a good in-house restaurant with forest views. Or take the bus back to Gora and eat at one of the small restaurants near the station. Either works."
+          "time": "12:45",
+          "activity": "Arrive Odawara Station — lunch",
+          "notes": "Good ekiben (station bento) options in Odawara Station food hall. Quick lunch before Shinkansen."
         },
         {
-          "time": "15:30",
-          "activity": "Afternoon free — return to Fujiya Hotel",
-          "notes": "Rest. Nap. Read. Walk the hotel gardens again. Today is your recovery day — you covered enormous ground yesterday. Let the onsen and the quiet do their work."
+          "time": "13:00",
+          "activity": "Reserve Hikari Shinkansen seats at Odawara JR office",
+          "notes": "Show JR Pass. Ordinary reserved car. RIGHT side seats for Fuji view opportunity."
         },
         {
-          "time": "17:30",
-          "activity": "♨️ ONSEN 2 continued — afternoon soak at Fujiya",
-          "notes": "Second use of Fujiya's mineral baths. Afternoon light through the outdoor rotenburo windows. Try the indoor historic pools this time if you used the rotenburo this morning."
+          "time": "13:10",
+          "activity": "🚄 Hikari Shinkansen — Odawara → Kyoto",
+          "notes": "JR Pass. ~1h 40min. Ordinary reserved. RIGHT side — Mt Fuji visible ~13:45 between Odawara and Shin-Fuji. May be your last Fuji view of the trip. Camera ready!"
         },
         {
-          "time": "19:00",
-          "activity": "🍽️ Dinner — Fujiya Hotel Orchid Room",
-          "notes": "Final dinner at Fujiya. Order what you didn't have last night — Western course or Japanese course. Take your time over the meal. This is the last proper sit-down dinner at a great hotel until Kyoto."
+          "time": "13:45",
+          "activity": "🗻 Mt Fuji — RIGHT SIDE — possible last Fuji view!",
+          "notes": "Between Odawara and Shin-Fuji stations. Look right. Clear days only — check fujisan.jp."
         },
         {
-          "time": "21:00",
-          "activity": "🚕 Taxi to Tenzan Tohji-kyo — ♨️ ONSEN 3",
-          "notes": "Taxi from Fujiya Hotel (~¥2,000, 10 min). Tenzan is Hakone's best public outdoor onsen — a cedar forest riverside rotenburo fed by natural hot springs. Multiple pools at different temperatures. Rustic, beautiful, very different vibe from Fujiya. Open until late. Pay at door (~¥1,500/person). Return by taxi (~¥2,000)."
+          "time": "14:50",
+          "activity": "Arrive Kyoto Station 🎉",
+          "notes": "Welcome to Kyoto — one day earlier than planned!"
         },
         {
-          "time": "22:30",
-          "activity": "Return to Fujiya Hotel — 🛏️ Sleep",
-          "notes": "Set alarm for 06:15. Tomorrow (May 17) is checkout + Green Car Shinkansen to Kyoto. Final dawn soak (onsen_4) at 06:30 before breakfast and checkout at 11:00."
+          "time": "15:00",
+          "activity": "Taxi to Dormy Inn Kyoto Gion — check in",
+          "notes": "10-15 min taxi. Right at check-in time (15:00) so no waiting. Drop bags, freshen up."
+        },
+        {
+          "time": "16:00",
+          "activity": "Taxi to Higashiyama District",
+          "notes": "10 min. Late afternoon light is beautiful on the temple approach."
+        },
+        {
+          "time": "16:15",
+          "activity": "🏯 Kiyomizu-dera Temple",
+          "notes": "Climb up through Ninenzaka. Wooden stage with sweeping city views. Late afternoon light hits the stage beautifully. Allow 45-50 min."
+        },
+        {
+          "time": "17:05",
+          "activity": "Sannenzaka + Ninenzaka — historic stone-paved lanes",
+          "notes": "Stroll downhill through machiya shops. Matcha soft serve, ceramics, lacquerware. Golden hour light on the lanes. Allow 25-30 min."
+        },
+        {
+          "time": "17:35",
+          "activity": "Yasaka Shrine — stone lanterns start glowing",
+          "notes": "10 min walk from base of Ninenzaka. Beautiful at dusk."
+        },
+        {
+          "time": "18:10",
+          "activity": "Walk to Hanamikoji Street — 5 min from Yasaka",
+          "notes": ""
+        },
+        {
+          "time": "18:15",
+          "activity": "Gion — Hanamikoji Street — prime maiko hour!",
+          "notes": "18:00-19:30 is peak maiko time. Walk slowly, no flash photography, bow respectfully if you see one. You're already in Gion so hotel is 5 min walk away."
+        },
+        {
+          "time": "19:30",
+          "activity": "Dinner in Gion area — first Kyoto meal!",
+          "notes": "Pontocho is 10 min walk if you want the riverside kawadoko terrace (May = open season). Or stay in Gion — plenty of options within a few minutes."
+        },
+        {
+          "time": "21:30",
+          "activity": "Taxi back to hotel",
+          "notes": "Or walk — hotel is very close to Hanamikoji."
+        },
+        {
+          "time": "22:00",
+          "activity": "♨️ Dormy Inn Kyoto onsen — first Kyoto soak",
+          "notes": "Open late. Good way to end arrival day."
         }
       ],
       "tips": [
-        "Pola Museum is a genuine world-class art collection — don't rush it",
-        "Tenzan Tohji-kyo is the best public onsen in Hakone — rustic cedar forest pools, very different from hotel onsens",
-        "Today is intentionally slow — you need recovery after May 15's full day",
-        "Check weather for Mt Fuji from Gora Park area in the morning — final views before Kyoto tomorrow"
+        "Ask Fujiya Hotel about late checkout to 12:00 at reception the night before — not guaranteed but worth asking",
+        "Hakone Free Pass covers the Gora detour and the Odawara journey — good final use of the pass",
+        "Right side seats on the Shinkansen from Odawara — Mt Fuji is visible ~13:45 on clear days",
+        "Kiyomizu-dera at 16:15 is great timing — late afternoon light on the wooden stage is stunning",
+        "Maiko spotting on Hanamikoji: 18:00-19:30, walk slowly, no flash, give them space"
       ]
     },
     {
       "date": "2026-05-17",
       "day": 7,
-      "city": "Kyoto",
-      "label": "Gran Class Shinkansen + Kyoto Arrival",
+      "city": "Kyoto (day trip to Amanohashidate + Ine)",
+      "label": "Amanohashidate + Ine Fishing Village — Full Day Tour",
       "hotel": "hotel_3",
-      "checkout_hotel": "hotel_2",
-      "type": "travel_and_sightseeing",
-      "trains_today": [
-        "train_3"
-      ],
-      "onsen_today": [
-        "onsen_4"
-      ],
-      "fuji_view_alert": "Mt Fuji visible RIGHT side Gran Class (D seats) between Odawara and Shin-Fuji ~10:20 AM - LAST MT FUJI VIEW OF THE ENTIRE TRIP",
+      "type": "day_tour",
+      "trains_today": [],
+      "onsen_today": [],
+      "tour_note": "Fully organised tour — no independent transport or booking required beyond the tour itself.",
       "schedule": [
         {
-          "time": "06:30",
-          "activity": "♨️ ONSEN 4 - final dawn rotenburo at Fujiya Hotel",
-          "notes": "Last Hakone onsen. Last mountain mineral water."
+          "time": "All day",
+          "activity": "🌊 Amanohashidate + Ine Fishing Village — full day organised tour",
+          "notes": "One of Japan's Three Views. Pine-covered sandbar + traditional funaya boathouses built directly over the water with boats parked under the living room. Tour operator handles all transport, entry, and logistics. Expect to be out roughly 08:00–19:00 depending on operator."
         },
         {
-          "time": "07:30",
-          "activity": "Final Fujiya Hotel breakfast",
-          "notes": "Orchid Room - savour it!"
-        },
-        {
-          "time": "08:45",
-          "activity": "Check out Fujiya Hotel",
-          "notes": ""
-        },
-        {
-          "time": "08:55",
-          "activity": "Tozan Railway > Hakone-Yumoto > Odawara",
-          "notes": "30 min total."
-        },
-        {
-          "time": "09:50",
-          "activity": "Reserve Gran Class seats at JR office - Odawara Station",
-          "notes": "Show JR Pass, pay Gran Class supplement. Only 18 seats per train - reserve ASAP!"
-        },
-        {
-          "time": "10:05",
-          "activity": "🌟 GRAN CLASS Hikari Shinkansen - Odawara > Kyoto",
-          "notes": "SIT RIGHT SIDE D SEATS! Fuji view ~10:20 AM."
-        },
-        {
-          "time": "10:20",
-          "activity": "🗻 MT FUJI - RIGHT SIDE - LAST FUJI VIEW OF THE TRIP!",
-          "notes": "Between Odawara and Shin-Fuji stations. Camera ready!"
-        },
-        {
-          "time": "10:05",
-          "activity": "Gran Class service - meal + drinks + hot towel + amenity kit",
-          "notes": "Fully reclining seats, cabin attendant. Enjoy every minute."
-        },
-        {
-          "time": "12:05",
-          "activity": "Arrive Kyoto Station",
-          "notes": "Welcome to Kyoto!"
-        },
-        {
-          "time": "12:20",
-          "activity": "Lunch - Kyoto Ramen Koji (10th floor of station)",
-          "notes": "8 different ramen restaurants on one floor."
-        },
-        {
-          "time": "13:45",
-          "activity": "Taxi to Dormy Inn Kyoto Gion",
-          "notes": "~¥1,500, 15 min. Or Kyoto City Bus 17 / 205 to Gion-Shijo (20 min, ¥250)."
-        },
-        {
-          "time": "14:00",
-          "activity": "Check in Dormy Inn Kyoto Gion",
-          "notes": "Gion area. 5 min walk to Hanamikoji Street. Free late-night ramen 9:30–11 PM."
-        },
-        {
-          "time": "15:15",
-          "activity": "Taxi to Higashiyama District",
-          "notes": ""
-        },
-        {
-          "time": "15:50",
-          "activity": "Kiyomizu-dera Temple",
-          "notes": "10 min uphill through Ninenzaka."
-        },
-        {
-          "time": "17:05",
-          "activity": "Sannenzaka + Ninenzaka historic stone-paved lanes",
-          "notes": "Downhill walk through machiya shops."
-        },
-        {
-          "time": "17:30",
-          "activity": "Yasaka Shrine at dusk - stone lanterns glowing",
-          "notes": ""
-        },
-        {
-          "time": "18:25",
-          "activity": "Gion - Hanamikoji Street - spot maiko 18:30-19:30!",
-          "notes": "Walk slowly, no flash photography, bow respectfully."
-        },
-        {
-          "time": "20:15",
-          "activity": "Dinner in Gion area",
-          "notes": ""
-        },
-        {
-          "time": "21:30",
-          "activity": "Taxi back to hotel",
-          "notes": "10 min."
-        },
-        {
-          "time": "22:00",
-          "activity": "♨️ Dormy Inn Kyoto onsen",
-          "notes": ""
+          "time": "Evening",
+          "activity": "Return to Dormy Inn Kyoto Gion",
+          "notes": "Dinner in Gion or Pontocho on return."
         }
       ],
       "tips": [
-        "Gran Class: only 18 seats per train - reserve at Odawara JR office first thing!",
-        "Fuji view: RIGHT side D seats, ~10:20 AM - this is the LAST Mt Fuji view of the trip",
-        "Maiko spotting: 18:00-19:30 on Hanamikoji - walk slowly, respect their space"
+        "Amanohashidate is ~2 hrs from Kyoto — tour handles all pickup and transport",
+        "Ine funaya boathouses are uniquely Japanese — boats park directly under the living room floor",
+        "Book ASAP — May is peak season and day tours sell out weeks ahead"
       ]
     },
     {
@@ -2080,20 +2027,22 @@
       "notes": "¥2,200/person. Book 2+ weeks ahead."
     },
     {
-      "id": "book_9",
-      "item": "Gran Class seats (May 17) - Odawara Station JR office on arrival morning",
-      "where": "JR office at Odawara Station",
-      "url": "",
-      "priority": "MEDIUM",
-      "done": false
-    },
-    {
       "id": "book_10",
       "item": "Travel insurance",
       "where": "Any major provider",
       "url": "",
       "priority": "MEDIUM",
       "done": false
+    },
+    {
+      "id": "book_12",
+      "priority": "URGENT",
+      "item": "Amanohashidate + Ine Fishing Village full day tour (May 17)",
+      "where": "Viator / Klook / local Kyoto operator",
+      "when": "Book ASAP — May is peak season",
+      "done": false,
+      "notes": "Search \"Amanohashidate Ine day tour from Kyoto\". May is peak — book ASAP. Confirm pickup point (Kyoto Station or hotel).",
+      "url": "https://www.viator.com"
     },
     {
       "id": "book_11",
@@ -2103,15 +2052,6 @@
       "priority": "HIGH",
       "done": false,
       "notes": "~¥1,500/person. Must pre-book."
-    },
-    {
-      "id": "book_12",
-      "item": "Pola Museum of Art — advance timed entry (May 16)",
-      "where": "polamuseum.or.jp",
-      "url": "https://www.polamuseum.or.jp/en/",
-      "priority": "HIGH",
-      "done": false,
-      "notes": "Required advance booking. Hakone Free Pass gives discount on entry."
     }
   ],
   "experiences": [
@@ -2223,9 +2163,10 @@
     {
       "id": "exp_16",
       "item": "Gion Hanamikoji Street and spotting maiko",
-      "date": "2026-05-17",
+      "date": "2026-05-16",
       "city": "Kyoto",
-      "done": false
+      "done": false,
+      "notes": "Now on Kyoto arrival evening (May 16)"
     },
     {
       "id": "exp_17",
@@ -2274,6 +2215,20 @@
       "item": "Narita duty free Japanese whisky",
       "date": "2026-05-25",
       "city": "Tokyo",
+      "done": false
+    },
+    {
+      "id": "exp_24",
+      "item": "Amanohashidate pine sandbar — one of Japan's Three Views",
+      "date": "2026-05-17",
+      "city": "Kyoto (day trip)",
+      "done": false
+    },
+    {
+      "id": "exp_25",
+      "item": "Ine funaya fishing village boathouses",
+      "date": "2026-05-17",
+      "city": "Kyoto (day trip)",
       "done": false
     }
   ],

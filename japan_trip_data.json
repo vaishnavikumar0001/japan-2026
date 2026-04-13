@@ -22,8 +22,9 @@
     "airport_drive_mins": 60,
     "airport_transport": "Uber/Rideshare",
     "last_updated": "2026-04-12",
-    "version": "2.2",
+    "version": "2.3",
     "changelog": [
+      "v2.3: May 19 rebuilt — tightened schedule, depart Kyoto evening to Osaka. Nishiki Market trimmed to 30 min graze, Gion antiques 20-30 min browse, Maruyama Park 20-30 min. Yasaka Shrine / Hanamikoji / Kamo River walk removed (done May 16). Farewell Kyoto dinner moved to 16:30. Train to Osaka on May 19 evening. May 20 now full Osaka day — no morning Kyoto checkout travel.",
       "v2.2: May 16 rebuilt — early checkout from Fujiya, afternoon Shinkansen to Kyoto, Higashiyama evening (Kiyomizu-dera, Ninenzaka, Yasaka, Hanamikoji). Pola Museum and Tenzan Tohji-kyo removed (onsen_3 dropped). May 17 rebuilt — Amanohashidate + Ine full day organised tour. Gran Class Shinkansen (train_3) removed from May 17. Dormy Inn hotel_3 check-in moved to May 16.",
       "v2.1: May 15 rebuilt — Shinjuku → Kawaguchiko (bus), Chureito Pagoda, Kachi Kachi Ropeway + Love Bell, Lake Kawaguchiko north shore, Owakudani, Hakone Shrine, Fujiya Hotel. Romance Car removed. Pirate Ship and Lake Ashi rowboat removed.",
       "v2.1: May 16 rebuilt — full rest day at Fujiya. Dawn onsen, hotel gardens, Gora Park, Pola Museum, afternoon rest, Tenzan Tohji-kyo public onsen at night.",
@@ -145,7 +146,7 @@
       "address": "359 Miyanoshita, Hakone-machi, Hakone 250-0404",
       "phone": "+81-460-82-2211",
       "notes": "Japan's oldest Western hotel. Yukata and geta provided. 3 min walk from Miyanoshita Station.",
-      "checkin_note": "Standard checkout 11 AM — ask reception about 12 PM late checkout. Historic hotel est. 1878."
+      "checkin_note": "Standard checkout 11 AM — ask reception about 12 PM late checkout."
     },
     {
       "id": "hotel_3",
@@ -178,7 +179,7 @@
       "address": "2-1-6 Higashishinsaibashi, Chuo Ward, Osaka 542-0083",
       "phone": "+81 6-6212-5489",
       "notes": "Lawson attached. Free late-night ramen 9:30-11 PM. Rooftop onsen open til midnight.",
-      "checkin_note": "Check-in from 3 PM. Free late-night ramen 9:30–11 PM. Rooftop onsen included."
+      "checkin_note": "Arriving evening of May 19. Check-in from 3 PM. Lawson attached. Free late-night ramen. Rooftop onsen open til midnight."
     },
     {
       "id": "hotel_5",
@@ -293,7 +294,7 @@
     {
       "id": "train_4",
       "number": 4,
-      "date": "2026-05-20",
+      "date": "2026-05-19",
       "from": "Kyoto",
       "to": "Shin-Osaka",
       "train": "Hikari Shinkansen",
@@ -301,7 +302,7 @@
       "duration": "15 min",
       "jr_pass": true,
       "seat_tip": "Any reserved seat",
-      "notes": "Shortest Shinkansen of the trip!"
+      "notes": "Evening departure — Kyoto to Osaka. Shortest Shinkansen of the trip!"
     },
     {
       "id": "train_5",
@@ -1206,87 +1207,98 @@
     {
       "date": "2026-05-19",
       "day": 9,
-      "city": "Kyoto",
-      "label": "Fushimi Inari + Kinkaku-ji + Farewell Gion",
-      "hotel": "hotel_3",
-      "type": "sightseeing",
-      "last_night_note": "Last night in Kyoto - pack for Osaka tonight!",
+      "city": "Kyoto → Osaka",
+      "label": "Fushimi Inari + Kinkaku-ji + Depart Osaka",
+      "hotel": "hotel_4",
+      "type": "sightseeing_and_travel",
+      "last_night_note": "Checking into Osaka tonight — pack bags before dinner.",
       "schedule": [
         {
-          "time": "10:00",
+          "time": "09:30",
           "activity": "Taxi to Inari Station",
-          "notes": ""
+          "notes": "Early start to beat the crowds at Fushimi Inari."
         },
         {
-          "time": "10:25",
+          "time": "10:00",
           "activity": "⛩️ Fushimi Inari - climb to Yotsutsuji + beyond!",
-          "notes": "Go PAST Yotsutsuji - most tourists miss the best upper section. Allow 1.5+ hrs."
+          "notes": "Go PAST Yotsutsuji - most tourists turn back here. The upper section is quieter and the views open up. Allow 1.5+ hrs."
         },
         {
-          "time": "12:35",
+          "time": "12:00",
           "activity": "JR Nara Line > Kyoto Station",
-          "notes": "5 min."
+          "notes": "5 min. JR Pass."
+        },
+        {
+          "time": "12:15",
+          "activity": "Nishiki Market - quick graze lunch",
+          "notes": "30 min only — pick up a few bites as you walk through. Tamagoyaki, pickles, skewers. Don't linger — you've got Kinkaku-ji next."
         },
         {
           "time": "13:00",
-          "activity": "Nishiki Market - 130 stalls, graze everything!",
-          "notes": "Arrive hungry!"
-        },
-        {
-          "time": "14:20",
           "activity": "🥇 Kinkaku-ji - the Golden Pavilion",
-          "notes": "Taxi. Gold leaf shimmers in afternoon light - 14:45 timing is perfect."
+          "notes": "Taxi from Nishiki (~15 min). Gold leaf shimmers in afternoon light. Allow 45-50 min."
         },
         {
-          "time": "15:50",
+          "time": "13:55",
           "activity": "Sekkatei teahouse matcha + exit matcha soft serve",
-          "notes": ""
+          "notes": "Right at the exit — don't skip this."
         },
         {
-          "time": "16:00",
-          "activity": "Taxi to Gion area",
-          "notes": ""
+          "time": "14:15",
+          "activity": "Taxi to Gion / Shinmonzen area",
+          "notes": "~15 min."
+        },
+        {
+          "time": "14:30",
+          "activity": "Quick browse — Shinmonzen + Furumonzen antique street",
+          "notes": "20-30 min walk-through. Window shopping and one or two stops if something catches your eye — no need to go deep today."
+        },
+        {
+          "time": "15:00",
+          "activity": "Maruyama Park — short walk",
+          "notes": "20-30 min. Locals picnicking under the trees. Peaceful farewell to Kyoto's east side."
+        },
+        {
+          "time": "15:30",
+          "activity": "Return to Dormy Inn Kyoto Gion — pack bags",
+          "notes": "Hotel is a short walk from Maruyama Park. Pack everything for Osaka tonight."
         },
         {
           "time": "16:30",
-          "activity": "Gion antique shopping - Shinmonzen + Furumonzen",
-          "notes": "Genuine world-class Kyoyaki ceramics."
-        },
-        {
-          "time": "17:30",
-          "activity": "Maruyama Park - weeping cherry + locals picnicking",
-          "notes": ""
+          "activity": "Early farewell dinner — Pontocho kawadoko",
+          "notes": "Last meal in Kyoto. Riverside kawadoko terrace — May is peak season so it's open. Book ahead if possible. Allow 1.5 hrs."
         },
         {
           "time": "18:15",
-          "activity": "Yasaka Shrine at dusk - lanterns glowing",
-          "notes": ""
+          "activity": "Taxi to Kyoto Station",
+          "notes": "10-15 min. Allow buffer for bags."
         },
         {
-          "time": "19:00",
-          "activity": "Hanamikoji Street - farewell Gion walk",
-          "notes": ""
+          "time": "18:45",
+          "activity": "🚄 Hikari Shinkansen — Kyoto → Shin-Osaka",
+          "notes": "15 min. JR Pass. Any reserved seat. Shortest Shinkansen of the trip — you'll barely sit down."
         },
         {
-          "time": "20:00",
-          "activity": "FAREWELL KYOTO DINNER - Pontocho kawadoko",
-          "notes": "Last night in Kyoto - make it special."
-        },
-        {
-          "time": "22:00",
-          "activity": "Final Kamo River walk - say goodbye to Kyoto",
-          "notes": ""
-        },
-        {
-          "time": "23:00",
-          "activity": "Dormy Inn onsen - final Kyoto soak",
-          "notes": "Pack bags for Osaka tonight!"
+          "time": "19:05",
+          "activity": "Arrive Shin-Osaka → taxi to Dormy Inn Namba ANNEX",
+          "notes": "Drop bags. Check in. Lawson attached if you need anything."
         }
       ],
       "tips": [
-        "Fushimi Inari: go beyond Yotsutsuji - the crowds thin out and the views open up",
-        "Pack bags tonight for early Osaka departure tomorrow"
-      ]
+        "Fushimi Inari: go early and past Yotsutsuji — crowds thin fast above the midpoint",
+        "Nishiki: 30 min graze only — you have Kinkaku-ji and a train to catch",
+        "Maruyama Park: 20-30 min farewell stroll — no need to linger",
+        "Pontocho kawadoko: book ahead if possible, May terrace season is busy",
+        "Pack bags before dinner — taxi straight to station after eating"
+      ],
+      "checkout_hotel": "hotel_3",
+      "trains_today": [
+        "train_4"
+      ],
+      "flags": {
+        "checkout_day": true,
+        "shinkansen_day": true
+      }
     },
     {
       "date": "2026-05-20",
@@ -1294,108 +1306,91 @@
       "city": "Osaka",
       "label": "Osaka Castle + Kuromon + Dotonbori",
       "hotel": "hotel_4",
-      "checkout_hotel": "hotel_3",
+      "checkout_hotel": null,
       "type": "travel_and_sightseeing",
-      "trains_today": [
-        "train_4"
-      ],
+      "trains_today": [],
       "onsen_today": [
         "onsen_5"
       ],
       "schedule": [
         {
+          "time": "09:00",
+          "activity": "Breakfast — Lawson attached to hotel or nearby",
+          "notes": "Quick start — already checked in from last night."
+        },
+        {
           "time": "09:30",
-          "activity": "Check out Dormy Inn Kyoto Gion",
-          "notes": ""
-        },
-        {
-          "time": "09:38",
-          "activity": "Taxi to Kyoto Station",
-          "notes": ""
-        },
-        {
-          "time": "10:05",
-          "activity": "Hikari Shinkansen Kyoto > Shin-Osaka",
-          "notes": "15 min! Shortest Shinkansen of the trip. JR Pass."
-        },
-        {
-          "time": "10:35",
-          "activity": "Taxi to Dormy Inn Namba ANNEX - drop bags",
-          "notes": ""
-        },
-        {
-          "time": "10:55",
           "activity": "Taxi to Osaka Castle",
-          "notes": ""
+          "notes": "~15 min from Namba."
         },
         {
-          "time": "11:15",
+          "time": "10:00",
           "activity": "Osaka Castle outer grounds - free walk",
           "notes": "Giant stone walls, moat, volunteer English guides!"
         },
         {
-          "time": "12:00",
+          "time": "10:45",
           "activity": "Lunch in castle park",
-          "notes": ""
+          "notes": "Benches in the park, konbini nearby, or castle park restaurants."
         },
         {
-          "time": "13:00",
+          "time": "11:30",
           "activity": "🏯 Osaka Castle main tower - 8 floors + observation deck",
           "notes": "Museum + 360 degree views + gold tiger roof!"
         },
         {
-          "time": "14:45",
+          "time": "13:15",
           "activity": "JR Osaka Loop Line > Namba",
           "notes": "20 min. JR Pass."
         },
         {
-          "time": "15:10",
-          "activity": "Check in Dormy Inn Namba ANNEX",
-          "notes": "Lawson convenience store attached!"
+          "time": "13:40",
+          "activity": "Rest at hotel — drop castle bags",
+          "notes": "Quick stop. Back on your feet soon."
         },
         {
-          "time": "16:00",
+          "time": "14:30",
           "activity": "Kuromon Ichiba Market - Osaka's Kitchen!",
           "notes": "170 stalls. Graze everything."
         },
         {
-          "time": "17:00",
+          "time": "15:30",
           "activity": "Amerikamura - Triangle Park + vintage + records",
           "notes": ""
         },
         {
-          "time": "18:15",
+          "time": "16:45",
           "activity": "Shinsaibashi Shopping Arcade + Don Quijote",
           "notes": ""
         },
         {
-          "time": "18:50",
+          "time": "17:30",
           "activity": "Dotonbori at dusk - neon canal reflections!",
           "notes": "Stand on Ebisu Bridge for full neon canal view."
         },
         {
-          "time": "18:55",
+          "time": "17:35",
           "activity": "Glico Running Man - mandatory couple photo!",
           "notes": "Ebisu Bridge by the canal."
         },
         {
-          "time": "19:00",
+          "time": "18:00",
           "activity": "Takoyaki at Ichifuji - the original and most authentic",
           "notes": "Not the flashiest stall but the best flavor."
         },
         {
-          "time": "19:30",
+          "time": "18:30",
           "activity": "Dinner - Kani Doraku (giant mechanical crab!)",
           "notes": "King crab course meal by the canal."
         },
         {
-          "time": "21:30",
+          "time": "21:00",
           "activity": "Bar hopping - Bar K whisky + Craft Beer Base Kamikaze",
           "notes": ""
         },
         {
           "time": "23:00",
-          "activity": "♨️ ONSEN 5 - Dormy Inn rooftop natural hot spring",
+          "activity": "♨️ ONSEN 4 - Dormy Inn rooftop natural hot spring",
           "notes": "Natural hot spring + city views. Open til midnight!"
         },
         {
@@ -2041,7 +2036,7 @@
       "where": "Viator / Klook / local Kyoto operator",
       "when": "Book ASAP — May is peak season",
       "done": false,
-      "notes": "Search \"Amanohashidate Ine day tour from Kyoto\". May is peak — book ASAP. Confirm pickup point (Kyoto Station or hotel).",
+      "notes": "Search \"Amanohashidate Ine day tour from Kyoto\". May is peak — book ASAP.",
       "url": "https://www.viator.com"
     },
     {

@@ -485,12 +485,14 @@ input { font-family: inherit; }
 .badge-rest    { background: #fce8e6; color: #a0220a; }
 .badge-maiko   { background: #fce4f0; color: #9a1060; }
 .badge-tour    { background: #f0e8fe; color: #5020a0; }
+.badge-train   { background: #e0f0ff; color: #0a4a90; }
 @media (prefers-color-scheme: dark) {
   .badge-luggage { background: #1a2a4a; color: #7ab3f0; }
   .badge-fuji    { background: #142a1e; color: #6dba8a; }
   .badge-rest    { background: #3a1a16; color: #f09080; }
   .badge-maiko   { background: #2a1020; color: #e070b0; }
   .badge-tour    { background: #1e1030; color: #b080f0; }
+  .badge-train   { background: #0a1e30; color: #70b8f0; }
 }
 
 /* Day tour card (full day organised tour) */

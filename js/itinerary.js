@@ -310,10 +310,11 @@ function renderSchedule() {
           <span>📍 ${escHtml(day.city)}</span>
           <span>🏨 ${escHtml(day.hotel)}</span>
         </div>
-        ${(day.luggage_forward || day.fuji_view_alert || day.rest_day || day.flags?.checkout_day || day.flags?.fuji_view_alert || day.type === 'day_tour') ? `
+        ${(day.luggage_forward || day.fuji_view_alert || day.rest_day || day.checkout_hotel || day.flags?.checkout_day || day.flags?.fuji_view_alert || day.flags?.shinkansen_day || day.type === 'day_tour') ? `
         <div class="day-badges">
           ${day.luggage_forward ? `<span class="day-badge badge-luggage">🧳 Luggage Forward Day</span>` : ''}
-          ${day.flags?.checkout_day ? `<span class="day-badge badge-luggage">🧳 Checkout Day</span>` : ''}
+          ${(day.flags?.checkout_day || day.checkout_hotel) ? `<span class="day-badge badge-luggage">🧳 Checkout Day</span>` : ''}
+          ${day.flags?.shinkansen_day ? `<span class="day-badge badge-train">🚄 Shinkansen Day</span>` : ''}
           ${(day.fuji_view_alert || day.flags?.fuji_view_alert) ? `<span class="day-badge badge-fuji">🗻 Mt Fuji View</span>` : ''}
           ${day.flags?.maiko_alert ? `<span class="day-badge badge-maiko">🌸 Maiko Hour Tonight</span>` : ''}
           ${day.rest_day ? `<span class="day-badge badge-rest">😌 Rest Day</span>` : ''}

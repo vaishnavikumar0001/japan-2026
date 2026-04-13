@@ -173,29 +173,31 @@
       "meals": "Room only (no breakfast)",
       "map_query": "Hotel Vischio Kyoto by GRANVIA Kyoto Station",
       "taqbin_day": "2026-05-18",
-      "taqbin_note": "Send bags from Hotel Vischio Kyoto front desk before 09:00. Address: Residence Hotel Takayama Station, 6-105 Hanasatomachi, Takayama 506-0026. Bags arrive Takayama May 20 afternoon.",
+      "taqbin_note": "Send bags from Hotel Vischio Kyoto front desk before 09:00. Address: Tokyu Stay Hida-Takayama Musubi no Yu, Hanasatomachi, Takayama 506-0026. Bags arrive Takayama May 20 afternoon.",
       "booking_url": "https://www.booking.com/hotel/jp/vischio-kyoto.html",
       "phone": "+81-75-344-8888"
     },
     {
       "id": "hotel_5",
-      "name": "Residence Hotel Takayama Station",
+      "name": "Tokyu Stay Hida-Takayama Musubi no Yu",
       "city": "Takayama",
-      "area": "Station",
+      "area": "Takayama City",
       "checkin": "2026-05-20",
       "checkout": "2026-05-22",
       "nights": 2,
-      "onsen": false,
+      "onsen": true,
       "checkin_time": "3:00 PM",
       "checkout_time": "11:00 AM",
-      "checkin_time_note": "Front desk open 6:30 AM–midnight only. Early departures: drop keys in key box.",
-      "address": "6-105 Hanasatomachi, Takayama, Gifu 506-0026",
-      "phone": "+81 577-57-5578",
-      "notes": "30 seconds from Takayama Station. Full apartment with kitchen. Front desk NOT 24 hours (6:30 AM–midnight).",
-      "checkin_note": "Check-in from 3 PM. 30 seconds from Takayama Station. Bags arrive via TA-Q-BIN (sent May 18). Checkout May 22.",
-      "meals": "Room only (full apartment with kitchen)",
-      "map_query": "Residence Hotel Takayama Station Gifu",
-      "taqbin_note": ""
+      "checkin_time_note": "24-hour front desk.",
+      "address": "Hanasatomachi, Takayama-shi, Gifu 506-0026",
+      "phone": "+81-577-36-0109",
+      "notes": "Natural hot spring \"Musubi no Yu\" in-house. Near Takayama city centre and Sanmachi Suji historic district. TA-Q-BIN bags arrive May 20 afternoon from Kyoto.",
+      "checkin_note": "Check-in from 3 PM. 24-hour front desk. Natural hot spring on-site (Musubi no Yu). Bags arrive via TA-Q-BIN from Hotel Vischio Kyoto (sent May 18).",
+      "meals": "Room only",
+      "map_query": "Tokyu Stay Hida-Takayama Musubi no Yu",
+      "taqbin_note": "",
+      "onsen_description": "Natural hot spring — Musubi no Yu indoor baths",
+      "booking_url": "https://www.tokyustay.co.jp/e/hotel/HidaTakayama/"
     },
     {
       "id": "hotel_6",
@@ -241,6 +243,28 @@
       "type": "Mountain mineral bath at sunrise",
       "included": true,
       "notes": "Dawn rotenburo - almost empty at this hour."
+    },
+    {
+      "id": "onsen_3",
+      "number": 3,
+      "date": "2026-05-20",
+      "time": "Evening",
+      "location": "Tokyu Stay Hida-Takayama — Musubi no Yu",
+      "city": "Takayama",
+      "type": "Natural hot spring — indoor baths",
+      "included": true,
+      "notes": "First Takayama soak after a big travel day. Natural hot spring water."
+    },
+    {
+      "id": "onsen_4",
+      "number": 4,
+      "date": "2026-05-21",
+      "time": "Night",
+      "location": "Tokyu Stay Hida-Takayama — Musubi no Yu",
+      "city": "Takayama",
+      "type": "Natural hot spring — evening soak",
+      "included": true,
+      "notes": "After a full day exploring Takayama. Last night in the mountains."
     }
   ],
   "trains": [
@@ -1131,7 +1155,7 @@
         {
           "time": "08:30",
           "activity": "🧳 TA-Q-BIN — send bags to Takayama",
-          "notes": "Drop large bags at Hotel Vischio Kyoto front desk before 09:00. Address: Residence Hotel Takayama Station, 6-105 Hanasatomachi, Takayama 506-0026. ~¥2,000–2,500/bag. Travel with day packs May 18–19 (Osaka day trip). Bags arrive Takayama May 20 afternoon — collected at check-in."
+          "notes": "Drop large bags at Hotel Vischio Kyoto front desk before 09:00. Address: Tokyu Stay Hida-Takayama, 6-105 Hanasatomachi, Takayama 506-0026. ~¥2,000–2,500/bag. Travel with day packs May 18–19 (Osaka day trip). Bags arrive Takayama May 20 afternoon — collected at check-in."
         },
         {
           "time": "10:45",
@@ -1352,7 +1376,7 @@
         },
         {
           "time": "12:45",
-          "activity": "Check in Residence Hotel Takayama Station",
+          "activity": "Check in Tokyu Stay Hida-Takayama",
           "notes": "30 seconds from the station exit. Collect TA-Q-BIN bags."
         },
         {
@@ -1502,7 +1526,7 @@
         },
         {
           "time": "08:00",
-          "activity": "Check out Residence Hotel Takayama Station",
+          "activity": "Check out Tokyu Stay Hida-Takayama",
           "notes": "Carry bags directly — you arrive Tokyo Station at 13:33, hotel is steps away. No TA-Q-BIN needed (and Marunouchi Hotel, 1-6-3 Marunouchi). Stow bags at front desk if needed before heading to Odaiba."
         },
         {
@@ -2006,7 +2030,7 @@
       "where": "Booking.com / direct",
       "url": "https://www.marunouchi-hotel.co.jp/en/",
       "priority": "URGENT",
-      "done": false,
+      "done": true,
       "notes": "1-min walk from Tokyo Station Marunouchi North Exit. Book directly on official site.",
       "where_to_book": "Official site"
     },
@@ -2017,16 +2041,34 @@
       "where_to_book": "Official site / Booking.com",
       "url": "https://www.booking.com/hotel/jp/vischio-kyoto.html",
       "notes": "May 16–20, 4 nights. At Kyoto Station. Peak season — book ASAP.",
-      "done": false
+      "done": true
     },
     {
       "id": "book_15",
       "priority": "URGENT",
-      "item": "Residence Hotel Takayama Station — May 20–22 (2 nights)",
-      "where_to_book": "Official site / Booking.com",
-      "url": "https://www.booking.com/hotel/jp/residence-takayama-station.html",
-      "notes": "May 20–22, 2 nights. Apartment-style. TA-Q-BIN bags arrive here from Kyoto.",
-      "done": false
+      "item": "Tokyu Stay Hida-Takayama Musubi no Yu — May 20–22 (2 nights)",
+      "where_to_book": "Tokyu Stay official site",
+      "url": "https://www.tokyustay.co.jp/e/hotel/HidaTakayama/",
+      "notes": "May 20–22, 2 nights. Natural hot spring on-site. TA-Q-BIN bags arrive here from Kyoto.",
+      "done": true
+    },
+    {
+      "id": "book_16",
+      "priority": "URGENT",
+      "item": "Hotel Gracery Shinjuku — May 12–15 (3 nights)",
+      "where_to_book": "Official site",
+      "url": "https://gracery.com/en/shinjuku/",
+      "notes": "May 12–15, 3 nights. Kabukicho / Godzilla hotel.",
+      "done": true
+    },
+    {
+      "id": "book_17",
+      "priority": "URGENT",
+      "item": "Fujiya Hotel Hakone — May 15–16 (1 night)",
+      "where_to_book": "Official site",
+      "url": "https://www.fujiyahotel.jp/en/",
+      "notes": "May 15–16, 1 night. Historic onsen hotel est. 1878.",
+      "done": true
     }
   ],
   "experiences": [

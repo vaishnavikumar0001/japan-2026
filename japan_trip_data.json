@@ -1554,18 +1554,39 @@
         },
         {
           "time": "17:30",
-          "activity": "Head back to Shinjuku",
-          "notes": ""
+          "activity": "Train to Shibuya",
+          "notes": "From Super Autobacs area — JR or subway to Shibuya (~30-40 min depending on location)."
         },
         {
-          "time": "19:00",
-          "activity": "🍽️ Dinner — Shinjuku",
-          "notes": "Omoide Yokocho (Memory Lane) for yakitori, or Tsunahachi tempura nearby."
+          "time": "18:15",
+          "activity": "🚦 Shibuya Scramble Crossing",
+          "notes": "Stand at the crossing itself, then watch from the Starbucks 2F window or Mark City bridge for the overhead view. Most dramatic at dusk."
         },
         {
-          "time": "22:00",
-          "activity": "Early night — big day tomorrow (Suzuka!)",
-          "notes": "Race day. Set alarm for 06:00."
+          "time": "18:45",
+          "activity": "Explore Shibuya — Center-gai + Takeshita Street",
+          "notes": "Center-gai for the buzz, or 10 min walk to Harajuku Takeshita Street for street fashion."
+        },
+        {
+          "time": "19:30",
+          "activity": "🌆 Shibuya Sky — rooftop observatory",
+          "notes": "Shibuya Scramble Square 46F. Open-air rooftop, 360° Tokyo panorama. Best at sunset into night. ¥2,000/person. Advance timed entry required — book at shibuya-scramble-square.com (book_7 in checklist).",
+          "highlight": true
+        },
+        {
+          "time": "20:30",
+          "activity": "🍽️ Dinner — Shibuya",
+          "notes": "Plenty of options in Scramble Square B2-6F food floors, or walk to Niku-yokocho (meat alley) for wagyu skewers."
+        },
+        {
+          "time": "21:45",
+          "activity": "Train back to Shinjuku",
+          "notes": "Yamanote Line — one stop, 3 min. Or walk ~25 min if you want a night stroll."
+        },
+        {
+          "time": "22:15",
+          "activity": "Back at Yuen Shinjuku — early night",
+          "notes": "Suzuka tomorrow — 06:00 alarm. Get to bed."
         }
       ],
       "tips": [

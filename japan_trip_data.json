@@ -117,22 +117,22 @@
   "hotels": [
     {
       "id": "hotel_1",
-      "name": "JR Kyushu Hotel Blossom Shinjuku",
+      "name": "Hotel Gracery Shinjuku",
       "city": "Tokyo",
-      "area": "Shinjuku",
+      "area": "Kabukicho, Shinjuku",
       "checkin": "2026-05-12",
       "checkout": "2026-05-15",
       "nights": 3,
       "onsen": false,
-      "checkin_time": "2:00 PM",
+      "checkin_time": "3:00 PM",
       "checkout_time": "11:00 AM",
-      "address": "2-6-2 Yoyogi, Shibuya-ku, Tokyo 151-0053",
-      "phone": "+81-3-5333-8687",
-      "notes": "3 min walk from Shinjuku Station South Exit. Luggage storage available before check-in and after check-out.",
-      "checkin_note": "Check-in from 2 PM. 3-min walk from JR Shinjuku Station south exit. Checkout May 15 morning — bags forwarded to Fujiya Hotel via TA-Q-BIN before 07:30.",
+      "address": "1-19-1 Kabukicho, Shinjuku-ku, Tokyo 160-8466",
+      "phone": "+81-3-6833-1111",
+      "notes": "Above Toho Cinemas in Kabukicho. Famous for the Godzilla head on the roof terrace. ~8 min walk from JR Shinjuku Station east exit, 3 min from Seibu-Shinjuku Station. Checkout May 15 morning — bags forwarded to Fujiya Hotel via TA-Q-BIN before 07:15.",
+      "checkin_note": "Check-in from 3 PM. Kabukicho, Shinjuku — 8 min walk from JR Shinjuku east exit. Godzilla head visible from the terrace on 8F. Checkout May 15 morning — bags forwarded to Fujiya Hotel via TA-Q-BIN before 07:15.",
       "meals": "Room only (no breakfast)",
-      "map_query": "JR Kyushu Hotel Blossom Shinjuku Tokyo",
-      "taqbin_note": "Send bags to Fujiya Hotel (359 Miyanoshita, Hakone) before 07:30. Pick up at Fujiya Hotel same evening.",
+      "map_query": "Hotel Gracery Shinjuku Kabukicho Tokyo",
+      "taqbin_note": "Send bags to Fujiya Hotel (359 Miyanoshita, Hakone 250-0404) before 07:15. Bags arrive Fujiya by 5 PM.",
       "taqbin_day": "2026-05-15"
     },
     {
@@ -198,7 +198,7 @@
     },
     {
       "id": "hotel_6",
-      "name": "Hotel near Tokyo Station (TBD)",
+      "name": "Hotel near Tokyo Station (TBD — book ASAP)",
       "city": "Tokyo",
       "area": "Marunouchi / Tokyo Station",
       "checkin": "2026-05-22",
@@ -626,7 +626,7 @@
         },
         {
           "time": "17:45",
-          "activity": "Check in - JR Kyushu Hotel Blossom Shinjuku",
+          "activity": "Check in - Hotel Gracery Shinjuku",
           "notes": "Night 1 of 4."
         },
         {
@@ -811,7 +811,7 @@
         {
           "time": "06:30",
           "activity": "🧳 TA-Q-BIN — send bags from Shinjuku hotel to Fujiya Hotel",
-          "notes": "Drop large bags at JR Kyushu Hotel Blossom Shinjuku front desk before 07:15. Address: Fujiya Hotel, 359 Miyanoshita, Hakone-machi 250-0404. ~¥1,800–2,200/bag. Bags arrive at Fujiya by 5 PM. Travel with day packs only."
+          "notes": "Drop large bags at Hotel Gracery Shinjuku front desk before 07:15. Address: Fujiya Hotel, 359 Miyanoshita, Hakone-machi 250-0404. ~¥1,800–2,200/bag. Bags arrive at Fujiya by 5 PM. Travel with day packs only."
         },
         {
           "time": "06:45",
@@ -2023,10 +2023,29 @@
       "id": "book_13",
       "item": "Hotel near Tokyo Station — May 22–25 (3 nights)",
       "where": "Booking.com / direct",
-      "url": "https://www.booking.com",
+      "url": "https://www.booking.com/searchresults.html?ss=Tokyo+Station&checkin=2026-05-22&checkout=2026-05-25&group_adults=2",
       "priority": "URGENT",
       "done": false,
-      "notes": "Marunouchi area preferred. Good options: Marunouchi Hotel, Mitsui Garden Tokyo Station, Hotel Metropolitan Marunouchi. Book ASAP — mid-May peak."
+      "notes": "Need address ASAP for TA-Q-BIN logistics. Stay near Marunouchi side.",
+      "where_to_book": "Booking.com / Hotels.com"
+    },
+    {
+      "id": "book_14",
+      "priority": "URGENT",
+      "item": "Dormy Inn Kyoto Gion — May 16–20 (4 nights)",
+      "where_to_book": "Dormy Inn official site",
+      "url": "https://dormy-inn.com/en/hotels/kyoto_gion/",
+      "notes": "May 16–20, 4 nights. Gion area. Peak sakura season — book ASAP.",
+      "done": false
+    },
+    {
+      "id": "book_15",
+      "priority": "URGENT",
+      "item": "Residence Hotel Takayama Station — May 20–22 (2 nights)",
+      "where_to_book": "Official site / Booking.com",
+      "url": "https://www.booking.com/hotel/jp/residence-takayama-station.html",
+      "notes": "May 20–22, 2 nights. Apartment-style. TA-Q-BIN bags arrive here from Kyoto.",
+      "done": false
     }
   ],
   "experiences": [

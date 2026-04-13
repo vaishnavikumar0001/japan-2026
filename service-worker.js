@@ -1,5 +1,5 @@
 
-const CACHE_NAME = 'japan-2026-v27';
+const CACHE_NAME = 'japan-2026-v28';
 
 const ASSETS = [
   '/',

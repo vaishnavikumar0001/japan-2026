@@ -170,8 +170,8 @@
       "city": "Takayama",
       "area": "Station",
       "checkin": "2026-05-20",
-      "checkout": "2026-05-23",
-      "nights": 3,
+      "checkout": "2026-05-22",
+      "nights": 2,
       "onsen": false,
       "checkin_time": "3:00 PM",
       "checkout_time": "11:00 AM",
@@ -179,14 +179,14 @@
       "address": "6-105 Hanasatomachi, Takayama, Gifu 506-0026",
       "phone": "+81 577-57-5578",
       "notes": "30 seconds from Takayama Station. Full apartment with kitchen. Front desk NOT 24 hours (6:30 AM–midnight).",
-      "checkin_note": "Check-in from 3 PM. 30 seconds from Takayama Station exit. Bags arrive via TA-Q-BIN (sent from Kyoto May 18)."
+      "checkin_note": "Check-in from 3 PM. 30 seconds from Takayama Station. Bags arrive via TA-Q-BIN (sent May 18). Checkout May 22."
     },
     {
       "id": "hotel_6",
       "name": "Yuen Shinjuku",
       "city": "Tokyo",
       "area": "Shinjuku",
-      "checkin": "2026-05-23",
+      "checkin": "2026-05-22",
       "checkout": "2026-05-25",
       "nights": 2,
       "onsen": true,
@@ -197,7 +197,7 @@
       "address": "5-3-18 Shinjuku, Shinjuku City, Tokyo 160-0022",
       "phone": "+81 3-5361-8355",
       "notes": "8 min walk from Shinjuku Station. Yukata provided. Onsen open 15:00-02:00 and 06:00-10:00.",
-      "checkin_note": "Check-in from 3 PM. Rooftop onsen with Tokyo skyline views. Shibuya area."
+      "checkin_note": "Check-in from 3 PM May 22. Rooftop onsen open late. Suzuka race day May 23 — early start."
     }
   ],
   "onsens": [
@@ -293,14 +293,28 @@
     {
       "id": "train_7",
       "number": 7,
-      "date": "2026-05-23",
+      "date": "2026-05-22",
       "from": "Takayama",
       "to": "Nagoya",
       "train": "Wide View Hida Limited Express",
       "class": "Reserved",
       "duration": "2 hrs 25 min",
       "jr_pass": true,
-      "seat_tip": "LEFT side A/B seats - gorge views on return too."
+      "seat_tip": "LEFT side A/B seats - gorge views on return too.",
+      "notes": "Last mountain train. Hida river gorge views all the way to Nagoya."
+    },
+    {
+      "id": "train_8c",
+      "number": 9,
+      "date": "2026-05-23",
+      "from": "Tokyo",
+      "to": "Nagoya",
+      "train": "Hikari Shinkansen",
+      "class": "Ordinary Reserved",
+      "duration": "2h 10min",
+      "jr_pass": true,
+      "seat_tip": "Any reserved seat. Take Hikari — NOT Nozomi (JR Pass not valid on Nozomi).",
+      "notes": "Depart Tokyo/Shinagawa ~06:50. Arrive Nagoya ~09:00. Transfer to Kintetsu for Shiroko."
     },
     {
       "id": "train_8b",
@@ -314,12 +328,12 @@
       "jr_pass": false,
       "jr_pass_warning": "NOT covered by JR Pass - buy separately at Kintetsu office east side Nagoya Station. ~Y1,720 each way. Buy BOTH directions at same time.",
       "seat_tip": "Any reserved seat",
-      "notes": "Then 20-min Mie Kotsu shuttle bus from Shiroko to circuit. Suica accepted."
+      "notes": "NOT JR Pass. Buy tickets at Kintetsu Nagoya Station. Buy BOTH outbound + return at same time. ~¥1,720 each way."
     },
     {
       "id": "train_8",
       "number": 8,
-      "date": "2026-05-23",
+      "date": "2026-05-22",
       "from": "Nagoya",
       "to": "Tokyo",
       "train": "Hikari Shinkansen",
@@ -327,7 +341,20 @@
       "duration": "1 hr 40 min",
       "jr_pass": true,
       "seat_tip": "Any reserved seat - evening train, Fuji view unlikely after dark.",
-      "notes": "Depart Nagoya ~19:10, arrive Tokyo ~20:50."
+      "notes": "Arrives Tokyo ~13:33. JR Chuo Line to Shinjuku."
+    },
+    {
+      "id": "train_8d",
+      "number": 10,
+      "date": "2026-05-23",
+      "from": "Nagoya",
+      "to": "Tokyo",
+      "train": "Hikari Shinkansen",
+      "class": "Ordinary Reserved",
+      "duration": "1h 45min",
+      "jr_pass": true,
+      "seat_tip": "Any reserved seat.",
+      "notes": "Evening return from Suzuka. Depart ~18:30, arrive Tokyo ~20:15."
     },
     {
       "id": "train_9",
@@ -1470,9 +1497,9 @@
     {
       "date": "2026-05-22",
       "day": 12,
-      "city": "Takayama",
-      "label": "Free Day — Takayama",
-      "hotel": "hotel_5",
+      "city": "Takayama → Tokyo",
+      "label": "Checkout Takayama → Tokyo + Super Autobacs",
+      "hotel": "hotel_6",
       "type": "sightseeing",
       "early_start": true,
       "early_start_time": "7:00 AM",
@@ -1481,174 +1508,205 @@
       "luggage_note": "Large bags arrive from Osaka today! Collect at front desk.",
       "schedule": [
         {
-          "time": "09:00",
-          "activity": "☕ Slow morning — no plans",
-          "notes": "Sleep in, walk the markets again at your own pace, browse craft shops, or revisit a favourite spot."
+          "time": "07:00",
+          "activity": "Wake up + grab breakfast",
+          "notes": "Convenience store near station or hotel lobby. Quick — trains to catch."
         },
         {
-          "time": "12:00",
-          "activity": "🍱 Lunch — wherever you like",
-          "notes": "Try anything you didn't get to on previous days."
+          "time": "08:00",
+          "activity": "Check out Residence Hotel Takayama Station",
+          "notes": "Day pack or full bags — TA-Q-BIN option: send bags to Yuen Shinjuku from hotel desk before 09:00."
+        },
+        {
+          "time": "08:55",
+          "activity": "🚂 Wide View Hida — Takayama → Nagoya",
+          "notes": "JR Pass. ~2h 30min. Last mountain train — enjoy the Hida river gorge."
+        },
+        {
+          "time": "11:25",
+          "activity": "Arrive Nagoya Station",
+          "notes": "Quick transfer to Shinkansen platforms (JR Central concourse)."
+        },
+        {
+          "time": "11:30",
+          "activity": "Quick lunch — Nagoya Station",
+          "notes": "Hitsumabushi eel or miso katsu bento from the basement food hall. ~20 min."
+        },
+        {
+          "time": "11:50",
+          "activity": "🚄 Hikari Shinkansen — Nagoya → Tokyo",
+          "notes": "JR Pass. ~1h 45min. Ordinary reserved."
+        },
+        {
+          "time": "13:33",
+          "activity": "Arrive Tokyo Station",
+          "notes": "JR Chuo Line rapid → Shinjuku (~20 min). Or taxi direct to Yuen Shinjuku."
         },
         {
           "time": "14:00",
-          "activity": "Free afternoon",
-          "notes": "Optional: Shirakawa-go day trip by highway bus (1 hr each way, UNESCO thatched village), or stay local."
+          "activity": "Check in Yuen Shinjuku",
+          "notes": "Kabukicho / Shinjuku area. Drop bags, freshen up."
+        },
+        {
+          "time": "15:00",
+          "activity": "🚗 Super Autobacs",
+          "notes": "Nearest large stores: Super Autobacs SEVEN Kasai (~35 min by train/taxi) or check autobacs.com for closest open location. Multi-floor car parts heaven."
+        },
+        {
+          "time": "17:30",
+          "activity": "Head back to Shinjuku",
+          "notes": ""
         },
         {
           "time": "19:00",
-          "activity": "🍽️ Final Takayama dinner",
-          "notes": "Last night in Takayama — make it count. Hida beef, local sake, Sanmachi atmosphere."
+          "activity": "🍽️ Dinner — Shinjuku",
+          "notes": "Omoide Yokocho (Memory Lane) for yakitori, or Tsunahachi tempura nearby."
+        },
+        {
+          "time": "22:00",
+          "activity": "Early night — big day tomorrow (Suzuka!)",
+          "notes": "Race day. Set alarm for 06:00."
         }
       ],
       "tips": [
         "Morning Market: 7 AM sharp for freshest produce. Bring cash - cash only stalls.",
         "Buy sake DIRECT from breweries - namazake (unpasteurized) unavailable outside Hida"
       ],
-      "checkout_hotel": null,
-      "trains_today": [],
+      "checkout_hotel": "hotel_5",
+      "trains_today": [
+        "train_7",
+        "train_8"
+      ],
       "flags": {
-        "rest_day": true
+        "checkout_day": true,
+        "shinkansen_day": true
       },
-      "rest_day": true
+      "rest_day": null
     },
     {
       "date": "2026-05-23",
       "day": 13,
-      "city": "Takayama > Suzuka > Tokyo",
-      "label": "Morning Market > Wide View Hida > SUZUKA CIRCUIT > Tokyo",
+      "city": "Tokyo → Suzuka → Tokyo",
+      "label": "SUZUKA CIRCUIT — Super Formula Day Trip from Tokyo",
       "hotel": "hotel_6",
-      "checkout_hotel": "hotel_5",
+      "checkout_hotel": null,
       "type": "travel_and_sightseeing",
       "suzuka_day": true,
       "trains_today": [
-        "train_7",
+        "train_8c",
         "train_8b",
-        "train_8"
+        "train_8d"
       ],
       "onsen_today": [
         "onsen_6"
       ],
       "schedule": [
         {
+          "time": "06:00",
+          "activity": "Wake up — Suzuka day!",
+          "notes": "Early start. Grab breakfast from Lawson/FamilyMart on the way to the station."
+        },
+        {
+          "time": "06:30",
+          "activity": "Taxi / walk to Shinjuku Station",
+          "notes": "Yuen Shinjuku is ~5 min walk to Shinjuku Station."
+        },
+        {
           "time": "06:50",
-          "activity": "Breakfast - convenience store near Takayama Station",
-          "notes": ""
+          "activity": "🚄 Hikari Shinkansen — Tokyo → Nagoya",
+          "notes": "JR Pass — take Hikari NOT Nozomi (JR Pass not valid on Nozomi). ~2h 10min. Depart from Tokyo or Shinagawa Station."
         },
         {
-          "time": "07:00",
-          "activity": "Miyagawa Morning Market - final farewell",
-          "notes": "5 min walk. Different vendors daily."
-        },
-        {
-          "time": "08:25",
-          "activity": "Check out Residence Hotel",
-          "notes": "30 SECOND walk to station!"
-        },
-        {
-          "time": "08:55",
-          "activity": "Wide View Hida - Takayama > Nagoya",
-          "notes": "LEFT side A/B for gorge views on return. JR Pass."
-        },
-        {
-          "time": "11:25",
+          "time": "09:00",
           "activity": "Arrive Nagoya Station",
-          "notes": ""
+          "notes": "Exit toward Kintetsu Nagoya Station (underground connection, ~5 min walk)."
+        },
+        {
+          "time": "09:10",
+          "activity": "Buy Kintetsu tickets — Nagoya → Shiroko + return",
+          "notes": "NOT JR Pass. Buy BOTH outbound and return at same window. ~¥1,720 each way. Kintetsu Limited Express ticket + seat reservation."
+        },
+        {
+          "time": "09:20",
+          "activity": "🚃 Kintetsu Limited Express — Nagoya → Shiroko",
+          "notes": "NOT JR Pass — separate ticket. ~40 min. Sit back and get excited.",
+          "non_jr_pass": true
+        },
+        {
+          "time": "10:05",
+          "activity": "Arrive Shiroko Station — follow signs to shuttle",
+          "notes": "English signs to Mie Kotsu shuttle bus. ~¥400. Runs frequently on race day."
+        },
+        {
+          "time": "10:25",
+          "activity": "🏁 Arrive Suzuka Circuit!",
+          "notes": "Race Day Special Passport + Pit Walk Pass at gate. Pick up circuit map."
+        },
+        {
+          "time": "10:30",
+          "activity": "Explore circuit — Motopia Park + Racing Theater + Ferris Wheel",
+          "notes": "Get your bearings. Walk the outer areas. The Ferris Wheel gives a circuit overview."
         },
         {
           "time": "11:30",
-          "activity": "Quick lunch - Hitsumabushi eel or miso katsu at platform shops",
-          "notes": "Eat fast!"
+          "activity": "🏎️ PIT WALK — walk the actual Suzuka pitlane!",
+          "notes": "Pit Walk Pass required. Stand next to the cars, see the mechanics, pit lane close-up."
         },
         {
-          "time": "11:45",
-          "activity": "Buy Kintetsu Limited Express tickets - Nagoya to Shiroko AND return",
-          "notes": "Kintetsu office EAST SIDE of Nagoya Station. NOT JR Pass. ~Y1,720 each way. Buy BOTH directions now."
+          "time": "12:30",
+          "activity": "Lunch at circuit",
+          "notes": "Circuit food stalls — Japanese race day food. Eat early before the crowds."
         },
         {
-          "time": "12:00",
-          "activity": "Kintetsu Limited Express - Nagoya > Shiroko",
-          "notes": "50 min. Reserved reclining seat."
+          "time": "14:00",
+          "activity": "🏁 Super Formula Rounds 4 & 5 — RACE!",
+          "notes": "Find grandstand seats early. Sound is incredible — no earplugs needed but bring them just in case."
         },
         {
-          "time": "12:50",
-          "activity": "Arrive Shiroko Station - follow English signs to shuttle bus",
-          "notes": ""
+          "time": "16:30",
+          "activity": "Head to shuttle bus — leave before the rush",
+          "notes": "Leave 15 min before the final session ends to beat the crowd to the shuttle."
         },
         {
-          "time": "13:10",
-          "activity": "Mie Kotsu shuttle bus > Suzuka Circuit",
-          "notes": "20 min. ~Y500. Suica accepted."
+          "time": "17:00",
+          "activity": "Shuttle bus → Shiroko Station",
+          "notes": "~20 min."
         },
         {
-          "time": "13:30",
-          "activity": "🏁 Arrive Suzuka Circuit! Buy Race Day Special Passport + Pit Walk Pass",
-          "notes": "Buy at main gate on arrival."
-        },
-        {
-          "time": "13:45",
-          "activity": "Explore circuit grounds - Motopia Park + Racing Theater + Ferris Wheel",
-          "notes": "Racing Theater has F1 car displays. Ferris Wheel gives aerial track view."
-        },
-        {
-          "time": "14:30",
-          "activity": "🏎️ PIT WALK - walk the actual Suzuka pitlane!",
-          "notes": "No umbrellas in pitlane - use rainwear if raining."
-        },
-        {
-          "time": "15:30",
-          "activity": "Super Formula Rounds 4 & 5 - qualifying or race session",
-          "notes": "Japan's premier single-seater. Same Suzuka corners as F1 - 130R, Spoon, Degner."
-        },
-        {
-          "time": "17:30",
-          "activity": "Head to shuttle bus - leave 15 min before session ends if possible",
-          "notes": "Buses get very crowded right after sessions."
+          "time": "17:15",
+          "activity": "🚃 Kintetsu Limited Express — Shiroko → Nagoya",
+          "notes": "NOT JR Pass — use return ticket bought this morning.",
+          "non_jr_pass": true
         },
         {
           "time": "18:00",
-          "activity": "Shuttle bus > Shiroko Station",
-          "notes": "20 min."
+          "activity": "Arrive Nagoya Station",
+          "notes": "Optional: quick Nagoya-style dinner (miso katsu, hitsumabushi) before the train."
         },
         {
-          "time": "18:10",
-          "activity": "Kintetsu Limited Express - Shiroko > Nagoya",
-          "notes": "50 min. Use pre-bought return ticket."
+          "time": "18:30",
+          "activity": "🚄 Hikari Shinkansen — Nagoya → Tokyo",
+          "notes": "JR Pass. ~1h 45min. Back to Shinjuku by ~21:00."
         },
         {
-          "time": "19:10",
-          "activity": "Arrive Nagoya Station - board evening Shinkansen",
+          "time": "20:15",
+          "activity": "Arrive Tokyo Station → Shinjuku",
+          "notes": "JR Chuo Line ~20 min to Shinjuku, or taxi direct."
+        },
+        {
+          "time": "21:00",
+          "activity": "Back at Yuen Shinjuku",
           "notes": ""
         },
         {
-          "time": "19:10",
-          "activity": "Hikari Shinkansen - Nagoya > Tokyo",
-          "notes": "~1 hr 40 min. Ordinary reserved. JR Pass."
-        },
-        {
-          "time": "20:50",
-          "activity": "Arrive Tokyo Station",
-          "notes": ""
-        },
-        {
-          "time": "21:05",
-          "activity": "JR Chuo Line > Shinjuku",
-          "notes": "30 min. JR Pass."
-        },
-        {
-          "time": "21:40",
-          "activity": "Check in Yuen Shinjuku - night 1 of 2",
-          "notes": "8 min walk from Shinjuku Station. Yukata provided!"
-        },
-        {
-          "time": "22:00",
-          "activity": "Late dinner - Tsunahachi tempura or Omoide Yokocho",
-          "notes": "Both 5 min walk from hotel."
+          "time": "21:30",
+          "activity": "🍽️ Late dinner — Omoide Yokocho or Kabukicho ramen",
+          "notes": "Celebrate the race day!"
         },
         {
           "time": "23:30",
-          "activity": "♨️ ONSEN 6 - Yuen Shinjuku rooftop onsen",
-          "notes": "Indoor + outdoor with Shinjuku skyline!"
+          "activity": "♨️ ONSEN 5 — Yuen Shinjuku rooftop",
+          "notes": "Best views of the trip — Tokyo skyline at midnight. Open late."
         }
       ],
       "tips": [

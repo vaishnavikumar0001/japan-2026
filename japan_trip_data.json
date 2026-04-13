@@ -165,30 +165,13 @@
       "checkin_note": "Check-in from 3 PM. Gion area — Hanamikoji St 5 min walk. Free late-night ramen 9:30–11 PM."
     },
     {
-      "id": "hotel_4",
-      "name": "Dormy Inn Premium Namba ANNEX",
-      "city": "Osaka",
-      "area": "Namba",
-      "checkin": "2026-05-20",
-      "checkout": "2026-05-21",
-      "nights": 1,
-      "onsen": true,
-      "onsen_description": "Rooftop natural hot spring with city views",
-      "checkin_time": "3:00 PM",
-      "checkout_time": "11:00 AM",
-      "address": "2-1-6 Higashishinsaibashi, Chuo Ward, Osaka 542-0083",
-      "phone": "+81 6-6212-5489",
-      "notes": "Lawson attached. Free late-night ramen 9:30-11 PM. Rooftop onsen open til midnight.",
-      "checkin_note": "Arriving evening of May 19. Check-in from 3 PM. Lawson attached. Free late-night ramen. Rooftop onsen open til midnight."
-    },
-    {
       "id": "hotel_5",
       "name": "Residence Hotel Takayama Station",
       "city": "Takayama",
       "area": "Station",
-      "checkin": "2026-05-21",
+      "checkin": "2026-05-20",
       "checkout": "2026-05-23",
-      "nights": 2,
+      "nights": 3,
       "onsen": false,
       "checkin_time": "3:00 PM",
       "checkout_time": "11:00 AM",
@@ -196,7 +179,7 @@
       "address": "6-105 Hanasatomachi, Takayama, Gifu 506-0026",
       "phone": "+81 577-57-5578",
       "notes": "30 seconds from Takayama Station. Full apartment with kitchen. Front desk NOT 24 hours (6:30 AM–midnight).",
-      "checkin_note": "Check-in from 3 PM. 5-min walk from Takayama Station."
+      "checkin_note": "Check-in from 3 PM. 30 seconds from Takayama Station exit. Bags arrive via TA-Q-BIN (sent from Kyoto May 18)."
     },
     {
       "id": "hotel_6",
@@ -241,17 +224,6 @@
       "notes": "Dawn rotenburo - almost empty at this hour."
     },
     {
-      "id": "onsen_4",
-      "number": 4,
-      "date": "2026-05-20",
-      "time": "11:00 PM",
-      "location": "Dormy Inn Namba ANNEX - rooftop",
-      "city": "Osaka",
-      "type": "Natural hot spring with city views",
-      "included": true,
-      "notes": "Follow up with free late-night ramen downstairs!"
-    },
-    {
       "id": "onsen_5",
       "number": 5,
       "date": "2026-05-23",
@@ -292,35 +264,22 @@
       "notes": "Departs Odawara ~13:10. No Gran Class on this service — ordinary reserved is comfortable. Reserve at Odawara JR office."
     },
     {
-      "id": "train_4",
-      "number": 4,
-      "date": "2026-05-20",
-      "from": "Kyoto",
-      "to": "Shin-Osaka",
-      "train": "Hikari Shinkansen",
-      "class": "Ordinary Reserved",
-      "duration": "15 min",
-      "jr_pass": true,
-      "seat_tip": "Any reserved seat",
-      "notes": "Official Kyoto → Osaka move. Checkout Kyoto, check in Dormy Inn Namba."
-    },
-    {
       "id": "train_5",
       "number": 5,
-      "date": "2026-05-21",
-      "from": "Osaka",
+      "date": "2026-05-20",
+      "from": "Kyoto",
       "to": "Nagoya",
       "train": "Hikari Shinkansen",
       "class": "Ordinary Reserved",
-      "duration": "50 min",
+      "duration": "38 min",
       "jr_pass": true,
       "seat_tip": "Any reserved seat",
-      "notes": "Transfer at Nagoya for Wide View Hida."
+      "notes": "Heading east (Tokyo direction). Reserved seat. Quick transfer at Nagoya to Wide View Hida."
     },
     {
       "id": "train_6",
       "number": 6,
-      "date": "2026-05-21",
+      "date": "2026-05-20",
       "from": "Nagoya",
       "to": "Takayama",
       "train": "Wide View Hida Limited Express",
@@ -328,7 +287,8 @@
       "duration": "2 hrs 25 min",
       "jr_pass": true,
       "seat_tip": "LEFT side A/B seats - Hida River gorge appears ~90 min in.",
-      "book_at": "Any JR office"
+      "book_at": "Any JR office",
+      "notes": "JR Pass. LEFT side for Kiso Valley river gorge views. Arrives Takayama ~12:38."
     },
     {
       "id": "train_7",
@@ -1139,6 +1099,11 @@
       "type": "sightseeing",
       "schedule": [
         {
+          "time": "08:30",
+          "activity": "🧳 TA-Q-BIN — send bags to Takayama",
+          "notes": "Drop large bags at hotel front desk before 9 AM for TA-Q-BIN pickup. Address: Residence Hotel Takayama Station. Bags arrive May 20 — travel with day packs only for May 19 + 20 morning."
+        },
+        {
           "time": "10:00",
           "activity": "Taxi to Kyoto Station",
           "notes": "10 min."
@@ -1202,14 +1167,15 @@
       "tips": [
         "Nijo nightingale floors: walk as slowly and quietly as possible",
         "Pontocho kawadoko terrace is only May-September - don't miss it"
-      ]
+      ],
+      "luggage_forward": true
     },
     {
       "date": "2026-05-19",
       "day": 9,
       "city": "Kyoto + Osaka Day Trip",
       "label": "Fushimi Inari + Kinkaku-ji + Osaka Day Trip",
-      "hotel": "hotel_4",
+      "hotel": "hotel_3",
       "type": "sightseeing_and_travel",
       "last_night_note": "Checking into Osaka tonight — pack bags before dinner.",
       "schedule": [
@@ -1321,77 +1287,88 @@
     {
       "date": "2026-05-20",
       "day": 10,
-      "city": "Kyoto → Osaka",
-      "label": "Checkout Kyoto → Osaka Check-In + Namba Evening",
-      "hotel": "hotel_4",
+      "city": "Kyoto → Takayama",
+      "label": "Checkout Kyoto → Wide View Hida → Takayama",
+      "hotel": "hotel_5",
       "checkout_hotel": "hotel_3",
       "type": "travel_and_sightseeing",
       "trains_today": [
-        "train_4"
+        "train_5",
+        "train_6"
       ],
       "onsen_today": [
         "onsen_5"
       ],
       "schedule": [
         {
+          "time": "08:00",
+          "activity": "Grab-and-go breakfast",
+          "notes": "Lawson or FamilyMart near hotel. Coffee + onigiri. Quick — big travel day."
+        },
+        {
+          "time": "08:30",
+          "activity": "Check out Dormy Inn Kyoto Gion",
+          "notes": "Bags already forwarded via TA-Q-BIN on May 18. Day pack only."
+        },
+        {
           "time": "09:00",
-          "activity": "Breakfast — Dormy Inn Kyoto Gion",
-          "notes": "Last morning in Kyoto."
+          "activity": "Taxi to Kyoto Station",
+          "notes": "10 min."
         },
         {
-          "time": "09:30",
-          "activity": "Pack + check out Dormy Inn Kyoto Gion",
-          "notes": "Standard 11:00 checkout. Ask about 12:00 late checkout if needed."
+          "time": "09:22",
+          "activity": "🚄 Hikari Shinkansen — Kyoto → Nagoya",
+          "notes": "JR Pass. ~38 min. Heading east toward Tokyo direction. Reserved seat."
         },
         {
-          "time": "11:00",
-          "activity": "🚄 Hikari Shinkansen — Kyoto → Shin-Osaka",
-          "notes": "JR Pass. 15 min. Ordinary reserved. train_4."
+          "time": "10:00",
+          "activity": "Arrive Nagoya Station — quick transfer",
+          "notes": "Head to Wide View Hida platform (JR Central). Allow 15-20 min for platform change."
         },
         {
-          "time": "11:20",
-          "activity": "Arrive Shin-Osaka → taxi to Dormy Inn Namba ANNEX",
-          "notes": "~20 min taxi to Namba. Drop bags — check-in is 3 PM."
+          "time": "10:13",
+          "activity": "🚂 Wide View Hida Limited Express — Nagoya → Takayama",
+          "notes": "JR Pass. ~2h 25min. Panoramic windows. Kiso Valley gorge scenery. Seat tip: LEFT side for mountain river views."
         },
         {
-          "time": "12:00",
-          "activity": "Lunch in Namba area",
-          "notes": "Easy options around Shinsaibashi. Or grab something at Kuromon if you want more."
+          "time": "12:38",
+          "activity": "Arrive Takayama Station 🏔️",
+          "notes": "Welcome to the Alps! Bags already waiting at hotel via TA-Q-BIN."
         },
         {
-          "time": "13:00",
-          "activity": "Free afternoon — Namba explore / Don Quijote / rest",
-          "notes": "Lighter pace today — you already did Castle + Dotonbori yesterday. Don Quijote is right nearby."
+          "time": "12:45",
+          "activity": "Check in Residence Hotel Takayama Station",
+          "notes": "30 seconds from the station exit. Collect TA-Q-BIN bags."
         },
         {
-          "time": "15:00",
-          "activity": "Check in — Dormy Inn Premium Namba ANNEX",
-          "notes": "Official check-in 3 PM. Lawson attached. Rooftop onsen open from afternoon."
+          "time": "13:15",
+          "activity": "Lunch — Hida beef ramen or local soba",
+          "notes": "Several spots 2 min walk from hotel in Sanmachi direction."
         },
         {
-          "time": "17:30",
-          "activity": "Dotonbori at golden hour — neon + canal reflections",
-          "notes": "Different vibe from last night — slower, golden evening light before the full neon kicks in."
+          "time": "14:30",
+          "activity": "Sanmachi Suji historic district + sake tastings",
+          "notes": "Edo-period merchant town. Three parallel lanes of dark timber buildings. Free sake tastings at Hirase, Funasaka, Ota breweries."
         },
         {
-          "time": "19:00",
-          "activity": "🍽️ Dinner — try something different from last night",
-          "notes": "Kushikatsu at Daruma, ramen at Kinryu, or explore Hozenji Yokocho alley."
+          "time": "16:20",
+          "activity": "Takayama Jinya — only surviving Edo government house in Japan",
+          "notes": "¥450/person. 1692 magistrate's office with original rice granaries. 45 min."
         },
         {
-          "time": "21:00",
-          "activity": "Bar hopping — Bar K whisky + Craft Beer Base Kamikaze",
-          "notes": "Namba/Shinsaibashi bar scene. Both within walking distance."
+          "time": "17:20",
+          "activity": "Higashiyama Temple Walk — hilltop views",
+          "notes": "2.4km walking trail linking 13 temples and shrines through forested hillside. About 1 hour."
         },
         {
-          "time": "23:00",
-          "activity": "♨️ ONSEN 4 — Dormy Inn rooftop natural hot spring",
-          "notes": "Open til midnight. Rooftop city views."
+          "time": "18:45",
+          "activity": "🍽️ Dinner — Hida beef sukiyaki or hoba miso",
+          "notes": "Hida beef is the local wagyu. Hoba miso (miso grilled on magnolia leaf) is unmissable. Try Kakusho or Jinya-mae area."
         },
         {
-          "time": "23:30",
-          "activity": "Free late-night ramen — Dormy Inn",
-          "notes": "Included. The legendary Dormy Inn midnight ramen."
+          "time": "20:30",
+          "activity": "Sanmachi Suji at night — lanterns + silence",
+          "notes": "Completely transforms after dark. Most tourists gone. Stone lanterns glowing, total quiet."
         }
       ],
       "tips": [
@@ -1401,133 +1378,22 @@
       "flags": {
         "checkout_day": true,
         "shinkansen_day": true
-      }
+      },
+      "luggage_forward": null
     },
     {
       "date": "2026-05-21",
       "day": 11,
       "city": "Takayama",
-      "label": "Den Den Town + Wide View Hida",
+      "label": "Morning Market + Hida Folk Village",
       "hotel": "hotel_5",
-      "checkout_hotel": "hotel_4",
+      "checkout_hotel": null,
       "type": "travel_and_sightseeing",
       "luggage_forward": true,
       "luggage_note": "Send large bags via TA-Q-BIN to Residence Hotel Takayama this morning. Bags arrive May 22.",
       "early_start": true,
       "early_start_time": "7:00 AM",
-      "trains_today": [
-        "train_5",
-        "train_6"
-      ],
-      "schedule": [
-        {
-          "time": "07:00",
-          "activity": "TA-Q-BIN bags to Residence Hotel Takayama Station",
-          "notes": "Hotel front desk. Address: 6-105 Hanasatomachi, Takayama."
-        },
-        {
-          "time": "07:15",
-          "activity": "Check out Dormy Inn Namba - daypack only",
-          "notes": ""
-        },
-        {
-          "time": "07:20",
-          "activity": "Breakfast - Lawson attached to hotel",
-          "notes": ""
-        },
-        {
-          "time": "07:30",
-          "activity": "Den Den Town (Nipponbashi) - Osaka's Akihabara",
-          "notes": "10 min walk. Joshin + Rocket retro games + Animate + Figure King."
-        },
-        {
-          "time": "09:20",
-          "activity": "Walk to Shinsekai district",
-          "notes": "15 min walk."
-        },
-        {
-          "time": "09:35",
-          "activity": "Shinsekai street level - Jan Jan Yokocho retro arcade",
-          "notes": ""
-        },
-        {
-          "time": "09:45",
-          "activity": "Fugu (puffer fish) breakfast at standing restaurant",
-          "notes": "Licensed chefs - fully safe!"
-        },
-        {
-          "time": "10:50",
-          "activity": "Subway to Osaka Station",
-          "notes": ""
-        },
-        {
-          "time": "11:30",
-          "activity": "Hikari Shinkansen Osaka > Nagoya",
-          "notes": "50 min. JR Pass."
-        },
-        {
-          "time": "12:35",
-          "activity": "Quick lunch - Nagoya ekiben (miso katsu bento!)",
-          "notes": "Platform shops at Nagoya."
-        },
-        {
-          "time": "13:00",
-          "activity": "Wide View Hida Limited Express Nagoya > Takayama",
-          "notes": "LEFT side A/B seats! Hida River gorge ~90 min in. JR Pass."
-        },
-        {
-          "time": "15:25",
-          "activity": "Arrive Takayama Station",
-          "notes": "🏔️ Welcome to the Japanese Alps!"
-        },
-        {
-          "time": "15:30",
-          "activity": "Check in Residence Hotel - 30 SECONDS from station!",
-          "notes": "Full apartment with kitchen. Night 1 of 2."
-        },
-        {
-          "time": "15:45",
-          "activity": "Sanmachi Suji historic district + sake tastings",
-          "notes": "10 min walk. Look for sugidama (cedar balls) above brewery entrances."
-        },
-        {
-          "time": "17:35",
-          "activity": "Takayama Jinya - only surviving Edo government house in Japan",
-          "notes": ""
-        },
-        {
-          "time": "18:35",
-          "activity": "Higashiyama Temple Walk - hilltop views",
-          "notes": ""
-        },
-        {
-          "time": "19:45",
-          "activity": "Dinner - Hida beef ramen or sukiyaki",
-          "notes": ""
-        },
-        {
-          "time": "21:30",
-          "activity": "Sanmachi Suji at night - lanterns and silence",
-          "notes": "One of Japan's most beautiful quiet experiences."
-        }
-      ],
-      "tips": [
-        "Wide View Hida: LEFT side A/B seats for gorge views - reserve at any JR office",
-        "Sanmachi Suji at night is one of Japan's most beautiful quiet experiences - don't skip it"
-      ]
-    },
-    {
-      "date": "2026-05-22",
-      "day": 12,
-      "city": "Takayama",
-      "label": "Morning Market + Hida Folk Village",
-      "hotel": "hotel_5",
-      "type": "sightseeing",
-      "early_start": true,
-      "early_start_time": "7:00 AM",
-      "last_night_note": "Last night in Takayama - pack for Tokyo tomorrow!",
-      "luggage_arrives": true,
-      "luggage_note": "Large bags arrive from Osaka today! Collect at front desk.",
+      "trains_today": [],
       "schedule": [
         {
           "time": "06:50",
@@ -1538,11 +1404,6 @@
           "time": "07:00",
           "activity": "Miyagawa Morning Market - running since Edo period",
           "notes": "5 min walk. Bring CASH - most stalls cash only!"
-        },
-        {
-          "time": "08:35",
-          "activity": "Collect large bags at hotel (arrived via TA-Q-BIN)",
-          "notes": "Hotel front desk."
         },
         {
           "time": "09:00",
@@ -1601,9 +1462,55 @@
         }
       ],
       "tips": [
+        "Wide View Hida: LEFT side A/B seats for gorge views - reserve at any JR office",
+        "Sanmachi Suji at night is one of Japan's most beautiful quiet experiences - don't skip it"
+      ],
+      "flags": null
+    },
+    {
+      "date": "2026-05-22",
+      "day": 12,
+      "city": "Takayama",
+      "label": "Free Day — Takayama",
+      "hotel": "hotel_5",
+      "type": "sightseeing",
+      "early_start": true,
+      "early_start_time": "7:00 AM",
+      "last_night_note": "Last night in Takayama - pack for Tokyo tomorrow!",
+      "luggage_arrives": true,
+      "luggage_note": "Large bags arrive from Osaka today! Collect at front desk.",
+      "schedule": [
+        {
+          "time": "09:00",
+          "activity": "☕ Slow morning — no plans",
+          "notes": "Sleep in, walk the markets again at your own pace, browse craft shops, or revisit a favourite spot."
+        },
+        {
+          "time": "12:00",
+          "activity": "🍱 Lunch — wherever you like",
+          "notes": "Try anything you didn't get to on previous days."
+        },
+        {
+          "time": "14:00",
+          "activity": "Free afternoon",
+          "notes": "Optional: Shirakawa-go day trip by highway bus (1 hr each way, UNESCO thatched village), or stay local."
+        },
+        {
+          "time": "19:00",
+          "activity": "🍽️ Final Takayama dinner",
+          "notes": "Last night in Takayama — make it count. Hida beef, local sake, Sanmachi atmosphere."
+        }
+      ],
+      "tips": [
         "Morning Market: 7 AM sharp for freshest produce. Bring cash - cash only stalls.",
         "Buy sake DIRECT from breweries - namazake (unpasteurized) unavailable outside Hida"
-      ]
+      ],
+      "checkout_hotel": null,
+      "trains_today": [],
+      "flags": {
+        "rest_day": true
+      },
+      "rest_day": true
     },
     {
       "date": "2026-05-23",

@@ -1504,7 +1504,7 @@
         {
           "time": "08:00",
           "activity": "Check out Residence Hotel Takayama Station",
-          "notes": "Day pack or full bags — TA-Q-BIN option: send bags to Yuen Shinjuku from hotel desk before 09:00."
+          "notes": "Day pack or full bags. TA-Q-BIN option: send bags to Tokyo Station hotel from front desk before 09:00."
         },
         {
           "time": "08:55",
@@ -1514,7 +1514,7 @@
         {
           "time": "11:25",
           "activity": "Arrive Nagoya Station",
-          "notes": "Quick transfer to Shinkansen platforms (JR Central concourse)."
+          "notes": "Quick transfer to Shinkansen platforms."
         },
         {
           "time": "11:30",
@@ -1528,28 +1528,33 @@
         },
         {
           "time": "13:33",
-          "activity": "Arrive Tokyo Station",
-          "notes": "JR Chuo Line rapid → Shinjuku (~20 min). Or taxi direct to Yuen Shinjuku."
+          "activity": "Arrive Tokyo Station — check in hotel",
+          "notes": "Drop bags, freshen up. Hotel is steps from the station."
         },
         {
-          "time": "14:00",
-          "activity": "Check in Yuen Shinjuku",
-          "notes": "Kabukicho / Shinjuku area. Drop bags, freshen up."
+          "time": "14:30",
+          "activity": "🚃 JR Keiyo Line → Shin-Kiba → Rinkai Line → Tokyo Teleport",
+          "notes": "JR Pass covers Keiyo Line to Shin-Kiba. Rinkai Line separate (¥330). Total ~25 min to Odaiba."
         },
         {
           "time": "15:00",
-          "activity": "🚗 Super Autobacs",
-          "notes": "Nearest large stores: Super Autobacs SEVEN Kasai (~35 min by train/taxi) or check autobacs.com for closest open location. Multi-floor car parts heaven."
+          "activity": "🤖 DiverCity Tokyo Plaza — Odaiba",
+          "notes": "Life-size 18m Unicorn Gundam statue in the plaza — mandatory photo. Inside: Gundam Base Tokyo (largest Gunpla shop in Japan), anime merch, Japanese fashion brands. Free entry to mall."
         },
         {
-          "time": "17:30",
-          "activity": "Train to Shibuya",
-          "notes": "JR Yamanote from Autobacs area or taxi to Shibuya. ~30-40 min."
+          "time": "16:15",
+          "activity": "🚗 Super Autobacs — Odaiba / Kasai area",
+          "notes": "Short taxi or one Rinkai Line stop from DiverCity. Super Autobacs SEVEN Kasai is the closest big store. JDM parts, accessories, scale models, merch."
+        },
+        {
+          "time": "17:45",
+          "activity": "Rinkai Line → Osaki → JR Yamanote → Shibuya",
+          "notes": "JR Pass (Yamanote). ~35 min from Odaiba to Shibuya."
         },
         {
           "time": "18:15",
           "activity": "🚦 Shibuya Scramble Crossing",
-          "notes": "Stand at the crossing itself, then watch from the Starbucks 2F window or Mark City bridge for the overhead view. Most dramatic at dusk."
+          "notes": "Stand in the crossing, then watch from the Starbucks 2F window or Mark City bridge for the overhead view. Most dramatic at dusk."
         },
         {
           "time": "18:45",
@@ -1559,23 +1564,22 @@
         {
           "time": "19:30",
           "activity": "🌆 Shibuya Sky — rooftop observatory",
-          "notes": "Shibuya Scramble Square 46F. Open-air rooftop, 360° Tokyo panorama. Best at sunset into night. ¥2,000/person. Advance timed entry required — book at shibuya-scramble-square.com (book_7 in checklist).",
-          "highlight": true
+          "notes": "Shibuya Scramble Square 46F. Open-air rooftop, 360° Tokyo panorama. Best at sunset into night. ¥2,000/person. Advance timed entry required — book at shibuya-scramble-square.com (book_7 in checklist)."
         },
         {
           "time": "20:30",
           "activity": "🍽️ Dinner — Shibuya",
-          "notes": "Plenty of options in Scramble Square B2-6F food floors, or walk to Niku-yokocho (meat alley) for wagyu skewers."
+          "notes": "Scramble Square B2–6F food floors, or Niku-yokocho (meat alley) for wagyu skewers."
         },
         {
           "time": "21:45",
-          "activity": "Train to Tokyo Station",
-          "notes": "JR Yamanote Shibuya → Tokyo ~15 min. Or taxi direct."
+          "activity": "JR Yamanote → Tokyo Station",
+          "notes": "~15 min. One of the last full days — soak it in."
         },
         {
           "time": "22:15",
-          "activity": "Check in — hotel near Tokyo Station",
-          "notes": "Drop bags, freshen up. Early night — Suzuka 06:00 start tomorrow."
+          "activity": "Back at hotel — early night",
+          "notes": "Suzuka tomorrow — 06:00 alarm. Get to bed."
         }
       ],
       "tips": [

@@ -183,21 +183,21 @@
     },
     {
       "id": "hotel_6",
-      "name": "Yuen Shinjuku",
+      "name": "Hotel near Tokyo Station (TBD)",
       "city": "Tokyo",
-      "area": "Shinjuku",
+      "area": "Marunouchi / Tokyo Station",
       "checkin": "2026-05-22",
       "checkout": "2026-05-25",
-      "nights": 2,
-      "onsen": true,
-      "onsen_description": "Rooftop onsen - indoor and outdoor with Tokyo skyline views",
+      "nights": 3,
+      "onsen": false,
+      "onsen_description": "",
       "checkin_time": "3:00 PM",
       "checkout_time": "11:00 AM",
       "checkin_time_note": "Early check-in NOT possible per hotel FAQ. Luggage storage available before check-in.",
-      "address": "5-3-18 Shinjuku, Shinjuku City, Tokyo 160-0022",
+      "address": "Marunouchi, Chiyoda, Tokyo",
       "phone": "+81 3-5361-8355",
-      "notes": "8 min walk from Shinjuku Station. Yukata provided. Onsen open 15:00-02:00 and 06:00-10:00.",
-      "checkin_note": "Check-in from 3 PM May 22. Rooftop onsen open late. Suzuka race day May 23 — early start."
+      "notes": "Steps from Tokyo Station. Central for Shinkansen (Suzuka May 23) and Keiyo Line (A-PIT May 24). Book ASAP — peak season.",
+      "checkin_note": "Check-in from 3 PM. Tokyo Station is the main Shinkansen hub — ideal for May 23 Suzuka departure and May 25 N'EX to Narita."
     }
   ],
   "onsens": [
@@ -222,17 +222,6 @@
       "type": "Mountain mineral bath at sunrise",
       "included": true,
       "notes": "Dawn rotenburo - almost empty at this hour."
-    },
-    {
-      "id": "onsen_5",
-      "number": 5,
-      "date": "2026-05-23",
-      "time": "11:30 PM",
-      "location": "Yuen Shinjuku - rooftop",
-      "city": "Tokyo",
-      "type": "Indoor + outdoor with Tokyo skyline views",
-      "included": true,
-      "notes": "Best onsen views of the trip. Shinjuku skyline at night."
     }
   ],
   "trains": [
@@ -360,15 +349,15 @@
       "id": "train_9",
       "number": 9,
       "date": "2026-05-25",
-      "from": "Shinjuku",
+      "from": "Tokyo Station",
       "to": "Narita Airport",
       "train": "N'EX Narita Express",
       "class": "Standard",
-      "depart_time": "14:20",
+      "depart_time": "13:28",
       "duration": "90 min",
       "jr_pass": true,
       "seat_tip": "Any seat",
-      "notes": "Depart 14:20 sharp. Return Suica card at Narita JR office for balance + Y500 deposit refund."
+      "notes": "Depart Tokyo Station ~13:28. Arrives Narita Terminal 1 ~14:26. Return Suica at Narita JR office. JR Pass valid."
     }
   ],
   "itinerary": [
@@ -1555,7 +1544,7 @@
         {
           "time": "17:30",
           "activity": "Train to Shibuya",
-          "notes": "From Super Autobacs area — JR or subway to Shibuya (~30-40 min depending on location)."
+          "notes": "JR Yamanote from Autobacs area or taxi to Shibuya. ~30-40 min."
         },
         {
           "time": "18:15",
@@ -1580,13 +1569,13 @@
         },
         {
           "time": "21:45",
-          "activity": "Train back to Shinjuku",
-          "notes": "Yamanote Line — one stop, 3 min. Or walk ~25 min if you want a night stroll."
+          "activity": "Train to Tokyo Station",
+          "notes": "JR Yamanote Shibuya → Tokyo ~15 min. Or taxi direct."
         },
         {
           "time": "22:15",
-          "activity": "Back at Yuen Shinjuku — early night",
-          "notes": "Suzuka tomorrow — 06:00 alarm. Get to bed."
+          "activity": "Check in — hotel near Tokyo Station",
+          "notes": "Drop bags, freshen up. Early night — Suzuka 06:00 start tomorrow."
         }
       ],
       "tips": [
@@ -1629,8 +1618,8 @@
         },
         {
           "time": "06:30",
-          "activity": "Taxi / walk to Shinjuku Station",
-          "notes": "Yuen Shinjuku is ~5 min walk to Shinjuku Station."
+          "activity": "Walk to Tokyo Station",
+          "notes": "~5 min walk from most hotels in Marunouchi area."
         },
         {
           "time": "06:50",
@@ -1716,7 +1705,7 @@
         },
         {
           "time": "21:00",
-          "activity": "Back at Yuen Shinjuku",
+          "activity": "Back at hotel — Tokyo Station area",
           "notes": ""
         },
         {
@@ -1746,78 +1735,68 @@
       "schedule": [
         {
           "time": "09:00",
-          "activity": "Breakfast at Yuen Shinjuku",
-          "notes": ""
+          "activity": "Breakfast near Tokyo Station",
+          "notes": "Hotel breakfast or KITTE B1 food hall (attached to Tokyo Station). Many options."
         },
         {
           "time": "09:30",
-          "activity": "Check out - store bags at hotel front desk",
-          "notes": ""
+          "activity": "Check out — store bags at hotel",
+          "notes": "Standard 11 AM checkout. Leave bags at front desk for the day."
         },
         {
-          "time": "09:40",
-          "activity": "Rinkai Line from Shinjuku > Shinonome (via Osaki)",
-          "notes": "35 min."
+          "time": "09:45",
+          "activity": "🚃 JR Keiyo Line → Shin-Kiba → Rinkai Line → Shinonome",
+          "notes": "JR Pass. Tokyo Station Keiyo Line platform (B1) → Shin-Kiba (~13 min) → Rinkai Line to Shinonome (~5 min). Total ~20 min — faster than from Shinjuku!"
         },
         {
-          "time": "10:05",
-          "activity": "🚗 A-PIT Super Autobacs - JDM paradise! 4 floors",
-          "notes": "Walk the PARKING LOT first - show cars change regularly. 3 min walk from Shinonome station."
+          "time": "10:10",
+          "activity": "🚗 A-PIT Super Autobacs — JDM paradise! 4 floors",
+          "notes": "Largest Super Autobacs in Japan. JDM parts, accessories, tuning gear, scale models, merch. Allow 2 hours minimum."
         },
         {
-          "time": "12:00",
-          "activity": "Rinkai Line + JR Yamanote > Harajuku",
-          "notes": "35 min."
+          "time": "12:15",
+          "activity": "Rinkai Line + JR Yamanote → Harajuku",
+          "notes": "JR Pass. Shinonome → Osaki → Harajuku (~30 min)."
         },
         {
-          "time": "12:30",
-          "activity": "Lunch in Harajuku or Omotesando area",
-          "notes": ""
+          "time": "12:45",
+          "activity": "Lunch in Harajuku / Omotesando",
+          "notes": "Plenty of options near Harajuku Station or Omotesando Hills basement."
         },
         {
-          "time": "13:30",
-          "activity": "Cat Street - Off-White, Supreme Japan, BAPE, Neighborhood",
-          "notes": "Japan-only releases not in US stores!"
+          "time": "13:45",
+          "activity": "Cat Street — Off-White, Supreme Japan, BAPE, Neighborhood",
+          "notes": "Off the tourist strip. Relaxed browse of the best streetwear in Tokyo."
         },
         {
           "time": "15:00",
-          "activity": "Ura-Harajuku boutiques - Sacai, Kapital, Nanamica, Beams Japan",
-          "notes": ""
+          "activity": "Ura-Harajuku boutiques — Sacai, Kapital, Nanamica, Beams Japan",
+          "notes": "The serious shopping. Budget time and wallet space."
         },
         {
-          "time": "16:00",
-          "activity": "JR Yamanote > Shinjuku",
-          "notes": "7 min."
-        },
-        {
-          "time": "16:15",
-          "activity": "Isetan Shinjuku - B1 food hall + craft floor + menswear",
-          "notes": ""
+          "time": "16:30",
+          "activity": "JR Yamanote → Tokyo Station area — Ginza / KITTE / Marunouchi",
+          "notes": "Walk or short train. KITTE rooftop has a free view of the station. Ginza for Itoya stationery, Uniqlo, Muji flagship."
         },
         {
           "time": "18:00",
-          "activity": "Tokyu Hands + Don Quijote Shinjuku",
+          "activity": "Collect bags from hotel",
           "notes": ""
         },
         {
           "time": "19:00",
-          "activity": "Collect bags from Yuen Shinjuku",
-          "notes": "Check back in for second night."
-        },
-        {
-          "time": "20:00",
-          "activity": "Dinner - New York Bar Park Hyatt or Kozue",
-          "notes": "Optional splurge. Lost in Translation vibes."
+          "activity": "🍽️ Dinner — New York Bar (Park Hyatt Shinjuku) or stay local",
+          "notes": "NY Bar: 30 min by Yamanote from Tokyo Station — worth the trip for the view. Or Marunouchi area has excellent dining."
         },
         {
           "time": "21:30",
-          "activity": "Omoide Yokocho final visit",
-          "notes": "2 min from hotel."
+          "activity": "Omoide Yokocho — final visit",
+          "notes": "Shinjuku Memory Lane. 30 min from hotel by JR. Last chance for yakitori under the tracks."
         },
         {
           "time": "23:00",
-          "activity": "Yuen Shinjuku rooftop onsen - last onsen of the trip",
-          "notes": "Savour it."
+          "activity": "🌃 Back to hotel",
+          "notes": "Last night in Japan. Pack everything — departure tomorrow."
         }
       ],
       "tips": [
@@ -1844,98 +1823,83 @@
       "schedule": [
         {
           "time": "08:00",
-          "activity": "Wake up - final morning in Japan",
-          "notes": "Last breakfast in Japan!"
+          "activity": "Wake up — final morning in Japan 🇯🇵",
+          "notes": ""
         },
         {
           "time": "08:15",
-          "activity": "Breakfast at Yuen Shinjuku",
-          "notes": ""
+          "activity": "Breakfast near Tokyo Station",
+          "notes": "Hotel breakfast or KITTE basement food hall. Quick — shopping still ahead."
         },
         {
           "time": "09:00",
-          "activity": "Check out Yuen Shinjuku - store bags at front desk",
-          "notes": ""
+          "activity": "Check out — store bags at hotel or station lockers",
+          "notes": "Standard 11 AM checkout. Tokyo Station has large coin lockers (B1 and basement passages)."
         },
         {
-          "time": "09:10",
-          "activity": "Walk to Takashimaya Times Square",
-          "notes": "8 min walk from hotel."
+          "time": "09:15",
+          "activity": "Final Tokyo shopping — KITTE + Daimaru Tokyo Station",
+          "notes": "KITTE: curated Japanese crafts, food souvenirs, design goods (connected to station). Daimaru B1: wagashi, Kit Kats, sake, matcha — best food souvenir floor near the station."
         },
         {
-          "time": "09:10",
-          "activity": "Takashimaya B1-B2 food hall - Kit Kats, wagashi, sake, matcha, yuzu",
-          "notes": "Best souvenir shopping in Tokyo."
-        },
-        {
-          "time": "09:10",
-          "activity": "Takashimaya 6F craft floor - ceramics, lacquerware, washi, knives",
-          "notes": ""
-        },
-        {
-          "time": "09:10",
-          "activity": "Takashimaya 8F tax-free counter - 10% refund, bring passport!",
-          "notes": "Consolidate ALL purchases here."
+          "time": "10:30",
+          "activity": "Takashimaya Times Square — Shinjuku (optional)",
+          "notes": "If you want Shinjuku one last time: 30 min by JR Yamanote. Tax-free counter 8F (bring passport). B1–B2 food hall."
         },
         {
           "time": "11:30",
-          "activity": "Shinjuku final shopping - Beams Japan + Tokyu Hands",
-          "notes": ""
+          "activity": "Final Tokyo lunch",
+          "notes": "Afuri ramen (Harajuku/Ginza), or grab quality ekiben from Tokyo Station's own selection — eat at the airport if tight on time."
         },
         {
           "time": "13:00",
-          "activity": "Final Tokyo lunch - Afuri Ramen or Tsunahachi tempura",
+          "activity": "Collect bags + head to Tokyo Station N'EX platforms",
+          "notes": "N'EX departs from Tokyo Station B1. Allow time for ticket barriers and platform."
+        },
+        {
+          "time": "13:28",
+          "activity": "🚄 N'EX Narita Express — Tokyo Station → Narita Airport",
+          "notes": "JR Pass. ~53 min to Narita Terminal 1. Return Suica card at Narita JR office for balance + ¥500 deposit refund."
+        },
+        {
+          "time": "14:26",
+          "activity": "Arrive Narita Airport Terminal 1",
           "notes": ""
         },
         {
-          "time": "13:50",
-          "activity": "Collect bags from Yuen Shinjuku",
-          "notes": "8 min walk."
-        },
-        {
-          "time": "14:20",
-          "activity": "N'EX Narita Express - Shinjuku > Narita Airport",
-          "notes": "90 min. JR Pass. DEPART ON TIME - tight connection at Narita."
-        },
-        {
-          "time": "15:50",
-          "activity": "Arrive Narita Airport Terminal 1",
-          "notes": "Go straight to Air Canada check-in."
-        },
-        {
-          "time": "15:50",
+          "time": "14:30",
           "activity": "Check in AC 4 + bag drop",
-          "notes": "Counter closes before 16:30. Move quickly."
+          "notes": "Air Canada. Allow time for international check-in queue."
         },
         {
-          "time": "16:00",
-          "activity": "Security + immigration - Narita T1",
-          "notes": "Allow 20-25 min."
+          "time": "15:00",
+          "activity": "Security + immigration — Narita T1",
+          "notes": "Can be slow. Head straight through."
         },
         {
-          "time": "16:20",
-          "activity": "At gate - last Japan duty free!",
-          "notes": "Yamazaki, Hibiki, Nikka whisky. Best prices in Japan."
+          "time": "15:30",
+          "activity": "At gate — last Japan duty free!",
+          "notes": "Narita T1 has excellent duty free — whisky, Kit Kats, ceramics, cosmetics."
         },
         {
           "time": "16:30",
           "activity": "✈️ AC 4 departs Tokyo Narita (NRT)",
-          "notes": "Boeing 787-9. 8h 45m. Wi-Fi. Meal + Breakfast included."
+          "notes": ""
         },
         {
           "time": "09:15",
-          "activity": "Land Vancouver (YVR) - same calendar day!",
-          "notes": "You crossed the Date Line going east - gain a day back."
+          "activity": "Land Vancouver (YVR) — same calendar day!",
+          "notes": "Time zones work in your favour on the way home."
         },
         {
           "time": "13:50",
           "activity": "✈️ AC 1762 departs Vancouver (YVR)",
-          "notes": "Boeing 737 MAX 8. 4h 27m."
+          "notes": ""
         },
         {
           "time": "20:17",
           "activity": "🏠 Land Austin-Bergstrom Airport (AUS)",
-          "notes": "Welcome home! Uber back to Cedar Park ~1 hour."
+          "notes": "Welcome home!"
         }
       ],
       "tips": [
@@ -2032,6 +1996,15 @@
       "priority": "HIGH",
       "done": false,
       "notes": "~¥1,500/person. Must pre-book."
+    },
+    {
+      "id": "book_13",
+      "item": "Hotel near Tokyo Station — May 22–25 (3 nights)",
+      "where": "Booking.com / direct",
+      "url": "https://www.booking.com",
+      "priority": "URGENT",
+      "done": false,
+      "notes": "Marunouchi area preferred. Good options: Marunouchi Hotel, Mitsui Garden Tokyo Station, Hotel Metropolitan Marunouchi. Book ASAP — mid-May peak."
     }
   ],
   "experiences": [

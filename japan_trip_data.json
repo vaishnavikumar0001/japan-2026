@@ -20,7 +20,14 @@
     "days": 15,
     "home": "Cedar Park, TX (near Veterans Park)",
     "airport_drive_mins": 60,
-    "airport_transport": "Uber/Rideshare"
+    "airport_transport": "Uber/Rideshare",
+    "last_updated": "2026-04-12",
+    "version": "2.1",
+    "changelog": [
+      "v2.1: May 15 rebuilt — Shinjuku → Kawaguchiko (bus), Chureito Pagoda, Kachi Kachi Ropeway + Love Bell, Lake Kawaguchiko north shore, Owakudani, Hakone Shrine, Fujiya Hotel. Romance Car removed. Pirate Ship and Lake Ashi rowboat removed.",
+      "v2.1: May 16 rebuilt — full rest day at Fujiya. Dawn onsen, hotel gardens, Gora Park, Pola Museum, afternoon rest, Tenzan Tohji-kyo public onsen at night.",
+      "v2.0: Initial full itinerary."
+    ]
   },
   "flights": {
     "outbound": {
@@ -108,20 +115,19 @@
   "hotels": [
     {
       "id": "hotel_1",
-      "name": "Hotel Gracery Shinjuku",
+      "name": "JR Kyushu Hotel Blossom Shinjuku",
       "city": "Tokyo",
       "area": "Shinjuku",
       "checkin": "2026-05-12",
-      "checkout": "2026-05-15",
-      "nights": 3,
+      "checkout": "2026-05-16",
+      "nights": 4,
       "onsen": false,
-      "address": "Shinjuku, Tokyo",
-      "notes": "5 min walk from Shinjuku Station South Exit",
       "checkin_time": "2:00 PM",
       "checkout_time": "11:00 AM",
-      "checkin_note": "Only hotel with 2 PM check-in — arrives May 12 after long flight, perfect",
-      "booking_url": "https://www.booking.com/searchresults.html?ss=Hotel+Gracery+Shinjuku",
-      "booking_site": "Booking.com"
+      "address": "2-6-2 Yoyogi, Shibuya-ku, Tokyo 151-0053",
+      "phone": "+81-3-5333-8687",
+      "notes": "3 min walk from Shinjuku Station South Exit. Luggage storage available before check-in and after check-out.",
+      "checkin_note": "Check-in from 2 PM. Station is a 3-min walk from JR Shinjuku Station south exit."
     },
     {
       "id": "hotel_2",
@@ -133,66 +139,62 @@
       "nights": 2,
       "onsen": true,
       "onsen_description": "Historic mineral pools - indoor and outdoor rotenburo",
-      "address": "Miyanoshita, Hakone, Kanagawa",
-      "notes": "Japan's oldest Western hotel. Yukata and geta provided. 3 min walk from Miyanoshita Station.",
       "checkin_time": "3:00 PM",
       "checkout_time": "11:00 AM",
-      "checkin_note": "Send bags via TA-Q-BIN May 15 morning",
-      "booking_url": "https://www.fujiyahotel.jp/en/",
-      "booking_site": "fujiyahotel.jp"
+      "address": "359 Miyanoshita, Hakone-machi, Hakone 250-0404",
+      "phone": "+81-460-82-2211",
+      "notes": "Japan's oldest Western hotel. Yukata and geta provided. 3 min walk from Miyanoshita Station.",
+      "checkin_note": "Check-in from 3 PM. Historic hotel est. 1878 — ask for the Orchid Room for meals."
     },
     {
       "id": "hotel_3",
-      "name": "Hotel Vischio Kyoto by Granvia",
+      "name": "Dormy Inn Kyoto Gion",
       "city": "Kyoto",
-      "area": "Kyoto Station South (Higashikujo)",
+      "area": "Gion",
       "checkin": "2026-05-17",
       "checkout": "2026-05-20",
       "nights": 3,
       "onsen": true,
       "onsen_description": "Hotel onsen - open late nights",
-      "address": "44-1 Kamitonoda-cho, Higashikujo, Minami-ku, Kyoto",
-      "notes": "2-min walk from Hachijo (South) Exit of Kyoto Station. Free late-night ramen 9:30-11 PM nightly.",
       "checkin_time": "3:00 PM",
       "checkout_time": "11:00 AM",
-      "booking_url": "https://www.booking.com/searchresults.html?ss=Hotel+Vischio+Kyoto+by+Granvia",
-      "booking_site": "Booking.com",
-      "checkin_note": "Hotel is a 2-min walk from Kyoto Station Hachijo South Exit. Drop luggage from 12 PM, official check-in 3 PM."
+      "address": "Gion, Kyoto",
+      "notes": "5 min walk to Hanamikoji Street. Free late-night ramen 9:30-11 PM nightly.",
+      "checkin_note": "Check-in from 3 PM. Drop luggage from noon. Gion area — Hanamikoji St 5 min walk."
     },
     {
       "id": "hotel_4",
-      "name": "Villa Fontaine Grand Osaka Umeda",
+      "name": "Dormy Inn Premium Namba ANNEX",
       "city": "Osaka",
-      "area": "Umeda",
+      "area": "Namba",
       "checkin": "2026-05-20",
       "checkout": "2026-05-21",
       "nights": 1,
       "onsen": true,
       "onsen_description": "Rooftop natural hot spring with city views",
-      "address": "Umeda, Osaka",
-      "notes": "Confirmed May 20–21.",
       "checkin_time": "3:00 PM",
       "checkout_time": "11:00 AM",
-      "booking_url": "https://www.booking.com/searchresults.html?ss=Villa+Fontaine+Grand+Osaka+Umeda",
-      "booking_site": "Booking.com"
+      "address": "2-1-6 Higashishinsaibashi, Chuo Ward, Osaka 542-0083",
+      "phone": "+81 6-6212-5489",
+      "notes": "Lawson attached. Free late-night ramen 9:30-11 PM. Rooftop onsen open til midnight.",
+      "checkin_note": "Check-in from 3 PM. Free late-night ramen 9:30–11 PM. Rooftop onsen included."
     },
     {
       "id": "hotel_5",
-      "name": "Tokyu Stay Hida-Takayama Musubi no Yu",
+      "name": "Residence Hotel Takayama Station",
       "city": "Takayama",
       "area": "Station",
       "checkin": "2026-05-21",
       "checkout": "2026-05-23",
       "nights": 2,
       "onsen": false,
-      "address": "6-105 Hanasatomachi, Takayama, Gifu 506-0026",
-      "phone": "+81 577-57-5578",
-      "notes": "30 seconds from Takayama Station. Full apartment with kitchen.",
       "checkin_time": "3:00 PM",
       "checkout_time": "11:00 AM",
-      "checkin_note": "⚠️ Front desk only 6:30 AM–midnight — not 24hr. May 23 early checkout: key drop box available.",
-      "booking_url": "https://www.booking.com/searchresults.html?ss=Tokyu+Stay+Hida-Takayama+Musubi+no+Yu",
-      "booking_site": "Booking.com"
+      "checkin_time_note": "Front desk open 6:30 AM–midnight only. Early departures: drop keys in key box.",
+      "address": "6-105 Hanasatomachi, Takayama, Gifu 506-0026",
+      "phone": "+81 577-57-5578",
+      "notes": "30 seconds from Takayama Station. Full apartment with kitchen. Front desk NOT 24 hours (6:30 AM–midnight).",
+      "checkin_note": "Check-in from 3 PM. 5-min walk from Takayama Station."
     },
     {
       "id": "hotel_6",
@@ -204,14 +206,13 @@
       "nights": 2,
       "onsen": true,
       "onsen_description": "Rooftop onsen - indoor and outdoor with Tokyo skyline views",
-      "address": "5-3-18 Shinjuku, Shinjuku City, Tokyo 160-0022",
-      "phone": "+81 3-5361-8355",
-      "notes": "8 min walk from Shinjuku Station. Yukata provided.",
       "checkin_time": "3:00 PM",
       "checkout_time": "11:00 AM",
-      "checkin_note": "⚠️ Early check-in explicitly NOT offered. Arriving ~9:40 PM May 23 — no issue. If arriving early, store bags at front desk.",
-      "booking_url": "https://www.booking.com/searchresults.html?ss=Yuen+Shinjuku",
-      "booking_site": "Booking.com"
+      "checkin_time_note": "Early check-in NOT possible per hotel FAQ. Luggage storage available before check-in.",
+      "address": "5-3-18 Shinjuku, Shinjuku City, Tokyo 160-0022",
+      "phone": "+81 3-5361-8355",
+      "notes": "8 min walk from Shinjuku Station. Yukata provided. Onsen open 15:00-02:00 and 06:00-10:00.",
+      "checkin_note": "Check-in from 3 PM. Rooftop onsen with Tokyo skyline views. Shibuya area."
     }
   ],
   "onsens": [
@@ -246,7 +247,11 @@
       "city": "Hakone",
       "type": "Riverside rotenburo in cedar forest",
       "included": false,
-      "notes": "Taxi from Fujiya Hotel."
+      "notes": "Public onsen — pay ¥1,500/person at door. Taxi from Fujiya Hotel (¥2,000 each way). Riverside rotenburo in cedar forest.",
+      "taxi_required": true,
+      "taxi_cost": "¥2,000 each way from Fujiya Hotel",
+      "entry_fee": "¥1,500 per person",
+      "pay_at_door": true
     },
     {
       "id": "onsen_4",
@@ -264,7 +269,7 @@
       "number": 5,
       "date": "2026-05-20",
       "time": "11:00 PM",
-      "location": "Villa Fontaine Grand Osaka Umeda",
+      "location": "Dormy Inn Namba ANNEX - rooftop",
       "city": "Osaka",
       "type": "Natural hot spring with city views",
       "included": true,
@@ -295,19 +300,6 @@
       "jr_pass": true,
       "seat_tip": "Any seat",
       "notes": "Activate JR Pass at Narita JR counter BEFORE boarding."
-    },
-    {
-      "id": "train_2",
-      "number": 2,
-      "date": "2026-05-15",
-      "from": "Shinjuku",
-      "to": "Hakone-Yumoto",
-      "train": "Odakyu Romance Car",
-      "class": "Reserved",
-      "duration": "85 min",
-      "jr_pass": false,
-      "seat_tip": "Seat 1A or 1B for panoramic front view. RIGHT side for Mt Fuji at 40 min mark.",
-      "book_at": "odakyu.jp - at least 2 weeks ahead"
     },
     {
       "id": "train_3",
@@ -344,13 +336,11 @@
       "from": "Osaka",
       "to": "Nagoya",
       "train": "Hikari Shinkansen",
-      "class": "GREEN CAR",
+      "class": "Ordinary Reserved",
       "duration": "50 min",
       "jr_pass": true,
       "seat_tip": "Any reserved seat",
-      "notes": "Transfer at Nagoya for Wide View Hida.",
-      "supplement": true,
-      "supplement_note": "Green Car upgrade - reserve at Shin-Osaka or Osaka Station JR Midori-no-madoguchi"
+      "notes": "Transfer at Nagoya for Wide View Hida."
     },
     {
       "id": "train_6",
@@ -667,7 +657,7 @@
         },
         {
           "time": "17:45",
-          "activity": "Check in - Hotel Gracery Shinjuku",
+          "activity": "Check in - JR Kyushu Hotel Blossom Shinjuku",
           "notes": "Night 1 of 4."
         },
         {
@@ -833,106 +823,169 @@
     {
       "date": "2026-05-15",
       "day": 5,
-      "city": "Hakone",
-      "label": "Romance Car + Open Air Museum + Fujiya Hotel",
+      "city": "Kawaguchiko → Hakone",
+      "label": "Fuji Day — Chureito + Kachi Kachi + Lake + Owakudani + Hakone Shrine + Fujiya Hotel",
+      "type": "travel_and_sightseeing",
       "hotel": "hotel_2",
       "checkout_hotel": "hotel_1",
-      "type": "travel_and_sightseeing",
       "luggage_forward": true,
-      "luggage_note": "Send large bags via TA-Q-BIN to Fujiya Hotel this morning. Travel with daypack only.",
-      "trains_today": [
-        "train_2"
-      ],
+      "luggage_note": "Send large bags via TA-Q-BIN to Fujiya Hotel at 06:30. Travel daypack only all day.",
+      "trains_today": [],
       "onsen_today": [
         "onsen_1"
       ],
+      "early_start": true,
+      "early_start_time": "06:30",
+      "early_start_reason": "Mt Fuji clearest before 11 AM — early bus essential for Chureito views",
+      "fuji_view_alert": true,
       "schedule": [
         {
-          "time": "08:00",
-          "activity": "TA-Q-BIN bags forwarded to Fujiya Hotel",
-          "notes": "Hotel Gracery Shinjuku front desk. Bags arrive Fujiya afternoon."
+          "time": "06:30",
+          "activity": "🧳 TA-Q-BIN bags forwarded to Fujiya Hotel",
+          "notes": "Hotel front desk. Pack daypack night before. Bags arrive Fujiya afternoon (~¥3,500 total)."
+        },
+        {
+          "time": "06:45",
+          "activity": "Quick breakfast",
+          "notes": "Convenience store or hotel. Fast — onigiri, coffee, snack for bus."
+        },
+        {
+          "time": "07:30",
+          "activity": "Walk to Busta Shinjuku (Shinjuku Expressway Bus Terminal)",
+          "notes": "10 min walk. 4th floor above Shinjuku Station south exit. Pre-booked bus departs here."
+        },
+        {
+          "time": "07:45",
+          "activity": "🚌 Highway Bus: Shinjuku → Kawaguchiko",
+          "notes": "Fujikyuko Bus. ~1h 45min. ~¥2,200/person. Pre-book at highway-buses.jp. NOT JR Pass. Direct, no transfers.",
+          "non_jr_pass": true
         },
         {
           "time": "09:30",
-          "activity": "Check out Hotel Gracery Shinjuku - daypack only",
-          "notes": ""
+          "activity": "Arrive Kawaguchiko Station",
+          "notes": "Buy Kawaguchiko Retro Bus day pass at station kiosk (~¥1,500/person)."
         },
         {
-          "time": "10:00",
-          "activity": "Odakyu Romance Car - Shinjuku > Hakone-Yumoto",
-          "notes": "Book at odakyu.jp at least 2 weeks ahead. 85 min scenic mountain ride."
+          "time": "09:40",
+          "activity": "🚃 Fujikyu Railway → Shimoyoshida Station",
+          "notes": "One stop, 10 min, ¥310 each. NOT JR Pass. Buy at machine at Kawaguchiko Station. Or take World Heritage Loop Bus from outside station (15 min, covered by day pass).",
+          "non_jr_pass": true
+        },
+        {
+          "time": "09:55",
+          "activity": "🗻 Chureito Pagoda Climb — 398 stone steps",
+          "notes": "10 min walk from station to shrine, then 398 steps up. Take it steady — 20-25 mins to summit. Stand LEFT of pagoda for the classic Fuji shot. No entry fee. Open 24 hours. Bring water."
+        },
+        {
+          "time": "11:15",
+          "activity": "Descend and return to Kawaguchiko Station",
+          "notes": "Fujikyu Railway or World Heritage Loop Bus back. 10–15 min.",
+          "non_jr_pass": true
         },
         {
           "time": "11:30",
-          "activity": "Arrive Hakone-Yumoto - buy 2-day Hakone Free Pass",
-          "notes": "Station kiosk. Covers ALL Hakone transport."
+          "activity": "🚡 Kachi Kachi Yama Ropeway (Mt Tenjo)",
+          "notes": "5 min walk from station. ~¥1,000 return (not in day pass). 3 min gondola. Summit: panoramic lake + Fuji view from above, Love Bell — ring it together (couples tradition), summit shrine. Allow 35–40 min."
         },
         {
-          "time": "11:45",
-          "activity": "Ashiyu free foot baths at Hayakawa riverside",
-          "notes": "3 min walk from station. Free."
+          "time": "12:30",
+          "activity": "🍜 Lunch at Kawaguchiko lakeside",
+          "notes": "5 min walk from ropeway base. Houtou noodles (Yamanashi specialty — thick flat noodles in miso-pumpkin broth, gentle on stomach), tempura teishoku, or Yoshida udon. Picture menus. ¥1,200–1,800/person."
         },
         {
-          "time": "12:20",
-          "activity": "Hakone Tozan Railway > Miyanoshita",
-          "notes": "15 min switchback mountain railway."
+          "time": "13:30",
+          "activity": "📸 Oishi Park north shore — Lake Kawaguchiko stroll",
+          "notes": "Red Kawaguchiko bus (day pass) 2 stops north. Classic wide-angle Fuji-reflected-in-lake shot. Mid-May: purple and pink lupin wildflowers line the lakefront. 30–40 min."
         },
         {
-          "time": "12:40",
-          "activity": "Drop bags at Fujiya Hotel front desk",
-          "notes": "3 min walk from Miyanoshita Station."
+          "time": "14:15",
+          "activity": "🚌 Bus: Kawaguchiko → Gotemba → Hakone-Yumoto",
+          "notes": "Fujikyuko Highway Bus to Gotemba (~50 min, ~¥1,500), then Odakyu Highway Bus Gotemba → Hakone-Yumoto (~40 min, ~¥1,000). Total ~1h 45min. Pre-book Kawaguchiko → Gotemba leg at highway-buses.jp.",
+          "non_jr_pass": true
         },
         {
-          "time": "13:00",
-          "activity": "Lunch - Fujiya Hotel Orchid Room",
-          "notes": "Historic chandeliers and mountain views."
+          "time": "16:10",
+          "activity": "Arrive Hakone-Yumoto — buy 2-day Hakone Free Pass",
+          "notes": "¥6,000/person at station kiosk. Covers all Hakone transport for today + May 16: Tozan Railway, cable car, ropeway, all Hakone buses."
         },
         {
-          "time": "14:10",
-          "activity": "Tozan Railway > Hakone Open Air Museum",
-          "notes": "10 min."
+          "time": "16:20",
+          "activity": "🚃 Hakone Tozan Railway → Gora",
+          "notes": "40 min. Covered by Hakone Free Pass. Train reverses direction 3 times climbing the mountain — famous engineering. Transfer at Gora to cable car."
         },
         {
-          "time": "14:30",
-          "activity": "Hakone Open Air Museum - sculptures + Picasso + foot onsen",
-          "notes": "Don't miss the foot onsen inside the museum!"
+          "time": "17:00",
+          "activity": "🚡 Cable Car → Sounzan + Ropeway → Owakudani",
+          "notes": "Hakone Tozan Cable Car: Gora → Sounzan (10 min, pass). Then Hakone Ropeway: Sounzan → Owakudani (15 min, pass). LAST ROPEWAY ~17:00 — check board at Gora. If closed, fold into May 16 morning instead."
         },
         {
-          "time": "16:35",
-          "activity": "Proper check in - yukata and geta sandals provided!",
-          "notes": "Japan's oldest Western hotel. Est. 1878."
+          "time": "17:15",
+          "activity": "🌋 Owakudani Volcanic Valley + Kuro Tamago black eggs",
+          "notes": "Japan's most dramatic geothermal landscape. Sulfur vents blast white steam. Buy kuro tamago (black eggs, boiled in volcanic spring, jet-black shells) — legend says each egg adds 7 years to your life. Mt Fuji visible from observation deck on clear days. Allow 30 min. Check last ropeway down time."
         },
         {
-          "time": "17:30",
-          "activity": "♨️ ONSEN 1 - Fujiya Hotel historic mineral pools",
-          "notes": "First onsen of the trip!"
+          "time": "17:45",
+          "activity": "🚡 Ropeway back → Cable Car → Tozan Railway → Miyanoshita area",
+          "notes": "Owakudani → Sounzan by ropeway, Sounzan → Gora cable car (10 min), Gora → Miyanoshita by Tozan Railway (15 min). All Hakone Free Pass."
         },
         {
-          "time": "19:30",
-          "activity": "Dinner - Fujiya Hotel Orchid Room",
-          "notes": "Try Western course - served since 1878!"
+          "time": "18:15",
+          "activity": "🛕 Hakone Shrine + Peace Torii Gate on Lake Ashi",
+          "notes": "Bus from Miyanoshita or Hakone-Yumoto to Hakone-machi (~20 min, pass). Walk 5 min to shrine. Vermilion torii gate standing directly in Lake Ashi — one of Japan's most iconic views. Best at dusk — light is extraordinary, crowds thinned. Cedar-lined approach (350-year-old trees). Allow 40–45 min."
+        },
+        {
+          "time": "19:10",
+          "activity": "🚌 Bus/taxi → Fujiya Hotel",
+          "notes": "Bus back toward Miyanoshita (pass) or taxi from shrine directly (¥2,000, 15 min). After today — take the taxi."
+        },
+        {
+          "time": "19:40",
+          "activity": "🏨 Check in: Fujiya Hotel (est. 1878)",
+          "notes": "TA-Q-BIN bags have arrived. Room ready. Receive yukata + geta sandals. Japan's oldest Western hotel — Charlie Chaplin, John Lennon, Helen Keller stayed here. Explore the Meiji-era corridors briefly."
+        },
+        {
+          "time": "20:00",
+          "activity": "♨️ ONSEN 1 — Fujiya Hotel historic mineral pools",
+          "notes": "First onsen of the trip! Silky sulphurous mineral water from Hakone hot springs. Indoor pools + outdoor rotenburo in mountain garden. Rinse at shower station before entering. No swimwear. Hair up. ~42°C. Give 45–60 mins. Try both indoor and outdoor."
         },
         {
           "time": "21:15",
-          "activity": "♨️ ONSEN 1 continued - second evening soak",
-          "notes": "Hotel baths are quieter now."
+          "activity": "🍽️ Late dinner — Fujiya Hotel",
+          "notes": "Tell reception at check-in you want late dinner. Orchid Room (historic Western dining, chandeliers, mountain views) or room service. Western course recommended — served since 1878. Local Hakone trout. Wear yukata — encouraged. ¥6,000–10,000/person."
+        },
+        {
+          "time": "22:30",
+          "activity": "♨️ ONSEN 1 continued — second evening soak",
+          "notes": "Baths quieter now. Outdoor rotenburo at night — cool mountain air above, hot mineral water below, complete silence. One of the best things you'll do this trip."
+        },
+        {
+          "time": "23:15",
+          "activity": "🛏️ Sleep — set alarm 06:15",
+          "notes": "Tomorrow (May 16) is the full Fujiya rest and onsen recovery day. Dawn rotenburo at 06:30. No buses, no climbing."
         }
       ],
       "tips": [
-        "Tomorrow is the earliest start of the trip - set alarm for 6:15 AM tonight!",
-        "Open Air Museum foot onsen: soak while looking at sculptures and Hakone mountains"
-      ]
+        "Check fujisan.jp the night before for Mt Fuji visibility forecast",
+        "Chureito: stand LEFT of pagoda for the classic five-story + Fuji shot",
+        "Ropeway closes 17:00 — if you miss it, fold Owakudani into May 16 morning instead",
+        "Hakone Shrine at dusk is the best time — light extraordinary, crowds thin",
+        "Taxi from Hakone Shrine to Fujiya Hotel ¥2,000 — worth it after today's mileage"
+      ],
+      "optional": {
+        "hakone_open_air_museum": "If arriving Kawaguchiko earlier than expected or Chureito goes quickly, add the Open Air Museum on the way to Fujiya. Chokoku-no-Mori Station on Tozan Railway — one stop before Miyanoshita. Open 09:00–17:00, last entry 16:30. Forest foot bath inside is the highlight. Hakone Free Pass gives discount (~¥1,600 after discount). Only if timing genuinely allows."
+      }
     },
     {
       "date": "2026-05-16",
       "day": 6,
       "city": "Hakone",
-      "label": "Mt Fuji + Kawaguchiko + Owakudani",
+      "label": "Fujiya Rest Day — Dawn Onsen + Gora Park + Pola Museum + Tenzan Onsen",
+      "type": "rest_and_sightseeing",
       "hotel": "hotel_2",
-      "type": "sightseeing",
       "early_start": true,
-      "early_start_time": "6:15 AM",
-      "early_start_reason": "Mt Fuji clearest before 11 AM - today's early start is essential",
+      "early_start_time": "06:15",
+      "early_start_reason": "Dawn rotenburo at Fujiya — almost empty at this hour, mountain mineral water at sunrise",
+      "trains_today": [],
       "onsen_today": [
         "onsen_2",
         "onsen_3"
@@ -940,109 +993,70 @@
       "schedule": [
         {
           "time": "06:30",
-          "activity": "♨️ ONSEN 2 - dawn rotenburo at Fujiya Hotel",
-          "notes": "Almost empty at dawn. Mountain mineral water at sunrise."
+          "activity": "♨️ ONSEN 2 — Dawn rotenburo at Fujiya Hotel",
+          "notes": "Almost empty at dawn. Mountain mineral water at sunrise. Outdoor rotenburo with misty forest views. One of the quietest, most peaceful moments of the entire trip. Take your time."
         },
         {
-          "time": "07:15",
-          "activity": "Quick breakfast - 7-Eleven or Fujiya Hotel",
-          "notes": ""
+          "time": "07:30",
+          "activity": "🍳 Breakfast at Fujiya Hotel",
+          "notes": "Full hotel breakfast — Western or Japanese course. Orchid Room or dining hall. Fuji Hotel breakfast has been served in the same room since 1878."
         },
         {
-          "time": "08:05",
-          "activity": "Tozan Railway > Hakone-Yumoto",
-          "notes": "15 min."
+          "time": "09:00",
+          "activity": "Slow morning — explore Fujiya Hotel grounds",
+          "notes": "The hotel has 16,000 sqm gardens with streams, waterfalls, seasonal flowers and mountain views. Wander in yukata. Visit the small museum with historic guest memorabilia (Chaplin, Lennon, Keller signatures). Greenhouse. Gift shop."
         },
         {
-          "time": "08:30",
-          "activity": "Fujikyuko Highway Bus > Kawaguchiko",
-          "notes": "90 min ride. Book at highway-buses.jp."
+          "time": "10:30",
+          "activity": "🚃 Hakone Tozan Railway → Gora",
+          "notes": "From Miyanoshita, one stop up to Gora (5 min, Hakone Free Pass). The end of the line for the zigzag railway."
         },
         {
-          "time": "10:05",
-          "activity": "Buy Kawaguchiko Retro Bus Pass (1-day)",
-          "notes": "Station kiosk."
+          "time": "10:45",
+          "activity": "🌸 Hakone Gora Park",
+          "notes": "French-style garden 3 min walk from Gora Station. Manicured lawns, fountains, seasonal flowers. In May: roses, wisteria, fresh green. Craft workshops inside — glass blowing, pottery spinning. Entry ~¥700. Allow 45–60 min."
         },
         {
-          "time": "10:38",
-          "activity": "Climb 398 stone steps to Chureito Pagoda",
-          "notes": "Red Line bus to Shimo-Yoshida then 5 min walk."
+          "time": "12:00",
+          "activity": "🎨 Pola Museum of Art",
+          "notes": "15 min bus from Gora (Hakone Free Pass). One of Japan's finest private art museums — Monet, Renoir, Picasso, Cézanne, plus Japanese modern masters. Set in forest with floor-to-ceiling windows over the valley. Allow 1.5–2 hours. ~¥1,800 admission. Book ahead: polamuseum.or.jp"
         },
         {
-          "time": "10:55",
-          "activity": "🗻 CHUREITO PAGODA - iconic Mt Fuji view",
-          "notes": "Stand LEFT of pagoda for classic shot with Fuji centered behind all five stories."
+          "time": "14:00",
+          "activity": "🍱 Lunch — Pola Museum café or back at Gora",
+          "notes": "The Pola Museum has a good in-house restaurant with forest views. Or take the bus back to Gora and eat at one of the small restaurants near the station. Either works."
         },
         {
-          "time": "12:20",
-          "activity": "Mt Fuji Panoramic Ropeway (Kachi Kachi Yama)",
-          "notes": "Red Line bus to ropeway base."
+          "time": "15:30",
+          "activity": "Afternoon free — return to Fujiya Hotel",
+          "notes": "Rest. Nap. Read. Walk the hotel gardens again. Today is your recovery day — you covered enormous ground yesterday. Let the onsen and the quiet do their work."
         },
         {
-          "time": "12:55",
-          "activity": "Ring the love bell at the summit together",
-          "notes": "Summit shrine - couples tradition!"
+          "time": "17:30",
+          "activity": "♨️ ONSEN 2 continued — afternoon soak at Fujiya",
+          "notes": "Second use of Fujiya's mineral baths. Afternoon light through the outdoor rotenburo windows. Try the indoor historic pools this time if you used the rotenburo this morning."
         },
         {
-          "time": "13:25",
-          "activity": "Lunch - Kawaguchiko lakefront hoto noodles",
-          "notes": "5 min walk from ropeway."
+          "time": "19:00",
+          "activity": "🍽️ Dinner — Fujiya Hotel Orchid Room",
+          "notes": "Final dinner at Fujiya. Order what you didn't have last night — Western course or Japanese course. Take your time over the meal. This is the last proper sit-down dinner at a great hotel until Kyoto."
         },
         {
-          "time": "14:20",
-          "activity": "Lake Kawaguchi stroll + optional swan boat",
-          "notes": ""
+          "time": "21:00",
+          "activity": "🚕 Taxi to Tenzan Tohji-kyo — ♨️ ONSEN 3",
+          "notes": "Taxi from Fujiya Hotel (~¥2,000, 10 min). Tenzan is Hakone's best public outdoor onsen — a cedar forest riverside rotenburo fed by natural hot springs. Multiple pools at different temperatures. Rustic, beautiful, very different vibe from Fujiya. Open until late. Pay at door (~¥1,500/person). Return by taxi (~¥2,000)."
         },
         {
-          "time": "15:25",
-          "activity": "Fujikyuko Bus back to Hakone-Yumoto",
-          "notes": "90 min return."
-        },
-        {
-          "time": "17:40",
-          "activity": "Hakone Shrine + Peace Torii Gate on Lake Ashi",
-          "notes": "Bus to Hakone-machi."
-        },
-        {
-          "time": "18:35",
-          "activity": "Lake Ashi rowboat - 30 min",
-          "notes": "Lakeside dock near shrine."
-        },
-        {
-          "time": "19:20",
-          "activity": "Pirate Ship - Hakone-machi to Togendai",
-          "notes": "30 min lake cruise. Free with Hakone Free Pass."
-        },
-        {
-          "time": "20:00",
-          "activity": "Hakone Ropeway > Owakudani volcanic valley",
-          "notes": "15 min aerial cable car."
-        },
-        {
-          "time": "20:15",
-          "activity": "🌋 Owakudani - sulfur vents + kuro tamago black eggs",
-          "notes": "Eating black eggs adds 7 years to your life!"
-        },
-        {
-          "time": "21:35",
-          "activity": "Ropeway > Cable Car > Railway back to Miyanoshita",
-          "notes": "40 min total."
-        },
-        {
-          "time": "22:15",
-          "activity": "Late dinner - Fujiya Hotel",
-          "notes": ""
-        },
-        {
-          "time": "23:00",
-          "activity": "♨️ ONSEN 3 - Tenzan Tohji-kyo (or Fujiya Hotel soak)",
-          "notes": "Tenzan = forest riverside onsen by taxi. Or use Fujiya Hotel baths if tired."
+          "time": "22:30",
+          "activity": "Return to Fujiya Hotel — 🛏️ Sleep",
+          "notes": "Set alarm for 06:15. Tomorrow (May 17) is checkout + Green Car Shinkansen to Kyoto. Final dawn soak (onsen_4) at 06:30 before breakfast and checkout at 11:00."
         }
       ],
       "tips": [
-        "Check fujisan.jp the night before for Mt Fuji visibility forecast",
-        "Chureito: stand LEFT of pagoda for the classic five-story + Fuji shot",
-        "Last ropeway down from Owakudani is ~9 PM - our 8:15 PM arrival gives 45 min"
+        "Pola Museum is a genuine world-class art collection — don't rush it",
+        "Tenzan Tohji-kyo is the best public onsen in Hakone — rustic cedar forest pools, very different from hotel onsens",
+        "Today is intentionally slow — you need recovery after May 15's full day",
+        "Check weather for Mt Fuji from Gora Park area in the morning — final views before Kyoto tomorrow"
       ]
     },
     {
@@ -1112,14 +1126,14 @@
           "notes": "8 different ramen restaurants on one floor."
         },
         {
-          "time": "13:15",
-          "activity": "Walk 2 min to Hotel Vischio Kyoto — Hachijo South Exit",
-          "notes": "Drop luggage at front desk (check-in is 3 PM). No taxi needed — hotel is steps from the south exit."
+          "time": "13:45",
+          "activity": "Taxi to Dormy Inn Kyoto Gion",
+          "notes": "~¥1,500, 15 min. Or Kyoto City Bus 17 / 205 to Gion-Shijo (20 min, ¥250)."
         },
         {
-          "time": "15:00",
-          "activity": "Check in Hotel Vischio Kyoto by Granvia",
-          "notes": "Official check-in 3:00 PM. Luggage already dropped earlier."
+          "time": "14:00",
+          "activity": "Check in Dormy Inn Kyoto Gion",
+          "notes": "Gion area. 5 min walk to Hanamikoji Street. Free late-night ramen 9:30–11 PM."
         },
         {
           "time": "15:15",
@@ -1158,7 +1172,7 @@
         },
         {
           "time": "22:00",
-          "activity": "♨️ Hotel Vischio Kyoto onsen",
+          "activity": "♨️ Dormy Inn Kyoto onsen",
           "notes": ""
         }
       ],
@@ -1233,7 +1247,7 @@
         },
         {
           "time": "23:00",
-          "activity": "Hotel Vischio Kyoto onsen",
+          "activity": "Dormy Inn Kyoto onsen",
           "notes": ""
         }
       ],
@@ -1318,7 +1332,7 @@
         },
         {
           "time": "23:00",
-          "activity": "Hotel Vischio Kyoto onsen - final Kyoto soak",
+          "activity": "Dormy Inn onsen - final Kyoto soak",
           "notes": "Pack bags for Osaka tonight!"
         }
       ],
@@ -1344,7 +1358,7 @@
       "schedule": [
         {
           "time": "09:30",
-          "activity": "Check out Hotel Vischio Kyoto by Granvia",
+          "activity": "Check out Dormy Inn Kyoto Gion",
           "notes": ""
         },
         {
@@ -1359,7 +1373,7 @@
         },
         {
           "time": "10:35",
-          "activity": "Taxi to Villa Fontaine Grand Osaka Umeda - drop bags",
+          "activity": "Taxi to Dormy Inn Namba ANNEX - drop bags",
           "notes": ""
         },
         {
@@ -1389,7 +1403,7 @@
         },
         {
           "time": "15:10",
-          "activity": "Check in Villa Fontaine Grand Osaka Umeda",
+          "activity": "Check in Dormy Inn Namba ANNEX",
           "notes": "Lawson convenience store attached!"
         },
         {
@@ -1434,12 +1448,18 @@
         },
         {
           "time": "23:00",
-          "activity": "♨️ ONSEN 5 - Villa Fontaine Grand Osaka Umeda hotel bath",
-          "notes": "Relax after a big Osaka day!"
+          "activity": "♨️ ONSEN 5 - Dormy Inn rooftop natural hot spring",
+          "notes": "Natural hot spring + city views. Open til midnight!"
+        },
+        {
+          "time": "23:30",
+          "activity": "Free late night ramen - Dormy Inn!",
+          "notes": "Served 21:30-23:00 nightly. Do NOT miss."
         }
       ],
       "tips": [
-        "Dotonbori: stand on Ebisu Bridge at dusk facing west for the classic neon shot"
+        "Dotonbori: stand on Ebisu Bridge at dusk facing west for the classic neon shot",
+        "Dormy Inn free ramen: served 21:30-23:00 nightly - do not miss it"
       ]
     },
     {
@@ -1451,7 +1471,7 @@
       "checkout_hotel": "hotel_4",
       "type": "travel_and_sightseeing",
       "luggage_forward": true,
-      "luggage_note": "Send large bags via TA-Q-BIN to Tokyu Stay Hida-Takayama this morning. Bags arrive May 22.",
+      "luggage_note": "Send large bags via TA-Q-BIN to Residence Hotel Takayama this morning. Bags arrive May 22.",
       "early_start": true,
       "early_start_time": "7:00 AM",
       "trains_today": [
@@ -1461,12 +1481,12 @@
       "schedule": [
         {
           "time": "07:00",
-          "activity": "TA-Q-BIN bags to Tokyu Stay Hida-Takayama Musubi no Yu",
+          "activity": "TA-Q-BIN bags to Residence Hotel Takayama Station",
           "notes": "Hotel front desk. Address: 6-105 Hanasatomachi, Takayama."
         },
         {
           "time": "07:15",
-          "activity": "Check out Villa Fontaine Grand Osaka Umeda - daypack only",
+          "activity": "Check out Dormy Inn Namba - daypack only",
           "notes": ""
         },
         {
@@ -1501,7 +1521,7 @@
         },
         {
           "time": "11:30",
-          "activity": "GREEN CAR Hikari Shinkansen Osaka > Nagoya - reserve at station",
+          "activity": "Hikari Shinkansen Osaka > Nagoya",
           "notes": "50 min. JR Pass."
         },
         {
@@ -1521,8 +1541,8 @@
         },
         {
           "time": "15:30",
-          "activity": "Check in Tokyu Stay Hida-Takayama Musubi no Yu - 30 SECONDS from station!",
-          "notes": "Onsen hotel steps from the station. Night 1 of 2."
+          "activity": "Check in Residence Hotel - 30 SECONDS from station!",
+          "notes": "Full apartment with kitchen. Night 1 of 2."
         },
         {
           "time": "15:45",
@@ -1674,7 +1694,7 @@
         },
         {
           "time": "08:25",
-          "activity": "Check out Tokyu Stay Hida-Takayama Musubi no Yu",
+          "activity": "Check out Residence Hotel",
           "notes": "30 SECOND walk to station!"
         },
         {
@@ -2007,8 +2027,8 @@
       "priority": "URGENT",
       "done": true,
       "sale_date_japan": "Sunday April 12, 2026 at 11:00 AM JST",
-      "alert": "TICKETS ON SALE: Saturday April 11 at 9:00 PM Austin, TX time. Buy Race Day Special Passport for May 23 + Pit Walk Pass.",
-      "sale_date_austin": "Saturday April 11, 2026 at 9:00 PM Austin, TX Time (CDT)"
+      "sale_date_chicago": "Saturday April 11, 2026 at 9:00 PM CDT",
+      "alert": "TICKETS ON SALE: Saturday April 11 at 9:00 PM Chicago time. Buy Race Day Special Passport for May 23 + Pit Walk Pass."
     },
     {
       "id": "book_2",
@@ -2032,17 +2052,7 @@
       "where": "sumo.or.jp",
       "url": "https://www.sumo.or.jp",
       "priority": "URGENT",
-      "done": true,
-      "sale_date_austin": "Friday April 3, 2026 at 10:01 AM Austin, TX Time (CDT)",
-      "sale_date_japan": "Saturday April 4, 2026 at 12:01 AM JST"
-    },
-    {
-      "id": "book_5",
-      "item": "Odakyu Romance Car reserved seats",
-      "where": "odakyu.jp",
-      "url": "https://www.odakyu.jp",
-      "priority": "HIGH",
-      "done": false
+      "done": true
     },
     {
       "id": "book_6",
@@ -2062,11 +2072,12 @@
     },
     {
       "id": "book_8",
-      "item": "Fujikyuko Bus Kawaguchiko",
+      "item": "Fujikyuko Highway Bus: Shinjuku → Kawaguchiko (07:45, May 15)",
       "where": "highway-buses.jp",
       "url": "https://www.highway-buses.jp",
       "priority": "HIGH",
-      "done": false
+      "done": false,
+      "notes": "¥2,200/person. Book 2+ weeks ahead."
     },
     {
       "id": "book_9",
@@ -2086,11 +2097,21 @@
     },
     {
       "id": "book_11",
-      "item": "Green Car seats - Osaka to Nagoya (May 21)",
-      "where": "JR Midori-no-madoguchi at Shin-Osaka or Osaka Station",
-      "url": "",
-      "priority": "MEDIUM",
-      "done": false
+      "item": "Fujikyuko Highway Bus: Kawaguchiko → Gotemba → Hakone-Yumoto (14:15, May 15)",
+      "where": "highway-buses.jp",
+      "url": "https://www.highway-buses.jp",
+      "priority": "HIGH",
+      "done": false,
+      "notes": "~¥1,500/person. Must pre-book."
+    },
+    {
+      "id": "book_12",
+      "item": "Pola Museum of Art — advance timed entry (May 16)",
+      "where": "polamuseum.or.jp",
+      "url": "https://www.polamuseum.or.jp/en/",
+      "priority": "HIGH",
+      "done": false,
+      "notes": "Required advance booking. Hakone Free Pass gives discount on entry."
     }
   ],
   "experiences": [
@@ -2329,7 +2350,7 @@
         "done": false
       },
       {
-        "item": "Small towel for onsen (Fujiya provides towels; Tokyu Stay has onsen)",
+        "item": "Small towel for onsen (Fujiya + Dormy Inn provide towels)",
         "done": false
       }
     ],

@@ -466,6 +466,75 @@ input { font-family: inherit; }
 }
 .day-header-meta span { display: flex; align-items: center; gap: 4px; }
 
+/* Day badges (luggage forward, Fuji, rest day) */
+.day-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+.day-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.01em;
+}
+.badge-luggage { background: #e8f0fe; color: #1a56a0; }
+.badge-fuji    { background: #e6f4ea; color: #1e6e3a; }
+.badge-rest    { background: #fce8e6; color: #a0220a; }
+@media (prefers-color-scheme: dark) {
+  .badge-luggage { background: #1a2a4a; color: #7ab3f0; }
+  .badge-fuji    { background: #142a1e; color: #6dba8a; }
+  .badge-rest    { background: #3a1a16; color: #f09080; }
+}
+
+/* NOT JR Pass badge on transport items */
+.activity-not-jr { background: #fff8e8; border-radius: 8px; padding: 8px 10px; margin: 2px 0; }
+@media (prefers-color-scheme: dark) {
+  .activity-not-jr { background: #2e2010; }
+}
+.not-jr-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #b85000;
+  background: #fff0d0;
+  border: 1px solid #e8b840;
+  border-radius: 10px;
+  padding: 2px 8px;
+  margin: 3px 0 5px;
+}
+@media (prefers-color-scheme: dark) {
+  .not-jr-badge { background: #3a2800; color: #f0a840; border-color: #7a5800; }
+}
+
+/* Optional activity collapsible block */
+.optional-block {
+  border: 1.5px dashed var(--border);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  margin-bottom: 14px;
+  background: var(--surface2);
+  opacity: 0.85;
+}
+.optional-summary {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  cursor: pointer;
+  list-style: none;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.optional-summary::-webkit-details-marker { display: none; }
+.optional-body {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  margin-top: 10px;
+}
+
 /* Activity list */
 .activity-list { margin-bottom: 14px; }
 
@@ -1118,6 +1187,13 @@ input { font-family: inherit; }
   background: var(--surface2);
   border-radius: var(--radius-sm);
   border-left: 3px solid var(--navy);
+  margin-top: 6px;
+}
+.onsen-pay  { border-left-color: #e07020; color: #8a4000; background: #fff4e6; }
+.onsen-taxi { border-left-color: #308030; color: #1a5020; background: #eaf5ea; }
+@media (prefers-color-scheme: dark) {
+  .onsen-pay  { background: #2e1a00; color: #f0a060; border-left-color: #c06020; }
+  .onsen-taxi { background: #102010; color: #70c070; border-left-color: #408040; }
 }
 
 /* ---------- CHECKLISTS TAB ---------- */

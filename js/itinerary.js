@@ -14,20 +14,24 @@ function _saveNote(date, val) {
 }
 
 function _renderActivity(act) {
-  const name   = act.activity || act.name || '';
-  const desc   = act.notes    || act.description || '';
-  const hasMap = name.trim().length > 0;
-  const isSumo = /sumo/i.test(name);
+  const name       = act.activity || act.name || '';
+  const desc       = act.notes    || act.description || '';
+  const hasMap     = name.trim().length > 0;
+  const isSumo     = /sumo/i.test(name);
+  const isSuzuka   = /suzuka/i.test(name);
+  const notJrPass  = act.non_jr_pass || /not jr pass/i.test(desc);
 
   return `
-    <div class="activity-item">
+    <div class="activity-item${notJrPass ? ' activity-not-jr' : ''}">
       <div class="activity-time">${escHtml(act.time || '')}</div>
       <div class="activity-body">
         <div class="activity-name">${escHtml(name)}</div>
+        ${notJrPass ? `<div class="not-jr-badge">⚠️ NOT JR Pass — separate ticket</div>` : ''}
         ${desc ? `<div class="activity-desc">${escHtml(desc)}</div>` : ''}
         <div class="activity-actions">
           ${hasMap ? `<a href="${mapLink(name)}" target="_blank" rel="noopener" class="map-btn">🗺 Map</a>` : ''}
-          ${isSumo ? `<button class="learn-link-btn" onclick="window.openLearnTopic('sumo')">📖 Sumo Guide</button>` : ''}
+          ${isSumo   ? `<button class="learn-link-btn" onclick="window.openLearnTopic('sumo')">📖 Sumo Guide</button>` : ''}
+          ${isSuzuka ? `<button class="learn-link-btn" onclick="window.openLearnTopic('suzuka')">🏎️ Suzuka Guide</button>` : ''}
         </div>
       </div>
     </div>
@@ -306,6 +310,12 @@ function renderSchedule() {
           <span>📍 ${escHtml(day.city)}</span>
           <span>🏨 ${escHtml(day.hotel)}</span>
         </div>
+        ${(day.luggage_forward || day.fuji_view_alert || day.rest_day) ? `
+        <div class="day-badges">
+          ${day.luggage_forward ? `<span class="day-badge badge-luggage">🧳 Luggage Forward Day</span>` : ''}
+          ${day.fuji_view_alert ? `<span class="day-badge badge-fuji">🗻 Mt Fuji View Day</span>` : ''}
+          ${day.rest_day ? `<span class="day-badge badge-rest">😌 Rest Day</span>` : ''}
+        </div>` : ''}
       </div>
 
       ${day.suzuka_day ? `
@@ -320,6 +330,15 @@ function renderSchedule() {
       <div class="activity-list" id="activity-list-${day.date}">
         ${(day.schedule || []).map(act => _renderActivity(act)).join('')}
       </div>
+
+      ${day.optional ? (() => {
+        const entries = Object.entries(day.optional);
+        return entries.map(([key, val]) => `
+        <details class="optional-block">
+          <summary class="optional-summary">⏱️ Optional if time allows — ${escHtml(key.replace(/_/g,' '))}</summary>
+          <div class="optional-body">${escHtml(val)}</div>
+        </details>`).join('');
+      })() : ''}
 
       ${day.tips && day.tips.length ? `
       <div class="tips-section">

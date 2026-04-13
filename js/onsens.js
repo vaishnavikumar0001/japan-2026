@@ -63,7 +63,9 @@ function renderOnsens() {
           <div class="onsen-card-body">
             <div class="onsen-type">📍 ${escHtml(o.city)} · ${escHtml(o.type)}</div>
             <div class="onsen-desc">${escHtml(o.notes || o.description || '')}</div>
-            ${(o.tips || o.included !== undefined) ? `<div class="onsen-tips">💡 ${o.included ? 'Included with hotel stay' : 'Separate entry fee'}</div>` : ''}
+            ${o.pay_at_door ? `<div class="onsen-tips onsen-pay">🎫 Pay at door — ${escHtml(o.entry_fee || '')} · Not included in hotel stay</div>` : ''}
+            ${o.taxi_required ? `<div class="onsen-tips onsen-taxi">🚕 Taxi required — ${escHtml(o.taxi_cost || '')}</div>` : ''}
+            ${(!o.pay_at_door && o.included !== undefined) ? `<div class="onsen-tips">💡 ${o.included ? 'Included with hotel stay' : 'Separate entry fee'}</div>` : ''}
           </div>
         </div>
       `);

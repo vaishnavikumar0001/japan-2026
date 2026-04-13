@@ -129,7 +129,10 @@
       "address": "2-6-2 Yoyogi, Shibuya-ku, Tokyo 151-0053",
       "phone": "+81-3-5333-8687",
       "notes": "3 min walk from Shinjuku Station South Exit. Luggage storage available before check-in and after check-out.",
-      "checkin_note": "Check-in from 2 PM. 3-min walk from JR Shinjuku Station south exit."
+      "checkin_note": "Check-in from 2 PM. 3-min walk from JR Shinjuku Station south exit.",
+      "meals": "Room only (no breakfast)",
+      "map_query": "JR Kyushu Hotel Blossom Shinjuku Tokyo",
+      "taqbin_note": ""
     },
     {
       "id": "hotel_2",
@@ -146,7 +149,10 @@
       "address": "359 Miyanoshita, Hakone-machi, Hakone 250-0404",
       "phone": "+81-460-82-2211",
       "notes": "Japan's oldest Western hotel. Yukata and geta provided. 3 min walk from Miyanoshita Station.",
-      "checkin_note": "Standard checkout 11 AM — ask reception about 12 PM late checkout."
+      "checkin_note": "Standard checkout 11 AM — ask reception about 12 PM late checkout.",
+      "meals": "Breakfast + Dinner included",
+      "map_query": "Fujiya Hotel 359 Miyanoshita Hakone",
+      "taqbin_note": ""
     },
     {
       "id": "hotel_3",
@@ -162,7 +168,12 @@
       "checkout_time": "11:00 AM",
       "address": "Gion, Kyoto",
       "notes": "5 min walk to Hanamikoji Street. Free late-night ramen 9:30-11 PM nightly. Check-in May 16 (one night earlier than original).",
-      "checkin_note": "Check-in from 3 PM. Gion area — Hanamikoji St 5 min walk. Free late-night ramen 9:30–11 PM."
+      "checkin_note": "Check-in from 3 PM. Gion area — Hanamikoji St 5 min walk. Free late-night ramen 9:30–11 PM.",
+      "meals": "Room only — free late-night ramen 9:30–11 PM",
+      "map_query": "Dormy Inn Kyoto Gion",
+      "taqbin_day": "2026-05-18",
+      "taqbin_note": "Send bags from here to Takayama (Residence Hotel Takayama Station). Bags arrive May 20 afternoon.",
+      "booking_url": ""
     },
     {
       "id": "hotel_5",
@@ -179,7 +190,10 @@
       "address": "6-105 Hanasatomachi, Takayama, Gifu 506-0026",
       "phone": "+81 577-57-5578",
       "notes": "30 seconds from Takayama Station. Full apartment with kitchen. Front desk NOT 24 hours (6:30 AM–midnight).",
-      "checkin_note": "Check-in from 3 PM. 30 seconds from Takayama Station. Bags arrive via TA-Q-BIN (sent May 18). Checkout May 22."
+      "checkin_note": "Check-in from 3 PM. 30 seconds from Takayama Station. Bags arrive via TA-Q-BIN (sent May 18). Checkout May 22.",
+      "meals": "Room only (full apartment with kitchen)",
+      "map_query": "Residence Hotel Takayama Station Gifu",
+      "taqbin_note": ""
     },
     {
       "id": "hotel_6",
@@ -197,7 +211,10 @@
       "address": "Marunouchi, Chiyoda, Tokyo",
       "phone": "+81 3-5361-8355",
       "notes": "Steps from Tokyo Station. Central for Shinkansen (Suzuka May 23) and Keiyo Line (A-PIT May 24). Book ASAP — peak season.",
-      "checkin_note": "Check-in from 3 PM. Tokyo Station is the main Shinkansen hub — ideal for May 23 Suzuka departure and May 25 N'EX to Narita."
+      "checkin_note": "Check-in from 3 PM. Tokyo Station is the main Shinkansen hub — ideal for May 23 Suzuka departure and May 25 N'EX to Narita.",
+      "meals": "Room only (TBD — hotel not yet booked)",
+      "map_query": "Hotels near Tokyo Station Marunouchi",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Tokyo+Station&checkin=2026-05-22&checkout=2026-05-25&group_adults=2"
     }
   ],
   "onsens": [

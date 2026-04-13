@@ -75,7 +75,11 @@ function renderHotels() {
     }
   });
 
-  html.push('<div class="section-heading">6 Hotels · May 12–25</div>');
+  const tripStart = data.hotels.reduce((a, h) => (h.checkin || h.check_in) < a ? (h.checkin || h.check_in) : a, '9999');
+  const tripEnd   = data.hotels.reduce((a, h) => (h.checkout || h.check_out) > a ? (h.checkout || h.check_out) : a, '0000');
+  const startFmt  = fmtDate(tripStart);
+  const endFmt    = fmtDate(tripEnd);
+  html.push(`<div class="section-heading">${data.hotels.length} Hotels · ${startFmt} – ${endFmt}</div>`);
 
   data.hotels.forEach(h => {
     const nights = h.nights;
@@ -95,6 +99,7 @@ function renderHotels() {
           <div class="hotel-badges">
             ${isActive ? '<span class="badge badge-red">Staying here</span>' : ''}
             ${h.onsen ? '<span class="badge badge-navy">♨️ Onsen</span>' : ''}
+            ${(!isHotelBooked(h.id) && h.name.includes('TBD')) ? '<span class="badge badge-urgent">⚠️ Not Booked</span>' : ''}
           </div>
         </div>
 
@@ -118,10 +123,11 @@ function renderHotels() {
             <span class="hotel-info-text">${escHtml(h.onsen_type || 'Onsen available')}</span>
           </div>` : ''}
 
+          ${h.meals ? `
           <div class="hotel-info-row">
             <span class="hotel-info-icon">🍽</span>
             <span class="hotel-info-text">${escHtml(h.meals)}</span>
-          </div>
+          </div>` : ''}
 
           <div class="hotel-info-row">
             <span class="hotel-info-icon">📍</span>
@@ -146,8 +152,9 @@ function renderHotels() {
           </div>` : ''}
 
           <div class="hotel-actions">
-            <a href="${mapLink(h.map_query)}" target="_blank" rel="noopener" class="btn-secondary">🗺 Open in Maps</a>
+            <a href="${mapLink(h.map_query || h.name + ' ' + h.city)}" target="_blank" rel="noopener" class="btn-secondary">🗺 Open in Maps</a>
             ${h.phone ? `<a href="tel:${escHtml(h.phone)}" class="btn-secondary">📞 Call</a>` : ''}
+            ${h.booking_url ? `<a href="${escHtml(h.booking_url)}" target="_blank" rel="noopener" class="btn-book-now">🏨 Book Now</a>` : ''}
           </div>
         </div>
       </div>

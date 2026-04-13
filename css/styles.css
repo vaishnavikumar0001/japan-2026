@@ -339,6 +339,8 @@ input { font-family: inherit; }
 .badge-gold    { background: var(--gold);  color: #3a2a00; }
 .badge-green   { background: var(--green-car); color: white; }
 .badge-muted   { background: var(--surface2); color: var(--text-muted); border: 1px solid var(--border); }
+.badge-urgent  { background: #C00000; color: white; font-weight: 700; animation: pulse-urgent 1.5s ease-in-out infinite; }
+@keyframes pulse-urgent { 0%,100% { opacity:1; } 50% { opacity:.65; } }
 
 /* ---------- ITINERARY TAB ---------- */
 .countdown-card {
@@ -966,6 +968,20 @@ input { font-family: inherit; }
   .btn-secondary { color: #60a0d8; }
   .btn-secondary:hover { background: var(--navy); color: white; }
 }
+
+.btn-book-now {
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  background: var(--red);
+  border: 1px solid var(--red);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  transition: all 0.15s;
+}
+.btn-book-now:hover { background: #900000; border-color: #900000; }
 
 /* ---------- TRAINS TAB ---------- */
 .trains-note {

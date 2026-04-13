@@ -199,9 +199,9 @@
     },
     {
       "id": "hotel_6",
-      "name": "Hotel near Tokyo Station (TBD — book ASAP)",
+      "name": "Marunouchi Hotel",
       "city": "Tokyo",
-      "area": "Marunouchi / Tokyo Station",
+      "area": "Marunouchi, Tokyo Station",
       "checkin": "2026-05-22",
       "checkout": "2026-05-25",
       "nights": 3,
@@ -209,14 +209,14 @@
       "onsen_description": "",
       "checkin_time": "3:00 PM",
       "checkout_time": "11:00 AM",
-      "checkin_time_note": "Early check-in NOT possible per hotel FAQ. Luggage storage available before check-in.",
-      "address": "Marunouchi, Chiyoda, Tokyo",
-      "phone": "+81 3-5361-8355",
-      "notes": "Steps from Tokyo Station. Central for Shinkansen (Suzuka May 23) and Keiyo Line (A-PIT May 24). Book ASAP — peak season.",
-      "checkin_note": "Check-in from 3 PM. Tokyo Station is the main Shinkansen hub — ideal for May 23 Suzuka departure and May 25 N'EX to Narita.",
-      "meals": "Room only (TBD — hotel not yet booked)",
-      "map_query": "Hotels near Tokyo Station Marunouchi",
-      "booking_url": "https://www.booking.com/searchresults.html?ss=Tokyo+Station&checkin=2026-05-22&checkout=2026-05-25&group_adults=2"
+      "checkin_time_note": "Luggage storage available before check-in at front desk.",
+      "address": "1-6-3 Marunouchi, Chiyoda-ku, Tokyo 100-0005",
+      "phone": "+81-3-3217-1111",
+      "notes": "1-min walk from Tokyo Station Marunouchi North Exit. Classic Marunouchi location — ideal for Shinkansen (May 23 Suzuka), Keiyo Line (May 24 A-PIT), and N'EX to Narita (May 25).",
+      "checkin_note": "Check-in from 3 PM. 1-min walk from Tokyo Station Marunouchi North Exit. Carry bags directly from Shinkansen on May 22 arrival.",
+      "meals": "Room only",
+      "map_query": "Marunouchi Hotel Tokyo Station",
+      "booking_url": "https://www.marunouchi-hotel.co.jp/en/"
     }
   ],
   "onsens": [
@@ -1503,7 +1503,7 @@
         {
           "time": "08:00",
           "activity": "Check out Residence Hotel Takayama Station",
-          "notes": "Carry bags directly — you arrive Tokyo Station at 13:33, hotel is steps away. No TA-Q-BIN needed (and hotel is TBD so address unavailable). Stow bags at front desk if needed before heading to Odaiba."
+          "notes": "Carry bags directly — you arrive Tokyo Station at 13:33, hotel is steps away. No TA-Q-BIN needed (and Marunouchi Hotel, 1-6-3 Marunouchi). Stow bags at front desk if needed before heading to Odaiba."
         },
         {
           "time": "08:55",
@@ -2002,13 +2002,13 @@
     },
     {
       "id": "book_13",
-      "item": "Hotel near Tokyo Station — May 22–25 (3 nights)",
+      "item": "Marunouchi Hotel — May 22–25 (3 nights)",
       "where": "Booking.com / direct",
-      "url": "https://www.booking.com/searchresults.html?ss=Tokyo+Station&checkin=2026-05-22&checkout=2026-05-25&group_adults=2",
+      "url": "https://www.marunouchi-hotel.co.jp/en/",
       "priority": "URGENT",
       "done": false,
-      "notes": "Need address ASAP for TA-Q-BIN logistics. Stay near Marunouchi side.",
-      "where_to_book": "Booking.com / Hotels.com"
+      "notes": "1-min walk from Tokyo Station Marunouchi North Exit. Book directly on official site.",
+      "where_to_book": "Official site"
     },
     {
       "id": "book_14",

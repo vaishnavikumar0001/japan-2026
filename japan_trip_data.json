@@ -810,8 +810,8 @@
       "schedule": [
         {
           "time": "06:30",
-          "activity": "🧳 TA-Q-BIN bags forwarded to Fujiya Hotel",
-          "notes": "Hotel front desk. Pack daypack night before. Bags arrive Fujiya afternoon (~¥3,500 total)."
+          "activity": "🧳 TA-Q-BIN — send bags from Shinjuku hotel to Fujiya Hotel",
+          "notes": "Drop large bags at JR Kyushu Hotel Blossom Shinjuku front desk before 07:15. Address: Fujiya Hotel, 359 Miyanoshita, Hakone-machi 250-0404. ~¥1,800–2,200/bag. Bags arrive at Fujiya by 5 PM. Travel with day packs only."
         },
         {
           "time": "06:45",
@@ -1135,7 +1135,7 @@
         {
           "time": "08:30",
           "activity": "🧳 TA-Q-BIN — send bags to Takayama",
-          "notes": "Drop large bags at hotel front desk before 9 AM for TA-Q-BIN pickup. Address: Residence Hotel Takayama Station. Bags arrive May 20 — travel with day packs only for May 19 + 20 morning."
+          "notes": "Drop large bags at Dormy Inn Kyoto Gion front desk before 09:00. Address: Residence Hotel Takayama Station, 6-105 Hanasatomachi, Takayama 506-0026. ~¥2,000–2,500/bag. Travel with day packs May 18–19 (Osaka day trip). Bags arrive Takayama May 20 afternoon — collected at check-in."
         },
         {
           "time": "10:00",
@@ -1423,7 +1423,7 @@
       "hotel": "hotel_5",
       "checkout_hotel": null,
       "type": "travel_and_sightseeing",
-      "luggage_forward": true,
+      "luggage_forward": false,
       "luggage_note": "Send large bags via TA-Q-BIN to Residence Hotel Takayama this morning. Bags arrive May 22.",
       "early_start": true,
       "early_start_time": "7:00 AM",
@@ -1522,7 +1522,7 @@
         {
           "time": "08:00",
           "activity": "Check out Residence Hotel Takayama Station",
-          "notes": "Day pack or full bags. TA-Q-BIN option: send bags to Tokyo Station hotel from front desk before 09:00."
+          "notes": "Carry bags directly — you arrive Tokyo Station at 13:33, hotel is steps away. No TA-Q-BIN needed (and hotel is TBD so address unavailable). Stow bags at front desk if needed before heading to Odaiba."
         },
         {
           "time": "08:55",

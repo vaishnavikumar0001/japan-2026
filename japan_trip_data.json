@@ -157,24 +157,25 @@
     },
     {
       "id": "hotel_3",
-      "name": "Dormy Inn Kyoto Gion",
+      "name": "Hotel Vischio Kyoto by GRANVIA",
       "city": "Kyoto",
-      "area": "Gion",
+      "area": "Kyoto Station",
       "checkin": "2026-05-16",
       "checkout": "2026-05-20",
       "nights": 4,
-      "onsen": true,
-      "onsen_description": "Hotel onsen - open late nights",
+      "onsen": false,
+      "onsen_description": "",
       "checkin_time": "3:00 PM",
       "checkout_time": "11:00 AM",
-      "address": "Gion, Kyoto",
-      "notes": "5 min walk to Hanamikoji Street. Free late-night ramen 9:30-11 PM nightly. Check-in May 16 (one night earlier than original).",
-      "checkin_note": "Check-in from 3 PM. Gion area — Hanamikoji St 5 min walk. Free late-night ramen 9:30–11 PM.",
-      "meals": "Room only — free late-night ramen 9:30–11 PM",
-      "map_query": "Dormy Inn Kyoto Gion",
+      "address": "Karasuma-dori Shichijo Sagaru 2-chome, Shimogyou-ku, Kyoto 600-8216",
+      "notes": "Directly connected to Kyoto Station via JR Isetan building. Bullet train platforms are a 3-min walk. Ideal for May 17 Amanohashidate, May 19 Osaka day trip, May 20 departure to Takayama.",
+      "checkin_note": "Check-in from 3 PM. Hotel is inside Kyoto Station complex — walk straight from the Shinkansen arrivals. No taxi needed.",
+      "meals": "Room only (no breakfast)",
+      "map_query": "Hotel Vischio Kyoto by GRANVIA Kyoto Station",
       "taqbin_day": "2026-05-18",
-      "taqbin_note": "Send bags from here to Takayama (Residence Hotel Takayama Station). Bags arrive May 20 afternoon.",
-      "booking_url": ""
+      "taqbin_note": "Send bags from Hotel Vischio Kyoto front desk before 09:00. Address: Residence Hotel Takayama Station, 6-105 Hanasatomachi, Takayama 506-0026. Bags arrive Takayama May 20 afternoon.",
+      "booking_url": "https://www.booking.com/hotel/jp/vischio-kyoto.html",
+      "phone": "+81-75-344-8888"
     },
     {
       "id": "hotel_5",
@@ -1039,13 +1040,13 @@
         },
         {
           "time": "15:00",
-          "activity": "Taxi to Dormy Inn Kyoto Gion — check in",
-          "notes": "10-15 min taxi. Right at check-in time (15:00) so no waiting. Drop bags, freshen up."
+          "activity": "🏨 Walk to Hotel Vischio Kyoto — check in",
+          "notes": "Hotel is inside Kyoto Station complex — 3-min walk from Shinkansen arrivals. No taxi needed. Drop bags, freshen up. Check-in from 3 PM."
         },
         {
           "time": "16:00",
           "activity": "Taxi to Higashiyama District",
-          "notes": "10 min. Late afternoon light is beautiful on the temple approach."
+          "notes": "Taxi from Kyoto Station, ~15 min, ~¥1,500. Or Bus 206 from Kyoto Station → Higashiyama stop, 25 min, ¥230. Late afternoon light is beautiful on the temple approach."
         },
         {
           "time": "16:15",
@@ -1064,28 +1065,23 @@
         },
         {
           "time": "18:10",
-          "activity": "Walk to Hanamikoji Street — 5 min from Yasaka",
-          "notes": ""
+          "activity": "Walk to Hanamikoji Street",
+          "notes": "5 min walk from Kiyomizu-dera base. Heart of Gion."
         },
         {
           "time": "18:15",
           "activity": "Gion — Hanamikoji Street — prime maiko hour!",
-          "notes": "18:00-19:30 is peak maiko time. Walk slowly, no flash photography, bow respectfully if you see one. You're already in Gion so hotel is 5 min walk away."
+          "notes": "18:00–19:30 is peak maiko time. Walk slowly, no flash photography, bow respectfully if you see one."
         },
         {
           "time": "19:30",
           "activity": "Dinner in Gion area — first Kyoto meal!",
-          "notes": "Pontocho is 10 min walk if you want the riverside kawadoko terrace (May = open season). Or stay in Gion — plenty of options within a few minutes."
+          "notes": "Pontocho riverside kawadoko terrace is 15 min walk (May = open season). Or stay in Gion — plenty of excellent options on Hanamikoji side streets."
         },
         {
           "time": "21:30",
-          "activity": "Taxi back to hotel",
-          "notes": "Or walk — hotel is very close to Hanamikoji."
-        },
-        {
-          "time": "22:00",
-          "activity": "♨️ Dormy Inn Kyoto onsen — first Kyoto soak",
-          "notes": "Open late. Good way to end arrival day."
+          "activity": "Taxi back to Kyoto Station — Hotel Vischio Kyoto",
+          "notes": "~25 min from Gion, ~¥2,000–2,500."
         }
       ],
       "tips": [
@@ -1114,7 +1110,7 @@
         },
         {
           "time": "Evening",
-          "activity": "Return to Dormy Inn Kyoto Gion",
+          "activity": "Return to Hotel Vischio Kyoto",
           "notes": "Dinner in Gion or Pontocho on return."
         }
       ],
@@ -1135,12 +1131,7 @@
         {
           "time": "08:30",
           "activity": "🧳 TA-Q-BIN — send bags to Takayama",
-          "notes": "Drop large bags at Dormy Inn Kyoto Gion front desk before 09:00. Address: Residence Hotel Takayama Station, 6-105 Hanasatomachi, Takayama 506-0026. ~¥2,000–2,500/bag. Travel with day packs May 18–19 (Osaka day trip). Bags arrive Takayama May 20 afternoon — collected at check-in."
-        },
-        {
-          "time": "10:00",
-          "activity": "Taxi to Kyoto Station",
-          "notes": "10 min."
+          "notes": "Drop large bags at Hotel Vischio Kyoto front desk before 09:00. Address: Residence Hotel Takayama Station, 6-105 Hanasatomachi, Takayama 506-0026. ~¥2,000–2,500/bag. Travel with day packs May 18–19 (Osaka day trip). Bags arrive Takayama May 20 afternoon — collected at check-in."
         },
         {
           "time": "10:45",
@@ -1191,11 +1182,6 @@
           "time": "22:00",
           "activity": "Kamo River evening walk - sit on the stone steps",
           "notes": "Classic Kyoto evening moment."
-        },
-        {
-          "time": "23:00",
-          "activity": "Dormy Inn Kyoto onsen",
-          "notes": ""
         }
       ],
       "tips": [
@@ -1300,8 +1286,8 @@
         },
         {
           "time": "21:20",
-          "activity": "Arrive Kyoto Station → taxi to Dormy Inn Kyoto Gion",
-          "notes": "~15 min taxi. Staying one more night in Kyoto."
+          "activity": "Arrive Kyoto Station → walk to Hotel Vischio Kyoto",
+          "notes": "Hotel is inside Kyoto Station — 2-min walk from arrivals. Staying one more night in Kyoto."
         }
       ],
       "tips": [
@@ -1341,13 +1327,8 @@
         },
         {
           "time": "08:30",
-          "activity": "Check out Dormy Inn Kyoto Gion",
-          "notes": "Bags already forwarded via TA-Q-BIN on May 18. Day pack only."
-        },
-        {
-          "time": "09:00",
-          "activity": "Taxi to Kyoto Station",
-          "notes": "10 min."
+          "activity": "Check out Hotel Vischio Kyoto",
+          "notes": "Bags already forwarded via TA-Q-BIN on May 18. Day pack only. Hotel is at Kyoto Station — walk straight to Shinkansen platforms."
         },
         {
           "time": "09:22",
@@ -2032,10 +2013,10 @@
     {
       "id": "book_14",
       "priority": "URGENT",
-      "item": "Dormy Inn Kyoto Gion — May 16–20 (4 nights)",
-      "where_to_book": "Dormy Inn official site",
-      "url": "https://dormy-inn.com/en/hotels/kyoto_gion/",
-      "notes": "May 16–20, 4 nights. Gion area. Peak sakura season — book ASAP.",
+      "item": "Hotel Vischio Kyoto by GRANVIA — May 16–20 (4 nights)",
+      "where_to_book": "Official site / Booking.com",
+      "url": "https://www.booking.com/hotel/jp/vischio-kyoto.html",
+      "notes": "May 16–20, 4 nights. At Kyoto Station. Peak season — book ASAP.",
       "done": false
     },
     {

@@ -1264,24 +1264,24 @@
           "notes": "Hotel is a short walk from Maruyama Park. Pack everything for Osaka tonight."
         },
         {
-          "time": "16:30",
-          "activity": "Early farewell dinner — Pontocho kawadoko",
-          "notes": "Last meal in Kyoto. Riverside kawadoko terrace — May is peak season so it's open. Book ahead if possible. Allow 1.5 hrs."
-        },
-        {
-          "time": "18:15",
+          "time": "16:15",
           "activity": "Taxi to Kyoto Station",
           "notes": "10-15 min. Allow buffer for bags."
         },
         {
-          "time": "18:45",
+          "time": "16:45",
           "activity": "🚄 Hikari Shinkansen — Kyoto → Shin-Osaka",
-          "notes": "15 min. JR Pass. Any reserved seat. Shortest Shinkansen of the trip — you'll barely sit down."
+          "notes": "15 min. JR Pass. Any reserved seat."
         },
         {
-          "time": "19:05",
+          "time": "17:05",
           "activity": "Arrive Shin-Osaka → taxi to Dormy Inn Namba ANNEX",
-          "notes": "Drop bags. Check in. Lawson attached if you need anything."
+          "notes": "~20 min taxi to Namba. Check in, drop bags, freshen up."
+        },
+        {
+          "time": "18:00",
+          "activity": "🍽️ First dinner in Osaka — Dotonbori",
+          "notes": "Walking distance from hotel. Kani Doraku, Ichifuji takoyaki, or explore the canal strip. First taste of Osaka food!"
         }
       ],
       "tips": [

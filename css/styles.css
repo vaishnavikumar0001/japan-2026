@@ -1116,6 +1116,99 @@ input { font-family: inherit; }
   border-left: 3px solid var(--navy);
 }
 
+/* Train number line under train name */
+.train-number-line {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin-top: 3px;
+  font-style: italic;
+}
+
+/* Series badge (N700S, HC85, etc.) */
+.badge-series {
+  background: var(--surface2);
+  color: var(--text-muted);
+  font-size: 0.63rem;
+  padding: 2px 7px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  margin-top: 4px;
+  display: inline-block;
+}
+
+/* Green Car available section */
+.train-green-car-row {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  margin: 0 14px 12px;
+  padding: 9px 12px;
+  background: rgba(46, 125, 50, 0.1);
+  border: 1px solid rgba(46, 125, 50, 0.28);
+  border-radius: var(--radius-sm);
+}
+.train-green-car-row .green-car-icon { font-size: 1rem; flex-shrink: 0; margin-top: 1px; }
+.train-green-car-row .green-car-info { font-size: 0.76rem; color: var(--text); line-height: 1.5; }
+.train-green-car-row .green-car-info strong { color: #4caf50; }
+.green-car-price { color: var(--text-muted); }
+.green-car-note { margin-top: 4px; color: var(--text-muted); font-size: 0.72rem; line-height: 1.5; }
+
+/* No Green Car info row */
+.train-no-green-car-row {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  margin: 0 14px 12px;
+  padding: 7px 10px;
+  background: var(--surface2);
+  border-radius: var(--radius-sm);
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* Booking section */
+.train-booking-section {
+  margin: 0 14px 14px;
+  padding: 10px 12px;
+  background: rgba(31, 78, 121, 0.08);
+  border: 1px solid rgba(31, 78, 121, 0.2);
+  border-radius: var(--radius-sm);
+}
+.train-booking-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--navy-light, #5b9bd5);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 6px;
+}
+.train-booking-how {
+  font-size: 0.75rem;
+  color: var(--text);
+  line-height: 1.55;
+  margin-bottom: 8px;
+}
+.train-book-btn {
+  display: inline-block;
+  padding: 6px 14px;
+  background: var(--navy);
+  color: white;
+  border-radius: var(--radius-sm);
+  font-size: 0.74rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.15s;
+}
+.train-book-btn:hover { background: var(--red); }
+
+@media (prefers-color-scheme: light) {
+  .train-booking-label { color: var(--navy); }
+  .train-green-car-row { background: rgba(46, 125, 50, 0.06); }
+  .train-green-car-row .green-car-info strong { color: #2e7d32; }
+  .train-booking-section { background: rgba(31, 78, 121, 0.04); }
+}
+
 .jr-pass-tag {
   display: inline-flex;
   align-items: center;

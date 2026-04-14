@@ -1008,6 +1008,18 @@ input { font-family: inherit; }
   box-shadow: 0 2px 8px rgba(201,168,76,0.2);
 }
 
+.train-card.bus-card {
+  border-color: #e67e22;
+  border-left: 4px solid #e67e22;
+}
+.train-card.bus-card .train-card-header {
+  background: linear-gradient(135deg, #3d1f00, #5a3200);
+}
+.train-card.bus-card .train-from-to { color: white; }
+.train-card.bus-card .train-arrow { color: rgba(255,255,255,0.5); }
+.train-card.bus-card .train-name-line { color: rgba(255,255,255,0.65); }
+.badge-bus { background: #e67e22; color: white; }
+
 .train-card.green-car {
   border-color: var(--green-car);
   box-shadow: 0 2px 8px rgba(46,125,50,0.2);

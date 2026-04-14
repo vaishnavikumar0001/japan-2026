@@ -10,8 +10,10 @@ function renderHotels() {
 
   // ── Hotel Booking Checklist ────────────────────────────────
   function hotelKey(id) { return 'hotel_booked_' + id; }
-  function isHotelBooked(id) {
-    try { return !!localStorage.getItem(hotelKey(id)); } catch(e) { return false; }
+  function isHotelBooked(h) {
+    // h.booked in JSON is authoritative (set when actually booked)
+    if (h.booked) return true;
+    try { return !!localStorage.getItem(hotelKey(h.id)); } catch(e) { return false; }
   }
   function toggleHotelBooked(id) {
     try {
@@ -21,7 +23,7 @@ function renderHotels() {
   }
 
   const totalHotels = data.hotels.length;
-  const bookedCount = data.hotels.filter(h => isHotelBooked(h.id)).length;
+  const bookedCount = data.hotels.filter(h => isHotelBooked(h)).length;
   const allDone = bookedCount === totalHotels;
 
   html.push(`
@@ -38,7 +40,7 @@ function renderHotels() {
       ${allDone ? '<div class="hotel-checklist-done">✅ All hotels booked!</div>' : ''}
       <div class="hotel-checklist-list">
         ${data.hotels.map(h => {
-          const isBooked = isHotelBooked(h.id);
+          const isBooked = isHotelBooked(h);
           const checkinShort = fmtDate(h.checkin || h.check_in);
           const checkoutShort = fmtDate(h.checkout || h.check_out);
           const hasUrl = h.booking_url && h.booking_url.length > 0;
@@ -51,7 +53,7 @@ function renderHotels() {
                 <div class="hcr-name">${escHtml(h.name)}</div>
                 <div class="hcr-dates">${escHtml(h.city)} · ${checkinShort} – ${checkoutShort} · ${h.nights}n</div>
               </div>
-              ${hasUrl ? `<a href="${escHtml(h.booking_url)}" target="_blank" rel="noopener" class="hcr-book-btn">Book →</a>` : ''}
+              ${(hasUrl && !isBooked) ? `<a href="${escHtml(h.booking_url)}" target="_blank" rel="noopener" class="hcr-book-btn">Book →</a>` : ''}
             </div>
           `;
         }).join('')}
@@ -83,7 +85,8 @@ function renderHotels() {
 
   data.hotels.forEach(h => {
     const nights = h.nights;
-    const isActive = (h.checkin || h.check_in) <= today && today < (h.checkout || h.check_out);
+    const isBooked    = isHotelBooked(h);
+    const isActive    = (h.checkin || h.check_in) <= today && today < (h.checkout || h.check_out);
     const isTaqbinDay = h.taqbin_day === today;
 
     const checkinFmt  = fmtDate(h.checkin  || h.check_in);
@@ -99,7 +102,7 @@ function renderHotels() {
           <div class="hotel-badges">
             ${isActive ? '<span class="badge badge-red">Staying here</span>' : ''}
             ${h.onsen ? '<span class="badge badge-navy">♨️ Onsen</span>' : ''}
-            ${(!isHotelBooked(h.id) && h.name.includes('TBD')) ? '<span class="badge badge-urgent">⚠️ Not Booked</span>' : ''}
+            ${isBooked ? '<span class="badge badge-green">✅ Booked</span>' : '<span class="badge badge-urgent">⚠️ Not Booked</span>'}
           </div>
         </div>
 
@@ -154,7 +157,7 @@ function renderHotels() {
           <div class="hotel-actions">
             <a href="${mapLink(h.map_query || h.name + ' ' + h.city)}" target="_blank" rel="noopener" class="btn-secondary">🗺 Open in Maps</a>
             ${h.phone ? `<a href="tel:${escHtml(h.phone)}" class="btn-secondary">📞 Call</a>` : ''}
-            ${h.booking_url ? `<a href="${escHtml(h.booking_url)}" target="_blank" rel="noopener" class="btn-book-now">🏨 Book Now</a>` : ''}
+            ${(h.booking_url && !isBooked) ? `<a href="${escHtml(h.booking_url)}" target="_blank" rel="noopener" class="btn-book-now">🏨 Book Now</a>` : ''}
           </div>
         </div>
       </div>

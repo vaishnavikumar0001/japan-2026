@@ -133,7 +133,8 @@
       "meals": "Room only (no breakfast)",
       "map_query": "Hotel Gracery Shinjuku Kabukicho Tokyo",
       "taqbin_note": "Send bags to Fujiya Hotel (359 Miyanoshita, Hakone 250-0404) before 07:15. Bags arrive Fujiya by 5 PM.",
-      "taqbin_day": "2026-05-15"
+      "taqbin_day": "2026-05-15",
+      "booked": true
     },
     {
       "id": "hotel_2",
@@ -153,7 +154,8 @@
       "checkin_note": "Check-in from 3 PM. 1 night only. Checkout May 16 by 11:00 AM (ask about late 12:00 checkout). Bags arrived via TA-Q-BIN from Shinjuku.",
       "meals": "Breakfast + Dinner included",
       "map_query": "Fujiya Hotel 359 Miyanoshita Hakone",
-      "taqbin_note": ""
+      "taqbin_note": "",
+      "booked": true
     },
     {
       "id": "hotel_3",
@@ -175,7 +177,8 @@
       "taqbin_day": "2026-05-18",
       "taqbin_note": "Send bags from Hotel Vischio Kyoto front desk before 09:00. Address: Tokyu Stay Hida-Takayama Musubi no Yu, Hanasatomachi, Takayama 506-0026. Bags arrive Takayama May 20 afternoon.",
       "booking_url": "https://www.booking.com/hotel/jp/vischio-kyoto.html",
-      "phone": "+81-75-344-8888"
+      "phone": "+81-75-344-8888",
+      "booked": true
     },
     {
       "id": "hotel_5",
@@ -197,7 +200,8 @@
       "map_query": "Tokyu Stay Hida-Takayama Musubi no Yu",
       "taqbin_note": "",
       "onsen_description": "Natural hot spring — Musubi no Yu indoor baths",
-      "booking_url": "https://www.tokyustay.co.jp/e/hotel/HidaTakayama/"
+      "booking_url": "https://www.tokyustay.co.jp/e/hotel/HidaTakayama/",
+      "booked": true
     },
     {
       "id": "hotel_6",
@@ -218,7 +222,8 @@
       "checkin_note": "Check-in from 3 PM. 1-min walk from Tokyo Station Marunouchi North Exit. Carry bags directly from Shinkansen on May 22 arrival.",
       "meals": "Room only",
       "map_query": "Marunouchi Hotel Tokyo Station",
-      "booking_url": "https://www.marunouchi-hotel.co.jp/en/"
+      "booking_url": "https://www.marunouchi-hotel.co.jp/en/",
+      "booked": true
     }
   ],
   "onsens": [
@@ -282,6 +287,40 @@
       "notes": "Activate JR Pass at Narita JR counter BEFORE boarding."
     },
     {
+      "id": "bus_1",
+      "date": "2026-05-15",
+      "from": "Shinjuku (Busta Shinjuku)",
+      "to": "Kawaguchiko Station",
+      "train": "Fujikyuko Highway Bus",
+      "class": "Reserved",
+      "depart": "07:45",
+      "arrive": "09:30",
+      "duration": "1h 45min",
+      "jr_pass": false,
+      "type": "bus",
+      "notes": "~¥2,200/person each way. Busta Shinjuku 4F (Shinjuku Station south exit). Pre-book required — fills up fast in May.",
+      "seat_tip": "Window seat for Fuji views on clear mornings.",
+      "booking_note": "Book at highway-buses.jp or Fujikyuko website. Booking ID: see book_8.",
+      "warning": "NOT JR Pass. Pre-book in advance — peak season sellout."
+    },
+    {
+      "id": "bus_2",
+      "date": "2026-05-15",
+      "from": "Kawaguchiko Station",
+      "to": "Hakone-Yumoto",
+      "train": "Fujikyuko + Odakyu Highway Bus (via Gotemba)",
+      "class": "Reserved",
+      "depart": "14:15",
+      "arrive": "16:10",
+      "duration": "~1h 55min (transfer at Gotemba)",
+      "jr_pass": false,
+      "type": "bus",
+      "notes": "Kawaguchiko → Gotemba (~50 min, ~¥1,500) then Odakyu Bus Gotemba → Hakone-Yumoto (~40 min, ~¥1,000). Transfer at Gotemba ~15 min.",
+      "seat_tip": "RIGHT side on Gotemba leg for Fuji views.",
+      "booking_note": "Book at highway-buses.jp. Booking ID: see book_11.",
+      "warning": "NOT JR Pass. Two separate buses — book both legs together if possible."
+    },
+    {
       "id": "train_2b",
       "number": "2b",
       "date": "2026-05-16",
@@ -293,7 +332,40 @@
       "jr_pass": true,
       "seat_tip": "RIGHT side for Mt Fuji view ~13:45 between Odawara and Shin-Fuji — may be your last Fuji view of the trip.",
       "book_at": "JR office at Odawara Station on arrival",
-      "notes": "Departs Odawara ~13:10. No Gran Class on this service — ordinary reserved is comfortable. Reserve at Odawara JR office."
+      "notes": "Departs Odawara ~13:10. No Gran Class on this service — ordinary reserved is comfortable. Reserve at Odawara JR office.",
+      "depart": "13:10",
+      "arrive": "14:50"
+    },
+    {
+      "id": "train_3",
+      "date": "2026-05-19",
+      "from": "Kyoto",
+      "to": "Shin-Osaka",
+      "train": "Hikari Shinkansen",
+      "class": "Ordinary Reserved",
+      "depart": "13:10",
+      "arrive": "13:25",
+      "duration": "15 min",
+      "jr_pass": true,
+      "type": "train",
+      "notes": "Osaka day trip outbound. Hikari or Nozomi (JR Pass valid on Hikari only).",
+      "seat_tip": "Any seat fine — it's only 15 min.",
+      "booking_note": "Reserve at Kyoto Station JR office with JR Pass. Or use any Hikari on the day."
+    },
+    {
+      "id": "train_4",
+      "date": "2026-05-19",
+      "from": "Shin-Osaka",
+      "to": "Kyoto",
+      "train": "Hikari Shinkansen (return)",
+      "class": "Ordinary Reserved",
+      "depart": "21:00",
+      "arrive": "21:15",
+      "duration": "15 min",
+      "jr_pass": true,
+      "type": "train",
+      "notes": "Osaka day trip return. Last Hikari around 22:30 if you want more time in Osaka.",
+      "booking_note": "Reserve or board any available Hikari from Shin-Osaka. Non-reserved car also fine for 15 min."
     },
     {
       "id": "train_5",
@@ -306,7 +378,9 @@
       "duration": "38 min",
       "jr_pass": true,
       "seat_tip": "Any reserved seat",
-      "notes": "Heading east (Tokyo direction). Reserved seat. Quick transfer at Nagoya to Wide View Hida."
+      "notes": "Heading east (Tokyo direction). Reserved seat. Quick transfer at Nagoya to Wide View Hida.",
+      "depart": "09:22",
+      "arrive": "10:00"
     },
     {
       "id": "train_6",
@@ -320,7 +394,9 @@
       "jr_pass": true,
       "seat_tip": "LEFT side A/B seats - Hida River gorge appears ~90 min in.",
       "book_at": "Any JR office",
-      "notes": "JR Pass. LEFT side for Kiso Valley river gorge views. Arrives Takayama ~12:38."
+      "notes": "JR Pass. LEFT side for Kiso Valley river gorge views. Arrives Takayama ~12:38.",
+      "depart": "10:13",
+      "arrive": "12:38"
     },
     {
       "id": "train_7",
@@ -333,7 +409,24 @@
       "duration": "2 hrs 25 min",
       "jr_pass": true,
       "seat_tip": "LEFT side A/B seats - gorge views on return too.",
-      "notes": "Last mountain train. Hida river gorge views all the way to Nagoya."
+      "notes": "Last mountain train. Hida river gorge views all the way to Nagoya.",
+      "depart": "08:55",
+      "arrive": "11:25"
+    },
+    {
+      "id": "train_8",
+      "number": 8,
+      "date": "2026-05-22",
+      "from": "Nagoya",
+      "to": "Tokyo",
+      "train": "Hikari Shinkansen",
+      "class": "Ordinary Reserved",
+      "duration": "1 hr 40 min",
+      "jr_pass": true,
+      "seat_tip": "Any reserved seat - evening train, Fuji view unlikely after dark.",
+      "notes": "Arrives Tokyo ~13:33. JR Chuo Line to Shinjuku.",
+      "depart": "11:50",
+      "arrive": "13:33"
     },
     {
       "id": "train_8c",
@@ -346,7 +439,9 @@
       "duration": "2h 10min",
       "jr_pass": true,
       "seat_tip": "Any reserved seat. Take Hikari — NOT Nozomi (JR Pass not valid on Nozomi).",
-      "notes": "Depart Tokyo/Shinagawa ~06:50. Arrive Nagoya ~09:00. Transfer to Kintetsu for Shiroko."
+      "notes": "Depart Tokyo/Shinagawa ~06:50. Arrive Nagoya ~09:00. Transfer to Kintetsu for Shiroko.",
+      "depart": "06:50",
+      "arrive": "09:10"
     },
     {
       "id": "train_8b",
@@ -360,20 +455,9 @@
       "jr_pass": false,
       "jr_pass_warning": "NOT covered by JR Pass - buy separately at Kintetsu office east side Nagoya Station. ~Y1,720 each way. Buy BOTH directions at same time.",
       "seat_tip": "Any reserved seat",
-      "notes": "NOT JR Pass. Buy tickets at Kintetsu Nagoya Station. Buy BOTH outbound + return at same time. ~¥1,720 each way."
-    },
-    {
-      "id": "train_8",
-      "number": 8,
-      "date": "2026-05-22",
-      "from": "Nagoya",
-      "to": "Tokyo",
-      "train": "Hikari Shinkansen",
-      "class": "Ordinary Reserved",
-      "duration": "1 hr 40 min",
-      "jr_pass": true,
-      "seat_tip": "Any reserved seat - evening train, Fuji view unlikely after dark.",
-      "notes": "Arrives Tokyo ~13:33. JR Chuo Line to Shinjuku."
+      "notes": "NOT JR Pass. Buy tickets at Kintetsu Nagoya Station. Buy BOTH outbound + return at same time. ~¥1,720 each way.",
+      "depart": "09:20",
+      "arrive": "10:05"
     },
     {
       "id": "train_8d",
@@ -386,7 +470,25 @@
       "duration": "1h 45min",
       "jr_pass": true,
       "seat_tip": "Any reserved seat.",
-      "notes": "Evening return from Suzuka. Depart ~18:30, arrive Tokyo ~20:15."
+      "notes": "Evening return from Suzuka. Depart ~18:30, arrive Tokyo ~20:15.",
+      "depart": "18:30",
+      "arrive": "20:15"
+    },
+    {
+      "id": "bus_3",
+      "date": "2026-05-23",
+      "from": "Shiroko Station",
+      "to": "Suzuka Circuit",
+      "train": "Mie Kotsu Race Day Shuttle",
+      "class": "Unreserved",
+      "depart": "~10:10",
+      "arrive": "~10:30",
+      "duration": "~20 min",
+      "jr_pass": false,
+      "type": "bus",
+      "notes": "~¥400/person each way. Runs frequently on race days. Return bus from circuit to Shiroko after race.",
+      "booking_note": "No pre-booking — buy ticket at Shiroko Station on the day. Follow signs to shuttle stop.",
+      "warning": "NOT JR Pass. Cash only at ticket stand — have ¥1,000 coins ready."
     },
     {
       "id": "train_9",
@@ -400,7 +502,9 @@
       "duration": "90 min",
       "jr_pass": true,
       "seat_tip": "Any seat",
-      "notes": "Depart Tokyo Station ~13:28. Arrives Narita Terminal 1 ~14:26. Return Suica at Narita JR office. JR Pass valid."
+      "notes": "Depart Tokyo Station ~13:28. Arrives Narita Terminal 1 ~14:26. Return Suica at Narita JR office. JR Pass valid.",
+      "depart": "13:28",
+      "arrive": "14:26"
     }
   ],
   "itinerary": [

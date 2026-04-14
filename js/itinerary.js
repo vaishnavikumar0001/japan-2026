@@ -50,15 +50,16 @@ function renderItinerary() {
 
   const today = new Date();
   today.setHours(0, 0, 0, 0);
-  const tripStart = new Date('2026-05-11T00:00:00');
-  const tripEnd   = new Date('2026-05-25T00:00:00');
-  const todayStr  = today.toISOString().slice(0, 10);
+  const departure    = new Date('2026-05-11T00:00:00'); // countdown target
+  const itinFrom     = new Date('2026-05-10T00:00:00'); // show itinerary from May 10
+  const tripEnd      = new Date('2026-05-25T00:00:00');
+  const todayStr     = today.toISOString().slice(0, 10);
 
   container.innerHTML = '';
 
-  // ── Before trip ──
-  if (today < tripStart) {
-    const diffDays = Math.ceil((tripStart - today) / 86400000);
+  // ── Before prep day (before May 10) — show countdown + pre-trip todos ──
+  if (today < itinFrom) {
+    const diffDays = Math.ceil((departure - today) / 86400000);
 
     const countdownEl = document.createElement('div');
     countdownEl.className = 'countdown-card';
@@ -77,7 +78,7 @@ function renderItinerary() {
     return;
   }
 
-  // ── During trip ──
+  // ── Prep day + during trip (May 10 onwards) ──
   if (today <= tripEnd) {
     const dayMap = {};
     data.itinerary.forEach(d => { dayMap[d.date] = d; });
@@ -211,11 +212,11 @@ function renderSchedule() {
 
   const today = new Date();
   today.setHours(0, 0, 0, 0);
-  const tripStart = new Date('2026-05-11T00:00:00');
+  const tripStart = new Date('2026-05-10T00:00:00');
   const tripEnd   = new Date('2026-05-25T00:00:00');
 
   let initialDate;
-  if (today < tripStart)     initialDate = '2026-05-11';
+  if (today < tripStart)     initialDate = '2026-05-10';
   else if (today > tripEnd)  initialDate = '2026-05-25';
   else                       initialDate = today.toISOString().slice(0, 10);
 

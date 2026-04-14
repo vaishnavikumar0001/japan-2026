@@ -477,6 +477,36 @@
       "type": "pre_departure",
       "schedule": [
         {
+          "time": "Morning",
+          "activity": "🖨️ Print all confirmations + tickets",
+          "notes": "Print one copy each: all 5 hotel confirmations, Suzuka Circuit tickets, Sumo tickets, teamLab Planets, Shibuya Sky, Tea Ceremony, Amanohashidate tour, JR Pass vouchers x2, flight itinerary. Keep in a single folder in carry-on."
+        },
+        {
+          "time": "Morning",
+          "activity": "🏨 Check all 5 hotel confirmations",
+          "notes": "Verify name, dates, number of guests for each: Hotel Gracery Shinjuku (May 12–15), Fujiya Hotel (May 15–16), Hotel Vischio Kyoto (May 16–20), Tokyu Stay Hida-Takayama (May 20–22), Marunouchi Hotel (May 22–25)."
+        },
+        {
+          "time": "Morning",
+          "activity": "🎫 Check all event tickets + experience bookings",
+          "notes": "Verify: Suzuka Circuit Super Formula (May 23), Sumo Natsu Basho (May 11–25 — any day tickets), teamLab Planets timed entry, Shibuya Sky timed entry, Camellia Tea Ceremony, Amanohashidate + Ine full day tour (May 17)."
+        },
+        {
+          "time": "Morning",
+          "activity": "🚄 Check train + bus reservations",
+          "notes": "Verify: JR Pass vouchers x2 (activate at Narita on May 12), Fujikyuko Bus Shinjuku→Kawaguchiko (May 15 07:45), Fujikyuko Bus Kawaguchiko→Hakone-Yumoto (May 15 14:15), Kintetsu Nagoya→Shiroko + return (May 23). All other trains reserved on JR Pass at station."
+        },
+        {
+          "time": "Morning",
+          "activity": "📱 Check all app checklists — Hotels, Trains, Bookings tabs",
+          "notes": "Open the Japan 2026 app. Verify Hotels tab shows all 5 ✅ booked. Bookings tab — confirm all URGENT items are checked off or in hand. Trains tab — screenshot every entry for offline reference."
+        },
+        {
+          "time": "Morning",
+          "activity": "💴 Confirm Japanese yen / travel card ready",
+          "notes": "Have ¥20,000–30,000 cash on arrival (ATMs at Narita if needed). Notify bank of Japan travel dates. Check credit card foreign transaction fees."
+        },
+        {
           "time": "Evening",
           "activity": "Final pack - both checked bags (1 per person)",
           "notes": "Max 23kg / 50lb each. Lay everything out first then pack."
@@ -509,7 +539,7 @@
         {
           "time": "Evening",
           "activity": "Download all booking confirmations offline on phone",
-          "notes": "teamLab, Sumo, Romance Car, Tea Ceremony, Suzuka, flight."
+          "notes": "Suzuka, Sumo, teamLab, Tea Ceremony, Amanohashidate tour, Shibuya Sky, flight — all offline in phone photos/app."
         },
         {
           "time": "Evening",

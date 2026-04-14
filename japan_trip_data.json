@@ -34,73 +34,32 @@
   "flights": {
     "outbound": {
       "date": "2026-05-11",
-      "uber_pickup": "06:30",
-      "airport_arrive": "07:30",
-      "checkin_deadline": "07:50",
-      "connection_note": "YVR has US Customs Preclearance - clear customs in Vancouver, arrive Tokyo as domestic. Connection is 1h 32m - move quickly.",
+      "uber_pickup": "06:00",
+      "airport_arrive": "06:50",
+      "checkin_deadline": "07:15",
       "legs": [
         {
-          "flight": "AC 1763",
-          "airline": "Air Canada Rouge",
           "from": "Austin (AUS)",
-          "to": "Vancouver (YVR)",
-          "to_terminal": "Terminal M",
-          "departs": "08:50",
-          "arrives": "11:28",
-          "aircraft": "Boeing 737 MAX 8",
-          "duration": "4h 38m",
-          "cabin": "Economy (W)",
-          "meal": "Air Canada Bistro (paid)",
-          "layover_next": "1h 32m"
-        },
-        {
-          "flight": "AC 3",
-          "airline": "Air Canada",
-          "from": "Vancouver (YVR)",
           "to": "Tokyo Narita (NRT)",
           "to_terminal": "Terminal 1",
-          "departs": "13:00",
-          "arrives": "14:55 +1 (May 12)",
-          "aircraft": "Boeing 787-9",
-          "duration": "9h 55m",
-          "cabin": "Economy (W)",
-          "meal": "Meal + Meal (included)",
-          "wifi": true
+          "departs": "08:00",
+          "arrives": "14:15 +1 (May 12)",
+          "notes": "Direct or connecting flight. Crosses International Date Line — May 11 becomes May 12 in the air."
         }
       ]
     },
     "return": {
       "date": "2026-05-25",
-      "nex_depart_shinjuku": "14:20",
-      "nex_arrive_narita": "15:50",
+      "nex_depart_tokyo": "13:28",
+      "nex_arrive_narita": "14:21",
       "legs": [
         {
-          "flight": "AC 4",
-          "airline": "Air Canada",
           "from": "Tokyo Narita (NRT)",
           "from_terminal": "Terminal 1",
-          "to": "Vancouver (YVR)",
-          "to_terminal": "Terminal M",
-          "departs": "16:30",
-          "arrives": "09:15 same day",
-          "aircraft": "Boeing 787-9",
-          "duration": "8h 45m",
-          "cabin": "Economy (L)",
-          "meal": "Meal + Breakfast (included)",
-          "wifi": true
-        },
-        {
-          "flight": "AC 1762",
-          "airline": "Air Canada Rouge",
-          "from": "Vancouver (YVR)",
-          "from_terminal": "Terminal M",
           "to": "Austin (AUS)",
-          "departs": "13:50",
-          "arrives": "20:17",
-          "aircraft": "Boeing 737 MAX 8",
-          "duration": "4h 27m",
-          "cabin": "Economy (L)",
-          "meal": "Air Canada Bistro (paid)"
+          "departs": "17:05",
+          "arrives": "19:00 same day",
+          "notes": "Time zones work in your favour — you land before you expect. Welcome home."
         }
       ]
     },
@@ -110,8 +69,7 @@
       "cabin_bag_limit_kg": 10,
       "cabin_bag_size_cm": "56x36x23",
       "personal_item": "backpack under seat",
-      "extra_checked_bag_fee": "$100 per trip",
-      "notes": "1 checked bag + 1 cabin bag + 1 backpack per person included. Second checked bag $100 per trip."
+      "notes": "1 checked bag + 1 cabin bag + 1 backpack per person included."
     }
   },
   "hotels": [
@@ -134,7 +92,8 @@
       "map_query": "Hotel Gracery Shinjuku Kabukicho Tokyo",
       "taqbin_note": "Send bags to Fujiya Hotel (359 Miyanoshita, Hakone 250-0404) before 07:15. Bags arrive Fujiya by 5 PM.",
       "taqbin_day": "2026-05-15",
-      "booked": true
+      "booked": true,
+      "booking_url": ""
     },
     {
       "id": "hotel_2",
@@ -155,7 +114,8 @@
       "meals": "Breakfast + Dinner included",
       "map_query": "Fujiya Hotel 359 Miyanoshita Hakone",
       "taqbin_note": "",
-      "booked": true
+      "booked": true,
+      "booking_url": ""
     },
     {
       "id": "hotel_3",
@@ -176,7 +136,7 @@
       "map_query": "Hotel Vischio Kyoto by GRANVIA Kyoto Station",
       "taqbin_day": "2026-05-18",
       "taqbin_note": "Send bags from Hotel Vischio Kyoto front desk before 09:00. Address: Tokyu Stay Hida-Takayama Musubi no Yu, Hanasatomachi, Takayama 506-0026. Bags arrive Takayama May 20 afternoon.",
-      "booking_url": "https://www.booking.com/hotel/jp/vischio-kyoto.html",
+      "booking_url": "",
       "phone": "+81-75-344-8888",
       "booked": true
     },
@@ -200,7 +160,7 @@
       "map_query": "Tokyu Stay Hida-Takayama Musubi no Yu",
       "taqbin_note": "",
       "onsen_description": "Natural hot spring — Musubi no Yu indoor baths",
-      "booking_url": "https://www.tokyustay.co.jp/e/hotel/HidaTakayama/",
+      "booking_url": "",
       "booked": true
     },
     {
@@ -222,7 +182,7 @@
       "checkin_note": "Check-in from 3 PM. 1-min walk from Tokyo Station Marunouchi North Exit. Carry bags directly from Shinkansen on May 22 arrival.",
       "meals": "Room only",
       "map_query": "Marunouchi Hotel Tokyo Station",
-      "booking_url": "https://www.marunouchi-hotel.co.jp/en/",
+      "booking_url": "",
       "booked": true
     }
   ],
@@ -549,7 +509,7 @@
         {
           "time": "Evening",
           "activity": "Download all booking confirmations offline on phone",
-          "notes": "teamLab, Sumo, Romance Car, Tea Ceremony, Suzuka, Air Canada."
+          "notes": "teamLab, Sumo, Romance Car, Tea Ceremony, Suzuka, flight."
         },
         {
           "time": "Evening",
@@ -631,79 +591,54 @@
       ],
       "schedule": [
         {
-          "time": "05:45 AM",
-          "activity": "Wake up - both alarms",
+          "time": "05:00 AM",
+          "activity": "Wake up — both alarms",
           "notes": "Last morning at home for 2 weeks!"
         },
         {
-          "time": "05:45 AM",
+          "time": "05:15 AM",
           "activity": "Get dressed + final bathroom sweep",
-          "notes": "Don't forget phone chargers, razors, last-minute toiletries."
+          "notes": "Phone chargers, razors, last-minute toiletries. Check carry-on is under 10kg."
         },
         {
-          "time": "06:15 AM",
+          "time": "05:45 AM",
           "activity": "Final house walkthrough",
-          "notes": "Lights off? Doors locked? Oven off? Fridge closed?"
+          "notes": "Lights off? Doors locked? Oven off? Fridge closed? Passport + JR Pass vouchers in carry-on?"
         },
         {
-          "time": "06:30 AM",
-          "activity": "Uber pickup - Cedar Park (Veterans Park area)",
-          "notes": "1 hour to Austin-Bergstrom Airport (AUS)."
+          "time": "06:00 AM",
+          "activity": "Uber pickup — Cedar Park (Veterans Park area)",
+          "notes": "~45-50 min to Austin-Bergstrom Airport (AUS). Book the night before."
         },
         {
-          "time": "07:30 AM",
+          "time": "06:50 AM",
           "activity": "Arrive Austin-Bergstrom Airport (AUS)",
-          "notes": "Head to Air Canada check-in counter."
+          "notes": "Head to international check-in."
         },
         {
-          "time": "07:30 AM",
-          "activity": "Check in + bag drop - Air Canada counter",
-          "notes": "2 checked bags (1 per person, included). Counter closes ~07:50."
+          "time": "07:00 AM",
+          "activity": "🧳 Check in + bag drop",
+          "notes": "2 checked bags (1 per person). Confirm weight under 23kg each."
+        },
+        {
+          "time": "07:20 AM",
+          "activity": "Clear TSA security",
+          "notes": "AUS is usually fast. Allow 20-30 min to be safe."
+        },
+        {
+          "time": "07:45 AM",
+          "activity": "At gate — last US breakfast + coffee",
+          "notes": "Grab something from the terminal. Next meal will be in the air."
         },
         {
           "time": "08:00 AM",
-          "activity": "Clear TSA security",
-          "notes": "AUS is usually fast. Allow 30 min to be safe."
-        },
-        {
-          "time": "08:30 AM",
-          "activity": "At gate - grab coffee and last US breakfast",
-          "notes": ""
-        },
-        {
-          "time": "08:50 AM",
-          "activity": "✈️ AC 1763 departs Austin (AUS)",
-          "notes": "Boeing 737 MAX 8. 4h 38m. Air Canada Bistro meal available for purchase."
-        },
-        {
-          "time": "11:28 AM",
-          "activity": "Land Vancouver (YVR) Terminal M",
-          "notes": "1h 32m connection - move quickly off the plane."
-        },
-        {
-          "time": "11:28 AM",
-          "activity": "Clear US Customs Preclearance at YVR",
-          "notes": "YVR processes US customs in Canada - you arrive in Tokyo as a domestic passenger. Follow signs."
-        },
-        {
-          "time": "11:45 AM",
-          "activity": "Walk to Air Canada international gate",
-          "notes": "Terminal M - follow AC Japan signs. YVR is well signed."
-        },
-        {
-          "time": "12:30 PM",
-          "activity": "Board AC 3 - get settled on 787-9",
-          "notes": "Much bigger plane - Dreamliner. Better air quality and humidity than older aircraft."
-        },
-        {
-          "time": "13:00 PM",
-          "activity": "✈️ AC 3 departs Vancouver (YVR)",
-          "notes": "Boeing 787-9. Wi-Fi available. Two full meals included. 9h 55m."
+          "activity": "✈️ Flight departs Austin (AUS) → Tokyo Narita (NRT)",
+          "notes": "JR Pass vouchers x2 in carry-on — NEVER checked bag."
         },
         {
           "time": "In flight",
-          "activity": "Cross International Date Line - Monday becomes Tuesday",
-          "notes": "You skip overnight - May 11 ends, May 12 begins while in the air."
+          "activity": "Cross International Date Line — Monday becomes Tuesday",
+          "notes": "May 11 ends, May 12 begins while you're in the air. You arrive tomorrow."
         }
       ],
       "tips": [
@@ -724,54 +659,54 @@
       ],
       "schedule": [
         {
-          "time": "14:55",
+          "time": "14:15",
           "activity": "🛬 Land Tokyo Narita (NRT) Terminal 1",
-          "notes": "Welcome to Japan! You cleared customs in Vancouver so you walk out as a domestic arrival."
+          "notes": "Welcome to Japan!"
+        },
+        {
+          "time": "14:20",
+          "activity": "Immigration + baggage claim",
+          "notes": "Allow 30-40 min. Follow signs to immigration — have passport and arrival card ready."
         },
         {
           "time": "15:00",
-          "activity": "Immigration + baggage claim",
-          "notes": "Faster than normal since customs was done at YVR. Allow 30-45 min."
+          "activity": "✅ Activate JR Pass x2 at Narita JR ticket counter",
+          "notes": "Ground floor Terminal 1. Show vouchers + passports. MOST IMPORTANT task on arrival — do not skip."
+        },
+        {
+          "time": "15:15",
+          "activity": "Pick up 2x Suica cards at JR counter",
+          "notes": "Load ¥5,000 each (~$35). Covers all metro, buses, convenience stores throughout the trip."
         },
         {
           "time": "15:30",
-          "activity": "Activate JR Pass x2 at Narita JR ticket counter",
-          "notes": "Ground floor Terminal 1. Show vouchers + passports. This is your most important task on arrival."
+          "activity": "Board N'EX Narita Express → Shinjuku",
+          "notes": "Platform B1. ~80 min. Covered by JR Pass. Reserved seats — show JR Pass at barrier."
         },
         {
-          "time": "15:45",
-          "activity": "Pick up 2x Suica cards at JR counter",
-          "notes": "Load Y5,000 each (~$35). Covers all metro, buses, convenience stores."
+          "time": "16:50",
+          "activity": "Arrive Shinjuku Station — South Exit",
+          "notes": "5 min walk to Hotel Gracery Shinjuku."
         },
         {
-          "time": "16:00",
-          "activity": "Board N'EX Narita Express to Shinjuku",
-          "notes": "Platform B1. 90 min. Covered by JR Pass."
+          "time": "17:00",
+          "activity": "🏨 Check in — Hotel Gracery Shinjuku",
+          "notes": "Night 1 of 3. Drop bags, freshen up. Godzilla head on the 8F terrace."
         },
         {
-          "time": "17:30",
-          "activity": "Arrive Shinjuku Station - South Exit",
-          "notes": "5 min walk to hotel."
+          "time": "18:00",
+          "activity": "🍢 Dinner — Omoide Yokocho (Memory Lane)",
+          "notes": "2 min walk from Shinjuku Station east exit. Smoky yakitori alley. Atmospheric first Tokyo meal."
         },
         {
-          "time": "17:45",
-          "activity": "Check in - Hotel Gracery Shinjuku",
-          "notes": "Night 1 of 4."
-        },
-        {
-          "time": "18:30",
-          "activity": "Dinner - Omoide Yokocho (Memory Lane)",
-          "notes": "2 min walk. Smoky yakitori alley. Very atmospheric first Tokyo meal."
-        },
-        {
-          "time": "20:00",
+          "time": "19:30",
           "activity": "Kabukicho + Golden Gai evening stroll",
-          "notes": "8 min walk. 200 tiny bars. Each fits 6-8 people. Just walk in and sit."
+          "notes": "8 min walk. 200+ tiny bars. Each fits 6-8 people. Just walk in and sit down."
         },
         {
-          "time": "22:00",
-          "activity": "Back to hotel - early night",
-          "notes": "Jet lag is real. Tomorrow starts at 10 AM."
+          "time": "21:30",
+          "activity": "Back to hotel — early night",
+          "notes": "Jet lag is real. Tomorrow starts at 10 AM — get some rest."
         }
       ],
       "tips": [
@@ -1990,17 +1925,17 @@
         {
           "time": "13:28",
           "activity": "🚄 N'EX Narita Express — Tokyo Station → Narita Airport",
-          "notes": "JR Pass. ~53 min to Narita Terminal 1. Return Suica card at Narita JR office for balance + ¥500 deposit refund."
+          "notes": "JR Pass. ~53 min to Narita Terminal 1. Return Suica cards at Narita JR service office for balance refund + ¥500 deposit each."
         },
         {
-          "time": "14:26",
+          "time": "14:21",
           "activity": "Arrive Narita Airport Terminal 1",
           "notes": ""
         },
         {
           "time": "14:30",
-          "activity": "Check in AC 4 + bag drop",
-          "notes": "Air Canada. Allow time for international check-in queue."
+          "activity": "Check in + bag drop",
+          "notes": "Flight. Allow time for international check-in queue."
         },
         {
           "time": "15:00",
@@ -2013,24 +1948,14 @@
           "notes": "Narita T1 has excellent duty free — whisky, Kit Kats, ceramics, cosmetics."
         },
         {
-          "time": "16:30",
-          "activity": "✈️ AC 4 departs Tokyo Narita (NRT)",
-          "notes": ""
+          "time": "17:05",
+          "activity": "✈️ Flight departs Tokyo Narita (NRT) → Austin",
+          "notes": "Homeward bound!"
         },
         {
-          "time": "09:15",
-          "activity": "Land Vancouver (YVR) — same calendar day!",
-          "notes": "Time zones work in your favour on the way home."
-        },
-        {
-          "time": "13:50",
-          "activity": "✈️ AC 1762 departs Vancouver (YVR)",
-          "notes": ""
-        },
-        {
-          "time": "20:17",
+          "time": "19:00",
           "activity": "🏠 Land Austin-Bergstrom Airport (AUS)",
-          "notes": "Welcome home!"
+          "notes": "Welcome home! Time zones work in your favour on the way back."
         }
       ],
       "tips": [

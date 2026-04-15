@@ -896,7 +896,7 @@
         {
           "time": "20:00",
           "activity": "teamLab Planets Toyosu - immersive digital art",
-          "notes": "Yamanote > Shimbashi > Yurikamome. Timed entry - book at teamlab.art!"
+          "notes": "Yamanote > Shimbashi > Yurikamome. ✅ Timed entry BOOKED — have confirmation ready on phone."
         },
         {
           "time": "22:10",
@@ -906,7 +906,7 @@
       ],
       "tips": [
         "Wear slip-on shoes today - easy on/off for kimono fitting AND teamLab water rooms",
-        "teamLab sells out weeks ahead - must pre-book at teamlab.art"
+        "✅ teamLab Planets timed entry BOOKED"
       ]
     },
     {
@@ -2116,7 +2116,7 @@
       "where": "teamlab.art",
       "url": "https://teamlab.art",
       "priority": "URGENT",
-      "done": false
+      "done": true
     },
     {
       "id": "book_4",

@@ -1289,23 +1289,43 @@
       "type": "day_tour",
       "trains_today": [],
       "onsen_today": [],
-      "tour_note": "Fully organised tour — no independent transport or booking required beyond the tour itself.",
+      "tour_note": "✅ BOOKED — Fully organised tour. No independent transport needed.",
       "schedule": [
         {
-          "time": "All day",
-          "activity": "🌊 Amanohashidate + Ine Fishing Village — full day organised tour",
-          "notes": "One of Japan's Three Views. Pine-covered sandbar + traditional funaya boathouses built directly over the water with boats parked under the living room. Tour operator handles all transport, entry, and logistics. Expect to be out roughly 08:00–19:00 depending on operator."
+          "time": "Night before",
+          "activity": "📧 Check email for tour details",
+          "notes": "Tour operator emails driver name, guide name, and vehicle details the evening of May 16. Check inbox AND spam folder. Save to phone."
+        },
+        {
+          "time": "09:20",
+          "activity": "🚶 Walk to meeting point — Kyoto-Hachijoguchi Bus Loading Area",
+          "notes": "Address: Higashikujo Nishisannocho, Minami Ward, Kyoto, 601-8003 (日本). Hotel Vischio is at Kyoto Station — the bus loading area is at the south exit (Hachijo exit), ~5 min walk. Look for the tour guide holding a sign.",
+          "map_query": "Kyoto Hachijoguchi Bus Loading Area Minami Ward Kyoto"
+        },
+        {
+          "time": "09:35",
+          "activity": "✅ Arrive at meeting point — tour guide waiting",
+          "notes": "MUST ARRIVE BY 9:35 AM. Tour departs 9:50 AM sharp. No refund for late arrivals or no-shows. Bring: food, water, cash."
+        },
+        {
+          "time": "09:50",
+          "activity": "🚌 Depart — Amanohashidate + Ine Fishing Village full day tour",
+          "notes": "~2 hrs to Amanohashidate (one of Japan's Three Views). Pine sandbar viewpoint, traditional Ine funaya boathouses built over the water — boats park directly under the living room. Tour handles all transport, entry, and logistics."
         },
         {
           "time": "Evening",
           "activity": "Return to Hotel Vischio Kyoto",
-          "notes": "Dinner in Gion or Pontocho on return."
+          "notes": "Activity ends at the same meeting point it began (Kyoto-Hachijoguchi). Walk back to hotel. Dinner in Gion or Pontocho."
         }
       ],
       "tips": [
-        "Amanohashidate is ~2 hrs from Kyoto — tour handles all pickup and transport",
+        "✅ Tour BOOKED — confirmation in email",
+        "Check email the night of May 16 for driver, guide, and vehicle details — could go to spam",
+        "Meeting point: Kyoto-Hachijoguchi Bus Loading Area (south side of Kyoto Station, Hachijo exit) — 5 min walk from hotel",
+        "Arrive 9:35 AM, depart 9:50 AM sharp — NO refund for late arrivals",
+        "Bring food, water, and cash for the day",
         "Ine funaya boathouses are uniquely Japanese — boats park directly under the living room floor",
-        "Book ASAP — May is peak season and day tours sell out weeks ahead"
+        "Activity ends back at the same Kyoto-Hachijoguchi meeting point"
       ]
     },
     {
@@ -2163,11 +2183,10 @@
       "id": "book_12",
       "priority": "URGENT",
       "item": "Amanohashidate + Ine Fishing Village full day tour (May 17)",
-      "where": "Viator / Klook / local Kyoto operator",
-      "when": "Book ASAP — May is peak season",
-      "done": false,
-      "notes": "Search \"Amanohashidate Ine day tour from Kyoto\". May is peak — book ASAP.",
-      "url": "https://www.viator.com"
+      "where": "Booked",
+      "done": true,
+      "notes": "✅ BOOKED. Meet at Kyoto-Hachijoguchi Bus Loading Area (Higashikujo Nishisannocho, Minami Ward, Kyoto 601-8003). Arrive 9:35 AM — depart 9:50 AM. Tour guide will wait at the bus loading area. Driver/guide/vehicle details emailed the night before — check inbox AND spam. No refund for late arrivals or no-shows.",
+      "url": ""
     },
     {
       "id": "book_11",

@@ -1008,52 +1008,52 @@
           "notes": "Convenience store or hotel. Fast — onigiri, coffee, snack for bus."
         },
         {
-          "time": "07:30",
+          "time": "07:45",
           "activity": "Walk to Busta Shinjuku (Shinjuku Expressway Bus Terminal)",
-          "notes": "10 min walk. 4th floor above Shinjuku Station south exit. Pre-booked bus departs here."
+          "notes": "10 min walk. 4th floor above Shinjuku Station south exit. Be there by 07:55 — bus departs 08:05."
         },
         {
-          "time": "07:45",
+          "time": "08:05",
           "activity": "🚌 Highway Bus: Shinjuku → Kawaguchiko ✅ BOOKED",
-          "notes": "Fujikyuko Bus. ~1h 45min. ¥2,200/person. ✅ BOOKED at highway-buses.jp. NOT JR Pass. Have QR code/confirmation ready. Departs Busta Shinjuku 4F (Shinjuku Station south exit).",
+          "notes": "Bus No. 1345, Fujikyuko Bus. ✅ BOOKED. 1h 35min. ¥2,200/person. NOT JR Pass. Have QR code/confirmation ready. Departs Busta Shinjuku 4F.",
           "non_jr_pass": true
         },
         {
-          "time": "09:30",
+          "time": "09:40",
           "activity": "Arrive Kawaguchiko Station",
           "notes": "Buy Kawaguchiko Retro Bus day pass at station kiosk (~¥1,500/person)."
         },
         {
-          "time": "09:40",
+          "time": "09:50",
           "activity": "🚃 Fujikyu Railway → Shimoyoshida Station",
           "notes": "One stop, 10 min, ¥310 each. NOT JR Pass. Buy at machine at Kawaguchiko Station. Or take World Heritage Loop Bus from outside station (15 min, covered by day pass).",
           "non_jr_pass": true
         },
         {
-          "time": "09:55",
+          "time": "10:05",
           "activity": "🗻 Chureito Pagoda Climb — 398 stone steps",
           "notes": "10 min walk from station to shrine, then 398 steps up. Take it steady — 20-25 mins to summit. Stand LEFT of pagoda for the classic Fuji shot. No entry fee. Open 24 hours. Bring water."
         },
         {
-          "time": "11:15",
+          "time": "11:25",
           "activity": "Descend and return to Kawaguchiko Station",
           "notes": "Fujikyu Railway or World Heritage Loop Bus back. 10–15 min.",
           "non_jr_pass": true
         },
         {
-          "time": "11:30",
+          "time": "11:40",
           "activity": "🚡 Kachi Kachi Yama Ropeway (Mt Tenjo)",
           "notes": "5 min walk from station. ~¥1,000 return (not in day pass). 3 min gondola. Summit: panoramic lake + Fuji view from above, Love Bell — ring it together (couples tradition), summit shrine. Allow 35–40 min."
         },
         {
-          "time": "12:30",
+          "time": "12:40",
           "activity": "🍜 Lunch at Kawaguchiko lakeside",
           "notes": "5 min walk from ropeway base. Houtou noodles (Yamanashi specialty — thick flat noodles in miso-pumpkin broth, gentle on stomach), tempura teishoku, or Yoshida udon. Picture menus. ¥1,200–1,800/person."
         },
         {
-          "time": "13:30",
+          "time": "13:40",
           "activity": "📸 Oishi Park north shore — Lake Kawaguchiko stroll",
-          "notes": "Red Kawaguchiko bus (day pass) 2 stops north. Classic wide-angle Fuji-reflected-in-lake shot. Mid-May: purple and pink lupin wildflowers line the lakefront. Extra time today — enjoy fully. ~1h 20min here."
+          "notes": "Red Kawaguchiko bus (day pass) 2 stops north. Classic wide-angle Fuji-reflected-in-lake shot. Mid-May: purple and pink lupin wildflowers line the lakefront. ~1h 15min here."
         },
         {
           "time": "14:55",

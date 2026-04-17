@@ -589,7 +589,7 @@
         {
           "time": "Morning",
           "activity": "🚄 Check train + bus reservations",
-          "notes": "Verify: JR Pass vouchers x2 (activate at Narita on May 12), Fujikyuko Bus Shinjuku→Kawaguchiko (May 15 07:45), Fujikyuko Bus Kawaguchiko→Hakone-Yumoto (May 15 14:15), Kintetsu Nagoya→Shiroko + return (May 23). All other trains reserved on JR Pass at station."
+          "notes": "✅ Fujikyuko Bus Shinjuku→Kawaguchiko (May 15 07:45) BOOKED. ✅ GL07 G-Liner Kawaguchiko→Gotemba (May 15 15:10) BOOKED. Verify: JR Pass vouchers x2 (activate at Narita on May 12), Kintetsu Nagoya→Shiroko + return (May 23). All other trains reserved on JR Pass at station."
         },
         {
           "time": "Morning",
@@ -1014,8 +1014,8 @@
         },
         {
           "time": "07:45",
-          "activity": "🚌 Highway Bus: Shinjuku → Kawaguchiko",
-          "notes": "Fujikyuko Bus. ~1h 45min. ~¥2,200/person. Pre-book at highway-buses.jp. NOT JR Pass. Direct, no transfers.",
+          "activity": "🚌 Highway Bus: Shinjuku → Kawaguchiko ✅ BOOKED",
+          "notes": "Fujikyuko Bus. ~1h 45min. ¥2,200/person. ✅ BOOKED at highway-buses.jp. NOT JR Pass. Have QR code/confirmation ready. Departs Busta Shinjuku 4F (Shinjuku Station south exit).",
           "non_jr_pass": true
         },
         {
@@ -1068,18 +1068,23 @@
         },
         {
           "time": "16:03",
-          "activity": "Arrive Gotemba Station — transfer to Hakone bus",
-          "notes": "Exit at Fuji Exit Platform 2. Follow signs to highway bus stop for Hakone-Yumoto (Odakyu Highway Bus or Hakone Tozan Bus). Buses run every 30-60 min. ~¥1,000/person. ~50 min to Hakone-Yumoto. Covered by Hakone Free Pass if you buy it here, otherwise pay on board."
+          "activity": "Arrive Gotemba Station (Fuji Exit Platform 2) — BUY Hakone Free Pass here",
+          "notes": "Exit at Fuji Exit Platform 2. FIRST: buy 2-day Hakone Free Pass at the Hakone Tozan Bus counter inside Gotemba Station — ¥6,000/person (covers all Hakone transport May 15–16: Tozan Railway, cable car, ropeway, buses). Buying here covers the Gotemba→Hakone-Yumoto bus too (saves ~¥1,000 vs buying at Hakone-Yumoto). Book/info: https://www.hakonenavi.jp/international/en/ticket/hakone-freepass/"
+        },
+        {
+          "time": "16:10",
+          "activity": "🚌 Bus: Gotemba Station → Hakone-Yumoto (covered by Hakone Free Pass)",
+          "notes": "Hakone Tozan Bus from Gotemba Station (Fuji Exit, same side as arrival). Route W or highway bus toward Hakone-Yumoto. ~50 min. Show Hakone Free Pass to driver — no extra charge. Buses run every 30–60 min. Directions: https://www.google.com/maps/dir/Gotemba+Station/Hakone-Yumoto+Station"
         },
         {
           "time": "17:00",
-          "activity": "Arrive Hakone-Yumoto — buy 2-day Hakone Free Pass",
-          "notes": "¥6,000/person at station kiosk (covers May 15–16: Tozan Railway, cable car, ropeway, all Hakone buses). Owakudani ropeway is already closed for today — moving to May 16 morning instead."
+          "activity": "Arrive Hakone-Yumoto ✅ Hakone Free Pass already bought",
+          "notes": "Free Pass already covers everything from here. No need to buy anything at Hakone-Yumoto. Owakudani ropeway already closed for the day — doing it first thing May 16 morning instead."
         },
         {
           "time": "17:10",
           "activity": "🚌 Bus: Hakone-Yumoto → Hakone-machi (Hakone Shrine)",
-          "notes": "Hakone Tozan Bus, Line H or K, ~30 min, covered by Hakone Free Pass. Get off at Hakone-machi or Moto-Hakone stop."
+          "notes": "Hakone Tozan Bus Line H toward Moto-Hakone / Hakone-machi. ~30 min. Show Hakone Free Pass — covered. Get off at Moto-Hakone-ko stop (for shrine lake torii) or Hakone-machi stop. Directions: https://www.google.com/maps/dir/Hakone-Yumoto+Station/Hakone+Shrine+Torii+Gate"
         },
         {
           "time": "17:40",
@@ -2165,12 +2170,12 @@
     },
     {
       "id": "book_8",
-      "item": "Fujikyuko Highway Bus: Shinjuku → Kawaguchiko (07:45, May 15)",
+      "item": "Fujikyuko Highway Bus: Shinjuku (Busta 4F) → Kawaguchiko (07:45, May 15)",
       "where": "highway-buses.jp",
-      "url": "https://www.highway-buses.jp",
+      "url": "https://highway-buses.jp/",
       "priority": "HIGH",
-      "done": false,
-      "notes": "¥2,200/person. Book 2+ weeks ahead."
+      "done": true,
+      "notes": "✅ BOOKED. ¥2,200/person. Departs Busta Shinjuku 4F (above Shinjuku Station south exit) 07:45, arrives Kawaguchiko ~09:30."
     },
     {
       "id": "book_10",
@@ -2191,12 +2196,12 @@
     },
     {
       "id": "book_11",
-      "item": "Fujikyuko Highway Bus: Kawaguchiko → Gotemba → Hakone-Yumoto (14:15, May 15)",
-      "where": "highway-buses.jp",
-      "url": "https://www.highway-buses.jp",
+      "item": "GL07 G-Liner: Kawaguchiko → Gotemba Station (15:10, May 15)",
+      "where": "sekitori.jp",
+      "url": "https://sekitori.jp/en/",
       "priority": "HIGH",
-      "done": false,
-      "notes": "~¥1,500/person. Must pre-book."
+      "done": true,
+      "notes": "✅ BOOKED on sekitori.jp. ¥2,200/person. GL07 departs Kawaguchiko Station 15:10 → arrives Gotemba Station (Fuji Exit Platform 2) 16:03. Get off at Gotemba Station — do NOT ride to Gotemba Premium Outlets."
     },
     {
       "id": "book_13",

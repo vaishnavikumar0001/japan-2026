@@ -280,23 +280,23 @@
       "id": "bus_2",
       "date": "2026-05-15",
       "from": "Kawaguchiko Station",
-      "to": "Hakone-Yumoto",
-      "train": "Fujikyuko + Odakyu Highway Bus (via Gotemba)",
+      "to": "Gotemba Station (Fuji Exit Platform 2)",
+      "train": "GL07 G-Liner — Limited Express Gotemba Liner",
       "class": "Reserved",
-      "depart": "14:15",
-      "arrive": "16:10",
-      "duration": "~1h 55min (transfer at Gotemba ~15 min)",
+      "depart": "15:10",
+      "arrive": "16:03",
+      "duration": "53 min",
       "jr_pass": false,
       "type": "bus",
-      "series": "Highway coach (two separate buses)",
-      "train_no": "Kawaguchiko→Gotemba (Fujikyuko) + Gotemba→Hakone-Yumoto (Odakyu)",
+      "series": "Fujikyu Mobility coach (WiFi onboard)",
+      "train_no": "GL07 Flight, Vehicle No. 1 — operated by Fujikyu Mobility Co., Ltd.",
       "green_car": false,
-      "green_car_note": "No class upgrade on highway buses.",
-      "notes": "Leg 1: Kawaguchiko → Gotemba ~50 min (~¥1,500). Leg 2: Gotemba → Hakone-Yumoto ~40 min (~¥1,000). Total ~¥2,500/person.",
-      "seat_tip": "Right side (facing forward) on the Gotemba leg for Fuji views looking back.",
-      "booking_url": "https://highway-buses.jp/",
-      "booking_how": "Book both legs on highway-buses.jp. Select Kawaguchiko → Gotemba (14:15) then Gotemba → Hakone-Yumoto. Alternatively book via Klook as a combined route.",
-      "warning": "NOT JR Pass. Book both legs separately — confirm Gotemba transfer connection before booking."
+      "green_car_note": "No class upgrade — standard reserved highway coach with WiFi.",
+      "notes": "Leg 1 (BOOKED): Kawaguchiko Station 15:10 → Gotemba Station Fuji Exit Platform 2, 16:03. ¥2,200/person. Get off at GOTEMBA STATION — do NOT ride to Gotemba Premium Outlets (Platform 3). Leg 2: Gotemba → Hakone-Yumoto by Odakyu/Hakone Tozan Bus (~50 min, ~¥1,000, covered by Hakone Free Pass).",
+      "seat_tip": "Any seat. Bus stops at Fuji-Q Highland 15:18 briefly — stay seated.",
+      "booking_url": "https://sekitori.jp/en/",
+      "booking_how": "Leg 1 BOOKED on sekitori.jp (GL07, ¥2,200/person). Leg 2 (Gotemba → Hakone-Yumoto): board Odakyu Highway Bus or Hakone Tozan Bus at Gotemba Station — covered by Hakone Free Pass, or pay ~¥1,000 on board.",
+      "warning": "NOT JR Pass. Get off Gotemba Station (Fuji Exit Platform 2) at 16:03 — NOT Gotemba Premium Outlets."
     },
     {
       "id": "train_2b",
@@ -1053,80 +1053,76 @@
         {
           "time": "13:30",
           "activity": "📸 Oishi Park north shore — Lake Kawaguchiko stroll",
-          "notes": "Red Kawaguchiko bus (day pass) 2 stops north. Classic wide-angle Fuji-reflected-in-lake shot. Mid-May: purple and pink lupin wildflowers line the lakefront. 30–40 min."
+          "notes": "Red Kawaguchiko bus (day pass) 2 stops north. Classic wide-angle Fuji-reflected-in-lake shot. Mid-May: purple and pink lupin wildflowers line the lakefront. Extra time today — enjoy fully. ~1h 20min here."
         },
         {
-          "time": "14:15",
-          "activity": "🚌 Bus: Kawaguchiko → Gotemba → Hakone-Yumoto",
-          "notes": "Fujikyuko Highway Bus to Gotemba (~50 min, ~¥1,500), then Odakyu Highway Bus Gotemba → Hakone-Yumoto (~40 min, ~¥1,000). Total ~1h 45min. Pre-book Kawaguchiko → Gotemba leg at highway-buses.jp.",
+          "time": "14:55",
+          "activity": "🚌 Red bus back to Kawaguchiko Station",
+          "notes": "Head back — need to be at the bus stop by 15:05."
+        },
+        {
+          "time": "15:10",
+          "activity": "🚌 GL07 G-Liner: Kawaguchiko Station → Gotemba Station",
+          "notes": "Limited Express Gotemba Liner operated by Fujikyu Mobility. Departs Kawaguchiko Station 15:10, arrives Gotemba Station (Fuji Exit Platform 2) 16:03. ¥2,200/person. BOOKED on sekitori.jp. NOT JR Pass. Get off at GOTEMBA STATION (Fuji Exit Platform 2) — do NOT ride to Gotemba Premium Outlets.",
           "non_jr_pass": true
         },
         {
-          "time": "16:10",
-          "activity": "Arrive Hakone-Yumoto — buy 2-day Hakone Free Pass",
-          "notes": "¥6,000/person at station kiosk. Covers all Hakone transport for today + May 16: Tozan Railway, cable car, ropeway, all Hakone buses."
-        },
-        {
-          "time": "16:20",
-          "activity": "🚃 Hakone Tozan Railway → Gora",
-          "notes": "40 min. Covered by Hakone Free Pass. Train reverses direction 3 times climbing the mountain — famous engineering. Transfer at Gora to cable car."
+          "time": "16:03",
+          "activity": "Arrive Gotemba Station — transfer to Hakone bus",
+          "notes": "Exit at Fuji Exit Platform 2. Follow signs to highway bus stop for Hakone-Yumoto (Odakyu Highway Bus or Hakone Tozan Bus). Buses run every 30-60 min. ~¥1,000/person. ~50 min to Hakone-Yumoto. Covered by Hakone Free Pass if you buy it here, otherwise pay on board."
         },
         {
           "time": "17:00",
-          "activity": "🚡 Cable Car → Sounzan + Ropeway → Owakudani",
-          "notes": "Hakone Tozan Cable Car: Gora → Sounzan (10 min, pass). Then Hakone Ropeway: Sounzan → Owakudani (15 min, pass). LAST ROPEWAY ~17:00 — check board at Gora. If closed, fold into May 16 morning instead."
+          "activity": "Arrive Hakone-Yumoto — buy 2-day Hakone Free Pass",
+          "notes": "¥6,000/person at station kiosk (covers May 15–16: Tozan Railway, cable car, ropeway, all Hakone buses). Owakudani ropeway is already closed for today — moving to May 16 morning instead."
         },
         {
-          "time": "17:15",
-          "activity": "🌋 Owakudani Volcanic Valley + Kuro Tamago black eggs",
-          "notes": "Japan's most dramatic geothermal landscape. Sulfur vents blast white steam. Buy kuro tamago (black eggs, boiled in volcanic spring, jet-black shells) — legend says each egg adds 7 years to your life. Mt Fuji visible from observation deck on clear days. Allow 30 min. Check last ropeway down time."
+          "time": "17:10",
+          "activity": "🚌 Bus: Hakone-Yumoto → Hakone-machi (Hakone Shrine)",
+          "notes": "Hakone Tozan Bus, Line H or K, ~30 min, covered by Hakone Free Pass. Get off at Hakone-machi or Moto-Hakone stop."
         },
         {
-          "time": "17:45",
-          "activity": "🚡 Ropeway back → Cable Car → Tozan Railway → Miyanoshita area",
-          "notes": "Owakudani → Sounzan by ropeway, Sounzan → Gora cable car (10 min), Gora → Miyanoshita by Tozan Railway (15 min). All Hakone Free Pass."
-        },
-        {
-          "time": "18:15",
+          "time": "17:40",
           "activity": "🛕 Hakone Shrine + Peace Torii Gate on Lake Ashi",
-          "notes": "Bus from Miyanoshita or Hakone-Yumoto to Hakone-machi (~20 min, pass). Walk 5 min to shrine. Vermilion torii gate standing directly in Lake Ashi — one of Japan's most iconic views. Best at dusk — light is extraordinary, crowds thinned. Cedar-lined approach (350-year-old trees). Allow 40–45 min."
+          "notes": "Vermilion torii gate standing directly in Lake Ashi — one of Japan's most iconic views. Golden hour light 18:00–18:45 is extraordinary in May — you timed this perfectly. Cedar-lined approach (350-year-old trees). Allow 45–50 min. Crowds thin after 18:00."
         },
         {
-          "time": "19:10",
-          "activity": "🚌 Bus/taxi → Fujiya Hotel",
-          "notes": "Bus back toward Miyanoshita (pass) or taxi from shrine directly (¥2,000, 15 min). After today — take the taxi."
+          "time": "18:35",
+          "activity": "🚕 Taxi → Fujiya Hotel",
+          "notes": "Taxi from Moto-Hakone directly to Fujiya Hotel, ~¥2,000, 15 min. Well-earned after today's mileage."
         },
         {
-          "time": "19:40",
+          "time": "19:00",
           "activity": "🏨 Check in: Fujiya Hotel (est. 1878)",
           "notes": "TA-Q-BIN bags have arrived. Room ready. Receive yukata + geta sandals. Japan's oldest Western hotel — Charlie Chaplin, John Lennon, Helen Keller stayed here. Explore the Meiji-era corridors briefly."
         },
         {
-          "time": "20:00",
+          "time": "19:30",
+          "activity": "🍽️ Dinner — Fujiya Hotel Orchid Room",
+          "notes": "Historic Western dining, chandeliers, mountain views. Western course recommended — served since 1878. Local Hakone trout. Wear yukata — encouraged. ¥6,000–10,000/person. Tell reception at check-in you want dinner."
+        },
+        {
+          "time": "21:00",
           "activity": "♨️ ONSEN 1 — Fujiya Hotel historic mineral pools",
           "notes": "First onsen of the trip! Silky sulphurous mineral water from Hakone hot springs. Indoor pools + outdoor rotenburo in mountain garden. Rinse at shower station before entering. No swimwear. Hair up. ~42°C. Give 45–60 mins. Try both indoor and outdoor."
         },
         {
-          "time": "21:15",
-          "activity": "🍽️ Late dinner — Fujiya Hotel",
-          "notes": "Tell reception at check-in you want late dinner. Orchid Room (historic Western dining, chandeliers, mountain views) or room service. Western course recommended — served since 1878. Local Hakone trout. Wear yukata — encouraged. ¥6,000–10,000/person."
-        },
-        {
           "time": "22:30",
-          "activity": "♨️ ONSEN 1 continued — second evening soak",
+          "activity": "♨️ ONSEN 1 continued — late night soak",
           "notes": "Baths quieter now. Outdoor rotenburo at night — cool mountain air above, hot mineral water below, complete silence. One of the best things you'll do this trip."
         },
         {
           "time": "23:15",
           "activity": "🛏️ Sleep — set alarm 06:15",
-          "notes": "Tomorrow (May 16) is the full Fujiya rest and onsen recovery day. Dawn rotenburo at 06:30. No buses, no climbing."
+          "notes": "Tomorrow (May 16): dawn onsen → breakfast → Owakudani → Odawara → Kyoto."
         }
       ],
       "tips": [
         "Check fujisan.jp the night before for Mt Fuji visibility forecast",
         "Chureito: stand LEFT of pagoda for the classic five-story + Fuji shot",
-        "Ropeway closes 17:00 — if you miss it, fold Owakudani into May 16 morning instead",
-        "Hakone Shrine at dusk is the best time — light extraordinary, crowds thin",
+        "Bus: GL07 G-Liner departs Kawaguchiko 15:10 — get off Gotemba Station (Fuji Exit Platform 2), NOT Gotemba Premium Outlets",
+        "Owakudani moved to May 16 morning — ropeway opens 09:00, plenty of time before Odawara train",
+        "Hakone Shrine at golden hour (17:40–18:30) — light on the torii gate over Lake Ashi is extraordinary",
         "Taxi from Hakone Shrine to Fujiya Hotel ¥2,000 — worth it after today's mileage"
       ],
       "optional": {
@@ -1172,34 +1168,39 @@
           "notes": "Last meal here. Western or Japanese course. Served in the same room since 1878. Take your time."
         },
         {
-          "time": "09:00",
-          "activity": "Pack bags + explore Fujiya Hotel grounds",
-          "notes": "Wander in yukata one last time. Visit the memorabilia room (Chaplin, Lennon, Keller signatures). Gift shop for Fujiya Hotel souvenir tins."
+          "time": "08:30",
+          "activity": "Check out Fujiya Hotel — store luggage at front desk",
+          "notes": "Check out by 11:00 (ask for 08:30 express checkout). Store large bags at hotel front desk — collect on your way back through Miyanoshita. Travel to Owakudani with day packs only."
         },
         {
-          "time": "10:30",
+          "time": "08:45",
           "activity": "🚃 Hakone Tozan Railway → Gora (Hakone Free Pass)",
-          "notes": "One stop up from Miyanoshita (5 min). Last use of Hakone Free Pass."
+          "notes": "From Miyanoshita Station, ~15 min to Gora. Train reverses direction twice climbing the mountain."
         },
         {
-          "time": "10:45",
-          "activity": "🌸 Hakone Gora Park — final Hakone stop",
-          "notes": "French-style garden 3 min from Gora Station. Roses and wisteria in May. 45 min gentle walk. Entry ~¥700."
+          "time": "09:00",
+          "activity": "🚡 Cable Car → Sounzan + Ropeway → Owakudani",
+          "notes": "Gora → Sounzan by cable car (10 min, Hakone Free Pass). Then Sounzan → Owakudani by ropeway (15 min, Hakone Free Pass). Ropeway opens 09:00 — you're on the first cars. Almost no crowds at this hour."
+        },
+        {
+          "time": "09:25",
+          "activity": "🌋 Owakudani Volcanic Valley + Kuro Tamago black eggs",
+          "notes": "Japan's most dramatic geothermal landscape. Sulfur vents blast white steam. Buy kuro tamago (black eggs boiled in volcanic spring, jet-black shells) — legend says each egg adds 7 years to your life! Mt Fuji visible from observation deck on clear mornings. Allow 45 min."
+        },
+        {
+          "time": "10:10",
+          "activity": "🚡 Ropeway back → Cable Car → Tozan Railway → Miyanoshita",
+          "notes": "Owakudani → Sounzan ropeway (15 min) → Gora cable car (10 min) → Tozan Railway back to Miyanoshita (15 min). All Hakone Free Pass. Arrive Miyanoshita ~10:50."
+        },
+        {
+          "time": "10:50",
+          "activity": "Collect luggage from Fujiya Hotel + final look around",
+          "notes": "Pick up stored bags from front desk. Quick visit to the memorabilia room (Chaplin, Lennon, Keller signatures) and gift shop for Fujiya Hotel souvenir tins if not done already."
         },
         {
           "time": "11:30",
-          "activity": "Return to Fujiya Hotel — collect luggage",
-          "notes": "Tozan Railway back to Miyanoshita (5 min, Hakone Free Pass)."
-        },
-        {
-          "time": "11:00",
-          "activity": "Check out Fujiya Hotel",
-          "notes": "Standard checkout is 11:00 — ask at reception if a 12:00 late checkout is possible (worth trying). Store luggage at front desk if needed while you do the Gora detour."
-        },
-        {
-          "time": "12:00",
-          "activity": "🚃 Tozan Railway → Hakone-Yumoto → Odawara",
-          "notes": "~30 min total. Hakone Free Pass covers this leg."
+          "activity": "🚃 Tozan Railway → Hakone-Yumoto → bus to Odawara",
+          "notes": "Tozan Railway Miyanoshita → Hakone-Yumoto (~15 min, Hakone Free Pass). Then Odakyu bus or train Hakone-Yumoto → Odawara (~30 min, Hakone Free Pass)."
         },
         {
           "time": "12:45",

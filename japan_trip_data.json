@@ -261,20 +261,20 @@
       "to": "Kawaguchiko Station",
       "train": "Fujikyuko Highway Bus",
       "class": "Reserved",
-      "depart": "07:45",
-      "arrive": "09:30",
-      "duration": "1h 45min",
+      "depart": "08:05",
+      "arrive": "09:40",
+      "duration": "1h 35min",
       "jr_pass": false,
       "type": "bus",
       "series": "Fujikyuko coach bus",
-      "train_no": "Shinjuku–Kawaguchiko Line (multiple daily departures)",
+      "train_no": "Bus No. 1345 — Shinjuku–Kawaguchiko Line",
       "green_car": false,
       "green_car_note": "No class upgrade — standard reserved highway coach.",
-      "notes": "~¥2,200/person each way. Busta Shinjuku 4F (Shinjuku Station south exit). Pre-book required — fills up fast in May.",
+      "notes": "✅ BOOKED. Bus No. 1345. ¥2,200/person. Busta Shinjuku 4F (Shinjuku Station south exit). Have QR code/confirmation ready.",
       "seat_tip": "Right-side window seat (when facing forward) for Fuji views on clear mornings.",
       "booking_url": "https://highway-buses.jp/",
-      "booking_how": "Book online at highway-buses.jp or Fujikyuko official site. Select Shinjuku → Kawaguchiko, May 15, 07:45. Pay by credit card. Print or show QR code. Also available on Klook.",
-      "warning": "NOT JR Pass. Pre-book weeks in advance — Golden Week aftermath, peak May sellout."
+      "booking_how": "✅ BOOKED on highway-buses.jp. Bus No. 1345, departs 08:05, arrives Kawaguchiko 09:40.",
+      "warning": "NOT JR Pass. Be at Busta Shinjuku 4F by 07:55 — bus departs 08:05 sharp."
     },
     {
       "id": "bus_2",
@@ -589,7 +589,7 @@
         {
           "time": "Morning",
           "activity": "🚄 Check train + bus reservations",
-          "notes": "✅ Fujikyuko Bus Shinjuku→Kawaguchiko (May 15 07:45) BOOKED. ✅ GL07 G-Liner Kawaguchiko→Gotemba (May 15 15:10) BOOKED. Verify: JR Pass vouchers x2 (activate at Narita on May 12), Kintetsu Nagoya→Shiroko + return (May 23). All other trains reserved on JR Pass at station."
+          "notes": "✅ Fujikyuko Bus Shinjuku→Kawaguchiko (May 15 08:05, Bus No. 1345) BOOKED. ✅ GL07 G-Liner Kawaguchiko→Gotemba (May 15 15:10) BOOKED. Verify: JR Pass vouchers x2 (activate at Narita on May 12), Kintetsu Nagoya→Shiroko + return (May 23). All other trains reserved on JR Pass at station."
         },
         {
           "time": "Morning",
@@ -2170,12 +2170,12 @@
     },
     {
       "id": "book_8",
-      "item": "Fujikyuko Highway Bus: Shinjuku (Busta 4F) → Kawaguchiko (07:45, May 15)",
+      "item": "Fujikyuko Highway Bus: Shinjuku (Busta 4F) → Kawaguchiko (08:05, May 15)",
       "where": "highway-buses.jp",
       "url": "https://highway-buses.jp/",
       "priority": "HIGH",
       "done": true,
-      "notes": "✅ BOOKED. ¥2,200/person. Departs Busta Shinjuku 4F (above Shinjuku Station south exit) 07:45, arrives Kawaguchiko ~09:30."
+      "notes": "✅ BOOKED. Bus No. 1345. ¥2,200/person. Departs Busta Shinjuku 4F (above Shinjuku Station south exit) 08:05, arrives Kawaguchiko 09:40."
     },
     {
       "id": "book_10",

@@ -95,16 +95,68 @@ function renderItinerary() {
           <span>📅 ${_itinFmtDate(day.date)}</span>
           <span>Day ${day.day}</span>
         </div>
-        <button class="today-glance-btn" onclick="window.switchTab('schedule')">View Full Schedule →</button>
       `;
     } else {
       card.innerHTML = `
         <div class="today-glance-label">🇯🇵 JAPAN 2026</div>
         <div class="today-glance-title">You're in Japan!</div>
-        <button class="today-glance-btn" onclick="window.switchTab('schedule')">View Schedule →</button>
       `;
     }
     container.appendChild(card);
+
+    // Render full day schedule inline
+    if (day) {
+      // Day badges
+      if (day.luggage_forward || day.fuji_view_alert || day.rest_day || day.checkout_hotel || day.flags?.checkout_day || day.flags?.fuji_view_alert || day.flags?.shinkansen_day || day.type === 'day_tour') {
+        const badgesEl = document.createElement('div');
+        badgesEl.className = 'day-badges';
+        badgesEl.innerHTML = `
+          ${day.luggage_forward ? `<span class="day-badge badge-luggage">🧳 Luggage Forward Day</span>` : ''}
+          ${(day.flags?.checkout_day || day.checkout_hotel) ? `<span class="day-badge badge-luggage">🧳 Checkout Day</span>` : ''}
+          ${day.flags?.shinkansen_day ? `<span class="day-badge badge-train">🚄 Shinkansen Day</span>` : ''}
+          ${(day.fuji_view_alert || day.flags?.fuji_view_alert) ? `<span class="day-badge badge-fuji">🗻 Mt Fuji View</span>` : ''}
+          ${day.flags?.maiko_alert ? `<span class="day-badge badge-maiko">🌸 Maiko Hour Tonight</span>` : ''}
+          ${day.rest_day ? `<span class="day-badge badge-rest">😌 Rest Day</span>` : ''}
+          ${day.type === 'day_tour' ? `<span class="day-badge badge-tour">🚌 Full Day Organised Tour</span>` : ''}
+        `;
+        container.appendChild(badgesEl);
+      }
+
+      // Activities
+      const actEl = document.createElement('div');
+      actEl.className = 'activity-list';
+      actEl.innerHTML = (day.schedule || []).map(act => _renderActivity(act)).join('');
+      container.appendChild(actEl);
+
+      // Optional blocks
+      if (day.optional) {
+        Object.entries(day.optional).forEach(([key, val]) => {
+          const opt = document.createElement('details');
+          opt.className = 'optional-block';
+          opt.innerHTML = `<summary class="optional-summary">⏱️ Optional if time allows — ${escHtml(key.replace(/_/g,' '))}</summary>
+            <div class="optional-body">${escHtml(val)}</div>`;
+          container.appendChild(opt);
+        });
+      }
+
+      // Tips
+      if (day.tips && day.tips.length) {
+        const tipsEl = document.createElement('div');
+        tipsEl.className = 'tips-section';
+        tipsEl.innerHTML = `<div class="tips-title">💡 Tips for today</div>` +
+          day.tips.map(t => `<div class="tip-item">${escHtml(t)}</div>`).join('');
+        container.appendChild(tipsEl);
+      }
+
+      // Notes
+      const notesEl = document.createElement('div');
+      notesEl.className = 'notes-section';
+      notesEl.innerHTML = `<div class="notes-label">📝 My Notes</div>
+        <textarea class="notes-textarea" id="today-notes-${day.date}" placeholder="Add personal notes for today…">${escHtml(_loadNote(day.date))}</textarea>`;
+      container.appendChild(notesEl);
+      const noteTA = notesEl.querySelector(`#today-notes-${day.date}`);
+      if (noteTA) noteTA.addEventListener('input', () => _saveNote(day.date, noteTA.value));
+    }
     return;
   }
 

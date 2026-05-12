@@ -19,6 +19,44 @@ function _saveNote(date, val) {
   try { localStorage.setItem('note_' + date, val); } catch(e) {}
 }
 
+// ── Transport badge detection ───────────────────────────────
+function _transportBadge(name) {
+  const n = name;
+  // Shinkansen
+  if (/shinkansen|nozomi|hikari|kodama|n.ex|narita express|🚄/i.test(n))
+    return { icon: '🚄', cls: 'tb-shinkansen', label: 'Shinkansen' };
+  // Limited Express (Wide View Hida, Kintetsu LEX etc)
+  if (/wide view|hida|limited express|🚂/i.test(n))
+    return { icon: '🚂', cls: 'tb-ltd', label: 'Ltd Express' };
+  // Bus (highway / local / shuttle / tour)
+  if (/🚌|\bhighway bus\b|express bus|fujikyuko|gl07|g-liner|shuttle bus|red bus|tour bus|depart.*amanohashidate|\bbus[: →]/i.test(n))
+    return { icon: '🚌', cls: 'tb-bus', label: 'Bus' };
+  // Train / subway / tram (all non-shinkansen rail)
+  if (/🚃|railway|tozan rail|fujikyu rail|sobu|yamanote|keiyo|rinkai|karasuma subway|jr.*line|kintetsu|odakyu|sagano|loop line|board.*n.ex/i.test(n))
+    return { icon: '🚃', cls: 'tb-train', label: 'Train' };
+  // Ropeway / cable car
+  if (/🚡|ropeway|cable car|gondola/i.test(n))
+    return { icon: '🚡', cls: 'tb-ropeway', label: 'Ropeway' };
+  // Taxi
+  if (/🚕|\btaxi\b|\bcab\b/i.test(n))
+    return { icon: '🚕', cls: 'tb-taxi', label: 'Taxi' };
+  // Flight
+  if (/✈️|flight depart|flights? from|fly to/i.test(n))
+    return { icon: '✈️', cls: 'tb-flight', label: 'Flight' };
+  // Ferry / boat / pirate ship
+  if (/🚢|⛴|pirate ship|ferry|lake.*cruise|lake.*boat/i.test(n))
+    return { icon: '🚢', cls: 'tb-ferry', label: 'Ferry' };
+  // Walk
+  if (/🚶|^walk to\b/i.test(n))
+    return { icon: '🚶', cls: 'tb-walk', label: 'Walk' };
+  return null;
+}
+
+// Strip a leading transport emoji + space so we don't double-up
+function _stripTransportEmoji(name) {
+  return name.replace(/^[🚄🚃🚌🚡🚕✈️🚶🚢⛴🚂🏠]\s*/, '');
+}
+
 function _renderActivity(act) {
   const name       = act.activity || act.name || '';
   const desc       = act.notes    || act.description || '';
@@ -26,12 +64,20 @@ function _renderActivity(act) {
   const isSumo     = /sumo/i.test(name);
   const isSuzuka   = /suzuka/i.test(name);
   const notJrPass  = act.non_jr_pass || /not jr pass/i.test(desc);
+  const transport  = _transportBadge(name);
+
+  // Strip existing leading transport emoji when we're showing a badge
+  const displayName = transport ? _stripTransportEmoji(name) : name;
+
+  const badgeHtml = transport
+    ? `<span class="transport-badge ${transport.cls}" title="${transport.label}">${transport.icon}</span>`
+    : '';
 
   return `
-    <div class="activity-item${notJrPass ? ' activity-not-jr' : ''}">
+    <div class="activity-item${notJrPass ? ' activity-not-jr' : ''}${transport ? ' activity-transport' : ''}">
       <div class="activity-time">${escHtml(act.time || '')}</div>
       <div class="activity-body">
-        <div class="activity-name">${escHtml(name)}</div>
+        <div class="activity-name">${badgeHtml}${escHtml(displayName)}</div>
         ${notJrPass ? `<div class="not-jr-badge">⚠️ NOT JR Pass — separate ticket</div>` : ''}
         ${desc ? `<div class="activity-desc">${escHtml(desc)}</div>` : ''}
         <div class="activity-actions">

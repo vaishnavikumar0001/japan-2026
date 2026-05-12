@@ -619,13 +619,47 @@ input { font-family: inherit; }
   margin-bottom: 4px;
 }
 
-.activity-transport {
-  font-size: 0.75rem;
-  color: var(--text-light);
-  display: flex;
+/* Transport badge — shown before activity name */
+.transport-badge {
+  display: inline-flex;
   align-items: center;
-  gap: 4px;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-right: 6px;
+  vertical-align: middle;
+  flex-shrink: 0;
+  line-height: 1;
 }
+.tb-shinkansen { background: rgba(31,78,121,0.12); }
+.tb-ltd        { background: rgba(62,39,35,0.10); }
+.tb-bus        { background: rgba(230,81,0,0.12); }
+.tb-train      { background: rgba(25,118,210,0.12); }
+.tb-ropeway    { background: rgba(46,125,50,0.12); }
+.tb-taxi       { background: rgba(212,175,55,0.20); }
+.tb-flight     { background: rgba(2,119,189,0.12); }
+.tb-ferry      { background: rgba(0,121,107,0.12); }
+.tb-walk       { background: rgba(120,120,120,0.10); }
+
+@media (prefers-color-scheme: dark) {
+  .tb-shinkansen { background: rgba(99,155,210,0.18); }
+  .tb-ltd        { background: rgba(180,140,120,0.15); }
+  .tb-bus        { background: rgba(255,140,80,0.18); }
+  .tb-train      { background: rgba(99,165,255,0.18); }
+  .tb-ropeway    { background: rgba(100,200,120,0.18); }
+  .tb-taxi       { background: rgba(212,175,55,0.22); }
+  .tb-flight     { background: rgba(80,180,255,0.18); }
+  .tb-ferry      { background: rgba(0,200,180,0.18); }
+  .tb-walk       { background: rgba(180,180,180,0.15); }
+}
+
+/* Row-level highlight for transport activities */
+.activity-item.activity-transport {
+  border-left: 3px solid var(--border);
+}
+.activity-item.activity-transport.tb-shinkansen-row { border-left-color: var(--navy); }
 
 .activity-actions {
   display: flex;

@@ -1021,12 +1021,12 @@
         {
           "time": "09:40",
           "activity": "Arrive Kawaguchiko Station",
-          "notes": "Buy Kawaguchiko Retro Bus day pass at station kiosk (~¥1,500/person)."
+          "notes": "No need for a day pass — you only take the retro bus twice today (to/from Oishi Park). Pay per ride at the bus stop (~¥300–400/ride). IC card (Suica) works on the bus too."
         },
         {
           "time": "09:50",
           "activity": "🚃 Fujikyu Railway → Shimoyoshida Station",
-          "notes": "One stop, 10 min, ¥310 each. NOT JR Pass. Buy at machine at Kawaguchiko Station. Or take World Heritage Loop Bus from outside station (15 min, covered by day pass).",
+          "notes": "One stop, 10 min, ¥310 each. NOT JR Pass. Buy at machine at Kawaguchiko Station. Faster and simpler than the bus — take the train.",
           "non_jr_pass": true
         },
         {
@@ -1043,7 +1043,7 @@
         {
           "time": "11:40",
           "activity": "🚡 Kachi Kachi Yama Ropeway (Mt Tenjo)",
-          "notes": "5 min walk from station. ~¥1,000 return (not in day pass). 3 min gondola. Summit: panoramic lake + Fuji view from above, Love Bell — ring it together (couples tradition), summit shrine. Allow 35–40 min."
+          "notes": "5 min walk from station. ~¥1,000 return. 3 min gondola. Summit: panoramic lake + Fuji view from above, Love Bell — ring it together (couples tradition), summit shrine. Allow 35–40 min."
         },
         {
           "time": "12:40",
@@ -1053,7 +1053,7 @@
         {
           "time": "13:40",
           "activity": "📸 Oishi Park north shore — Lake Kawaguchiko stroll",
-          "notes": "Red Kawaguchiko bus (day pass) 2 stops north. Classic wide-angle Fuji-reflected-in-lake shot. Mid-May: purple and pink lupin wildflowers line the lakefront. ~1h 15min here."
+          "notes": "Red Kawaguchiko Retro Bus — pay per ride at the stop (~¥300–400, Suica accepted). 2 stops north, ~10 min. Classic wide-angle Fuji-reflected-in-lake shot. Mid-May: purple and pink lupin wildflowers line the lakefront. ~1h 15min here."
         },
         {
           "time": "14:55",

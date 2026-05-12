@@ -13,20 +13,20 @@
   loadingEl.innerHTML = '<div class="load-flag">🇯🇵</div><div class="load-text">Loading your Japan trip…</div>';
   document.body.appendChild(loadingEl);
 
-  // ── Dynamic calendar badge ─────────────────────────────────
+  // ── Dynamic calendar badge — always shows Japan date (JST) ───
   (function() {
-    const now = new Date();
+    const jstStr  = new Date().toLocaleDateString('en-CA', { timeZone: 'Asia/Tokyo' }); // YYYY-MM-DD
+    const jstDate = new Date(jstStr + 'T00:00:00');
     const monthEl = document.getElementById('cal-month');
     const dayEl   = document.getElementById('cal-day');
     if (monthEl && dayEl) {
-      monthEl.textContent = now.toLocaleString('en-US', { month: 'short' });
-      dayEl.textContent   = now.getDate();
+      monthEl.textContent = jstDate.toLocaleString('en-US', { month: 'short' });
+      dayEl.textContent   = jstDate.getDate();
     }
   })();
 
   // ── Tab routing ────────────────────────────────────────────
   const tabs = {
-    itinerary:  { panel: document.getElementById('tab-itinerary'),  btn: null, rendered: false },
     schedule:   { panel: document.getElementById('tab-schedule'),   btn: null, rendered: false },
     hotels:     { panel: document.getElementById('tab-hotels'),     btn: null, rendered: false },
     trains:     { panel: document.getElementById('tab-trains'),     btn: null, rendered: false },
@@ -35,7 +35,7 @@
     learn:      { panel: document.getElementById('tab-learn'),      btn: null, rendered: false }
   };
 
-  let activeTab = 'itinerary';
+  let activeTab = 'schedule';
 
   document.querySelectorAll('.nav-btn').forEach(btn => {
     const t = btn.dataset.tab;
@@ -57,8 +57,7 @@
 
     // Update header title
     const titles = {
-      itinerary:  '🇯🇵 Today',
-      schedule:   '📅 Itinerary',
+      schedule:   '🇯🇵 Itinerary',
       hotels:     '🏨 Hotels',
       trains:     '🚄 Trains',
       onsens:     '♨️ Onsens',
@@ -74,7 +73,6 @@
     if (alwaysRender || !tabs[name].rendered) {
       tabs[name].rendered = true;
       switch (name) {
-        case 'schedule':   renderSchedule();   break;
         case 'hotels':     renderHotels();     break;
         case 'trains':     renderTrains();     break;
         case 'onsens':     renderOnsens();     break;
@@ -196,7 +194,7 @@
         const r = results[i];
         closeSearch();
         if (r.type === 'activity') {
-          switchTab('itinerary');
+          switchTab('schedule');
           setTimeout(() => {
             if (window.goToDay) window.goToDay(r.day.date);
           }, 50);
@@ -246,9 +244,9 @@
     // Remove loading screen
     loadingEl.remove();
 
-    // Render itinerary first (active tab)
-    renderItinerary();
-    tabs.itinerary.rendered = true;
+    // Render itinerary (active tab)
+    renderSchedule();
+    tabs.schedule.rendered = true;
 
   }).catch(err => {
     loadingEl.innerHTML = `<div class="load-flag">⚠️</div><div class="load-text">Failed to load trip data.<br>Please refresh.</div>`;

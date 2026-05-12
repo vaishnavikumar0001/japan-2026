@@ -6,6 +6,12 @@ function _itinFmtDate(dateStr) {
   return window.fmtDate ? fmtDate(dateStr) : dateStr;
 }
 
+// Always return today's date string in Japan Standard Time (UTC+9),
+// regardless of what timezone the device is set to.
+function _todayJST() {
+  return new Date().toLocaleDateString('en-CA', { timeZone: 'Asia/Tokyo' });
+}
+
 function _loadNote(date) {
   try { return localStorage.getItem('note_' + date) || ''; } catch(e) { return ''; }
 }
@@ -48,12 +54,11 @@ function renderItinerary() {
   const container = document.getElementById('itinerary-content');
   if (!container || !data) return;
 
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
+  const todayStr     = _todayJST();                      // JST-aware date string
+  const today        = new Date(todayStr + 'T00:00:00'); // local midnight for comparisons
   const departure    = new Date('2026-05-11T00:00:00'); // countdown target
   const itinFrom     = new Date('2026-05-10T00:00:00'); // show itinerary from May 10
   const tripEnd      = new Date('2026-05-25T00:00:00');
-  const todayStr     = today.toISOString().slice(0, 10);
 
   container.innerHTML = '';
 
@@ -262,15 +267,14 @@ function renderSchedule() {
   const container = document.getElementById('schedule-content');
   if (!container || !data) return;
 
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
+  const today     = new Date(_todayJST() + 'T00:00:00'); // JST-aware, local midnight
   const tripStart = new Date('2026-05-10T00:00:00');
   const tripEnd   = new Date('2026-05-25T00:00:00');
 
   let initialDate;
   if (today < tripStart)     initialDate = '2026-05-10';
   else if (today > tripEnd)  initialDate = '2026-05-25';
-  else                       initialDate = today.toISOString().slice(0, 10);
+  else                       initialDate = _todayJST();
 
   let currentDate = initialDate;
 
@@ -294,7 +298,7 @@ function renderSchedule() {
       const pill = document.createElement('button');
       pill.className = 'day-pill';
       if (date === currentDate) pill.classList.add('active');
-      if (date === today.toISOString().slice(0, 10)) pill.classList.add('today');
+      if (date === _todayJST()) pill.classList.add('today');
       const mo = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][new Date(date + 'T00:00:00').getMonth()];
       pill.textContent = `${mo}-${date.slice(8)}${d.suzuka_day ? ' 🏎️' : ''}`;
       pill.dataset.date = date;
@@ -344,7 +348,7 @@ function renderSchedule() {
     const idx = dates.indexOf(currentDate);
     const prevDate = idx > 0 ? dates[idx - 1] : null;
     const nextDate = idx < dates.length - 1 ? dates[idx + 1] : null;
-    const isToday  = currentDate === today.toISOString().slice(0, 10);
+    const isToday  = currentDate === _todayJST();
 
     dayArea.innerHTML = `
       <div class="day-nav">

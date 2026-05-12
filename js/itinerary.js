@@ -20,20 +20,23 @@ function _saveNote(date, val) {
 }
 
 // ── Transport badge detection ───────────────────────────────
-function _transportBadge(name) {
+// Checks both the activity name and notes for transport keywords
+function _transportBadge(name, notes) {
   const n = name;
-  // Shinkansen
+  const combined = name + ' ' + (notes || '');
+  // Shinkansen (name only — don't badge sightseeing just because notes mention Shinkansen)
   if (/shinkansen|nozomi|hikari|kodama|n.ex|narita express|🚄/i.test(n))
     return { icon: '🚄', cls: 'tb-shinkansen', label: 'Shinkansen' };
-  // Limited Express (Wide View Hida, Kintetsu LEX etc)
+  // Limited Express
   if (/wide view|hida|limited express|🚂/i.test(n))
     return { icon: '🚂', cls: 'tb-ltd', label: 'Ltd Express' };
-  // Bus (highway / local / shuttle / tour)
+  // Bus
   if (/🚌|\bhighway bus\b|express bus|fujikyuko|gl07|g-liner|shuttle bus|red bus|tour bus|depart.*amanohashidate|\bbus[: →]/i.test(n))
     return { icon: '🚌', cls: 'tb-bus', label: 'Bus' };
-  // Train / subway / tram (all non-shinkansen rail)
-  if (/🚃|railway|tozan rail|fujikyu rail|sobu|yamanote|keiyo|rinkai|karasuma subway|jr.*line|kintetsu|odakyu|sagano|loop line|board.*n.ex/i.test(n))
-    return { icon: '🚃', cls: 'tb-train', label: 'Train' };
+  // Train / subway / metro (check notes too for "Metro: X > Y > Z" style directions)
+  if (/🚃|railway|tozan rail|fujikyu rail|sobu|yamanote|keiyo|rinkai|karasuma subway|jr.*line|kintetsu|odakyu|sagano|loop line|board.*n.ex/i.test(n) ||
+      /\bmetro[: ]/i.test(combined))
+    return { icon: '🚃', cls: 'tb-train', label: 'Train / Metro' };
   // Ropeway / cable car
   if (/🚡|ropeway|cable car|gondola/i.test(n))
     return { icon: '🚡', cls: 'tb-ropeway', label: 'Ropeway' };
@@ -64,7 +67,7 @@ function _renderActivity(act) {
   const isSumo     = /sumo/i.test(name);
   const isSuzuka   = /suzuka/i.test(name);
   const notJrPass  = act.non_jr_pass || /not jr pass/i.test(desc);
-  const transport  = _transportBadge(name);
+  const transport  = _transportBadge(name, desc);
 
   // Strip existing leading transport emoji when we're showing a badge
   const displayName = transport ? _stripTransportEmoji(name) : name;

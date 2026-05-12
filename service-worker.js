@@ -1,33 +1,36 @@
 
-const CACHE_NAME = 'japan-2026-v56';
+const CACHE_NAME = 'japan-2026-v57';
+
+// Use relative paths so this works whether deployed at /japan-2026/ or /
+const BASE = self.registration.scope;
 
 const ASSETS = [
-  '/',
-  '/index.html',
-  '/manifest.json',
-  '/japan_trip_data.json',
-  '/css/styles.css',
-  '/js/auth.js',
-  '/js/data.js',
-  '/js/app.js',
-  '/js/itinerary.js',
-  '/js/hotels.js',
-  '/js/trains.js',
-  '/js/onsens.js',
-  '/js/checklists.js',
-  '/js/learn.js',
-  '/icons/icon-192.png',
-  '/icons/icon-512.png',
-  '/sumo_explainer.html',
-  '/suzuka_explainer.html'
+  BASE,
+  BASE + 'index.html',
+  BASE + 'manifest.json',
+  BASE + 'japan_trip_data.json',
+  BASE + 'css/styles.css',
+  BASE + 'js/auth.js',
+  BASE + 'js/data.js',
+  BASE + 'js/app.js',
+  BASE + 'js/itinerary.js',
+  BASE + 'js/hotels.js',
+  BASE + 'js/trains.js',
+  BASE + 'js/onsens.js',
+  BASE + 'js/checklists.js',
+  BASE + 'js/learn.js',
+  BASE + 'icons/icon-192.png',
+  BASE + 'icons/icon-512.png',
+  BASE + 'sumo_explainer.html',
+  BASE + 'suzuka_explainer.html'
 ];
 
-// Install: pre-cache all assets
+// Install: pre-cache all assets individually so one 404 can't kill the whole install
 self.addEventListener('install', event => {
   event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then(cache => cache.addAll(ASSETS))
-      .then(() => self.skipWaiting())
+    caches.open(CACHE_NAME).then(cache =>
+      Promise.allSettled(ASSETS.map(url => cache.add(url)))
+    ).then(() => self.skipWaiting())
   );
 });
 
@@ -63,7 +66,7 @@ self.addEventListener('fetch', event => {
       }).catch(() => {
         // Offline fallback for navigation requests
         if (event.request.mode === 'navigate') {
-          return caches.match('/index.html');
+          return caches.match(BASE + 'index.html');
         }
       });
     })

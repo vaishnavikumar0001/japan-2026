@@ -6,10 +6,11 @@ function _itinFmtDate(dateStr) {
   return window.fmtDate ? fmtDate(dateStr) : dateStr;
 }
 
-// Always return today's date string in Japan Standard Time (UTC+9),
-// regardless of what timezone the device is set to.
+// Always return today's date string in Japan Standard Time (UTC+9).
+// Uses raw UTC arithmetic — no Intl/locale dependency, works on all iOS Safari versions.
 function _todayJST() {
-  return new Date().toLocaleDateString('en-CA', { timeZone: 'Asia/Tokyo' });
+  // Date.now() is always UTC milliseconds. Add 9h to get JST, then read the ISO date.
+  return new Date(Date.now() + 9 * 3600000).toISOString().slice(0, 10);
 }
 
 function _loadNote(date) {

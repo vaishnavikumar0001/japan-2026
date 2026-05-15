@@ -15,7 +15,7 @@
 
   // ── Dynamic calendar badge — always shows Japan date (JST) ───
   (function() {
-    const jstStr  = new Date().toLocaleDateString('en-CA', { timeZone: 'Asia/Tokyo' }); // YYYY-MM-DD
+    const jstStr  = new Date(Date.now() + 9 * 3600000).toISOString().slice(0, 10); // YYYY-MM-DD in JST
     const jstDate = new Date(jstStr + 'T00:00:00');
     const monthEl = document.getElementById('cal-month');
     const dayEl   = document.getElementById('cal-day');

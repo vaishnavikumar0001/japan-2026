@@ -1,5 +1,5 @@
 
-const CACHE_NAME = 'japan-2026-v57';
+const CACHE_NAME = 'japan-2026-v58';
 
 // Use relative paths so this works whether deployed at /japan-2026/ or /
 const BASE = self.registration.scope;
